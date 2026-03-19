@@ -847,6 +847,303 @@
                 font-size: 12px;
             }
         }
+    
+/* ===== AD-STYLE ARTICLE LAYOUT ===== */
+.stories-header {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 70px 60px 0 60px;
+}
+.stories-header-inner {
+    border-top: 1px solid var(--charcoal);
+    padding-top: 16px;
+    text-align: center;
+}
+.stories-header-inner h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--charcoal);
+}
+.stories-main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px 60px 0 60px;
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 40px;
+}
+.featured-story {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.featured-story:hover .featured-img {
+    opacity: 0.92;
+}
+.featured-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.4s ease;
+}
+.featured-caption {
+    text-align: center;
+    padding: 28px 30px 0 30px;
+}
+.featured-category {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--charcoal);
+    margin-bottom: 10px;
+}
+.featured-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: var(--charcoal);
+    margin-bottom: 14px;
+}
+.featured-excerpt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--gray-text);
+    max-width: 560px;
+    margin: 0 auto;
+}
+.sidebar-stories {
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-card {
+    display: grid;
+    grid-template-columns: 1fr 160px;
+    gap: 20px;
+    align-items: start;
+    padding: 24px 0;
+    border-top: 1px solid #d4d4d4;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+.sidebar-card:first-child {
+    padding-top: 0;
+    border-top: none;
+}
+.sidebar-card:hover {
+    opacity: 0.8;
+}
+.sidebar-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 4px;
+}
+.sidebar-category {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--charcoal);
+}
+.sidebar-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: var(--charcoal);
+}
+.sidebar-card-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+.trending-header {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 70px 60px 0 60px;
+}
+.trending-header-inner {
+    border-top: 1px solid var(--charcoal);
+    padding-top: 16px;
+    text-align: center;
+}
+.trending-header-inner h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--charcoal);
+}
+.trending-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px 60px 0 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.trending-card {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 16px;
+    align-items: start;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+.trending-card:hover {
+    opacity: 0.8;
+}
+.trending-card-img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+}
+.trending-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 4px;
+}
+.trending-category {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--charcoal);
+}
+.trending-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: var(--charcoal);
+}
+.trending-byline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: var(--gray-text);
+    margin-top: 4px;
+}
+
+/* ===== AD-STYLE RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .stories-main {
+        grid-template-columns: 1fr;
+        padding: 30px 40px 0 40px;
+    }
+    .stories-header, .trending-header {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .trending-grid {
+        padding: 30px 40px 0 40px;
+    }
+    .sidebar-stories {
+        flex-direction: row;
+        gap: 24px;
+        overflow-x: auto;
+    }
+    .sidebar-card {
+        min-width: 280px;
+        border-top: none;
+        border-left: 1px solid #d4d4d4;
+        padding: 0 0 0 24px;
+    }
+    .sidebar-card:first-child {
+        border-left: none;
+        padding-left: 0;
+    }
+    .sidebar-card-img {
+        width: 120px;
+        height: 120px;
+    }
+    .sidebar-card {
+        grid-template-columns: 1fr 120px;
+    }
+}
+@media (max-width: 768px) {
+    .stories-header, .trending-header {
+        padding: 50px 24px 0 24px;
+    }
+    .stories-main {
+        padding: 20px 24px 0 24px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .trending-grid {
+        padding: 20px 24px 0 24px;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .sidebar-stories {
+        flex-direction: column;
+    }
+    .sidebar-card {
+        border-left: none;
+        border-top: 1px solid #d4d4d4;
+        padding: 20px 0 0 0;
+        min-width: auto;
+    }
+    .sidebar-card:first-child {
+        border-top: none;
+        padding-top: 0;
+    }
+    .featured-title {
+        font-size: 26px;
+    }
+}
+@media (max-width: 480px) {
+    .stories-header, .trending-header {
+        padding: 40px 16px 0 16px;
+    }
+    .stories-main {
+        padding: 16px 16px 0 16px;
+    }
+    .trending-grid {
+        padding: 16px 16px 0 16px;
+    }
+    .sidebar-card-img {
+        width: 100px;
+        height: 100px;
+    }
+    .sidebar-card {
+        grid-template-columns: 1fr 100px;
+        gap: 12px;
+    }
+    .sidebar-title {
+        font-size: 16px;
+    }
+    .trending-card {
+        grid-template-columns: 100px 1fr;
+        gap: 12px;
+    }
+    .trending-card-img {
+        width: 100px;
+        height: 100px;
+    }
+    .featured-title {
+        font-size: 22px;
+    }
+    .featured-excerpt {
+        font-size: 13px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -884,88 +1181,92 @@
         </div>
     </section>
 
-    <!-- Section Title -->
-    <h2 class="section-title">LATEST FROM THE EDITORIAL</h2>
+    
+    <!-- TODAY'S STORIES Section Header -->
+    <div class="stories-header">
+        <div class="stories-header-inner">
+            <h2>Latest from the Editorial</h2>
+        </div>
+    </div>
 
-    <!-- Editorial Grid -->
-    <div class="editorial-grid">
-        <!-- Card 1: Large (spanning 2 columns) -->
-        <a href="/editorial/spring-edition-march-2026" class="editorial-card card-large">
-            <div class="card-image-wrapper">
-                <img src="images/wine-festival.jpg" alt="Wine Festival" class="card-image">
-            </div>
-            <div class="card-content">
-                <div class="card-category">Festival Season</div>
-                <h3 class="card-title">The Hilton Head Island Wine & Food Festival</h3>
-                <p class="card-excerpt">March 20–28: Five events worth your time this festival week.</p>
-                <span class="card-link">READ MORE →</span>
+    <!-- Main Stories: Featured left + Sidebar right -->
+    <div class="stories-main">
+        <!-- Featured Story (large image left) -->
+        <div>
+            <a href="/editorial/spring-edition-march-2026" class="featured-story">
+                <img src="images/wine-festival.jpg" alt="Hilton Head Wine and Food Festival" class="featured-img">
+                <div class="featured-caption">
+                    <div class="featured-category">Festival Season</div>
+                    <h3 class="featured-title">The Hilton Head Island Wine & Food Festival</h3>
+                    <p class="featured-excerpt">March 20–28: Five events worth your time this festival week, from Grand Tastings on the harbour to intimate winemaker dinners under the oaks.</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Sidebar Stories -->
+        <div class="sidebar-stories">
+            <a href="/editorial/spring-edition-march-2026" class="sidebar-card">
+                <div class="sidebar-card-text">
+                    <div class="sidebar-category">Lowcountry Living</div>
+                    <h3 class="sidebar-title">Spring on the Island: A Season of Renewal</h3>
+                </div>
+                <img src="images/spring-island.jpg" alt="Spring on Hilton Head Island" class="sidebar-card-img">
+            </a>
+
+            <a href="/editorial/spring-edition-march-2026" class="sidebar-card">
+                <div class="sidebar-card-text">
+                    <div class="sidebar-category">Island Profile</div>
+                    <h3 class="sidebar-title">Bob Lacey Now Calls Hilton Head Home</h3>
+                </div>
+                <img src="images/bob-lacey.jpg" alt="Bob Lacey Profile" class="sidebar-card-img">
+            </a>
+
+            <a href="/editorial/spring-edition-march-2026" class="sidebar-card">
+                <div class="sidebar-card-text">
+                    <div class="sidebar-category">Spring Market</div>
+                    <h3 class="sidebar-title">The Best Time to Buy on Hilton Head Island</h3>
+                </div>
+                <img src="images/spring-market.jpg" alt="Spring Real Estate Market" class="sidebar-card-img">
+            </a>
+        </div>
+    </div>
+
+    <!-- TRENDING STORIES Section -->
+    <div class="trending-header">
+        <div class="trending-header-inner">
+            <h2>Trending Stories</h2>
+        </div>
+    </div>
+
+    <div class="trending-grid">
+        <a href="/editorial/spring-edition-march-2026" class="trending-card">
+            <img src="images/lowcountry-birds.jpg" alt="Lowcountry Birds" class="trending-card-img">
+            <div class="trending-card-text">
+                <div class="trending-category">Outdoors</div>
+                <h3 class="trending-title">10 Lowcountry Birds to Spot This Spring</h3>
+                <div class="trending-byline">By The Editorial Staff</div>
             </div>
         </a>
 
-        <!-- Card 2: Tall (spanning 2 rows) -->
-        <a href="/editorial/spring-edition-march-2026" class="editorial-card card-tall">
-            <div class="card-image-wrapper">
-                <img src="images/spring-island.jpg" alt="Spring on the Island" class="card-image">
-            </div>
-            <div class="card-content">
-                <div class="card-category">Lowcountry Living</div>
-                <h3 class="card-title">Spring on the Island</h3>
-                <span class="card-link">READ MORE →</span>
+        <a href="/editorial/spring-edition-march-2026" class="trending-card">
+            <img src="images/upick-farms.jpg" alt="U-Pick Farms" class="trending-card-img">
+            <div class="trending-card-text">
+                <div class="trending-category">Day Trips</div>
+                <h3 class="trending-title">U-Pick Farms Worth the Drive</h3>
+                <div class="trending-byline">By The Editorial Staff</div>
             </div>
         </a>
 
-        <!-- Card 3: Standard -->
-        <a href="/editorial/spring-edition-march-2026" class="editorial-card">
-            <div class="card-image-wrapper">
-                <img src="images/bob-lacey.jpg" alt="Bob Lacey Profile" class="card-image">
-            </div>
-            <div class="card-content">
-                <div class="card-category">Island Profile</div>
-                <h3 class="card-title">Bob Lacey Now Calls Hilton Head Home</h3>
-                <p class="card-excerpt">National Radio Hall of Famer joins a growing community of notable figures choosing the Lowcountry.</p>
-                <span class="card-link">READ MORE →</span>
-            </div>
-        </a>
-
-        <!-- Card 4: Standard -->
-        <a href="/editorial/spring-edition-march-2026" class="editorial-card">
-            <div class="card-image-wrapper">
-                <img src="images/spring-market.jpg" alt="Spring Real Estate Market" class="card-image">
-            </div>
-            <div class="card-content">
-                <div class="card-category">Spring Market</div>
-                <h3 class="card-title">The Best Time to Buy on Hilton Head Island</h3>
-                <p class="card-excerpt">Spring 2026 presents one of the most compelling windows in recent memory.</p>
-                <span class="card-link">READ MORE →</span>
-            </div>
-        </a>
-
-        <!-- Card 5: Wide (spanning 2 columns) -->
-        <a href="/editorial/spring-edition-march-2026" class="editorial-card card-wide">
-            <div class="card-image-wrapper">
-                <img src="images/lowcountry-birds.jpg" alt="Lowcountry Birds" class="card-image">
-            </div>
-            <div class="card-content">
-                <div class="card-category">Outdoors</div>
-                <h3 class="card-title">10 Lowcountry Birds to Spot This Spring</h3>
-                <p class="card-excerpt">From ruby-throated hummingbirds to Eastern kingbirds, spring brings spectacular birding.</p>
-                <span class="card-link">READ MORE →</span>
-            </div>
-        </a>
-
-        <!-- Card 6: Standard -->
-        <a href="/editorial/spring-edition-march-2026" class="editorial-card">
-            <div class="card-image-wrapper">
-                <img src="images/upick-farms.jpg" alt="U-Pick Farms" class="card-image">
-            </div>
-            <div class="card-content">
-                <div class="card-category">Day Trips</div>
-                <h3 class="card-title">U-Pick Farms Worth the Drive</h3>
-                <p class="card-excerpt">Strawberries on St. Helena Island, sunflowers in Hardeeville, blueberries in coastal Georgia.</p>
-                <span class="card-link">READ MORE →</span>
+        <a href="/editorial/spring-edition-march-2026" class="trending-card">
+            <img src="images/spring-market.jpg" alt="Luxury Estate" class="trending-card-img">
+            <div class="trending-card-text">
+                <div class="trending-category">Architecture</div>
+                <h3 class="trending-title">Inside a $4.2M Sea Pines Oceanfront Estate</h3>
+                <div class="trending-byline">By The Editorial Staff</div>
             </div>
         </a>
     </div>
+
 
     <!-- Newsletter Section -->
     <section class="newsletter">
