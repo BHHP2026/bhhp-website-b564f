@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spring Edition — March 2026 | Best Hilton Head Properties</title>
+    <meta name="description" content="The Spring Edition: Wine festivals, island renewal, architecture, wildlife, and the best of Hilton Head Island living — curated by Best Hilton Head Properties.">
+    <meta property="og:title" content="The Spring Edition — March 2026 | Best Hilton Head Properties">
+    <meta property="og:description" content="Wine festivals, island renewal, architecture, wildlife, and the best of Hilton Head Island living.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bhhp-staging.netlify.app/editorial/spring-edition-march-2026/">
+    <meta property="og:image" content="https://bhhp-staging.netlify.app/editorial/images/wine-festival.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #092969;
+            --charcoal: #1C1C1E;
+            --gold: #C4A05A;
+            --teal: #6FBFB0;
+            --white: #FAFAF8;
+            --cream: #F5EFE0;
+            --gray-light: #E0DDD8;
+            --gray-text: #666662;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: var(--white); color: var(--charcoal); font-family: 'Montserrat', sans-serif; }
+
+        /* Nav */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0 40px; height: 72px;
+            background: rgba(255,255,255,0.97);
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            backdrop-filter: blur(10px);
+        }
+        .nav-left, .nav-right { display: flex; align-items: center; gap: 28px; flex: 1; }
+        .nav-right { justify-content: flex-end; }
+        .nav-item {
+            font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600;
+            letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none;
+            color: var(--charcoal); transition: color 0.3s ease;
+        }
+        .nav-item:hover { color: var(--gold); }
+        .nav-item.active { border-bottom: 1.5px solid var(--charcoal); padding-bottom: 2px; }
+        .nav-center { display: flex; align-items: center; justify-content: center; }
+        .nav-logo-img { height: 58px; width: auto; filter: brightness(0); }
+        .nav-search { cursor: pointer; }
+        .serhant-btn {
+            font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700;
+            letter-spacing: 1.5px; text-transform: uppercase; padding: 8px 16px;
+            background: var(--charcoal); color: var(--white); text-decoration: none;
+            border-radius: 2px; transition: background 0.3s ease;
+        }
+        .serhant-btn:hover { background: var(--navy); }
+
+        /* Article Hero */
+        .article-hero {
+            margin-top: 72px;
+            height: 70vh;
+            min-height: 500px;
+            background: linear-gradient(135deg, #2c1810 0%, #1a3a2a 50%, #0a2040 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .article-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('../images/wine-festival.jpg') center/cover;
+            opacity: 0.25;
+        }
+        .article-hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 40px;
+            max-width: 800px;
+        }
+        .article-hero-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 24px;
+        }
+        .article-hero-title {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 72px;
+            font-weight: 400;
+            font-style: italic;
+            color: white;
+            line-height: 1.1;
+            margin-bottom: 12px;
+        }
+        .article-hero-edition {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            font-weight: 300;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 30px;
+        }
+        .article-hero-date {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* Table of Contents */
+        .toc {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .toc-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--gray-text);
+            margin-bottom: 30px;
+        }
+        .toc-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px 24px;
+        }
+        .toc-list a {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: var(--charcoal);
+            text-decoration: none;
+            padding: 6px 0;
+            border-bottom: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .toc-list a:hover {
+            color: var(--gold);
+            border-bottom-color: var(--gold);
+        }
+
+        /* Article Sections */
+        .article-section {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 80px 60px;
+            border-top: 1px solid var(--gray-light);
+        }
+        .article-section:first-of-type {
+            border-top: none;
+        }
+        .section-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        .section-layout.reverse .section-image {
+            order: 2;
+        }
+        .section-layout.reverse .section-text {
+            order: 1;
+        }
+        .section-layout.full-width {
+            grid-template-columns: 1fr;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .section-image img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            display: block;
+        }
+        .section-category {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 16px;
+        }
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 1.2;
+            color: var(--charcoal);
+            margin-bottom: 12px;
+        }
+        .section-byline {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            color: var(--gray-text);
+            letter-spacing: 1px;
+            margin-bottom: 24px;
+        }
+        .section-body {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #444;
+        }
+        .section-body p {
+            margin-bottom: 18px;
+        }
+        .pull-quote {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 24px;
+            line-height: 1.5;
+            color: var(--charcoal);
+            border-left: 3px solid var(--gold);
+            padding: 20px 0 20px 30px;
+            margin: 30px 0;
+        }
+
+        /* Full-width image break */
+        .image-break {
+            width: 100%;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 60px;
+        }
+        .image-break img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+        .image-break-caption {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            color: var(--gray-text);
+            text-align: center;
+            padding: 12px 0;
+            letter-spacing: 0.5px;
+        }
+
+        /* Newsletter */
+        .newsletter {
+            max-width: 1300px;
+            margin: 80px auto 0 auto;
+            padding: 60px 60px;
+            border-top: 1px solid #d4d4d4;
+            border-bottom: 1px solid #d4d4d4;
+            text-align: center;
+        }
+        .newsletter-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            color: var(--charcoal);
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 0;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+        .newsletter-input {
+            flex: 1;
+            padding: 14px 20px;
+            border: 1px solid #d4d4d4;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            background: var(--white);
+            border-radius: 0;
+        }
+        .newsletter-input:focus { outline: none; border-color: var(--charcoal); }
+        .newsletter-button {
+            padding: 14px 28px;
+            background-color: var(--charcoal);
+            color: var(--white);
+            border: 1px solid var(--charcoal);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 0;
+            transition: all 0.3s ease;
+        }
+        .newsletter-button:hover { background-color: var(--navy); border-color: var(--navy); }
+
+        /* Footer */
+        footer {
+            background-color: var(--charcoal);
+            color: var(--white);
+            padding: 60px 60px;
+            margin-top: 80px;
+        }
+        .footer-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+        }
+        .footer-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+        }
+        .footer-section h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10px;
+            letter-spacing: 2.5px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: rgba(255,255,255,0.5);
+            text-transform: uppercase;
+        }
+        .footer-section p { font-size: 13px; line-height: 1.8; opacity: 0.9; margin-bottom: 10px; }
+        .footer-contact { font-size: 13px; line-height: 1.8; }
+        .footer-contact a { color: rgba(255,255,255,0.7); text-decoration: none; transition: color 0.3s ease; }
+        .footer-contact a:hover { color: var(--white); }
+        .footer-bottom {
+            max-width: 1300px;
+            margin: 40px auto 0 auto;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            text-align: center;
+            font-size: 11px;
+            opacity: 0.5;
+        }
+        .social-links { display: flex; gap: 20px; margin-top: 20px; }
+        .social-link {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .social-link:hover { color: var(--white); }
+
+        /* Back to editorial link */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--charcoal);
+            text-decoration: none;
+            margin-bottom: 30px;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover { color: var(--gold); }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .section-layout { grid-template-columns: 1fr; gap: 40px; }
+            .section-layout.reverse .section-image { order: 0; }
+            .section-layout.reverse .section-text { order: 0; }
+            .article-section { padding: 60px 40px; }
+            .image-break { padding: 0 40px; }
+        }
+        @media (max-width: 768px) {
+            nav { padding: 0 20px; height: 64px; }
+            .nav-left, .nav-right { gap: 16px; }
+            .nav-item { font-size: 9px; letter-spacing: 1.2px; }
+            .nav-logo-img { height: 50px; }
+            .article-hero { margin-top: 64px; height: 60vh; }
+            .article-hero-title { font-size: 48px; }
+            .article-hero-edition { font-size: 20px; letter-spacing: 5px; }
+            .section-title { font-size: 28px; }
+            .article-section { padding: 50px 24px; }
+            .image-break { padding: 0 24px; }
+            .newsletter { padding: 50px 24px; margin-top: 60px; }
+            .newsletter-text { font-size: 22px; }
+            .footer-content { grid-template-columns: 1fr; gap: 40px; }
+            footer { padding: 50px 24px; margin-top: 60px; }
+        }
+        @media (max-width: 480px) {
+            nav { padding: 0 15px; height: 56px; }
+            .nav-left, .nav-right { display: none; }
+            .nav-logo-img { height: 44px; }
+            .article-hero { margin-top: 56px; height: 50vh; min-height: 380px; }
+            .article-hero-title { font-size: 36px; }
+            .article-hero-edition { font-size: 16px; letter-spacing: 4px; }
+            .article-hero-content { padding: 24px; }
+            .toc { padding: 40px 20px; }
+            .section-title { font-size: 24px; }
+            .pull-quote { font-size: 20px; }
+            .article-section { padding: 40px 16px; }
+            .image-break { padding: 0 16px; }
+            .image-break img { height: 250px; }
+            .newsletter { padding: 40px 16px; margin-top: 50px; }
+            .newsletter-form { flex-direction: column; }
+            .newsletter-input, .newsletter-button { width: 100%; }
+            footer { padding: 40px 16px; margin-top: 50px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-left">
+            <a href="/" class="nav-item">Listings</a>
+            <a href="/#neighborhoods" class="nav-item">Neighborhoods</a>
+            <a href="/#about" class="nav-item">About</a>
+        </div>
+        <div class="nav-center">
+            <a href="/"><img src="/editorial/images/bhhp-logo.png" alt="Best Hilton Head Properties" class="nav-logo-img"></a>
+        </div>
+        <div class="nav-right">
+            <a href="/editorial/" class="nav-item active">Editorial</a>
+            <a href="/#contact" class="nav-item">Contact</a>
+            <svg class="nav-search" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <a href="https://www.serhant.com" class="serhant-btn" target="_blank">Serhant.</a>
+        </div>
+    </nav>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="article-hero-content">
+            <div class="article-hero-label">Best Hilton Head Properties · The Resort Editorial</div>
+            <h1 class="article-hero-title">Spring</h1>
+            <div class="article-hero-edition">Edition</div>
+            <div class="article-hero-date">March 2026 · Hilton Head Island, South Carolina</div>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <div class="toc">
+        <div class="toc-label">In This Issue</div>
+        <ul class="toc-list">
+            <li><a href="#wine-festival">Wine & Food Festival</a></li>
+            <li><a href="#spring-island">Spring on the Island</a></li>
+            <li><a href="#bob-lacey">Bob Lacey Profile</a></li>
+            <li><a href="#spring-market">Spring Market Report</a></li>
+            <li><a href="#lowcountry-birds">Lowcountry Birds</a></li>
+            <li><a href="#upick-farms">U-Pick Farms</a></li>
+            <li><a href="#sea-pines-estate">Sea Pines Estate</a></li>
+        </ul>
+    </div>
+
+    <!-- Article 1: Wine & Food Festival -->
+    <div class="article-section" id="wine-festival">
+        <div class="section-layout">
+            <div class="section-image">
+                <img src="../images/wine-festival.jpg" alt="Hilton Head Island Wine and Food Festival">
+            </div>
+            <div class="section-text">
+                <div class="section-category">Festival Season</div>
+                <h2 class="section-title">The Hilton Head Island Wine & Food Festival</h2>
+                <div class="section-byline">March 20–28, 2026 · By The Editorial Staff</div>
+                <div class="section-body">
+                    <p>Every March, the Lowcountry transforms into a destination for the world’s most discerning palates. The Hilton Head Island Wine & Food Festival returns for its celebrated run, bringing together acclaimed vintners, master sommeliers, and the island’s finest chefs for a week that blurs the line between culinary art and coastal lifestyle.</p>
+                    <p>This year’s Grand Tasting on Harbour Town’s waterfront promises more than 200 wines from Napa, Bordeaux, and the emerging vineyards of the Carolina Piedmont. But the true magic happens at the intimate winemaker dinners beneath the live oaks—where a table of twelve shares a six-course pairing under a canopy of Spanish moss and starlight.</p>
+                    <div class="pull-quote">“There’s something about the salt air and the sound of the harbour that makes every glass taste better.”</div>
+                    <p>The festival also introduces its first Lowcountry Oyster & Rosé Brunch, hosted at a private Sea Pines estate. Limited to forty guests, the event pairs local May River oysters with curated rosés from Provence and the Willamette Valley. Tickets are available through the BHHP concierge.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full-width image break -->
+    <div class="image-break">
+        <img src="../images/spring-island.jpg" alt="Spring on Hilton Head Island">
+        <div class="image-break-caption">The maritime forest canopy awakens along Sea Pines’ ancient trails.</div>
+    </div>
+
+    <!-- Article 2: Spring on the Island -->
+    <div class="article-section" id="spring-island">
+        <div class="section-layout reverse">
+            <div class="section-image">
+                <img src="../images/spring-island.jpg" alt="Spring on Hilton Head Island">
+            </div>
+            <div class="section-text">
+                <div class="section-category">Lowcountry Living</div>
+                <h2 class="section-title">Spring on the Island: A Season of Renewal</h2>
+                <div class="section-byline">By The Editorial Staff</div>
+                <div class="section-body">
+                    <p>When the azaleas begin their cascade of pink and white along Calibogue Cay, islanders know the season has turned. Spring on Hilton Head is not simply warmer weather—it is a complete sensory shift. The pluff mud sweetens, the osprey return to their nests atop channel markers, and the first light of morning arrives with the kind of golden softness that painters spend lifetimes chasing.</p>
+                    <p>For residents of the island’s gated communities—from Palmetto Dunes to Wexford Plantation—spring means mornings on the bike paths through maritime forests, afternoons on the newly groomed fairways, and evenings where the sunset over Broad Creek becomes the evening’s main event.</p>
+                    <div class="pull-quote">“Spring is when Hilton Head reveals its truest self—unhurried, elegant, and impossibly beautiful.”</div>
+                    <p>The island’s farm-to-table restaurants shift their menus to feature local catches and the first harvests from Lowcountry farms. The Harbour Town Yacht Basin fills with sails, and the beach stretches grow wider with the retreating winter tides. It is, without question, the season that turns visitors into homeowners.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article 3: Bob Lacey -->
+    <div class="article-section" id="bob-lacey">
+        <div class="section-layout">
+            <div class="section-image">
+                <img src="../images/bob-lacey.jpg" alt="Bob Lacey in Hilton Head">
+            </div>
+            <div class="section-text">
+                <div class="section-category">Island Profile</div>
+                <h2 class="section-title">Bob Lacey Now Calls Hilton Head Home</h2>
+                <div class="section-byline">By The Editorial Staff</div>
+                <div class="section-body">
+                    <p>For three decades, Bob Lacey was one of the most recognized voices in American morning radio. His syndicated show reached millions of listeners from Charlotte to Chicago. But when it came time to choose where to write the next chapter, Lacey and his wife didn’t hesitate: Hilton Head Island.</p>
+                    <p>“We looked at a dozen places,” Lacey recalls from the screened porch of his Palmetto Bluff home, the May River glinting beyond the tree line. “Nowhere else had this combination—world-class amenities, genuine Southern warmth, and a pace of life that lets you actually enjoy what you’ve built.”</p>
+                    <div class="pull-quote">“I spent my career telling people where to go. Turns out, the best place was here all along.”</div>
+                    <p>Lacey has become an ambassador for island living, hosting a popular local podcast and chairing the annual Lowcountry Celebrity Golf Classic. His story is one Best Hilton Head Properties hears often: accomplished professionals discovering that the island offers not just a home, but a lifestyle that exceeds every expectation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full-width image break -->
+    <div class="image-break">
+        <img src="../images/spring-market.jpg" alt="Luxury Real Estate on Hilton Head">
+        <div class="image-break-caption">A Sea Pines oceanfront estate—one of spring’s most anticipated listings.</div>
+    </div>
+
+    <!-- Article 4: Spring Market -->
+    <div class="article-section" id="spring-market">
+        <div class="section-layout reverse">
+            <div class="section-image">
+                <img src="../images/spring-market.jpg" alt="Spring Real Estate Market Hilton Head">
+            </div>
+            <div class="section-text">
+                <div class="section-category">Spring Market</div>
+                <h2 class="section-title">The Best Time to Buy on Hilton Head Island</h2>
+                <div class="section-byline">Spring 2026 Market Report · By The Editorial Staff</div>
+                <div class="section-body">
+                    <p>Spring 2026 presents one of the most compelling buying windows in recent memory. Following a period of measured appreciation, the island’s luxury segment—properties above $2 million—has stabilized, offering buyers a rare moment of equilibrium between value and selection.</p>
+                    <p>Inventory in the island’s most coveted communities has increased by 18% year-over-year, a welcome shift from the scarcity that defined 2023 and 2024. Sea Pines, Long Cove, and Palmetto Bluff each have notable new listings, including several waterfront estates that haven’t traded in more than a decade.</p>
+                    <div class="pull-quote">“The buyers we’re working with this spring are deliberate, discerning, and ready. The inventory finally matches their expectations.”</div>
+                    <p>Interest rates have settled into a range that sophisticated buyers can work with, and the island’s long-term fundamentals—limited land, world-class amenities, and a growing reputation as the Southeast’s premier coastal address—remain firmly intact. For those considering a move, the spring edition of the BHHP portfolio is now available by request.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article 5: Lowcountry Birds -->
+    <div class="article-section" id="lowcountry-birds">
+        <div class="section-layout">
+            <div class="section-image">
+                <img src="../images/lowcountry-birds.jpg" alt="Lowcountry Birds Hilton Head">
+            </div>
+            <div class="section-text">
+                <div class="section-category">Outdoors</div>
+                <h2 class="section-title">10 Lowcountry Birds to Spot This Spring</h2>
+                <div class="section-byline">By The Editorial Staff</div>
+                <div class="section-body">
+                    <p>From ruby-throated hummingbirds arriving at the island’s flowering trumpet vines to the painted buntings that make Sea Pines their seasonal canvas, spring transforms Hilton Head into one of the Eastern Seaboard’s premier birding destinations.</p>
+                    <p>The island’s 50 miles of bike paths double as birding corridors, where great blue herons stand sentinel in tidal creeks and osprey circle overhead with their morning catch. At Pinckney Island National Wildlife Refuge, just across the bridge, the rookeries come alive with roseate spoonbills, wood storks, and snowy egrets in breathtaking concentrations.</p>
+                    <p>For the resident who has mastered the fairway and the fishing pier, birding offers a quieter kind of luxury—one that requires nothing more than patience, a pair of binoculars, and a willingness to rise with the sun. The Audubon Society’s Hilton Head chapter offers guided walks every Saturday morning through June.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article 6: U-Pick Farms -->
+    <div class="article-section" id="upick-farms">
+        <div class="section-layout reverse">
+            <div class="section-image">
+                <img src="../images/upick-farms.jpg" alt="U-Pick Farms near Hilton Head">
+            </div>
+            <div class="section-text">
+                <div class="section-category">Day Trips</div>
+                <h2 class="section-title">U-Pick Farms Worth the Drive</h2>
+                <div class="section-byline">By The Editorial Staff</div>
+                <div class="section-body">
+                    <p>Strawberries on St. Helena Island. Sunflowers in Hardeeville. Blueberries across the Georgia line in coastal Effingham County. Spring means the Lowcountry’s farm country opens its gates for the most charming kind of day trip—one that ends with sun-warmed fruit and a cooler full of local honey.</p>
+                    <p>The drive itself is part of the appeal. Highway 278 gives way to two-lane roads canopied by live oaks, past roadside stands selling boiled peanuts and sweetgrass baskets. At Hunter Farms near Walterboro, the strawberry fields open in mid-March, and the picking is exceptional through April.</p>
+                    <p>For families and visitors alike, these excursions offer an authentic glimpse into the agricultural heritage that shaped the Lowcountry long before the first resort was built. Pack a picnic, bring the grandchildren, and discover why islanders guard these farms like well-kept secrets.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full-width image break -->
+    <div class="image-break">
+        <img src="../images/spring-market.jpg" alt="Sea Pines Oceanfront Estate">
+        <div class="image-break-caption">The grand approach to one of Sea Pines’ most significant oceanfront properties.</div>
+    </div>
+
+    <!-- Article 7: Sea Pines Estate -->
+    <div class="article-section" id="sea-pines-estate">
+        <div class="section-layout full-width">
+            <div class="section-text" style="text-align: center;">
+                <div class="section-category">Architecture</div>
+                <h2 class="section-title">Inside a $4.2M Sea Pines Oceanfront Estate</h2>
+                <div class="section-byline">By The Editorial Staff</div>
+                <div class="section-body" style="text-align: left;">
+                    <p>Set behind a private gate at the end of a crushed-shell drive, this 6,200-square-foot oceanfront residence represents the pinnacle of Lowcountry architectural design. Completed in 2021 by a team that included one of Charleston’s most celebrated architects, the home marries traditional tabby-and-timber construction with floor-to-ceiling walls of glass that frame the Atlantic like living art.</p>
+                    <p>The primary suite occupies the entire second floor, with a private terrace that stretches forty feet along the oceanfront. Below, a chef’s kitchen opens to a great room where reclaimed heart pine floors meet twelve-foot ceilings and a fireplace mantel carved from a single piece of salvaged Lowcountry cypress.</p>
+                    <div class="pull-quote">“This is not simply a house on the ocean. It is a house that belongs to the ocean—designed so that every room, every window, every moment acknowledges where you are.”</div>
+                    <p>The grounds include a saltwater infinity pool, an outdoor kitchen, and a private boardwalk to the beach. The property is offered exclusively through Best Hilton Head Properties. Private showings are available by appointment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2 class="newsletter-text">Stay in the know. Subscribe to our editorial.</h2>
+        <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+            <button type="submit" class="newsletter-button">SUBSCRIBE</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">BEST HILTON HEAD PROPERTIES</div>
+                <p>SERHANT. · FOUNDING PARTNER · SOUTH CAROLINA</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <div class="footer-contact">
+                    <a href="mailto:info@besthiltonheadproperties.com">info@besthiltonheadproperties.com</a><br>
+                    <a href="tel:+18433015525">(843) 301-5525</a><br><br>
+                    9 Palmetto Bay Rd<br>
+                    Hilton Head Island, SC 29928
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Follow</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Best Hilton Head Properties. All rights reserved. | Privacy Policy | Terms of Service
+        </div>
+    </footer>
+
+    <!-- Smooth scrolling for TOC links -->
+    <script>
+        document.querySelectorAll('.toc-list a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
