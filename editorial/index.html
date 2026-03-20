@@ -1144,7 +1144,54 @@
     }
 }
 
-    </style>
+    
+/* ─── ARTICLE DECK SWIPERS ─────────────────────────── */
+.art-stories { background: var(--white); padding: 0 0 80px; }
+.art-stories-header { border-top: 1px solid var(--gray-light); padding: 40px 80px 0; margin-bottom: 48px; }
+.art-stories-header-inner { display: flex; align-items: center; justify-content: space-between; }
+.art-stories-h2 { font-family: 'Playfair Display', serif; font-size: clamp(22px,3vw,30px); color: var(--charcoal); letter-spacing: 0.02em; }
+.art-deck { margin-bottom: 72px; }
+.art-deck-meta { display: flex; align-items: flex-end; justify-content: space-between; padding: 0 80px 20px; gap: 24px; }
+.art-deck-left { display: flex; flex-direction: column; gap: 6px; }
+.art-deck-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+.art-deck-h3 { font-family: 'Playfair Display', serif; font-size: clamp(20px,2.5vw,28px); color: var(--charcoal); font-weight: 600; line-height: 1.2; margin: 0; }
+.art-deck-readmore { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: var(--navy); text-decoration: none; white-space: nowrap; border-bottom: 1px solid var(--navy); padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
+.art-deck-readmore:hover { color: var(--gold); border-color: var(--gold); }
+.art-deck-wrap { position: relative; }
+.art-track { display: flex; gap: 16px; padding: 0 80px 28px; overflow-x: auto; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none; cursor: grab; }
+.art-track:active { cursor: grabbing; }
+.art-track::-webkit-scrollbar { display: none; }
+.art-card { flex: 0 0 300px; height: 420px; border-radius: 12px; overflow: hidden; position: relative; cursor: pointer; text-decoration: none; display: block; transition: transform 0.4s ease, box-shadow 0.4s ease; }
+.art-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0,0,0,0.22); }
+.art-card-img { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 0.6s ease; }
+.art-card:hover .art-card-img { transform: scale(1.05); }
+.art-card-grad { position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,14,28,0.92) 0%, rgba(8,14,28,0.5) 40%, rgba(8,14,28,0.1) 70%, transparent 100%); }
+.art-card-grad-gold { background: linear-gradient(to top, rgba(30,18,0,0.94) 0%, rgba(55,35,5,0.55) 40%, rgba(20,10,0,0.12) 70%, transparent 100%); }
+.art-card-body { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px 20px; }
+.art-card-num { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.art-card-name { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 600; color: #fff; line-height: 1.25; margin-bottom: 6px; }
+.art-card-desc { font-family: 'Montserrat', sans-serif; font-size: 11px; color: rgba(255,255,255,0.78); line-height: 1.5; }
+.art-arrow { position: absolute; top: 46%; transform: translateY(-50%); z-index: 10; background: rgba(255,255,255,0.95); border: none; border-radius: 50%; width: 46px; height: 46px; font-size: 28px; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.14); transition: all 0.22s ease; display: flex; align-items: center; justify-content: center; color: var(--navy); line-height: 1; padding-bottom: 2px; }
+.art-arrow:hover { background: var(--navy); color: #fff; box-shadow: 0 8px 28px rgba(9,41,105,0.28); }
+.art-prev { left: 20px; }
+.art-next { right: 20px; }
+@media (max-width: 1024px) {
+  .art-stories-header, .art-deck-meta { padding-left: 40px; padding-right: 40px; }
+  .art-track { padding-left: 40px; padding-right: 40px; }
+}
+@media (max-width: 768px) {
+  .art-stories-header, .art-deck-meta { padding-left: 20px; padding-right: 20px; padding-bottom: 14px; }
+  .art-deck-meta { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .art-track { padding-left: 20px; padding-right: 20px; gap: 12px; }
+  .art-card { flex: 0 0 76vw; height: 360px; }
+  .art-arrow { display: none; }
+  .art-deck { margin-bottom: 48px; }
+}
+@media (max-width: 480px) {
+  .art-card { flex: 0 0 84vw; height: 340px; }
+  .art-deck-h3 { font-size: 18px; }
+}
+</style>
 </head>
 <body>
     <!-- Navigation -->
@@ -1231,43 +1278,79 @@
         </div>
     </div>
 
-    <!-- TRENDING STORIES Section -->
-    <div class="trending-header">
-        <div class="trending-header-inner">
-            <h2>Trending Stories</h2>
+        <!-- TRENDING STORIES Section -->
+    <section class="art-stories">
+      <div class="art-stories-header">
+        <div class="art-stories-header-inner">
+          <h2 class="art-stories-h2">Trending Stories</h2>
         </div>
-    </div>
-
-    <div class="trending-grid">
-        <a href="/editorial/spring-edition-march-2026" class="trending-card">
-            <img src="images/lowcountry-birds.jpg" alt="Lowcountry Birds" class="trending-card-img">
-            <div class="trending-card-text">
-                <div class="trending-category">Outdoors</div>
-                <h3 class="trending-title">10 Lowcountry Birds to Spot This Spring</h3>
-                <div class="trending-byline">By The Editorial Staff</div>
-            </div>
-        </a>
-
-        <a href="/editorial/spring-edition-march-2026" class="trending-card">
-            <img src="images/upick-farms.jpg" alt="U-Pick Farms" class="trending-card-img">
-            <div class="trending-card-text">
-                <div class="trending-category">Day Trips</div>
-                <h3 class="trending-title">U-Pick Farms Worth the Drive</h3>
-                <div class="trending-byline">By The Editorial Staff</div>
-            </div>
-        </a>
-
-        <a href="/editorial/spring-edition-march-2026" class="trending-card">
-            <img src="images/spring-market.jpg" alt="Luxury Estate" class="trending-card-img">
-            <div class="trending-card-text">
-                <div class="trending-category">Architecture</div>
-                <h3 class="trending-title">Inside a $4.2M Sea Pines Oceanfront Estate</h3>
-                <div class="trending-byline">By The Editorial Staff</div>
-            </div>
-        </a>
-    </div>
-
-
+      </div>
+      <div class="art-deck">
+        <div class="art-deck-meta">
+          <div class="art-deck-left">
+            <div class="art-deck-eyebrow">Nature &amp; Wildlife</div>
+            <h3 class="art-deck-h3">10 Lowcountry Birds to Spot This Spring</h3>
+          </div>
+          <a href="/editorial/spring-edition-march-2026/#lowcountry-birds" class="art-deck-readmore">Read Full Article &#8594;</a>
+        </div>
+        <div class="art-deck-wrap">
+          <button class="art-arrow art-prev" aria-label="Previous">&#8249;</button>
+          <div class="art-track">
+            <a href="/editorial/spring-edition-march-2026/#lowcountry-birds" class="art-card"><div class="art-card-img" style="background-image:url(images/painted-bunting.jpg)"></div><div class="art-card-grad"></div><div class="art-card-body"><div class="art-card-num">01 / 10</div><div class="art-card-name">Painted Bunting</div><div class="art-card-desc">The most dazzling songbird in North America</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#lowcountry-birds" class="art-card"><div class="art-card-img" style="background-image:url(images/ruby-throated-hummingbird.jpg)"></div><div class="art-card-grad"></div><div class="art-card-body"><div class="art-card-num">02 / 10</div><div class="art-card-name">Ruby-Throated Hummingbird</div><div class="art-card-desc">A jewel-toned speedster arriving each April</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#lowcountry-birds" class="art-card"><div class="art-card-img" style="background-image:url(images/roseate-spoonbill.jpg)"></div><div class="art-card-grad"></div><div class="art-card-body"><div class="art-card-num">03 / 10</div><div class="art-card-name">Roseate Spoonbill</div><div class="art-card-desc">Cotton-candy pink and unmistakable at the water's edge</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#lowcountry-birds" class="art-card"><div class="art-card-img" style="background-image:url(images/great-blue-heron.jpg)"></div><div class="art-card-grad"></div><div class="art-card-body"><div class="art-card-num">04 / 10</div><div class="art-card-name">Great Blue Heron</div><div class="art-card-desc">The tall, patient sentinel of every Lowcountry marsh</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#lowcountry-birds" class="art-card"><div class="art-card-img" style="background-image:url(images/wood-stork.jpg)"></div><div class="art-card-grad"></div><div class="art-card-body"><div class="art-card-num">05 / 10</div><div class="art-card-name">Wood Stork</div><div class="art-card-desc">America's only native stork, soaring on thermals</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#lowcountry-birds" class="art-card"><div class="art-card-img" style="background-image:url(images/osprey.jpg)"></div><div class="art-card-grad"></div><div class="art-card-body"><div class="art-card-num">06 / 10</div><div class="art-card-name">Osprey</div><div class="art-card-desc">The master fisher, plunging feet-first into the sound</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#lowcountry-birds" class="art-card"><div class="art-card-img" style="background-image:url(images/snowy-egret.jpg)"></div><div class="art-card-grad"></div><div class="art-card-body"><div class="art-card-num">07 / 10</div><div class="art-card-name">Snowy Egret</div><div class="art-card-desc">Bright yellow feet dancing in the shallows</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#lowcountry-birds" class="art-card"><div class="art-card-img" style="background-image:url(images/brown-pelican.jpg)"></div><div class="art-card-grad"></div><div class="art-card-body"><div class="art-card-num">08 / 10</div><div class="art-card-name">Brown Pelican</div><div class="art-card-desc">Ancient-looking but acrobatic along the shoreline</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#lowcountry-birds" class="art-card"><div class="art-card-img" style="background-image:url(images/yellow-crowned-night-heron.jpg)"></div><div class="art-card-grad"></div><div class="art-card-body"><div class="art-card-num">09 / 10</div><div class="art-card-name">Yellow-Crowned Night-Heron</div><div class="art-card-desc">A nocturnal skulker in the spartina grass</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#lowcountry-birds" class="art-card"><div class="art-card-img" style="background-image:url(images/eastern-kingbird.jpg)"></div><div class="art-card-grad"></div><div class="art-card-body"><div class="art-card-num">10 / 10</div><div class="art-card-name">Eastern Kingbird</div><div class="art-card-desc">Bold and fearless, chasing hawks twice its size</div></div></a>
+          </div>
+          <button class="art-arrow art-next" aria-label="Next">&#8250;</button>
+        </div>
+      </div>
+      <div class="art-deck">
+        <div class="art-deck-meta">
+          <div class="art-deck-left">
+            <div class="art-deck-eyebrow">Local Food &amp; Agritourism</div>
+            <h3 class="art-deck-h3">Hidden U-Pick Farms Near Hilton Head</h3>
+          </div>
+          <a href="/editorial/spring-edition-march-2026/#upick-farms" class="art-deck-readmore">Read Full Article &#8594;</a>
+        </div>
+        <div class="art-deck-wrap">
+          <button class="art-arrow art-prev" aria-label="Previous">&#8249;</button>
+          <div class="art-track">
+            <a href="/editorial/spring-edition-march-2026/#upick-farms" class="art-card"><div class="art-card-img" style="background-image:url(images/upick-farms.jpg);background-position:20% center"></div><div class="art-card-grad"></div><div class="art-card-body"><div class="art-card-num">01 / 05</div><div class="art-card-name">Hunter Farms</div><div class="art-card-desc">Walterboro &middot; 55 min &middot; Strawberries, peaches &amp; sunflowers</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#upick-farms" class="art-card"><div class="art-card-img" style="background-image:url(images/upick-farms.jpg);background-position:75% center"></div><div class="art-card-grad"></div><div class="art-card-body"><div class="art-card-num">02 / 05</div><div class="art-card-name">Reiley's Berries</div><div class="art-card-desc">St. Helena Island &middot; 45 min &middot; Organic blueberries on a working Sea Island farm</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#upick-farms" class="art-card"><div class="art-card-img" style="background-image:url(images/upick-farms.jpg);background-position:50% 15%"></div><div class="art-card-grad"></div><div class="art-card-body"><div class="art-card-num">03 / 05</div><div class="art-card-name">Sunflower Fields at Caledonia</div><div class="art-card-desc">Hardeeville &middot; 30 min &middot; Vast sunflower fields at golden hour</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#upick-farms" class="art-card"><div class="art-card-img" style="background-image:url(images/upick-farms.jpg);background-position:40% 85%"></div><div class="art-card-grad"></div><div class="art-card-body"><div class="art-card-num">04 / 05</div><div class="art-card-name">Southern Belle Farm</div><div class="art-card-desc">McDonough, GA &middot; 3.5 hrs &middot; The region's most spectacular farm experience</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#upick-farms" class="art-card"><div class="art-card-img" style="background-image:url(images/wine-festival.jpg);background-position:center center"></div><div class="art-card-grad"></div><div class="art-card-body"><div class="art-card-num">05 / 05</div><div class="art-card-name">Bluffton Farmers Market</div><div class="art-card-desc">15 min &middot; Local produce, honey &amp; fresh-cut blooms every Thursday</div></div></a>
+          </div>
+          <button class="art-arrow art-next" aria-label="Next">&#8250;</button>
+        </div>
+      </div>
+      <div class="art-deck">
+        <div class="art-deck-meta">
+          <div class="art-deck-left">
+            <div class="art-deck-eyebrow">Luxury Real Estate</div>
+            <h3 class="art-deck-h3">Inside a $4.2M Sea Pines Oceanfront Estate</h3>
+          </div>
+          <a href="/editorial/spring-edition-march-2026/#sea-pines-estate" class="art-deck-readmore">Read Full Article &#8594;</a>
+        </div>
+        <div class="art-deck-wrap">
+          <button class="art-arrow art-prev" aria-label="Previous">&#8249;</button>
+          <div class="art-track">
+            <a href="/editorial/spring-edition-march-2026/#sea-pines-estate" class="art-card"><div class="art-card-img" style="background-image:url(images/spring-market.jpg);background-position:center center"></div><div class="art-card-grad art-card-grad-gold"></div><div class="art-card-body"><div class="art-card-num">The Residence</div><div class="art-card-name">Sea Pines &middot; $4,200,000</div><div class="art-card-desc">6,200 sq ft &middot; Oceanfront &middot; Gated &middot; Built 2021</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#sea-pines-estate" class="art-card"><div class="art-card-img" style="background-image:url(images/spring-market.jpg);background-position:25% center"></div><div class="art-card-grad art-card-grad-gold"></div><div class="art-card-body"><div class="art-card-num">Living Spaces</div><div class="art-card-name">Floor-to-Ceiling Ocean Views</div><div class="art-card-desc">Walls of glass that frame the Atlantic like living art</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#sea-pines-estate" class="art-card"><div class="art-card-img" style="background-image:url(images/spring-market.jpg);background-position:75% center"></div><div class="art-card-grad art-card-grad-gold"></div><div class="art-card-body"><div class="art-card-num">Primary Suite</div><div class="art-card-name">Entire Second Floor</div><div class="art-card-desc">Private 40-ft ocean terrace above the tide line</div></div></a>
+            <a href="/editorial/spring-edition-march-2026/#sea-pines-estate" class="art-card"><div class="art-card-img" style="background-image:url(images/spring-market.jpg);background-position:50% 20%"></div><div class="art-card-grad art-card-grad-gold"></div><div class="art-card-body"><div class="art-card-num">Architecture</div><div class="art-card-name">Tabby, Timber &amp; Glass</div><div class="art-card-desc">Charleston-designed &middot; Traditional craft meets modern form</div></div></a>
+          </div>
+          <button class="art-arrow art-next" aria-label="Next">&#8250;</button>
+        </div>
+      </div>
+    </section>
+    
     <!-- Newsletter Section -->
     <section class="newsletter">
         <h2 class="newsletter-text">Stay in the know. Subscribe to our editorial.</h2>
@@ -1327,6 +1410,25 @@
             alert('Thank you for subscribing with ' + email + '!');
             document.querySelector('.newsletter-input').value = '';
         });
-    </script>
+    
+  // Art deck drag-to-scroll
+  document.querySelectorAll('.art-track').forEach(function(track){
+    var down=false,sx,sl;
+    track.addEventListener('mousedown',function(e){down=true;sx=e.pageX-track.offsetLeft;sl=track.scrollLeft;});
+    track.addEventListener('mouseleave',function(){down=false;});
+    track.addEventListener('mouseup',function(){down=false;});
+    track.addEventListener('mousemove',function(e){if(!down)return;e.preventDefault();var x=e.pageX-track.offsetLeft;track.scrollLeft=sl-(x-sx)*1.5;});
+  });
+  // Art deck arrow scroll
+  document.querySelectorAll('.art-arrow').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var track=btn.closest('.art-deck-wrap').querySelector('.art-track');
+      var card=track.querySelector('.art-card');
+      var w=card?card.offsetWidth+16:316;
+      var dir=btn.classList.contains('art-next')?1:-1;
+      track.scrollBy({left:dir*w*2,behavior:'smooth'});
+    });
+  });
+</script>
 </body>
 </html>
