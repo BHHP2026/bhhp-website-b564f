@@ -554,6 +554,53 @@
             .newsletter-input, .newsletter-button { width: 100%; }
             footer { padding: 40px 16px; margin-top: 50px; }
         }
+    
+        /* Bird Entry with Image */
+        .bird-entry {
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            gap: 24px;
+            align-items: start;
+            margin-bottom: 28px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid #eee;
+        }
+        .bird-entry:last-of-type {
+            border-bottom: none;
+        }
+        .bird-entry img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 4px;
+            display: block;
+        }
+        .bird-entry p {
+            margin-bottom: 0 !important;
+        }
+        @media (max-width: 768px) {
+            .bird-entry {
+                grid-template-columns: 120px 1fr;
+                gap: 16px;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+            }
+            .bird-entry img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        @media (max-width: 480px) {
+            .bird-entry {
+                grid-template-columns: 90px 1fr;
+                gap: 12px;
+            }
+            .bird-entry img {
+                width: 90px;
+                height: 90px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -718,25 +765,55 @@
                 <div class="section-body">
                     <p>Spring transforms Hilton Head into one of the Eastern Seaboard’s premier birding destinations. From the maritime forests to the tidal marshes, here are the ten species every islander should know this season.</p>
 
-                    <p><strong>1. Painted Bunting</strong> — The island’s most celebrated visitor. Males arrive in late April wearing plumage so vivid—electric blue head, scarlet breast, lime green back—they seem to belong in the tropics. Sea Pines and Hilton Head Plantation are reliable spots.</p>
+                    <div class="bird-entry">
+                        <img src="../images/painted-bunting.jpg" alt="Painted Bunting perched on branch">
+                        <div><p><strong>1. Painted Bunting</strong> — The island’s most celebrated visitor. Males arrive in late April wearing plumage so vivid—electric blue head, scarlet breast, lime green back—they seem to belong in the tropics. Sea Pines and Hilton Head Plantation are reliable spots.</p></div>
+                    </div>
 
-                    <p><strong>2. Ruby-Throated Hummingbird</strong> — The first arrivals appear at trumpet vine and coral honeysuckle by mid-March. Hang a feeder on the porch and expect daily visitors through October.</p>
+                    <div class="bird-entry">
+                        <img src="../images/ruby-throated-hummingbird.jpg" alt="Ruby-Throated Hummingbird in flight">
+                        <div><p><strong>2. Ruby-Throated Hummingbird</strong> — The first arrivals appear at trumpet vine and coral honeysuckle by mid-March. Hang a feeder on the porch and expect daily visitors through October.</p></div>
+                    </div>
 
-                    <p><strong>3. Roseate Spoonbill</strong> — Unmistakable in flight—brilliant pink wings, a spatula-shaped bill, and a prehistoric silhouette. Pinckney Island NWR hosts a nesting colony visible from the trails.</p>
+                    <div class="bird-entry">
+                        <img src="../images/roseate-spoonbill.jpg" alt="Roseate Spoonbill wading">
+                        <div><p><strong>3. Roseate Spoonbill</strong> — Unmistakable in flight—brilliant pink wings, a spatula-shaped bill, and a prehistoric silhouette. Pinckney Island NWR hosts a nesting colony visible from the trails.</p></div>
+                    </div>
 
-                    <p><strong>4. Great Blue Heron</strong> — The Lowcountry’s patient sentinel. Standing four feet tall in tidal creeks at dawn, they are as much a part of the landscape as the live oaks. Year-round residents, but spring breeding plumage adds elegant chest plumes.</p>
+                    <div class="bird-entry">
+                        <img src="../images/great-blue-heron.jpg" alt="Great Blue Heron standing in water">
+                        <div><p><strong>4. Great Blue Heron</strong> — The Lowcountry’s patient sentinel. Standing four feet tall in tidal creeks at dawn, they are as much a part of the landscape as the live oaks. Year-round residents, but spring breeding plumage adds elegant chest plumes.</p></div>
+                    </div>
 
-                    <p><strong>5. Wood Stork</strong> — North America’s only native stork. These federally protected birds nest in large rookeries on Pinckney Island, where dozens of pairs raise chicks from March through June. Their bald heads and slow wingbeats are unforgettable in flight.</p>
+                    <div class="bird-entry">
+                        <img src="../images/wood-stork.jpg" alt="Wood Stork in the wild">
+                        <div><p><strong>5. Wood Stork</strong> — North America’s only native stork. These federally protected birds nest in large rookeries on Pinckney Island, where dozens of pairs raise chicks from March through June. Their bald heads and slow wingbeats are unforgettable in flight.</p></div>
+                    </div>
 
-                    <p><strong>6. Osprey</strong> — Listen for their sharp whistle above the marinas. Ospreys return to the same nests year after year—atop channel markers, dock pilings, and the occasional golf course light pole. By April, most nests have eggs.</p>
+                    <div class="bird-entry">
+                        <img src="../images/osprey.jpg" alt="Osprey perched on a snag">
+                        <div><p><strong>6. Osprey</strong> — Listen for their sharp whistle above the marinas. Ospreys return to the same nests year after year—atop channel markers, dock pilings, and the occasional golf course light pole. By April, most nests have eggs.</p></div>
+                    </div>
 
-                    <p><strong>7. Snowy Egret</strong> — Smaller and more animated than the great egret, snowies work the shallows with a signature “foot-stirring” dance, flashing bright yellow feet to flush prey. Look for them at Fish Haul Creek.</p>
+                    <div class="bird-entry">
+                        <img src="../images/snowy-egret.jpg" alt="Snowy Egret with bright yellow feet">
+                        <div><p><strong>7. Snowy Egret</strong> — Smaller and more animated than the great egret, snowies work the shallows with a signature “foot-stirring” dance, flashing bright yellow feet to flush prey. Look for them at Fish Haul Creek.</p></div>
+                    </div>
 
-                    <p><strong>8. Brown Pelican</strong> — The coast’s most charismatic diver. Watch squadrons glide inches above the surf at Coligny Beach, then fold into spectacular plunge-dives when they spot schooling fish. Spring means courtship displays and nest-building on the offshore islands.</p>
+                    <div class="bird-entry">
+                        <img src="../images/brown-pelican.jpg" alt="Brown Pelican in flight">
+                        <div><p><strong>8. Brown Pelican</strong> — The coast’s most charismatic diver. Watch squadrons glide inches above the surf at Coligny Beach, then fold into spectacular plunge-dives when they spot schooling fish. Spring means courtship displays and nest-building on the offshore islands.</p></div>
+                    </div>
 
-                    <p><strong>9. Yellow-Crowned Night-Heron</strong> — Often overlooked, these compact herons hunt fiddler crabs at dusk along the lagoon edges of Palmetto Dunes and Shipyard. Their bold black-and-white face pattern and red eyes make them worth the late-evening search.</p>
+                    <div class="bird-entry">
+                        <img src="../images/yellow-crowned-night-heron.jpg" alt="Yellow-Crowned Night-Heron perched">
+                        <div><p><strong>9. Yellow-Crowned Night-Heron</strong> — Often overlooked, these compact herons hunt fiddler crabs at dusk along the lagoon edges of Palmetto Dunes and Shipyard. Their bold black-and-white face pattern and red eyes make them worth the late-evening search.</p></div>
+                    </div>
 
-                    <p><strong>10. Eastern Kingbird</strong> — Spring’s most fearless arrival. These sleek, dark-backed flycatchers perch on exposed branches near open marshes and will aggressively chase hawks, crows, and anything else that enters their territory. Watch for them along the Cross Island bike path from April onward.</p>
+                    <div class="bird-entry">
+                        <img src="../images/eastern-kingbird.jpg" alt="Eastern Kingbird on branch">
+                        <div><p><strong>10. Eastern Kingbird</strong> — Spring’s most fearless arrival. These sleek, dark-backed flycatchers perch on exposed branches near open marshes and will aggressively chase hawks, crows, and anything else that enters their territory. Watch for them along the Cross Island bike path from April onward.</p></div>
+                    </div>
 
                     <div class="pull-quote">“The island’s 50 miles of bike paths double as some of the finest birding corridors on the Eastern Seaboard.”</div>
 
