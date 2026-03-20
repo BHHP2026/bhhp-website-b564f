@@ -1158,15 +1158,15 @@
 .art-deck-readmore { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: var(--navy); text-decoration: none; white-space: nowrap; border-bottom: 1px solid var(--navy); padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
 .art-deck-readmore:hover { color: var(--gold); border-color: var(--gold); }
 .art-deck-wrap { position: relative; }
-.art-track { display: flex; gap: 16px; padding: 0 80px 28px; overflow-x: auto; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none; cursor: grab; }
+.art-track { display: flex; gap: 16px; padding: 0 80px 28px; overflow-x: auto; scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none; cursor: grab; -webkit-overflow-scrolling: touch; }
 .art-track:active { cursor: grabbing; }
 .art-track::-webkit-scrollbar { display: none; }
-.art-card { flex: 0 0 300px; height: 420px; border-radius: 12px; overflow: hidden; position: relative; cursor: pointer; text-decoration: none; display: block; transition: transform 0.4s ease, box-shadow 0.4s ease; }
-.art-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0,0,0,0.22); }
+.art-card { flex: 0 0 340px; height: 520px; border-radius: 16px; overflow: hidden; position: relative; cursor: pointer; text-decoration: none; display: block; transition: transform 0.4s ease, box-shadow 0.4s ease; }
+.art-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0,0,0,0.24); }
 .art-card-img { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 0.6s ease; }
 .art-card:hover .art-card-img { transform: scale(1.05); }
-.art-card-grad { position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,14,28,0.92) 0%, rgba(8,14,28,0.5) 40%, rgba(8,14,28,0.1) 70%, transparent 100%); }
-.art-card-grad-gold { background: linear-gradient(to top, rgba(30,18,0,0.94) 0%, rgba(55,35,5,0.55) 40%, rgba(20,10,0,0.12) 70%, transparent 100%); }
+.art-card-grad { position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,14,28,0.88) 0%, rgba(8,14,28,0.45) 35%, rgba(8,14,28,0.15) 60%, transparent 100%); }
+.art-card-grad-gold { background: linear-gradient(to top, rgba(30,18,0,0.90) 0%, rgba(55,35,5,0.48) 35%, rgba(20,10,0,0.12) 60%, transparent 100%); }
 .art-card-body { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px 20px; }
 .art-card-num { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
 .art-card-name { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 600; color: #fff; line-height: 1.25; margin-bottom: 6px; }
@@ -1180,16 +1180,12 @@
   .art-track { padding-left: 40px; padding-right: 40px; }
 }
 @media (max-width: 768px) {
-  .art-stories-header, .art-deck-meta { padding-left: 20px; padding-right: 20px; padding-bottom: 14px; }
-  .art-deck-meta { flex-direction: column; align-items: flex-start; gap: 10px; }
-  .art-track { padding-left: 20px; padding-right: 20px; gap: 12px; }
-  .art-card { flex: 0 0 76vw; height: 360px; }
+  .art-stories-header, .art-deck-meta { padding-left: 28px; padding-right: 28px; }
+  .art-deck-meta { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .art-track { padding: 0 28px 16px; }
+  .art-card { flex: 0 0 260px; height: 400px; }
   .art-arrow { display: none; }
   .art-deck { margin-bottom: 48px; }
-}
-@media (max-width: 480px) {
-  .art-card { flex: 0 0 84vw; height: 340px; }
-  .art-deck-h3 { font-size: 18px; }
 }
 </style>
 </head>
