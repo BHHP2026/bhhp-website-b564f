@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Neighborhoods — Best Hilton Head Properties · SERHANT.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --charcoal: #1a1a1a;
+      --navy: #1B2A4A;
+      --gold: #C9A96E;
+      --white: #FAFAF8;
+      --teal: #81D8D0;
+    }
+    html, body {
+      height: 100%;
+      background: var(--charcoal);
+      color: var(--white);
+      font-family: 'Montserrat', sans-serif;
+      overflow: hidden;
+    }
+    .page {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+      position: relative;
+    }
+    /* Subtle background texture */
+    .page::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(27,42,74,0.5) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 80% 100%, rgba(201,169,110,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    /* Top logo bar */
+    .top-bar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      padding: 24px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-link img {
+      height: 72px;
+      width: auto;
+      filter: contrast(1.6) brightness(1.05);
+    }
+    /* Decorative line */
+    .eyebrow {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .eyebrow::before, .eyebrow::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(40px, 7vw, 80px);
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 1.05;
+      color: var(--white);
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+    }
+    h1 em {
+      font-style: italic;
+      color: var(--teal);
+    }
+    .subtitle {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: rgba(250,250,248,0.45);
+      margin-bottom: 56px;
+    }
+    .divider {
+      width: 1px;
+      height: 60px;
+      background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+      margin: 0 auto 56px;
+    }
+    .message {
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      color: rgba(250,250,248,0.65);
+      line-height: 2;
+      max-width: 460px;
+      margin-bottom: 52px;
+    }
+    .back-btn {
+      display: inline-block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--teal);
+      border: 1px solid var(--teal);
+      padding: 14px 36px;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+    }
+    .back-btn:hover {
+      background: var(--teal);
+      color: var(--charcoal);
+    }
+    @media (max-width: 640px) {
+      .top-bar { padding: 20px 20px; }
+      .logo-link img { height: 52px; }
+      .subtitle { margin-bottom: 40px; }
+      .divider { margin-bottom: 40px; }
+      .message { margin-bottom: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="top-bar">
+      <a href="index.html" class="logo-link">
+        <img src="BHHP-logo.png" alt="Best Hilton Head Properties · SERHANT.">
+      </a>
+    </div>
+
+    <div class="eyebrow">Coming Soon</div>
+    <h1>Our<br><em>Neighborhoods</em></h1>
+    <p class="subtitle">Hilton Head Island &amp; Beyond</p>
+
+    <div class="divider"></div>
+
+    <p class="message">
+      We're crafting an immersive guide to Hilton Head Island's most sought-after communities — from Palmetto Dunes to Sea Pines, Wexford to Long Cove. Each neighborhood, told the way it deserves to be.
+    </p>
+
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+</body>
+</html>
