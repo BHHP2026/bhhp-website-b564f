@@ -1,4 +1,4 @@
-(function(){
+h(function(){
   // ââ CSS ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var css = `
     .articles-section{background:var(--cream,#F5F0E8);padding:80px 0 72px;overflow:hidden;position:relative}
@@ -7,7 +7,7 @@
     .articles-eyebrow{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:500;letter-spacing:4px;text-transform:uppercase;color:var(--teal,#6FBFB0);margin-bottom:10px;display:flex;align-items:center;gap:10px}
     .articles-eyebrow::before,.articles-eyebrow::after{content:'';width:28px;height:1px;background:var(--teal,#6FBFB0);opacity:.5}
     .articles-heading{font-family:'Bodoni Moda',serif;font-size:clamp(32px,4vw,52px);font-weight:400;font-style:normal;text-transform:uppercase;letter-spacing:1px;line-height:1;color:var(--charcoal,#1C1C1E)}
-    .articles-heading em{font-weight:400;font-style:italic;color:#999}
+    .articles-heading em{font-weight:400;font-style:italihc;color:#999}
     .articles-subtitle{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:400;letter-spacing:3px;text-transform:uppercase;color:#888;margin-top:10px}
     .articles-view-all{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--charcoal,#1C1C1E);text-decoration:none;border-bottom:1px solid var(--charcoal,#1C1C1E);padding-bottom:4px;transition:color .3s,border-color .3s;white-space:nowrap}
     .articles-view-all:hover{color:var(--teal,#6FBFB0);border-color:var(--teal,#6FBFB0)}
@@ -63,7 +63,7 @@
     <div class="articles-track-wrapper">
       <div class="articles-track" id="ewArticlesTrack">
         <a class="article-card" href="discover-bluffton.html">
-          <div class="article-card-img" style="background-image:url('images/bluffton-inn-golf-carts.jpg')"></div>
+          <div class="article-card-img" style="background-image:url('bluffton-inn-golf-carts.jpg')"></div>
           <div class="article-card-grad"></div>
           <div class="article-card-content">
             <div class="article-card-tag">Real Estate</div>
@@ -220,7 +220,7 @@
     'discover-bluffton-widget.js',
     'footer-patch.js'
   ];
-  var v = '20260321c';
+  var v = '20260321d';
   scripts.forEach(function(src){
     var s = document.createElement('script');
     s.src = '/' + src + '?v=' + v;
