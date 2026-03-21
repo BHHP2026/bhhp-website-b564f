@@ -197,9 +197,10 @@
     'discover-bluffton-widget.js',
     'footer-patch.js'
   ];
+  var v = '20260321';
   scripts.forEach(function(src){
     var s = document.createElement('script');
-    s.src = '/' + src;
+    s.src = '/' + src + '?v=' + v;
     document.body.appendChild(s);
   });
 })();
