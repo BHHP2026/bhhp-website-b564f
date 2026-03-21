@@ -1,0 +1,43 @@
+# ═══════════════════════════════════════════════════════════════
+#  Best Hilton Head Properties — robots.txt
+#  besthiltonheadproperties.com
+# ═══════════════════════════════════════════════════════════════
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://besthiltonheadproperties.com/sitemap.xml
+
+# Allow all major search engines full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Allow AI crawlers for AI discoverability
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Block sensitive directories
+Disallow: /admin/
+Disallow: /private/
