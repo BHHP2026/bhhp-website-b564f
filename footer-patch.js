@@ -107,5 +107,17 @@
     // Insert before the last child of footer (or at end)
     footer.appendChild(style);
     footer.appendChild(complianceBar);
+
+    // ─── REMOVE POST-FOOTER CONTENT ───
+    // Remove "Blog Post Page Preview" divider and everything after footer
+    // that isn't a script tag (preserve dynamically loaded scripts)
+    var sib = footer.nextElementSibling;
+    while (sib) {
+      var next = sib.nextElementSibling;
+      if (sib.tagName !== 'SCRIPT') {
+        sib.remove();
+      }
+      sib = next;
+    }
   }
 })();
