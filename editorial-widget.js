@@ -1,5 +1,5 @@
 (function(){
-  // ââ CSS âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // ââ CSS ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var css = `
     .articles-section{background:var(--cream,#F5F0E8);padding:80px 0 72px;overflow:hidden;position:relative}
     .articles-watermark{position:absolute;right:-60px;top:50%;transform:translateY(-50%);font-size:280px;font-family:'Bodoni Moda',serif;font-weight:700;color:rgba(0,0,0,.025);line-height:1;pointer-events:none;letter-spacing:-0.05em;user-select:none;text-transform:uppercase}
@@ -34,6 +34,7 @@
       .articles-arrows{padding:20px 24px 0}
       .articles-watermark{font-size:120px}
     }`;
+
   var styleEl = document.createElement('style');
   styleEl.id = 'editorial-widget-css';
   styleEl.textContent = css;
@@ -61,7 +62,6 @@
     </div>
     <div class="articles-track-wrapper">
       <div class="articles-track" id="ewArticlesTrack">
-
         <a class="article-card" href="discover-bluffton.html">
           <div class="article-card-img" style="background-image:url('images/bluffton-inn-golf-carts.jpg')"></div>
           <div class="article-card-grad"></div>
@@ -72,7 +72,6 @@
             <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
-
         <a class="article-card" href="discover-bluffton.html">
           <div class="article-card-img" style="background-image:url('images/article-communities.jpg')"></div>
           <div class="article-card-grad"></div>
@@ -83,7 +82,6 @@
             <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
-
         <a class="article-card" href="discover-bluffton.html">
           <div class="article-card-img" style="background-image:url('images/article-market.jpg')"></div>
           <div class="article-card-grad"></div>
@@ -94,7 +92,6 @@
             <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
-
         <a class="article-card" href="discover-bluffton.html">
           <div class="article-card-img" style="background-image:url('images/article-palmetto.jpg')"></div>
           <div class="article-card-grad"></div>
@@ -105,7 +102,6 @@
             <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
-
         <a class="article-card" href="discover-bluffton.html">
           <div class="article-card-img" style="background-image:url('images/article-mayriver.jpg')"></div>
           <div class="article-card-grad"></div>
@@ -116,7 +112,6 @@
             <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
-
         <a class="article-card" href="discover-bluffton.html">
           <div class="article-card-img" style="background-image:url('images/article-oldtown.jpg')"></div>
           <div class="article-card-grad"></div>
@@ -127,7 +122,6 @@
             <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
-
         <a class="article-card" href="discover-bluffton.html">
           <div class="article-card-img" style="background-image:url('images/article-golf.jpg')"></div>
           <div class="article-card-grad"></div>
@@ -138,7 +132,6 @@
             <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
-
         <a class="article-card" href="discover-bluffton.html">
           <div class="article-card-img" style="background-image:url('images/article-relocation.jpg')"></div>
           <div class="article-card-grad"></div>
@@ -149,7 +142,6 @@
             <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
-
         <a class="article-card" href="discover-bluffton.html">
           <div class="article-card-img" style="background-image:url('images/article-family.jpg')"></div>
           <div class="article-card-grad"></div>
@@ -160,7 +152,6 @@
             <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
-
         <a class="article-card" href="discover-bluffton.html">
           <div class="article-card-img" style="background-image:url('images/article-buyers.jpg')"></div>
           <div class="article-card-grad"></div>
@@ -171,7 +162,6 @@
             <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
-
       </div>
     </div>
     <div class="articles-arrows">
@@ -187,18 +177,39 @@
 })();
 
 // ââ Remove post-footer content âââââââââââââââââââââââââââââââââââââââ
+// Uses CSS to instantly hide unwanted content, plus a repeating interval
+// to remove DOM nodes that may be injected after initial page load by
+// the site builder's own scripts.
 (function(){
-  var f = document.querySelector('footer');
-  if (!f) return;
-  var s = f.nextElementSibling;
-  while (s) {
-    var n = s.nextElementSibling;
-    if (s.tagName !== 'SCRIPT') s.remove();
-    s = n;
+  // Instant CSS hide for .page-divider and non-widget divs after footer
+  var st = document.createElement('style');
+  st.id = 'post-footer-hide';
+  st.textContent = '.page-divider{display:none!important}footer~div:not([class*="bhhp-"]){display:none!important}';
+  document.head.appendChild(st);
+
+  function cleanup(){
+    var f = document.querySelector('footer');
+    if (!f) return;
+    var s = f.nextElementSibling;
+    while (s) {
+      var n = s.nextElementSibling;
+      if (s.tagName !== 'SCRIPT') s.remove();
+      s = n;
+    }
   }
+
+  // Run immediately
+  cleanup();
+
+  // Retry every 500ms for 10 seconds to catch late-injected content
+  var count = 0;
+  var timer = setInterval(function(){
+    cleanup();
+    if (++count >= 20) clearInterval(timer);
+  }, 500);
 })();
 
-// ââ Dynamic Script Loader âââââââââââââââââââââââââââââââââââââââââââ
+// ââ Dynamic Script Loader ââââââââââââââââââââââââââââââââââââââââââââ
 // editorial-widget.js is the only script hardcoded in index.html.
 // Netlify snippet injection is not working, so we load the remaining
 // widget scripts dynamically from here.
@@ -209,7 +220,7 @@
     'discover-bluffton-widget.js',
     'footer-patch.js'
   ];
-  var v = '20260321b';
+  var v = '20260321c';
   scripts.forEach(function(src){
     var s = document.createElement('script');
     s.src = '/' + src + '?v=' + v;
