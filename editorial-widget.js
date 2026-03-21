@@ -1,5 +1,5 @@
 (function(){
-  // ── CSS ─────────────────────────────────────────────────────────────────
+  // ââ CSS âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var css = `
     .articles-section{background:var(--cream,#F5F0E8);padding:80px 0 72px;overflow:hidden;position:relative}
     .articles-watermark{position:absolute;right:-60px;top:50%;transform:translateY(-50%);font-size:280px;font-family:'Bodoni Moda',serif;font-weight:700;color:rgba(0,0,0,.025);line-height:1;pointer-events:none;letter-spacing:-0.05em;user-select:none;text-transform:uppercase}
@@ -39,166 +39,166 @@
   styleEl.textContent = css;
   document.head.appendChild(styleEl);
 
-  // ── Update blog-section header banner ──────────────────────────────────
+  // ââ Update blog-section header banner ââââââââââââââââââââââââââââââ
   var blogSection = document.querySelector('.blog-section');
   if (blogSection) {
     var eyebrow = blogSection.querySelector('.eyebrow');
     if (eyebrow) eyebrow.textContent = 'RESORT EDITORIAL';
     var h2 = blogSection.querySelector('.section-h2');
-    if (h2) h2.innerHTML = 'RESORT EDITORIAL <em><span class=\"dim\">Articles</span></em> PREVIEW';
+    if (h2) h2.innerHTML = 'RESORT EDITORIAL <em><span class="dim">Articles</span></em> PREVIEW';
   }
 
-  // ── Build widget HTML ──────────────────────────────────────────────────
-  var html = `<section class=\"articles-section\" id=\"editorial-articles-widget\">
-    <div class=\"articles-watermark\">Editorial</div>
-    <div class=\"articles-header\">
-      <div class=\"articles-title-block\">
-        <div class=\"articles-eyebrow\">Hilton Head Island &nbsp;&middot;&nbsp; Bluffton &nbsp;&middot;&nbsp; Carolina Sea Islands</div>
-        <h2 class=\"articles-heading\">YOUR BLUFFTON <em>Home Search</em><br>STARTS HERE</h2>
-        <p class=\"articles-subtitle\">Ten essential reads for buyers discovering the Carolina Sea Islands.</p>
+  // ââ Build widget HTML ââââââââââââââââââââââââââââââââââââââââââââââ
+  var html = `<section class="articles-section" id="editorial-articles-widget">
+    <div class="articles-watermark">Editorial</div>
+    <div class="articles-header">
+      <div class="articles-title-block">
+        <div class="articles-eyebrow">Hilton Head Island &nbsp;&middot;&nbsp; Bluffton &nbsp;&middot;&nbsp; Carolina Sea Islands</div>
+        <h2 class="articles-heading">YOUR BLUFFTON <em>Home Search</em><br>STARTS HERE</h2>
+        <p class="articles-subtitle">Ten essential reads for buyers discovering the Carolina Sea Islands.</p>
       </div>
-      <a href=\"discover-bluffton.html\" class=\"articles-view-all\">Read All Articles</a>
+      <a href="discover-bluffton.html" class="articles-view-all">Read All Articles</a>
     </div>
-    <div class=\"articles-track-wrapper\">
-      <div class=\"articles-track\" id=\"ewArticlesTrack\">
+    <div class="articles-track-wrapper">
+      <div class="articles-track" id="ewArticlesTrack">
 
-        <a class=\"article-card\" href=\"discover-bluffton.html\">
-          <div class=\"article-card-img\" style=\"background-image:url('images/bluffton-inn-golf-carts.jpg')\"></div>
-          <div class=\"article-card-grad\"></div>
-          <div class=\"article-card-content\">
-            <div class=\"article-card-tag\">Real Estate</div>
-            <div class=\"article-card-name\">Bluffton vs. Hilton Head: Where Should You Buy?</div>
-            <div class=\"article-card-desc\">Everything you need to know about choosing between the island and the mainland &mdash; from taxes to lifestyle to long-term value.</div>
-            <span class=\"article-card-read\">Read Article &rarr;</span>
+        <a class="article-card" href="discover-bluffton.html">
+          <div class="article-card-img" style="background-image:url('images/bluffton-inn-golf-carts.jpg')"></div>
+          <div class="article-card-grad"></div>
+          <div class="article-card-content">
+            <div class="article-card-tag">Real Estate</div>
+            <div class="article-card-name">Bluffton vs. Hilton Head: Where Should You Buy?</div>
+            <div class="article-card-desc">Everything you need to know about choosing between the island and the mainland &mdash; from taxes to lifestyle to long-term value.</div>
+            <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
 
-        <a class=\"article-card\" href=\"discover-bluffton.html\">
-          <div class=\"article-card-img\" style=\"background-image:url('images/article-communities.jpg')\"></div>
-          <div class=\"article-card-grad\"></div>
-          <div class=\"article-card-content\">
-            <div class=\"article-card-tag\">Communities</div>
-            <div class=\"article-card-name\">The Top Gated Communities in Bluffton, SC</div>
-            <div class=\"article-card-desc\">Palmetto Bluff, Colleton River, Berkeley Hall, Belfair &mdash; a detailed guide to the Southeast&rsquo;s most prestigious addresses.</div>
-            <span class=\"article-card-read\">Read Article &rarr;</span>
+        <a class="article-card" href="discover-bluffton.html">
+          <div class="article-card-img" style="background-image:url('images/article-communities.jpg')"></div>
+          <div class="article-card-grad"></div>
+          <div class="article-card-content">
+            <div class="article-card-tag">Communities</div>
+            <div class="article-card-name">The Top Gated Communities in Bluffton, SC</div>
+            <div class="article-card-desc">Palmetto Bluff, Colleton River, Berkeley Hall, Belfair &mdash; a detailed guide to the Southeast&rsquo;s most prestigious addresses.</div>
+            <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
 
-        <a class=\"article-card\" href=\"discover-bluffton.html\">
-          <div class=\"article-card-img\" style=\"background-image:url('images/article-market.jpg')\"></div>
-          <div class=\"article-card-grad\"></div>
-          <div class=\"article-card-content\">
-            <div class=\"article-card-tag\">Market Insight</div>
-            <div class=\"article-card-name\">Bluffton Real Estate Market 2026: Prices, Trends &amp; Forecast</div>
-            <div class=\"article-card-desc\">Median prices, inventory levels, and what buyers should expect in the fastest-growing Carolina Sea Islands market.</div>
-            <span class=\"article-card-read\">Read Article &rarr;</span>
+        <a class="article-card" href="discover-bluffton.html">
+          <div class="article-card-img" style="background-image:url('images/article-market.jpg')"></div>
+          <div class="article-card-grad"></div>
+          <div class="article-card-content">
+            <div class="article-card-tag">Market Insight</div>
+            <div class="article-card-name">Bluffton Real Estate Market 2026: Prices, Trends &amp; Forecast</div>
+            <div class="article-card-desc">Median prices, inventory levels, and what buyers should expect in the fastest-growing Carolina Sea Islands market.</div>
+            <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
 
-        <a class=\"article-card\" href=\"discover-bluffton.html\">
-          <div class=\"article-card-img\" style=\"background-image:url('images/article-palmetto.jpg')\"></div>
-          <div class=\"article-card-grad\"></div>
-          <div class=\"article-card-content\">
-            <div class=\"article-card-tag\">Signature Community</div>
-            <div class=\"article-card-name\">Inside Palmetto Bluff: Montage Resort Living</div>
-            <div class=\"article-card-desc\">A 20,000-acre nature preserve, Montage resort amenities, and May River estates &mdash; the crown jewel of the Carolina Sea Islands.</div>
-            <span class=\"article-card-read\">Read Article &rarr;</span>
+        <a class="article-card" href="discover-bluffton.html">
+          <div class="article-card-img" style="background-image:url('images/article-palmetto.jpg')"></div>
+          <div class="article-card-grad"></div>
+          <div class="article-card-content">
+            <div class="article-card-tag">Signature Community</div>
+            <div class="article-card-name">Inside Palmetto Bluff: Montage Resort Living</div>
+            <div class="article-card-desc">A 20,000-acre nature preserve, Montage resort amenities, and May River estates &mdash; the crown jewel of the Carolina Sea Islands.</div>
+            <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
 
-        <a class=\"article-card\" href=\"discover-bluffton.html\">
-          <div class=\"article-card-img\" style=\"background-image:url('images/article-mayriver.jpg')\"></div>
-          <div class=\"article-card-grad\"></div>
-          <div class=\"article-card-content\">
-            <div class=\"article-card-tag\">Nature &amp; Waterfront</div>
-            <div class=\"article-card-name\">The May River: Bluffton&rsquo;s Crown Jewel</div>
-            <div class=\"article-card-desc\">From dolphin-filled sunsets to the last oyster house in South Carolina, the May River defines the Bluffton experience.</div>
-            <span class=\"article-card-read\">Read Article &rarr;</span>
+        <a class="article-card" href="discover-bluffton.html">
+          <div class="article-card-img" style="background-image:url('images/article-mayriver.jpg')"></div>
+          <div class="article-card-grad"></div>
+          <div class="article-card-content">
+            <div class="article-card-tag">Nature &amp; Waterfront</div>
+            <div class="article-card-name">The May River: Bluffton&rsquo;s Crown Jewel</div>
+            <div class="article-card-desc">From dolphin-filled sunsets to the last oyster house in South Carolina, the May River defines the Bluffton experience.</div>
+            <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
 
-        <a class=\"article-card\" href=\"discover-bluffton.html\">
-          <div class=\"article-card-img\" style=\"background-image:url('images/article-oldtown.jpg')\"></div>
-          <div class=\"article-card-grad\"></div>
-          <div class=\"article-card-content\">
-            <div class=\"article-card-tag\">Culture &amp; Lifestyle</div>
-            <div class=\"article-card-name\">Old Town Bluffton: Art, Dining &amp; Coastal Charm</div>
-            <div class=\"article-card-desc\">Galleries, farm-to-table restaurants, and centuries-old live oaks &mdash; discover the artistic heart of the Carolina Sea Islands.</div>
-            <span class=\"article-card-read\">Read Article &rarr;</span>
+        <a class="article-card" href="discover-bluffton.html">
+          <div class="article-card-img" style="background-image:url('images/article-oldtown.jpg')"></div>
+          <div class="article-card-grad"></div>
+          <div class="article-card-content">
+            <div class="article-card-tag">Culture &amp; Lifestyle</div>
+            <div class="article-card-name">Old Town Bluffton: Art, Dining &amp; Coastal Charm</div>
+            <div class="article-card-desc">Galleries, farm-to-table restaurants, and centuries-old live oaks &mdash; discover the artistic heart of the Carolina Sea Islands.</div>
+            <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
 
-        <a class=\"article-card\" href=\"discover-bluffton.html\">
-          <div class=\"article-card-img\" style=\"background-image:url('images/article-golf.jpg')\"></div>
-          <div class=\"article-card-grad\"></div>
-          <div class=\"article-card-content\">
-            <div class=\"article-card-tag\">Golf Living</div>
-            <div class=\"article-card-name\">Golf Communities in Bluffton: A Complete Guide</div>
-            <div class=\"article-card-desc\">Nicklaus, Fazio, Dye &mdash; over 25 championship courses and the communities built around them.</div>
-            <span class=\"article-card-read\">Read Article &rarr;</span>
+        <a class="article-card" href="discover-bluffton.html">
+          <div class="article-card-img" style="background-image:url('images/article-golf.jpg')"></div>
+          <div class="article-card-grad"></div>
+          <div class="article-card-content">
+            <div class="article-card-tag">Golf Living</div>
+            <div class="article-card-name">Golf Communities in Bluffton: A Complete Guide</div>
+            <div class="article-card-desc">Nicklaus, Fazio, Dye &mdash; over 25 championship courses and the communities built around them.</div>
+            <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
 
-        <a class=\"article-card\" href=\"discover-bluffton.html\">
-          <div class=\"article-card-img\" style=\"background-image:url('images/article-relocation.jpg')\"></div>
-          <div class=\"article-card-grad\"></div>
-          <div class=\"article-card-content\">
-            <div class=\"article-card-tag\">Relocation</div>
-            <div class=\"article-card-name\">Moving to Bluffton from the Northeast: What to Expect</div>
-            <div class=\"article-card-desc\">Tax savings, climate, culture shift, and why so many New Yorkers, Bostonians, and Washingtonians are making the move.</div>
-            <span class=\"article-card-read\">Read Article &rarr;</span>
+        <a class="article-card" href="discover-bluffton.html">
+          <div class="article-card-img" style="background-image:url('images/article-relocation.jpg')"></div>
+          <div class="article-card-grad"></div>
+          <div class="article-card-content">
+            <div class="article-card-tag">Relocation</div>
+            <div class="article-card-name">Moving to Bluffton from the Northeast: What to Expect</div>
+            <div class="article-card-desc">Tax savings, climate, culture shift, and why so many New Yorkers, Bostonians, and Washingtonians are making the move.</div>
+            <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
 
-        <a class=\"article-card\" href=\"discover-bluffton.html\">
-          <div class=\"article-card-img\" style=\"background-image:url('images/article-family.jpg')\"></div>
-          <div class=\"article-card-grad\"></div>
-          <div class=\"article-card-content\">
-            <div class=\"article-card-tag\">Family</div>
-            <div class=\"article-card-name\">Family Life in Bluffton: Schools, Activities &amp; Community</div>
-            <div class=\"article-card-desc\">Top-rated schools, youth sports, nature camps, and a community built for families who value the outdoors.</div>
-            <span class=\"article-card-read\">Read Article &rarr;</span>
+        <a class="article-card" href="discover-bluffton.html">
+          <div class="article-card-img" style="background-image:url('images/article-family.jpg')"></div>
+          <div class="article-card-grad"></div>
+          <div class="article-card-content">
+            <div class="article-card-tag">Family</div>
+            <div class="article-card-name">Family Life in Bluffton: Schools, Activities &amp; Community</div>
+            <div class="article-card-desc">Top-rated schools, youth sports, nature camps, and a community built for families who value the outdoors.</div>
+            <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
 
-        <a class=\"article-card\" href=\"discover-bluffton.html\">
-          <div class=\"article-card-img\" style=\"background-image:url('images/article-buyers.jpg')\"></div>
-          <div class=\"article-card-grad\"></div>
-          <div class=\"article-card-content\">
-            <div class=\"article-card-tag\">Buyer&rsquo;s Guide</div>
-            <div class=\"article-card-name\">Why Buyers Are Choosing Bluffton Over Hilton Head in 2026</div>
-            <div class=\"article-card-desc\">Bigger lots, lower taxes, gated luxury, and a small-town soul &mdash; the reasons that make Bluffton the smarter buy.</div>
-            <span class=\"article-card-read\">Read Article &rarr;</span>
+        <a class="article-card" href="discover-bluffton.html">
+          <div class="article-card-img" style="background-image:url('images/article-buyers.jpg')"></div>
+          <div class="article-card-grad"></div>
+          <div class="article-card-content">
+            <div class="article-card-tag">Buyer&rsquo;s Guide</div>
+            <div class="article-card-name">Why Buyers Are Choosing Bluffton Over Hilton Head in 2026</div>
+            <div class="article-card-desc">Bigger lots, lower taxes, gated luxury, and a small-town soul &mdash; the reasons that make Bluffton the smarter buy.</div>
+            <span class="article-card-read">Read Article &rarr;</span>
           </div>
         </a>
 
       </div>
     </div>
-    <div class=\"articles-arrows\">
-      <button class=\"articles-arrow\" onclick=\"document.getElementById('ewArticlesTrack').scrollBy({left:-380,behavior:'smooth'})\" aria-label=\"Scroll left\">&#8592;</button>
-      <button class=\"articles-arrow\" onclick=\"document.getElementById('ewArticlesTrack').scrollBy({left:380,behavior:'smooth'})\" aria-label=\"Scroll right\">&#8594;</button>
+    <div class="articles-arrows">
+      <button class="articles-arrow" onclick="document.getElementById('ewArticlesTrack').scrollBy({left:-380,behavior:'smooth'})" aria-label="Scroll left">&#8592;</button>
+      <button class="articles-arrow" onclick="document.getElementById('ewArticlesTrack').scrollBy({left:380,behavior:'smooth'})" aria-label="Scroll right">&#8594;</button>
     </div>
   </section>`;
 
-  // ── Inject after blog-section ──────────────────────────────────────────
+  // ââ Inject after blog-section ââââââââââââââââââââââââââââââââââââââ
   if (blogSection && !document.getElementById('editorial-articles-widget')) {
     blogSection.insertAdjacentHTML('afterend', html);
   }
 })();
 
-// ── Remove post-footer content ───────────────────────────────────────
+// ââ Remove post-footer content âââââââââââââââââââââââââââââââââââââââ
 (function(){
-  var f = document.querySelector(\"footer\");
+  var f = document.querySelector('footer');
   if (!f) return;
   var s = f.nextElementSibling;
   while (s) {
     var n = s.nextElementSibling;
-    if (s.tagName !== \"SCRIPT\") s.remove();
+    if (s.tagName !== 'SCRIPT') s.remove();
     s = n;
   }
 })();
 
-// ── Dynamic Script Loader ───────────────────────────────────────────────
+// ââ Dynamic Script Loader âââââââââââââââââââââââââââââââââââââââââââ
 // editorial-widget.js is the only script hardcoded in index.html.
 // Netlify snippet injection is not working, so we load the remaining
 // widget scripts dynamically from here.
@@ -209,7 +209,7 @@
     'discover-bluffton-widget.js',
     'footer-patch.js'
   ];
-  var v = '20260321';
+  var v = '20260321b';
   scripts.forEach(function(src){
     var s = document.createElement('script');
     s.src = '/' + src + '?v=' + v;
