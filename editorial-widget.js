@@ -1,4 +1,4 @@
-h(function(){
+(function(){
   // ââ CSS ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var css = `
     .articles-section{background:var(--cream,#F5F0E8);padding:80px 0 72px;overflow:hidden;position:relative}
