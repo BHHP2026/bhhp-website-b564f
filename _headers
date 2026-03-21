@@ -1,0 +1,9 @@
+# JS and HTML: no-cache so every deploy takes effect immediately
+/*.js
+  Cache-Control: no-cache, must-revalidate
+
+/*.html
+  Cache-Control: no-cache, must-revalidate
+
+/
+  Cache-Control: no-cache, must-revalidate
