@@ -185,3 +185,21 @@
     blogSection.insertAdjacentHTML('afterend', html);
   }
 })();
+
+// ── Dynamic Script Loader ───────────────────────────────────────────────
+// editorial-widget.js is the only script hardcoded in index.html.
+// Netlify snippet injection is not working, so we load the remaining
+// widget scripts dynamically from here.
+(function(){
+  var scripts = [
+    'content-patch.js',
+    'editorial-intro-widget.js',
+    'discover-bluffton-widget.js',
+    'footer-patch.js'
+  ];
+  scripts.forEach(function(src){
+    var s = document.createElement('script');
+    s.src = '/' + src;
+    document.body.appendChild(s);
+  });
+})();
