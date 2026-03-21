@@ -75,7 +75,7 @@
       </a>
 
       <a class="article-card" href="discover-bluffton.html">
-        <div class="article-card-img" style="background-image:url('https://images.pexels.com/photos/914682/pexels-photo-914682.jpeg?auto=compress&cs=tinysrgb&w=700&h=1050&fit=crop')"></div>
+        <div class="article-card-img" style="background-image:url('images/article-communities.jpg')"></div>
         <div class="article-card-grad"></div>
         <div class="article-card-content">
           <div class="article-card-tag">Communities</div>
@@ -86,7 +86,7 @@
       </a>
 
       <a class="article-card" href="discover-bluffton.html">
-        <div class="article-card-img" style="background-image:url('https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=700&h=1050&fit=crop')"></div>
+        <div class="article-card-img" style="background-image:url('images/article-market.jpg')"></div>
         <div class="article-card-grad"></div>
         <div class="article-card-content">
           <div class="article-card-tag">Market Insight</div>
@@ -97,7 +97,7 @@
       </a>
 
       <a class="article-card" href="discover-bluffton.html">
-        <div class="article-card-img" style="background-image:url('https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg?auto=compress&cs=tinysrgb&w=700&h=1050&fit=crop')"></div>
+        <div class="article-card-img" style="background-image:url('images/article-palmetto.jpg')"></div>
         <div class="article-card-grad"></div>
         <div class="article-card-content">
           <div class="article-card-tag">Signature Community</div>
@@ -108,7 +108,7 @@
       </a>
 
       <a class="article-card" href="discover-bluffton.html">
-        <div class="article-card-img" style="background-image:url('https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?auto=compress&cs=tinysrgb&w=700&h=1050&fit=crop')"></div>
+        <div class="article-card-img" style="background-image:url('images/article-mayriver.jpg')"></div>
         <div class="article-card-grad"></div>
         <div class="article-card-content">
           <div class="article-card-tag">Nature &amp; Waterfront</div>
@@ -119,7 +119,7 @@
       </a>
 
       <a class="article-card" href="discover-bluffton.html">
-        <div class="article-card-img" style="background-image:url('https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=700&h=1050&fit=crop')"></div>
+        <div class="article-card-img" style="background-image:url('images/article-oldtown.jpg')"></div>
         <div class="article-card-grad"></div>
         <div class="article-card-content">
           <div class="article-card-tag">Culture &amp; Lifestyle</div>
@@ -130,7 +130,7 @@
       </a>
 
       <a class="article-card" href="discover-bluffton.html">
-        <div class="article-card-img" style="background-image:url('https://images.pexels.com/photos/54123/pexels-photo-54123.jpeg?auto=compress&cs=tinysrgb&w=700&h=1050&fit=crop')"></div>
+        <div class="article-card-img" style="background-image:url('images/article-golf.jpg')"></div>
         <div class="article-card-grad"></div>
         <div class="article-card-content">
           <div class="article-card-tag">Golf Living</div>
@@ -141,7 +141,7 @@
       </a>
 
       <a class="article-card" href="discover-bluffton.html">
-        <div class="article-card-img" style="background-image:url('https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=700&h=1050&fit=crop')"></div>
+        <div class="article-card-img" style="background-image:url('images/article-relocation.jpg')"></div>
         <div class="article-card-grad"></div>
         <div class="article-card-content">
           <div class="article-card-tag">Relocation</div>
@@ -152,7 +152,7 @@
       </a>
 
       <a class="article-card" href="discover-bluffton.html">
-        <div class="article-card-img" style="background-image:url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=700&h=1050&fit=crop')"></div>
+        <div class="article-card-img" style="background-image:url('images/article-family.jpg')"></div>
         <div class="article-card-grad"></div>
         <div class="article-card-content">
           <div class="article-card-tag">Family</div>
@@ -163,7 +163,7 @@
       </a>
 
       <a class="article-card" href="discover-bluffton.html">
-        <div class="article-card-img" style="background-image:url('https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=700&h=1050&fit=crop')"></div>
+        <div class="article-card-img" style="background-image:url('images/article-buyers.jpg')"></div>
         <div class="article-card-grad"></div>
         <div class="article-card-content">
           <div class="article-card-tag">Buyer&rsquo;s Guide</div>
