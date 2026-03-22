@@ -50,6 +50,8 @@
   }
 
   // ââ Build widget HTML ââââââââââââââââââââââââââââââââââââââââââââââ
+    // CARD 1 IMAGE: uses root-level bluffton-inn-golf-carts.jpg (high-res 1024x683, uploaded to repo root)
+    // DO NOT change path to images/bluffton-inn-golf-carts.jpg — that is the old low-res 200x133 thumbnail
   var html = `<section class="articles-section" id="editorial-articles-widget">
     <div class="articles-watermark">Editorial</div>
     <div class="articles-header">
