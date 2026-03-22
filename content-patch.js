@@ -171,3 +171,419 @@
     });
   }
 })();
+
+/* ============================================================
+   BHHP Luxury Listings Patch
+   - Fixes listing-info positioning (copy anchored to bottom)
+   - Raises anchor z-index so entire card is clickable
+   - Sets correct listing URLs
+   - Injects additional listing slides dynamically
+   ============================================================ */
+(function () {
+  'use strict';
+
+  var LISTINGS = [
+    {
+      name: 'Collier Beach Ocean Estate',
+      address: '10 Collier Beach Road · Hilton Head Island, SC 29928',
+      specs: '6 Beds  ·  8 Baths  ·  5,000 Sq Ft  ·  Active',
+      price: '$7,950,000',
+      url: 'https://search.besthiltonheadproperties.com/search/detail/256909813?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[mainInputSearch]=false&s[circle][lat]=32.1889992&s[circle][lng]=-80.7002976&s[circle][radius]=3&s[address]=10%20Collier%20Beach%20Rd%2C%20Hilton%20Head%20Island%2C%20SC%2029928',
+      image: null  // uses existing slide in HTML
+    },
+    {
+      name: 'Island Creek Estate',
+      address: '29 Island Creek Drive · Okatie, SC 29909',
+      specs: '4 Beds  ·  5 Baths  ·  3,570 Sq Ft  ·  Active',
+      price: '$1,950,000',
+      url: 'https://search.besthiltonheadproperties.com/search/detail/258417153?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[mainInputSearch]=false&s[circle][lat]=32.329027&s[circle][lng]=-80.840907&s[circle][radius]=3&s[address]=29%20Island%20Creek%20Dr%2C%20Okatie%2C%20SC%2029909',
+      image: '/images/island-creek.jpg'
+    },
+    {
+      name: 'Blue Dasher Estate',
+      address: '35 Blue Dasher Lane · Bluffton, SC 29909',
+      specs: '5 Beds  ·  4.5 Baths  ·  3,282 Sq Ft  ·  Active',
+      price: '$1,225,000',
+      url: 'https://hhimls.mlsmatrix.com/Matrix/Results.aspx?c=H4sIAAAAAAAEAItWMjEyMlDSUTIDYksgNjS2MFTSySvNyaGIUDI0AJlqogTjYpipZEQFa6hIYHEiGYakHe4(tDym1MDAIA3duFgA0ExYO2wBAAA)',
+      image: '/images/blue-dasher.jpg'
+    },
+    {
+      name: 'Hidden Lake Estate',
+      address: '4 Hidden Lake Court · Bluffton, SC 29910',
+      specs: '5 Beds  ·  5.5 Baths  ·  4,858 Sq Ft  ·  Active',
+      price: '$1,185,000',
+      url: 'https://hhimls.mlsmatrix.com/Matrix/Results.aspx?c=H4sIAAAAAAAEAItWMjEyMlDSUTIDYksgNjS2MFTSySvNyaGIUDI0AJlqqgTjYpipZEQFa6hIYHEiGYa4x5QaGBgaHuo5tA7duFgAN8pI2WwBAAA)',
+      image: '/images/hidden-lake.png'
+    }
+  ];
+
+  function buildSlide(listing) {
+    var slide = document.createElement('div');
+    slide.className = 'listing-slide';
+    slide.style.cssText = 'background:center center/cover no-repeat #1a2a4a;';
+    if (listing.image) {
+      slide.style.backgroundImage = 'url(' + listing.image + ')';
+    }
+    slide.innerHTML =
+      '<div class="listing-slide-overlay"></div>' +
+      '<a href="' + listing.url + '" target="_blank" rel="noopener noreferrer"' +
+      ' style="position:absolute;inset:0;z-index:3;cursor:pointer;"></a>' +
+      '<div class="listing-info" style="position:absolute;bottom:0;left:0;right:0;z-index:2;pointer-events:none;">' +
+        '<div>' +
+          '<div class="listing-name">' + listing.name + '</div>' +
+          '<div class="listing-location">' + listing.address + '</div>' +
+          '<div class="listing-location">' + listing.specs + '</div>' +
+        '</div>' +
+        '<div>' +
+          '<div class="listing-price-label">Asking Price</div>' +
+          '<div class="listing-price">' + listing.price + '</div>' +
+        '</div>' +
+      '</div>';
+    return slide;
+  }
+
+  function patchListings() {
+    var carousel = document.querySelector('.listing-carousel');
+    if (!carousel) return;
+
+    // ── 0a. Nav: About dropdown — remove "Our Team", link "Talita Haggist" ──
+    document.querySelectorAll('li').forEach(function(li) {
+      var t = li.textContent.trim();
+      if (t === 'Our Team' || t === 'Wexford' || t === 'Harbour Town') li.remove();
+    });
+    document.querySelectorAll('a').forEach(function(a) {
+      if (a.textContent.trim() === 'Talita Haggist') {
+        a.href = 'https://bhhp-staging.netlify.app/our-story';
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+
+    // ── 0b. Nav: "Blog" → "Editorial" ────────────────────────────
+    document.querySelectorAll('a.nav-link, .mobile-menu a').forEach(function(a) {
+      if (a.textContent.trim() === 'Blog') {
+        a.textContent = 'Editorial';
+        a.href = 'https://bhhp-staging.netlify.app/editorial/';
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+
+    // ── 0b. Hero headline: "Luxury" → "Elegance" ─────────────────────────
+    var heroEm = document.querySelector('.hero-headline em');
+    if (heroEm && heroEm.textContent.trim().match(/Luxury/i)) {
+      heroEm.textContent = 'Elegance';
+    }
+    var quoteBg = document.querySelector('.quote-bg-text');
+    if (quoteBg && quoteBg.textContent.trim().match(/LUXURY/i)) {
+      quoteBg.textContent = 'ELEGANCE';
+    }
+
+    // ── 0b. Hero sub copy ────────────────────────────────────────
+    var heroSub = document.querySelector('.hero-sub');
+    if (heroSub && heroSub.textContent.includes('trusted name')) {
+      heroSub.textContent = 'Find your next home with precision. Sell your current one with confidence. Carolina Sea Islands real estate, elevated.';
+    }
+    if (heroSub) {
+      heroSub.style.color = '#ffffff';
+      heroSub.style.fontSize = '13px';
+      heroSub.style.fontWeight = '300';
+      heroSub.style.opacity = '1';
+    }
+
+    // ── 0. Quote widget: update text + attribution tiffany blue ──────
+    var quoteText = document.querySelector('p.quote-text');
+    if (quoteText && quoteText.textContent.trim().match(/hilton head is not just/i)) {
+      quoteText.textContent = 'Every home here tells a story that begins the moment you arrive and never quite ends. My work is making sure the right story finds the right person.';
+    }
+    var quoteAttr = document.querySelector('.quote-attr');
+    if (quoteAttr) quoteAttr.style.color = '#0ABAB5';
+
+    // ── 0. "A Lifestyle UNLIKE ANY OTHER" → tiffany blue span ───────
+    var ilsSpan = document.querySelector('h2.ils-heading span');
+    if (ilsSpan) ilsSpan.style.color = '#0ABAB5';
+
+    // ── 0. "Your Time TO SHINE" → tiffany blue span ─────────────────
+    var shineSpan = document.querySelector('h2.fiftyfive-heading span');
+    if (shineSpan) shineSpan.style.color = '#0ABAB5';
+
+    // ── 0. Editorial widget: desc copy + white, button tiffany blue ───
+    var editorialDesc = document.querySelector('p.editorial-intro-desc');
+    if (editorialDesc && editorialDesc.textContent.trim().match(/elegant, inspired|stories from the Carolina/i)) {
+      editorialDesc.textContent = 'The latest in architecture, lifestyle, and island living — curated news from the Carolina Sea Islands, by Best Hilton Head Properties.';
+    }
+    if (editorialDesc) editorialDesc.style.color = '#ffffff';
+    var editorialIssue = document.querySelector('.editorial-intro-issue');
+    if (editorialIssue) editorialIssue.style.color = '#0ABAB5';
+    var editorialBtn = document.querySelector('a.editorial-intro-cta');
+    if (editorialBtn) {
+      editorialBtn.style.color = '#0ABAB5';
+      editorialBtn.style.borderColor = '#0ABAB5';
+    }
+
+    // ── 0. "Now Publishing" → tiffany blue ─────────────────────────
+    document.querySelectorAll('*').forEach(function(el) {
+      if (el.children.length < 2 && el.textContent.trim() === 'Now Publishing') el.style.color = '#0ABAB5';
+    });
+
+    // ── 0. Old green rgb(111,191,176) → brand tiffany across site ────
+    document.querySelectorAll('.advsearch-h-ghost').forEach(function(el) { el.style.color = '#0ABAB5'; });
+    document.querySelectorAll('.strip-icon-phone').forEach(function(el) { el.style.backgroundColor = '#0ABAB5'; });
+    document.querySelectorAll('.dbw-eyebrow').forEach(function(el) { el.style.color = '#0ABAB5'; });
+    document.querySelectorAll('.bhhp-ig-follow').forEach(function(el) { el.style.color = '#0ABAB5'; });
+    document.querySelectorAll('.bhhp-yt-subscribe').forEach(function(el) { el.style.backgroundColor = '#0ABAB5'; });
+    document.querySelectorAll('*').forEach(function(el) {
+      if (el.children.length === 0 && el.textContent.trim() === 'Global') {
+        if (getComputedStyle(el).color === 'rgb(111, 191, 176)') el.style.color = '#0ABAB5';
+      }
+    });
+
+    // ── 0. "YOUR BLUFFTON HOME SEARCH" → tiffany blue em (all pages) ────
+    var articlesEm = document.querySelector('h2.articles-heading em');
+    if (articlesEm) articlesEm.setAttribute('style', 'color:#0ABAB5 !important');
+
+    // ── 0. "RESORT EDITORIAL ARTICLES PREVIEW" → tiffany blue ARTICLES ──
+    // .dim class has rgba(0,0,0,0.25) with higher specificity — need !important via setAttribute
+    document.querySelectorAll('h2').forEach(function(h) {
+      if (h.textContent.indexOf('RESORT EDITORIAL') !== -1) {
+        var span = h.querySelector('em span') || h.querySelector('em');
+        if (span) span.setAttribute('style', 'color:#0ABAB5 !important');
+      }
+    });
+
+    // ── 0. discover-bluffton.html: remove Moss Creek community card ──────
+    document.querySelectorAll('article.comm-card').forEach(function(card) {
+      if (card.textContent.match(/moss creek/i)) card.remove();
+    });
+
+    // ── 0. Bluffton widget: tagline + button → tiffany blue ───────────
+    var dbwTagline = document.querySelector('.dbw-tagline');
+    if (dbwTagline) dbwTagline.style.color = '#0ABAB5';
+    var dbwCta = document.querySelector('a.dbw-cta');
+    if (dbwCta) { dbwCta.style.color = '#0ABAB5'; dbwCta.style.borderColor = '#0ABAB5'; }
+    var dbwDesc = document.querySelector('p.dbw-desc');
+    if (dbwDesc) dbwDesc.style.color = '#ffffff';
+
+    // ── 0. Bluffton video: skip burned-in intro (0–7s) and outro (56s+) title cards ──
+    // Targets homepage widget (.discover-bluffton-video) AND discover-bluffton.html hero (video with bluffton-hero.mp4)
+    var bluffVid = document.querySelector('.discover-bluffton-video');
+    if (!bluffVid) {
+      document.querySelectorAll('video').forEach(function(v) {
+        if ((v.src || v.currentSrc || '').indexOf('bluffton-hero') !== -1) bluffVid = v;
+        var src = v.querySelector('source');
+        if (src && (src.src || src.getAttribute('src') || '').indexOf('bluffton-hero') !== -1) bluffVid = v;
+      });
+    }
+    if (bluffVid) {
+      var VID_START = 8;   // skip "experience bluffton IN 60 SECONDS" intro card
+      var VID_END   = 56;  // skip "bluffton · HEART OF THE LOWCOUNTRY" outro card
+      var vidGuard  = false;
+      var ensureRange = function() {
+        if (vidGuard) return;
+        if (bluffVid.currentTime < VID_START || bluffVid.currentTime >= VID_END) {
+          vidGuard = true;
+          bluffVid.currentTime = VID_START;
+          setTimeout(function() { vidGuard = false; }, 500);
+        }
+      };
+      bluffVid.addEventListener('loadedmetadata', ensureRange);
+      bluffVid.addEventListener('timeupdate', ensureRange);
+      ensureRange();
+    }
+
+    // ── 0. discover-bluffton.html hero: tagline → tiffany blue ───────────
+    var heroTagline = document.querySelector('.hero-tagline');
+    if (heroTagline) heroTagline.style.color = '#0ABAB5';
+
+    // ── 0. 55+ cards + VIEW ALL → search site, new tab ──────────────
+    document.querySelectorAll('.fiftyfive-card').forEach(function(card) {
+      card.style.position = 'relative';
+      var overlay = document.createElement('a');
+      overlay.href = 'https://search.besthiltonheadproperties.com';
+      overlay.target = '_blank';
+      overlay.rel = 'noopener noreferrer';
+      overlay.style.cssText = 'position:absolute;inset:0;z-index:10;display:block;';
+      card.appendChild(overlay);
+    });
+    document.querySelectorAll('a').forEach(function(a) {
+      if (a.textContent.trim().match(/view all 55/i)) {
+        a.href = 'https://search.besthiltonheadproperties.com';
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+
+    // ── 0. "Explore the Islands" → search site, new tab ─────────────
+    document.querySelectorAll('a').forEach(function(a) {
+      if (a.textContent.trim().match(/explore the islands/i)) {
+        a.href = 'https://search.besthiltonheadproperties.com';
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+
+    // ── 0. Island Neighborhoods: "Neighborhoods" → Tiffany blue, remove active listing counts ─────
+    var neighborhoodsSection = document.querySelector('.neighborhoods-section');
+    if (neighborhoodsSection) {
+      var neighborhoodsDim = neighborhoodsSection.querySelector('h2.section-h2 .dim');
+      if (neighborhoodsDim) {
+        neighborhoodsDim.style.color = '#0ABAB5';
+        neighborhoodsDim.style.opacity = '1';
+      }
+      neighborhoodsSection.querySelectorAll('.nc-count').forEach(function(el) { el.remove(); });
+      neighborhoodsSection.querySelectorAll('a.view-all-link').forEach(function(a) {
+        if (a.textContent.trim().match(/view all areas/i)) {
+          a.href = 'https://search.besthiltonheadproperties.com';
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+        }
+      });
+    }
+
+    // ── 0. Contact strip: outline button + tiffany mail icon ─────────
+    var stripBtn = document.querySelector('a.strip-btn');
+    if (stripBtn) {
+      stripBtn.style.backgroundColor = 'transparent';
+      stripBtn.style.color = 'rgb(129, 216, 208)';
+      stripBtn.style.border = '1px solid rgb(129, 216, 208)';
+      stripBtn.style.padding = '14px 32px';
+      stripBtn.style.fontWeight = '500';
+      stripBtn.style.letterSpacing = '3px';
+      stripBtn.style.fontSize = '10px';
+    }
+    var emailPath = document.querySelector('.strip-icon-email svg path');
+    if (emailPath) emailPath.style.fill = '#0ABAB5';
+    var stripBtnIcon = document.querySelector('a.strip-btn svg path');
+    if (stripBtnIcon) stripBtnIcon.style.fill = '#0ABAB5';
+
+    // ── 0. Rename heading: "Luxury Listings" → "Featured Estates" ───
+    var listingsTitle = document.querySelector('.listings-title');
+    if (listingsTitle) listingsTitle.style.fontSize = '14px';
+
+    var headline = document.querySelector('.listings-headline');
+    if (headline) {
+      // Replace bare text node with a styled gold span
+      Array.from(headline.childNodes).forEach(function(node) {
+        if (node.nodeType === 3 && node.textContent.trim().match(/Luxury|Featured/i)) {
+          var span = document.createElement('span');
+          span.textContent = 'FEATURED ';
+          span.style.color = '#ffffff';
+          span.style.fontSize = '52px';
+          span.style.verticalAlign = 'baseline';
+          headline.replaceChild(span, node);
+        }
+      });
+      var dimSpan = headline.querySelector('.dim');
+      if (dimSpan) {
+        dimSpan.textContent = 'Estates';
+        dimSpan.style.color = '#0ABAB5';
+        dimSpan.style.opacity = '1';
+        dimSpan.style.fontSize = '52px';
+      }
+    }
+
+    // ── 1. Fix the existing HTML slide ────────────────────────────
+    var existingSlides = carousel.querySelectorAll('.listing-slide');
+    existingSlides.forEach(function (slide) {
+      var anchor = slide.querySelector('a');
+      if (anchor) {
+        anchor.style.zIndex = '3';
+        anchor.style.cursor = 'pointer';
+        var nameEl = slide.querySelector('.listing-name');
+        if (nameEl) {
+          var name = nameEl.textContent.trim().toLowerCase();
+          var match = LISTINGS.find(function (l) {
+            return name.includes(l.name.toLowerCase()) || l.name.toLowerCase().includes(name);
+          });
+          if (match) {
+            anchor.href = match.url;
+            anchor.target = '_blank';
+            anchor.rel = 'noopener noreferrer';
+          }
+        }
+      }
+      var info = slide.querySelector('.listing-info');
+      if (info) {
+        info.style.position = 'absolute';
+        info.style.bottom = '0';
+        info.style.left = '0';
+        info.style.right = '0';
+        info.style.zIndex = '2';
+        info.style.pointerEvents = 'none';
+      }
+    });
+
+    // ── 2. Inject additional slides ──────────────────────────
+    var injected = LISTINGS.filter(function (l) { return l.image !== null; });
+    injected.forEach(function (listing) {
+      var already = carousel.querySelector('[data-bhhp-listing="' + listing.name + '"]');
+      if (already) return;
+      var slide = buildSlide(listing);
+      slide.setAttribute('data-bhhp-listing', listing.name);
+      slide.style.opacity = '0';
+      slide.style.transition = 'opacity 0.5s';
+      carousel.appendChild(slide);
+    });
+
+    // ── 3. Also inject image-less slides ─────────────────────
+    var noImage = LISTINGS.filter(function (l) { return l.image === null && l.name !== 'Collier Beach Ocean Estate'; });
+    noImage.forEach(function (listing) {
+      var already = carousel.querySelector('[data-bhhp-listing="' + listing.name + '"]');
+      if (already) return;
+      var slide = buildSlide(listing);
+      slide.setAttribute('data-bhhp-listing', listing.name);
+      slide.style.opacity = '0';
+      slide.style.transition = 'opacity 0.5s';
+      carousel.appendChild(slide);
+    });
+
+    // ── 4. Hook nav arrows to cycle through all slides ───────
+    var allSlides = Array.from(carousel.querySelectorAll('.listing-slide'));
+    var total = allSlides.length;
+    var current = 0;
+
+    allSlides.forEach(function (s, i) {
+      s.style.opacity = i === 0 ? '1' : '0';
+      s.style.pointerEvents = i === 0 ? 'auto' : 'none';
+      s.style.zIndex = i === 0 ? '1' : '0';
+    });
+
+    // Update counter total — fix text node directly to handle any spacing format
+    var counterEl = document.querySelector('.listings-counter');
+    if (counterEl) {
+      Array.from(counterEl.childNodes).forEach(function(node) {
+        if (node.nodeType === 3 && node.textContent.indexOf('|') !== -1) {
+          node.textContent = node.textContent.replace(/\|\s*\d+/, '|  ' + total);
+        }
+      });
+    }
+    var curEl = document.querySelector('.listings-counter .cur');
+
+    function goTo(idx) {
+      allSlides[current].style.opacity = '0';
+      allSlides[current].style.pointerEvents = 'none';
+      allSlides[current].style.zIndex = '0';
+      current = (idx + total) % total;
+      allSlides[current].style.opacity = '1';
+      allSlides[current].style.pointerEvents = 'auto';
+      allSlides[current].style.zIndex = '1';
+      if (curEl) curEl.textContent = String(current + 1).padStart(2, '0');
+    }
+
+    // Nav uses .lnav-btn divs
+    var navBtns = document.querySelectorAll('.lnav-btn');
+    navBtns.forEach(function (btn) {
+      var newBtn = btn.cloneNode(true);
+      btn.parentNode.replaceChild(newBtn, btn);
+    });
+    var freshBtns = document.querySelectorAll('.lnav-btn');
+    if (freshBtns[0]) freshBtns[0].addEventListener('click', function () { goTo(current - 1); });
+    if (freshBtns[1]) freshBtns[1].addEventListener('click', function () { goTo(current + 1); });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', patchListings);
+  } else {
+    patchListings();
+  }
+})();
