@@ -4,60 +4,138 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Palmetto Dunes — Hilton Head Island | Best Hilton Head Properties</title>
+<meta name="description" content="Palmetto Dunes: Hilton Head Island's premier oceanfront resort community. Three championship courses, 11-mile lagoon, 3 miles of private beach, and Shelter Cove Harbour. Explore homes with BHHP.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--navy:#092969;--teal:#81D8D0;--gold:#D4AF37;--ivory:#F5EFE0;--white:#FFFFFF;--charcoal:#111111;--text:#333333;--light:#f7f7f5}
-body{font-family:'Montserrat',sans-serif;color:var(--charcoal);background:var(--white)}
-.site-nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:24px 48px;display:flex;align-items:center;justify-content:space-between;transition:all 0.4s ease;background:transparent}
-.site-nav.scrolled{background:rgba(9,41,105,0.97);backdrop-filter:blur(12px);padding:16px 48px;box-shadow:0 2px 30px rgba(0,0,0,0.3)}
-.nav-logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#fff;letter-spacing:3px}
-.nav-logo-sub{font-size:8px;letter-spacing:2px;color:rgba(255,255,255,0.6);text-transform:uppercase;margin-top:2px}
-.nav-links{display:flex;align-items:center;gap:32px;list-style:none}
-.nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:11px;letter-spacing:2px;text-transform:uppercase;transition:color 0.3s}
-.nav-links a:hover{color:var(--gold)}
-.nav-serhant{font-family:'Playfair Display',serif;font-size:13px;letter-spacing:2px;color:rgba(255,255,255,0.7);border-left:1px solid rgba(255,255,255,0.2);padding-left:24px}
-.nbhd-hero{min-height:85vh;background:linear-gradient(160deg,#092969 0%,#0d5c4a 50%,#1a7a5e 100%);display:flex;align-items:flex-end;padding:0 80px 80px;position:relative;overflow:hidden}
-.nbhd-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 60% 40%,rgba(129,216,208,0.18) 0%,transparent 55%)}
-.nbhd-hero-content{position:relative;z-index:1;max-width:700px}
-.nbhd-eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:20px}
-.nbhd-hero h1{font-family:'Playfair Display',serif;font-size:clamp(48px,6vw,80px);font-weight:400;color:#fff;line-height:1.05;margin-bottom:24px}
-.nbhd-hero p{font-size:16px;color:rgba(255,255,255,0.75);line-height:1.8;max-width:540px;margin-bottom:40px}
-.nbhd-stats{display:flex;gap:48px}
-.nbhd-stat-num{font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#fff;line-height:1}
-.nbhd-stat-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:4px}
-.nbhd-body{max-width:1200px;margin:0 auto;padding:100px 80px}
-.nbhd-intro{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-bottom:100px}
-.nbhd-intro h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3vw,40px);font-weight:400;color:var(--navy);line-height:1.3;margin-bottom:24px}
-.nbhd-intro p{font-size:15px;color:#555;line-height:1.9;margin-bottom:16px}
-.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-bottom:80px}
-.feature-card{padding:40px 32px;background:var(--light);border-top:3px solid var(--teal)}
-.feature-card h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:var(--navy);margin-bottom:12px}
-.feature-card p{font-size:13px;color:#666;line-height:1.8}
-.market-snapshot{background:var(--navy);padding:80px;margin:0 -80px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:0}
-.market-item{padding:0 40px;border-right:1px solid rgba(255,255,255,0.1);text-align:center}
-.market-item:last-child{border-right:none}
-.market-num{font-family:'Playfair Display',serif;font-size:48px;font-weight:400;color:#fff;line-height:1;margin-bottom:8px}
-.market-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5)}
-.nbhd-cta{text-align:center;padding:100px 0 0}
-.nbhd-cta h2{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,48px);font-weight:400;color:var(--navy);margin-bottom:20px}
-.nbhd-cta p{font-size:15px;color:#666;max-width:460px;margin:0 auto 36px;line-height:1.8}
-.btn-primary{display:inline-block;padding:18px 48px;background:var(--navy);color:#fff;text-decoration:none;font-size:11px;letter-spacing:3px;text-transform:uppercase;transition:all 0.3s;margin:0 8px}
-.btn-primary:hover{background:var(--gold);color:var(--navy)}
-.btn-secondary{display:inline-block;padding:17px 48px;border:1px solid var(--navy);color:var(--navy);text-decoration:none;font-size:11px;letter-spacing:3px;text-transform:uppercase;transition:all 0.3s;margin:0 8px}
-.btn-secondary:hover{background:var(--navy);color:#fff}
-footer{background:var(--charcoal);padding:60px 80px 40px;color:rgba(255,255,255,0.5);font-size:12px;text-align:center}
-footer .footer-brand{font-family:'Playfair Display',serif;font-size:22px;color:#fff;margin-bottom:8px}
-footer .footer-tagline{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:32px}
-footer .footer-links{display:flex;justify-content:center;gap:32px;margin-bottom:32px;list-style:none}
-footer .footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:11px;letter-spacing:1px;text-transform:uppercase;transition:color 0.3s}
-footer .footer-links a:hover{color:var(--gold)}
-footer .footer-copy{font-size:10px;letter-spacing:1px;border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;margin-top:24px}
+  :root{--navy:#092969;--teal:#81D8D0;--gold:#D4AF37;--ivory:#F5EFE0;--white:#FFFFFF;--charcoal:#111111}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Montserrat',sans-serif;color:var(--charcoal);background:var(--white);overflow-x:hidden}
+  /* NAV */
+  .site-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:24px 48px;transition:all 0.4s ease}
+  .site-nav.scrolled{background:rgba(9,41,105,0.97);backdrop-filter:blur(12px);padding:14px 48px;box-shadow:0 4px 30px rgba(0,0,0,0.25)}
+  .nav-logo-main{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--white);letter-spacing:3px}
+  .nav-logo-sub{font-size:9px;font-weight:500;letter-spacing:2.5px;color:var(--teal);text-transform:uppercase;text-align:center;margin-top:2px}
+  .nav-links{display:flex;gap:32px;list-style:none}
+  .nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;transition:color 0.3s}
+  .nav-links a:hover{color:var(--teal)}
+  .nav-cta{color:var(--white);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:10px 22px;border:1px solid rgba(255,255,255,0.4);border-radius:2px;transition:all 0.3s}
+  .nav-cta:hover{background:var(--teal);border-color:var(--teal);color:var(--navy)}
+  .nav-serhant{font-size:11px;font-weight:700;letter-spacing:3px;color:var(--teal);text-transform:uppercase}
+  /* HERO */
+  .hero{position:relative;height:100vh;min-height:700px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#061828}
+  .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0.55}
+  .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(9,41,105,0.35) 0%,rgba(6,24,40,0.15) 40%,rgba(9,41,105,0.82) 100%)}
+  .hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;max-width:960px}
+  .hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:12px}
+  .hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:40px;height:1px;background:var(--teal);opacity:0.6}
+  .hero-title{font-family:'Playfair Display',serif;font-size:clamp(52px,8vw,100px);font-weight:400;color:var(--white);line-height:1.0;letter-spacing:-1px;margin-bottom:10px}
+  .hero-title em{font-style:italic;color:var(--teal)}
+  .hero-sub{font-size:14px;font-weight:300;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:40px}
+  .hero-stats{display:flex;align-items:center;justify-content:center;margin-bottom:48px;flex-wrap:wrap}
+  .hero-stat{padding:0 28px;border-right:1px solid rgba(255,255,255,0.2);text-align:center}
+  .hero-stat:last-child{border-right:none}
+  .hero-stat-val{font-family:'Playfair Display',serif;font-size:28px;font-weight:600;color:var(--gold);display:block}
+  .hero-stat-lbl{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.6);display:block;margin-top:5px}
+  .hero-cta-group{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  .btn-primary{padding:16px 36px;background:var(--gold);color:var(--navy);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:all 0.3s}
+  .btn-primary:hover{background:#c9a227;transform:translateY(-2px)}
+  .btn-outline{padding:16px 36px;border:1px solid rgba(255,255,255,0.45);color:var(--white);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:all 0.3s}
+  .btn-outline:hover{border-color:var(--teal);color:var(--teal)}
+  .scroll-hint{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,0.45);font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase}
+  .scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,rgba(255,255,255,0.5),transparent);animation:scrollPulse 2s ease-in-out infinite}
+  @keyframes scrollPulse{0%,100%{opacity:0.4}50%{opacity:1}}
+  /* STATS BAND */
+  .stats-band{background:var(--navy);padding:26px 48px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0}
+  .stat-item{padding:0 36px;border-right:1px solid rgba(255,255,255,0.15);text-align:center}
+  .stat-item:last-child{border-right:none}
+  .stat-val{font-family:'Playfair Display',serif;font-size:30px;font-weight:600;color:var(--gold)}
+  .stat-lbl{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-top:3px}
+  /* ABOUT */
+  .about-section{padding:100px 48px;background:var(--white)}
+  .about-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  .section-eyebrow{font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:16px}
+  .section-title{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,50px);font-weight:400;color:var(--navy);line-height:1.15;margin-bottom:24px}
+  .section-title em{font-style:italic;color:var(--gold)}
+  .section-body{font-size:16px;line-height:1.8;color:#444;margin-bottom:32px}
+  .quote-card{padding:28px 32px;border-left:3px solid var(--gold);background:var(--ivory);border-radius:0 6px 6px 0}
+  .quote-card p{font-family:'Playfair Display',serif;font-size:19px;font-style:italic;color:var(--navy);line-height:1.6}
+  .quote-card cite{display:block;margin-top:14px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--teal);font-style:normal}
+  .about-image-wrap{position:relative}
+  .about-image{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;display:block}
+  .about-badge{position:absolute;bottom:-20px;right:-20px;width:110px;height:110px;border-radius:50%;background:var(--navy);border:4px solid var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px}
+  .badge-val{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--gold);line-height:1.1}
+  .badge-lbl{font-size:8px;font-weight:600;letter-spacing:1px;color:var(--teal);text-transform:uppercase;line-height:1.4;margin-top:3px}
+  /* LIFESTYLE */
+  .lifestyle-section{background:var(--navy);padding:100px 48px}
+  .lifestyle-header{text-align:center;max-width:680px;margin:0 auto 64px}
+  .lifestyle-header .section-eyebrow{color:var(--teal)}
+  .lifestyle-header .section-title{color:var(--white)}
+  .lifestyle-header p{font-size:16px;line-height:1.8;color:rgba(255,255,255,0.65)}
+  .lifestyle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1280px;margin:0 auto}
+  .lifestyle-card{position:relative;border-radius:4px;overflow:hidden;aspect-ratio:4/3;cursor:default;background:#0a2040}
+  .lifestyle-card:first-child{grid-row:span 2;aspect-ratio:auto;min-height:560px}
+  .card-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease}
+  .lifestyle-card:hover .card-img{transform:scale(1.05)}
+  .card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(9,41,105,0.92) 0%,rgba(9,41,105,0.35) 50%,transparent 100%);transition:background 0.4s}
+  .lifestyle-card:hover .card-overlay{background:linear-gradient(to top,rgba(9,41,105,0.96) 0%,rgba(9,41,105,0.6) 60%,rgba(9,41,105,0.15) 100%)}
+  .card-content{position:absolute;bottom:0;left:0;right:0;padding:28px 24px}
+  .card-cat{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:8px}
+  .card-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:var(--white);line-height:1.25;margin-bottom:10px}
+  .card-desc{font-size:13px;line-height:1.65;color:rgba(255,255,255,0);max-height:0;overflow:hidden;transition:all 0.4s;margin-bottom:0}
+  .lifestyle-card:hover .card-desc{color:rgba(255,255,255,0.75);max-height:120px;margin-bottom:14px}
+  .card-tags{display:flex;flex-wrap:wrap;gap:6px}
+  .card-tag{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;background:rgba(212,175,55,0.18);border:1px solid rgba(212,175,55,0.35);color:var(--gold);border-radius:2px}
+  /* LAGOON FEATURE */
+  .feature-section{padding:100px 48px;background:var(--ivory)}
+  .feature-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  .feature-img-col{position:relative}
+  .feature-image{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:4px;display:block}
+  .feature-caption{position:absolute;bottom:0;left:0;right:0;padding:20px 24px;background:linear-gradient(to top,rgba(9,41,105,0.9),transparent);font-family:'Playfair Display',serif;font-size:19px;font-style:italic;color:var(--white);border-radius:0 0 4px 4px}
+  .feature-list{list-style:none;margin-top:24px}
+  .feature-list li{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid rgba(9,41,105,0.08);font-size:15px;color:#444;line-height:1.5}
+  .feature-list li:last-child{border-bottom:none}
+  .feature-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:7px}
+  /* MARKET */
+  .market-section{background:var(--charcoal);padding:80px 48px}
+  .market-inner{max-width:1000px;margin:0 auto;text-align:center}
+  .market-title{font-family:'Playfair Display',serif;font-size:38px;color:var(--white);margin-bottom:12px}
+  .market-title em{font-style:italic;color:var(--gold)}
+  .market-sub{font-size:14px;color:rgba(255,255,255,0.45);margin-bottom:56px;letter-spacing:1px}
+  .market-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-bottom:40px}
+  .market-stat{background:rgba(255,255,255,0.04);padding:36px 20px}
+  .market-stat-val{font-family:'Playfair Display',serif;font-size:42px;font-weight:600;color:var(--gold);display:block}
+  .market-stat-lbl{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);display:block;margin-top:8px}
+  .market-note{font-size:11px;color:rgba(255,255,255,0.25)}
+  /* CTA */
+  .cta-section{padding:120px 48px;background:linear-gradient(135deg,var(--navy) 0%,#0d3a6b 100%);text-align:center}
+  .cta-title{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,62px);font-weight:400;color:var(--white);line-height:1.15;margin-bottom:20px}
+  .cta-title em{font-style:italic;color:var(--gold)}
+  .cta-sub{font-size:16px;color:rgba(255,255,255,0.62);margin-bottom:48px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.75}
+  .cta-group{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  /* FOOTER */
+  footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rgba(255,255,255,0.06)}
+  .footer-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px}
+  .footer-logo-main{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--white);letter-spacing:3px}
+  .footer-logo-sub{font-size:10px;font-weight:500;letter-spacing:2.5px;color:var(--teal);text-transform:uppercase;margin-top:4px}
+  .footer-links{display:flex;gap:32px;flex-wrap:wrap}
+  .footer-links a{color:rgba(255,255,255,0.45);text-decoration:none;font-size:12px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;transition:color 0.3s}
+  .footer-links a:hover{color:var(--teal)}
+  .footer-serhant{font-size:11px;font-weight:700;letter-spacing:3px;color:var(--teal);text-transform:uppercase}
+  .footer-copy{text-align:center;margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.06);font-size:12px;color:rgba(255,255,255,0.22)}
+  /* CARD GRADIENT FALLBACKS */
+  .card-fallback-lagoon{background:linear-gradient(135deg,#0a2832 0%,#1a4a5a 100%)}
+  .card-fallback-bike{background:linear-gradient(135deg,#1a2808 0%,#2a4812 100%)}
+  .card-fallback-dining{background:linear-gradient(135deg,#2a1808 0%,#4a2812 100%)}
+  .card-fallback-toptracer{background:linear-gradient(135deg,#081828 0%,#0d2a40 100%)}
+  @media(max-width:1024px){.lifestyle-grid{grid-template-columns:repeat(2,1fr)}.lifestyle-card:first-child{grid-column:span 2;grid-row:span 1;aspect-ratio:16/7;min-height:auto}}
+  @media(max-width:768px){.site-nav{padding:20px 24px}.site-nav.scrolled{padding:14px 24px}.nav-links{display:none}.about-inner,.feature-inner{grid-template-columns:1fr;gap:48px}.lifestyle-grid{grid-template-columns:1fr}.lifestyle-card:first-child{grid-column:span 1;grid-row:span 1;aspect-ratio:4/3;min-height:unset}.market-grid{grid-template-columns:repeat(2,1fr)}.about-badge{display:none}}
 </style>
 </head>
 <body>
+
 <nav class="site-nav" id="siteNav">
   <ul class="nav-links">
     <li><a href="/neighborhoods">Neighborhoods</a></li>
@@ -68,90 +146,240 @@ footer .footer-copy{font-size:10px;letter-spacing:1px;border-top:1px solid rgba(
     <div class="nav-logo-sub">Best Hilton Head Properties</div>
   </a>
   <div style="display:flex;align-items:center;gap:32px">
-    <a href="/contact" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:11px;letter-spacing:2px;text-transform:uppercase">Contact</a>
+    <a href="/contact" class="nav-cta">Contact</a>
     <div class="nav-serhant">SERHANT.</div>
   </div>
 </nav>
 
-<section class="nbhd-hero">
-  <div class="nbhd-hero-content">
-    <div class="nbhd-eyebrow">Hilton Head Island &mdash; Neighborhoods</div>
-    <h1>Palmetto<br>Dunes</h1>
-    <p>A beloved resort community offering the perfect balance of beach access, world-class golf, and relaxed island living. Three championship courses, a 11-mile lagoon system, and miles of pristine Atlantic shoreline.</p>
-    <div class="nbhd-stats">
-      <div><div class="nbhd-stat-num">$1.35M</div><div class="nbhd-stat-label">Avg. Sale Price</div></div>
-      <div><div class="nbhd-stat-num">14</div><div class="nbhd-stat-label">Days on Market</div></div>
-      <div><div class="nbhd-stat-num">31</div><div class="nbhd-stat-label">Active Listings</div></div>
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-bg" src="https://www.palmettodunes.com/assets/masthead/golf-videobackground-masthead.jpg" alt="Aerial view of Palmetto Dunes oceanfront resort and championship golf courses" loading="eager">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Hilton Head Island · South Carolina</div>
+    <h1 class="hero-title">Palmetto<br><em>Dunes</em></h1>
+    <p class="hero-sub">Hilton Head's Premier Oceanfront Resort Community</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="hero-stat-val">2,000</span><span class="hero-stat-lbl">Acres of Resort</span></div>
+      <div class="hero-stat"><span class="hero-stat-val">3</span><span class="hero-stat-lbl">Championship Courses</span></div>
+      <div class="hero-stat"><span class="hero-stat-val">3 mi</span><span class="hero-stat-lbl">Private Beach</span></div>
+      <div class="hero-stat"><span class="hero-stat-val">11 mi</span><span class="hero-stat-lbl">Signature Lagoon</span></div>
+    </div>
+    <div class="hero-cta-group">
+      <a href="/contact" class="btn-primary">Explore Homes</a>
+      <a href="#lifestyle" class="btn-outline">Discover the Lifestyle</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><div class="scroll-line"></div><span>Scroll</span></div>
+</section>
+
+<!-- STATS BAND -->
+<div class="stats-band">
+  <div class="stat-item"><div class="stat-val">3</div><div class="stat-lbl">Championship Courses</div></div>
+  <div class="stat-item"><div class="stat-val">11 mi</div><div class="stat-lbl">Lagoon System</div></div>
+  <div class="stat-item"><div class="stat-val">17</div><div class="stat-lbl">Clay Tennis Courts</div></div>
+  <div class="stat-item"><div class="stat-val">3 mi</div><div class="stat-lbl">Oceanfront Beach</div></div>
+  <div class="stat-item"><div class="stat-val">Top 50</div><div class="stat-lbl">US Tennis Resort</div></div>
+</div>
+
+<!-- ABOUT -->
+<section class="about-section">
+  <div class="about-inner">
+    <div>
+      <div class="section-eyebrow">Where Ocean Meets Championship Living</div>
+      <h2 class="section-title">Hilton Head's <em>Most Celebrated</em> Oceanfront Community</h2>
+      <p class="section-body">Stretching across 2,000 lush acres along Hilton Head Island's most coveted Atlantic coastline, Palmetto Dunes Oceanfront Resort is a masterwork of resort living. Three miles of pristine private beach frame a community designed for those who demand the extraordinary — from three world-class championship golf courses to an 11-mile interconnected lagoon system that winds through the heart of the resort, offering unmatched water frontage and natural beauty at every turn.</p>
+      <div class="quote-card">
+        <p>"Palmetto Dunes is where oceanfront living meets championship sport — a rare 2,000-acre canvas of beach, lagoon, and fairway that defines the Hilton Head lifestyle at its finest."</p>
+        <cite>— BHHP Advisory Team</cite>
+      </div>
+    </div>
+    <div class="about-image-wrap">
+      <img class="about-image" src="https://www.palmettodunes.com/assets/masthead/beach-videobackground-masthead.jpg" alt="Palmetto Dunes private oceanfront beach on Hilton Head Island" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#061828,#0d2a40)';this.alt=''">
+      <div class="about-badge"><div class="badge-val">Top 50</div><div class="badge-lbl">US Tennis Resort · Tennis Mag</div></div>
     </div>
   </div>
 </section>
 
-<div class="nbhd-body">
-  <div class="nbhd-intro">
+<!-- LIFESTYLE WIDGET -->
+<section class="lifestyle-section" id="lifestyle">
+  <div class="lifestyle-header">
+    <div class="section-eyebrow">Resort · Sport · Nature</div>
+    <h2 class="section-title">A Life <em>Unlike Any Other</em></h2>
+    <p>Three championship golf courses, private oceanfront, a one-of-a-kind lagoon system, and Shelter Cove Harbour — Palmetto Dunes delivers an unrivaled collection of resort experiences across 2,000 private acres.</p>
+  </div>
+  <div class="lifestyle-grid">
+
+    <!-- Card 1 (tall): Championship Golf -->
+    <div class="lifestyle-card">
+      <img class="card-img" src="https://www.palmettodunes.com/assets/masthead/golf-videobackground-masthead.jpg" alt="Championship golf courses at Palmetto Dunes with ocean views" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#0a1828,#1a3a5a)'">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-cat">World-Class Golf</div>
+        <div class="card-title">Three Championship Courses</div>
+        <p class="card-desc">The Robert Trent Jones oceanfront layout, George Fazio's classic design, and Arthur Hills' signature course — three distinct championship experiences in one resort, with the Atlantic as your backdrop.</p>
+        <div class="card-tags"><span class="card-tag">Robert Trent Jones</span><span class="card-tag">George Fazio</span><span class="card-tag">Arthur Hills</span><span class="card-tag">Toptracer Range</span></div>
+      </div>
+    </div>
+
+    <!-- Card 2: Private Beach -->
+    <div class="lifestyle-card">
+      <img class="card-img" src="https://www.palmettodunes.com/assets/masthead/beach-videobackground-masthead.jpg" alt="Three miles of private Atlantic beach at Palmetto Dunes" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#061828,#0d3050)'">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-cat">Private Oceanfront</div>
+        <div class="card-title">3 Miles of Atlantic Beach</div>
+        <p class="card-desc">Three uninterrupted miles of pristine Atlantic coastline — one of the most generous stretches of private beach on Hilton Head Island. Sunrise swims, sunset walks, and dolphin sightings are simply part of daily life.</p>
+        <div class="card-tags"><span class="card-tag">3 Miles Private</span><span class="card-tag">Beach Rentals</span><span class="card-tag">Oceanfront Homes</span></div>
+      </div>
+    </div>
+
+    <!-- Card 3: Tennis -->
+    <div class="lifestyle-card">
+      <img class="card-img" src="https://www.palmettodunes.com/assets/masthead/TennisNewVideo-masthead.jpg" alt="17 championship clay tennis courts at Palmetto Dunes" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#0a2020,#1a4040)'">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-cat">Racquet Sports</div>
+        <div class="card-title">17 Clay Courts · Top 50 US</div>
+        <p class="card-desc">Named one of the Top 50 US Tennis Resorts by Tennis Magazine. Seventeen Har-Tru clay courts, a world-class pickleball center, professional instruction, round robins, and clinics for every level.</p>
+        <div class="card-tags"><span class="card-tag">17 Har-Tru Clay Courts</span><span class="card-tag">Pickleball Center</span><span class="card-tag">Tennis Magazine Top 50</span></div>
+      </div>
+    </div>
+
+    <!-- Card 4: Shelter Cove Harbour -->
+    <div class="lifestyle-card">
+      <img class="card-img" src="https://www.palmettodunes.com/assets/masthead/marina-videobackground-masthead.jpg" alt="Shelter Cove Harbour and Marina at Palmetto Dunes" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#0a1828,#0d3050)'">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-cat">Harbour Living</div>
+        <div class="card-title">Shelter Cove Harbour & Marina</div>
+        <p class="card-desc">A vibrant waterfront village at the heart of Palmetto Dunes — boutique marina, al fresco dining, live entertainment, sunset cruises, and year-round events. Shelter Cove is where the community gathers.</p>
+        <div class="card-tags"><span class="card-tag">Full-Service Marina</span><span class="card-tag">Waterfront Dining</span><span class="card-tag">Live Entertainment</span></div>
+      </div>
+    </div>
+
+    <!-- Card 5: 11-Mile Lagoon -->
+    <div class="lifestyle-card card-fallback-lagoon">
+      <img class="card-img" src="https://www.palmettodunes.com/assets/masthead/beach-videobackground-masthead.jpg" alt="The 11-mile lagoon system winding through Palmetto Dunes" loading="lazy" style="opacity:0.4" onerror="this.style.opacity='0'">
+      <div class="card-overlay" style="background:linear-gradient(to top,rgba(6,24,40,0.95) 0%,rgba(10,40,60,0.5) 60%,transparent 100%)"></div>
+      <div class="card-content">
+        <div class="card-cat">Natural Wonder</div>
+        <div class="card-title">11-Mile Lagoon System</div>
+        <p class="card-desc">A defining feature unlike anything in the Lowcountry — 11 continuous miles of interconnected tidal lagoon wind through the resort, creating extraordinary water-view homesites and a living ecosystem home to herons, otters, and bass.</p>
+        <div class="card-tags"><span class="card-tag">11 Miles Continuous</span><span class="card-tag">Kayak & Fishing</span><span class="card-tag">Water-View Homesites</span></div>
+      </div>
+    </div>
+
+    <!-- Card 6: Biking & Nature -->
+    <div class="lifestyle-card card-fallback-bike">
+      <img class="card-img" src="https://www.palmettodunes.com/assets/masthead/golf-videobackground-masthead.jpg" alt="Biking and outdoor activities at Palmetto Dunes resort" loading="lazy" style="opacity:0.35" onerror="this.style.opacity='0'">
+      <div class="card-overlay" style="background:linear-gradient(to top,rgba(10,20,6,0.95) 0%,rgba(20,40,12,0.5) 60%,transparent 100%)"></div>
+      <div class="card-content">
+        <div class="card-cat">Outdoor Living</div>
+        <div class="card-title">200+ Miles of Biking & Nature</div>
+        <p class="card-desc">Hilton Head Island's famed 200+ miles of paved bike paths begin at your doorstep. Explore the resort's nature trails, rent bikes and beach gear from Hilton Head Outfitters, or cast a line in the lagoon at dawn.</p>
+        <div class="card-tags"><span class="card-tag">Bike Rentals</span><span class="card-tag">Nature Trails</span><span class="card-tag">Fishing Charters</span></div>
+      </div>
+    </div>
+
+    <!-- Card 7: Dining & Entertainment -->
+    <div class="lifestyle-card card-fallback-dining">
+      <div class="card-overlay" style="background:linear-gradient(to top,rgba(30,10,0,0.97) 0%,rgba(60,20,0,0.6) 60%,rgba(30,10,0,0.3) 100%)"></div>
+      <div class="card-content">
+        <div class="card-cat">Dining & Nightlife</div>
+        <div class="card-title">Waterfront Dining at Shelter Cove</div>
+        <p class="card-desc">From casual dockside lunches to elegant waterfront dinners — Shelter Cove's dining scene rivals any destination resort. Sunset views, fresh Lowcountry seafood, and live music every evening.</p>
+        <div class="card-tags"><span class="card-tag">Waterfront Restaurants</span><span class="card-tag">Live Music</span><span class="card-tag">Hilton Head Outfitters</span></div>
+      </div>
+    </div>
+
+    <!-- Card 8: Watersports -->
+    <div class="lifestyle-card">
+      <img class="card-img" src="https://www.palmettodunes.com/assets/masthead/marina-videobackground-masthead.jpg" alt="Watersports and boat tours at Palmetto Dunes marina" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#0a1828,#0d3050)'">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-cat">Water Adventure</div>
+        <div class="card-title">Cruises, Charters & Watersports</div>
+        <p class="card-desc">Pontoon boat rentals, dolphin watching cruises, kayaking, paddleboarding, deep-sea fishing charters, and sunset tours — the Atlantic and Intracoastal are yours to explore from Shelter Cove's full-service marina.</p>
+        <div class="card-tags"><span class="card-tag">Boat Rentals</span><span class="card-tag">Dolphin Cruises</span><span class="card-tag">Fishing Charters</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LAGOON FEATURE SECTION -->
+<section class="feature-section">
+  <div class="feature-inner">
+    <div class="feature-img-col">
+      <img class="feature-image" src="https://www.palmettodunes.com/assets/masthead/golf-videobackground-masthead.jpg" alt="Aerial view of Palmetto Dunes lagoon system and golf courses" loading="lazy" onerror="this.style.background='linear-gradient(135deg,#0a1828,#1a3a5a)'">
+      <div class="feature-caption">"A 2,000-acre sanctuary where ocean, lagoon, and fairway converge."</div>
+    </div>
     <div>
-      <h2>Where Resort Living<br>Meets Island Authenticity</h2>
-      <p>Palmetto Dunes is one of Hilton Head&rsquo;s most popular and well-rounded resort communities. Spanning 2,000 acres along the Atlantic Ocean, it offers an exceptional variety of property types &mdash; from oceanfront villas and golf course homes to lagoon-side condominiums perfect for vacation rentals.</p>
-      <p>What sets Palmetto Dunes apart is its remarkable 11-mile lagoon system, which winds through the entire community, offering kayaking, paddleboarding, and fishing right from many backyards. It&rsquo;s the kind of amenity that turns a vacation property into a lifestyle.</p>
-    </div>
-    <div>
-      <p style="font-size:15px;color:#555;line-height:1.9;margin-bottom:16px">Three championship golf courses &mdash; Robert Trent Jones, George Fazio, and Arthur Hills &mdash; provide variety and challenge for golfers of every level, while the Palmetto Dunes Tennis & Pickleball Center ranks among the top facilities on the East Coast.</p>
-      <p style="font-size:15px;color:#555;line-height:1.9">The community&rsquo;s Shelter Cove Harbour adds a marina village dimension with boutique shops, waterfront dining, and regular evening concerts during the season. Palmetto Dunes consistently delivers an exceptional blend of amenities at a more accessible price point than Sea Pines or Wexford.</p>
-    </div>
-  </div>
-
-  <div class="feature-grid">
-    <div class="feature-card">
-      <h3>Three Golf Courses</h3>
-      <p>Robert Trent Jones, George Fazio, and Arthur Hills courses offer 54 holes of championship golf through some of the island&rsquo;s most scenic landscapes.</p>
-    </div>
-    <div class="feature-card">
-      <h3>11-Mile Lagoon System</h3>
-      <p>A continuous 11-mile waterway winds through the community &mdash; ideal for kayaking, paddleboarding, and catch-and-release fishing.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Oceanfront Access</h3>
-      <p>Miles of protected Atlantic beachfront accessible to all residents, with beach equipment rentals and seasonal lifeguard services.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Tennis &amp; Pickleball</h3>
-      <p>The Palmetto Dunes Tennis &amp; Pickleball Center ranks among the finest facilities on the East Coast, with 23 courts and a full pro staff.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Shelter Cove Harbour</h3>
-      <p>A charming marina village with waterfront dining, boutique shopping, and the popular Tuesday night outdoor concert series.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Vacation Rental Ready</h3>
-      <p>Many Palmetto Dunes properties are approved for short-term rental, making them ideal investment properties with strong seasonal income potential.</p>
+      <div class="section-eyebrow">The Palmetto Dunes Difference</div>
+      <h2 class="section-title">An <em>11-Mile Lagoon</em> Like No Other</h2>
+      <p class="section-body">The resort's iconic 11-mile continuous lagoon system is arguably Hilton Head's most extraordinary natural feature — a living, tidal waterway that winds through every neighborhood, creating one of the highest concentrations of waterfront homesites on the entire island.</p>
+      <ul class="feature-list">
+        <li>Over 11 continuous miles of interconnected tidal lagoon throughout the resort</li>
+        <li>Abundant water-view homesites offering lagoon frontage at all price points</li>
+        <li>World-class bass fishing, kayaking, and paddleboarding directly from your backyard</li>
+        <li>Rich Lowcountry ecosystem — herons, egrets, otters, and native wildlife</li>
+        <li>Three championship courses designed in harmony with the lagoon landscape</li>
+        <li>Toptracer Golf Range: cutting-edge technology for practice and entertainment</li>
+        <li>Shelter Cove Harbour: full-service marina with dining, retail, and live events</li>
+      </ul>
     </div>
   </div>
+</section>
 
-  <div class="market-snapshot">
-    <div class="market-item"><div class="market-num">$1.35M</div><div class="market-label">Avg. Sale Price</div></div>
-    <div class="market-item"><div class="market-num">14</div><div class="market-label">Median Days on Market</div></div>
-    <div class="market-item"><div class="market-num">97%</div><div class="market-label">List-to-Sale Ratio</div></div>
-    <div class="market-item"><div class="market-num">31</div><div class="market-label">Active Listings</div></div>
+<!-- MARKET SNAPSHOT -->
+<section class="market-section">
+  <div class="market-inner">
+    <h2 class="market-title">Palmetto Dunes <em>Market Snapshot</em></h2>
+    <p class="market-sub">Current real estate data · Palmetto Dunes & Shelter Cove · Hilton Head Island</p>
+    <div class="market-grid">
+      <div class="market-stat"><span class="market-stat-val">$1.35M</span><span class="market-stat-lbl">Average Sale Price</span></div>
+      <div class="market-stat"><span class="market-stat-val">14</span><span class="market-stat-lbl">Days on Market</span></div>
+      <div class="market-stat"><span class="market-stat-val">97%</span><span class="market-stat-lbl">List-to-Sale Ratio</span></div>
+      <div class="market-stat"><span class="market-stat-val">31</span><span class="market-stat-lbl">Active Listings</span></div>
+    </div>
+    <p class="market-note">Data reflects recent transactions. Contact BHHP for current detailed market analysis.</p>
   </div>
+</section>
 
-  <div class="nbhd-cta">
-    <h2>Explore Palmetto Dunes</h2>
-    <p>Whether you&rsquo;re looking for a primary residence, vacation home, or investment property, Palmetto Dunes delivers.</p>
-    <a href="/contact" class="btn-primary">Schedule a Consultation</a>
-    <a href="/listings" class="btn-secondary">View Current Listings</a>
+<!-- CTA -->
+<section class="cta-section">
+  <h2 class="cta-title">Ready to Own a Piece of<br><em>Palmetto Dunes?</em></h2>
+  <p class="cta-sub">From oceanfront villas to lagoon-view estates and golf-front retreats — BHHP's white-glove advisory service guides you to the perfect home in Hilton Head's most celebrated resort community.</p>
+  <div class="cta-group">
+    <a href="/contact" class="btn-primary">Request a Private Consultation</a>
+    <a href="/neighborhoods" class="btn-outline">Explore All Communities</a>
   </div>
-</div>
+</section>
 
+<!-- FOOTER -->
 <footer>
-  <div class="footer-brand">Best Hilton Head Properties</div>
-  <div class="footer-tagline">SERHANT. Exclusive Partner</div>
-  <ul class="footer-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/neighborhoods">Neighborhoods</a></li>
-    <li><a href="/our-story">Our Story</a></li>
-    <li><a href="/contact">Contact</a></li>
-  </ul>
-  <div class="footer-copy">&copy; 2025 Best Hilton Head Properties &mdash; SERHANT. All rights reserved.</div>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo-main">BHHP</div>
+      <div class="footer-logo-sub">Best Hilton Head Properties</div>
+    </div>
+    <nav class="footer-links">
+      <a href="/neighborhoods">Neighborhoods</a>
+      <a href="/listings">Listings</a>
+      <a href="/our-story">Our Story</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <div class="footer-serhant">SERHANT.</div>
+  </div>
+  <div class="footer-copy">© 2025 Best Hilton Head Properties · Licensed Real Estate Broker · Hilton Head Island, South Carolina</div>
 </footer>
-<script>var nav=document.getElementById('siteNav');if(nav)window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>50)});</script>
+
+<script>
+  const nav = document.getElementById('siteNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+</script>
 </body>
-                                                                                                 </html>
+</html>
