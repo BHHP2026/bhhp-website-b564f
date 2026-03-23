@@ -4,60 +4,143 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hilton Head Plantation — Hilton Head Island | Best Hilton Head Properties</title>
+<meta name="description" content="Hilton Head Plantation: Hilton Head Island's largest gated community. 4,000+ acres, four championship golf courses, Skull Creek Marina, private beach access, and miles of nature trails. Explore homes with BHHP.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--navy:#092969;--teal:#81D8D0;--gold:#D4AF37;--ivory:#F5EFE0;--white:#FFFFFF;--charcoal:#111111;--text:#333333;--light:#f7f7f5}
-body{font-family:'Montserrat',sans-serif;color:var(--charcoal);background:var(--white)}
-.site-nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:24px 48px;display:flex;align-items:center;justify-content:space-between;transition:all 0.4s ease;background:transparent}
-.site-nav.scrolled{background:rgba(9,41,105,0.97);backdrop-filter:blur(12px);padding:16px 48px;box-shadow:0 2px 30px rgba(0,0,0,0.3)}
-.nav-logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#fff;letter-spacing:3px}
-.nav-logo-sub{font-size:8px;letter-spacing:2px;color:rgba(255,255,255,0.6);text-transform:uppercase;margin-top:2px}
-.nav-links{display:flex;align-items:center;gap:32px;list-style:none}
-.nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:11px;letter-spacing:2px;text-transform:uppercase;transition:color 0.3s}
-.nav-links a:hover{color:var(--gold)}
-.nav-serhant{font-family:'Playfair Display',serif;font-size:13px;letter-spacing:2px;color:rgba(255,255,255,0.7);border-left:1px solid rgba(255,255,255,0.2);padding-left:24px}
-.nbhd-hero{min-height:85vh;background:linear-gradient(160deg,#092969 0%,#0a3d6b 45%,#0d5080 100%);display:flex;align-items:flex-end;padding:0 80px 80px;position:relative;overflow:hidden}
-.nbhd-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 65% 45%,rgba(212,175,55,0.14) 0%,transparent 58%)}
-.nbhd-hero-content{position:relative;z-index:1;max-width:700px}
-.nbhd-eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:20px}
-.nbhd-hero h1{font-family:'Playfair Display',serif;font-size:clamp(48px,6vw,80px);font-weight:400;color:#fff;line-height:1.05;margin-bottom:24px}
-.nbhd-hero p{font-size:16px;color:rgba(255,255,255,0.75);line-height:1.8;max-width:540px;margin-bottom:40px}
-.nbhd-stats{display:flex;gap:48px}
-.nbhd-stat-num{font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#fff;line-height:1}
-.nbhd-stat-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:4px}
-.nbhd-body{max-width:1200px;margin:0 auto;padding:100px 80px}
-.nbhd-intro{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-bottom:100px}
-.nbhd-intro h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3vw,40px);font-weight:400;color:var(--navy);line-height:1.3;margin-bottom:24px}
-.nbhd-intro p{font-size:15px;color:#555;line-height:1.9;margin-bottom:16px}
-.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-bottom:80px}
-.feature-card{padding:40px 32px;background:var(--light);border-top:3px solid var(--teal)}
-.feature-card h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:var(--navy);margin-bottom:12px}
-.feature-card p{font-size:13px;color:#666;line-height:1.8}
-.market-snapshot{background:var(--navy);padding:80px;margin:0 -80px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:0}
-.market-item{padding:0 40px;border-right:1px solid rgba(255,255,255,0.1);text-align:center}
-.market-item:last-child{border-right:none}
-.market-num{font-family:'Playfair Display',serif;font-size:48px;font-weight:400;color:#fff;line-height:1;margin-bottom:8px}
-.market-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5)}
-.nbhd-cta{text-align:center;padding:100px 0 0}
-.nbhd-cta h2{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,48px);font-weight:400;color:var(--navy);margin-bottom:20px}
-.nbhd-cta p{font-size:15px;color:#666;max-width:460px;margin:0 auto 36px;line-height:1.8}
-.btn-primary{display:inline-block;padding:18px 48px;background:var(--navy);color:#fff;text-decoration:none;font-size:11px;letter-spacing:3px;text-transform:uppercase;transition:all 0.3s;margin:0 8px}
-.btn-primary:hover{background:var(--gold);color:var(--navy)}
-.btn-secondary{display:inline-block;padding:17px 48px;border:1px solid var(--navy);color:var(--navy);text-decoration:none;font-size:11px;letter-spacing:3px;text-transform:uppercase;transition:all 0.3s;margin:0 8px}
-.btn-secondary:hover{background:var(--navy);color:#fff}
-footer{background:var(--charcoal);padding:60px 80px 40px;color:rgba(255,255,255,0.5);font-size:12px;text-align:center}
-footer .footer-brand{font-family:'Playfair Display',serif;font-size:22px;color:#fff;margin-bottom:8px}
-footer .footer-tagline{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:32px}
-footer .footer-links{display:flex;justify-content:center;gap:32px;margin-bottom:32px;list-style:none}
-footer .footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:11px;letter-spacing:1px;text-transform:uppercase;transition:color 0.3s}
-footer .footer-links a:hover{color:var(--gold)}
-footer .footer-copy{font-size:10px;letter-spacing:1px;border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;margin-top:24px}
+  :root{--navy:#092969;--teal:#81D8D0;--gold:#D4AF37;--ivory:#F5EFE0;--white:#FFFFFF;--charcoal:#111111}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Montserrat',sans-serif;color:var(--charcoal);background:var(--white);overflow-x:hidden}
+  /* NAV */
+  .site-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:24px 48px;transition:all 0.4s ease}
+  .site-nav.scrolled{background:rgba(9,41,105,0.97);backdrop-filter:blur(12px);padding:14px 48px;box-shadow:0 4px 30px rgba(0,0,0,0.25)}
+  .nav-logo-main{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--white);letter-spacing:3px}
+  .nav-logo-sub{font-size:9px;font-weight:500;letter-spacing:2.5px;color:var(--teal);text-transform:uppercase;text-align:center;margin-top:2px}
+  .nav-links{display:flex;gap:32px;list-style:none}
+  .nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;transition:color 0.3s}
+  .nav-links a:hover{color:var(--teal)}
+  .nav-cta{color:var(--white);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:10px 22px;border:1px solid rgba(255,255,255,0.4);border-radius:2px;transition:all 0.3s}
+  .nav-cta:hover{background:var(--teal);border-color:var(--teal);color:var(--navy)}
+  .nav-serhant{font-size:11px;font-weight:700;letter-spacing:3px;color:var(--teal);text-transform:uppercase}
+  /* HERO */
+  .hero{position:relative;height:100vh;min-height:700px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#05111e}
+  .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0.5}
+  .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(5,17,30,0.5) 0%,rgba(5,17,30,0.15) 40%,rgba(9,41,105,0.85) 100%)}
+  .hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;max-width:960px}
+  .hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:12px}
+  .hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:40px;height:1px;background:var(--teal);opacity:0.6}
+  .hero-title{font-family:'Playfair Display',serif;font-size:clamp(48px,7vw,92px);font-weight:400;color:var(--white);line-height:1.0;letter-spacing:-1px;margin-bottom:10px}
+  .hero-title em{font-style:italic;color:var(--teal)}
+  .hero-sub{font-size:14px;font-weight:300;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:40px}
+  .hero-stats{display:flex;align-items:center;justify-content:center;margin-bottom:48px;flex-wrap:wrap}
+  .hero-stat{padding:0 28px;border-right:1px solid rgba(255,255,255,0.2);text-align:center}
+  .hero-stat:last-child{border-right:none}
+  .hero-stat-val{font-family:'Playfair Display',serif;font-size:28px;font-weight:600;color:var(--gold);display:block}
+  .hero-stat-lbl{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.6);display:block;margin-top:5px}
+  .hero-cta-group{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  .btn-primary{padding:16px 36px;background:var(--gold);color:var(--navy);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:all 0.3s}
+  .btn-primary:hover{background:#c9a227;transform:translateY(-2px)}
+  .btn-outline{padding:16px 36px;border:1px solid rgba(255,255,255,0.45);color:var(--white);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:all 0.3s}
+  .btn-outline:hover{border-color:var(--teal);color:var(--teal)}
+  .scroll-hint{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,0.45);font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase}
+  .scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,rgba(255,255,255,0.5),transparent);animation:scrollPulse 2s ease-in-out infinite}
+  @keyframes scrollPulse{0%,100%{opacity:0.4}50%{opacity:1}}
+  /* STATS BAND */
+  .stats-band{background:var(--navy);padding:26px 48px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0}
+  .stat-item{padding:0 36px;border-right:1px solid rgba(255,255,255,0.15);text-align:center}
+  .stat-item:last-child{border-right:none}
+  .stat-val{font-family:'Playfair Display',serif;font-size:30px;font-weight:600;color:var(--gold)}
+  .stat-lbl{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-top:3px}
+  /* ABOUT */
+  .about-section{padding:100px 48px;background:var(--white)}
+  .about-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  .section-eyebrow{font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:16px}
+  .section-title{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,50px);font-weight:400;color:var(--navy);line-height:1.15;margin-bottom:24px}
+  .section-title em{font-style:italic;color:var(--gold)}
+  .section-body{font-size:16px;line-height:1.8;color:#444;margin-bottom:32px}
+  .quote-card{padding:28px 32px;border-left:3px solid var(--gold);background:var(--ivory);border-radius:0 6px 6px 0}
+  .quote-card p{font-family:'Playfair Display',serif;font-size:19px;font-style:italic;color:var(--navy);line-height:1.6}
+  .quote-card cite{display:block;margin-top:14px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--teal);font-style:normal}
+  .about-image-wrap{position:relative}
+  .about-image{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;display:block}
+  .about-badge{position:absolute;bottom:-20px;right:-20px;width:110px;height:110px;border-radius:50%;background:var(--navy);border:4px solid var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px}
+  .badge-val{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--gold);line-height:1.1}
+  .badge-lbl{font-size:8px;font-weight:600;letter-spacing:1px;color:var(--teal);text-transform:uppercase;line-height:1.4;margin-top:3px}
+  /* LIFESTYLE */
+  .lifestyle-section{background:var(--navy);padding:100px 48px}
+  .lifestyle-header{text-align:center;max-width:680px;margin:0 auto 64px}
+  .lifestyle-header .section-eyebrow{color:var(--teal)}
+  .lifestyle-header .section-title{color:var(--white)}
+  .lifestyle-header p{font-size:16px;line-height:1.8;color:rgba(255,255,255,0.65)}
+  .lifestyle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1280px;margin:0 auto}
+  .lifestyle-card{position:relative;border-radius:4px;overflow:hidden;aspect-ratio:4/3;cursor:default}
+  .lifestyle-card:first-child{grid-row:span 2;aspect-ratio:auto;min-height:560px}
+  .card-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease}
+  .lifestyle-card:hover .card-bg{transform:scale(1.05)}
+  .card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(9,41,105,0.92) 0%,rgba(9,41,105,0.35) 50%,transparent 100%);transition:background 0.4s}
+  .lifestyle-card:hover .card-overlay{background:linear-gradient(to top,rgba(9,41,105,0.96) 0%,rgba(9,41,105,0.6) 60%,rgba(9,41,105,0.15) 100%)}
+  .card-content{position:absolute;bottom:0;left:0;right:0;padding:28px 24px}
+  .card-cat{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:8px}
+  .card-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:var(--white);line-height:1.25;margin-bottom:10px}
+  .card-desc{font-size:13px;line-height:1.65;color:rgba(255,255,255,0);max-height:0;overflow:hidden;transition:all 0.4s;margin-bottom:0}
+  .lifestyle-card:hover .card-desc{color:rgba(255,255,255,0.75);max-height:120px;margin-bottom:14px}
+  .card-tags{display:flex;flex-wrap:wrap;gap:6px}
+  .card-tag{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;background:rgba(212,175,55,0.18);border:1px solid rgba(212,175,55,0.35);color:var(--gold);border-radius:2px}
+  /* GRADIENT CARD BACKGROUNDS */
+  .bg-golf{background:linear-gradient(145deg,#081a10 0%,#0f3020 40%,#1a4a30 100%)}
+  .bg-marina{background:linear-gradient(145deg,#040e1a 0%,#072040 50%,#0a3060 100%)}
+  .bg-beach{background:linear-gradient(145deg,#060c18 0%,#091a35 50%,#0d2a50 100%)}
+  .bg-tennis{background:linear-gradient(145deg,#0a1808 0%,#162a10 50%,#1e3c18 100%)}
+  .bg-nature{background:linear-gradient(145deg,#08100a 0%,#0f2012 50%,#183020 100%)}
+  .bg-history{background:linear-gradient(145deg,#180c04 0%,#2a1508 50%,#3a2010 100%)}
+  .bg-dining{background:linear-gradient(145deg,#120808 0%,#201010 50%,#301818 100%)}
+  .bg-security{background:linear-gradient(145deg,#060a18 0%,#0a1228 50%,#101c3a 100%)}
+  /* FEATURE SECTION */
+  .feature-section{padding:100px 48px;background:var(--ivory)}
+  .feature-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  .feature-img-col{position:relative}
+  .feature-image{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:4px;display:block;background:linear-gradient(145deg,#081a10 0%,#1a4a30 100%)}
+  .feature-caption{position:absolute;bottom:0;left:0;right:0;padding:20px 24px;background:linear-gradient(to top,rgba(9,41,105,0.9),transparent);font-family:'Playfair Display',serif;font-size:19px;font-style:italic;color:var(--white);border-radius:0 0 4px 4px}
+  .feature-list{list-style:none;margin-top:24px}
+  .feature-list li{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid rgba(9,41,105,0.08);font-size:15px;color:#444;line-height:1.5}
+  .feature-list li:last-child{border-bottom:none}
+  .feature-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:7px}
+  /* MARKET */
+  .market-section{background:var(--charcoal);padding:80px 48px}
+  .market-inner{max-width:1000px;margin:0 auto;text-align:center}
+  .market-title{font-family:'Playfair Display',serif;font-size:38px;color:var(--white);margin-bottom:12px}
+  .market-title em{font-style:italic;color:var(--gold)}
+  .market-sub{font-size:14px;color:rgba(255,255,255,0.45);margin-bottom:56px;letter-spacing:1px}
+  .market-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-bottom:40px}
+  .market-stat{background:rgba(255,255,255,0.04);padding:36px 20px}
+  .market-stat-val{font-family:'Playfair Display',serif;font-size:42px;font-weight:600;color:var(--gold);display:block}
+  .market-stat-lbl{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);display:block;margin-top:8px}
+  .market-note{font-size:11px;color:rgba(255,255,255,0.25)}
+  /* CTA */
+  .cta-section{padding:120px 48px;background:linear-gradient(135deg,var(--navy) 0%,#0d3a6b 100%);text-align:center}
+  .cta-title{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,62px);font-weight:400;color:var(--white);line-height:1.15;margin-bottom:20px}
+  .cta-title em{font-style:italic;color:var(--gold)}
+  .cta-sub{font-size:16px;color:rgba(255,255,255,0.62);margin-bottom:48px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.75}
+  .cta-group{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  /* FOOTER */
+  footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rgba(255,255,255,0.06)}
+  .footer-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px}
+  .footer-logo-main{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--white);letter-spacing:3px}
+  .footer-logo-sub{font-size:10px;font-weight:500;letter-spacing:2.5px;color:var(--teal);text-transform:uppercase;margin-top:4px}
+  .footer-links{display:flex;gap:32px;flex-wrap:wrap}
+  .footer-links a{color:rgba(255,255,255,0.45);text-decoration:none;font-size:12px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;transition:color 0.3s}
+  .footer-links a:hover{color:var(--teal)}
+  .footer-serhant{font-size:11px;font-weight:700;letter-spacing:3px;color:var(--teal);text-transform:uppercase}
+  .footer-copy{text-align:center;margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.06);font-size:12px;color:rgba(255,255,255,0.22)}
+  /* RESPONSIVE */
+  @media(max-width:1024px){.lifestyle-grid{grid-template-columns:repeat(2,1fr)}.lifestyle-card:first-child{grid-column:span 2;grid-row:span 1;aspect-ratio:16/7;min-height:auto}}
+  @media(max-width:768px){.site-nav{padding:20px 24px}.site-nav.scrolled{padding:14px 24px}.nav-links{display:none}.about-inner,.feature-inner{grid-template-columns:1fr;gap:48px}.lifestyle-grid{grid-template-columns:1fr}.lifestyle-card:first-child{grid-column:span 1;grid-row:span 1;aspect-ratio:4/3;min-height:unset}.market-grid{grid-template-columns:repeat(2,1fr)}.about-badge{display:none}}
 </style>
 </head>
 <body>
+
 <nav class="site-nav" id="siteNav">
   <ul class="nav-links">
     <li><a href="/neighborhoods">Neighborhoods</a></li>
@@ -68,90 +151,248 @@ footer .footer-copy{font-size:10px;letter-spacing:1px;border-top:1px solid rgba(
     <div class="nav-logo-sub">Best Hilton Head Properties</div>
   </a>
   <div style="display:flex;align-items:center;gap:32px">
-    <a href="/contact" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:11px;letter-spacing:2px;text-transform:uppercase">Contact</a>
+    <a href="/contact" class="nav-cta">Contact</a>
     <div class="nav-serhant">SERHANT.</div>
   </div>
 </nav>
 
-<section class="nbhd-hero">
-  <div class="nbhd-hero-content">
-    <div class="nbhd-eyebrow">Hilton Head Island &mdash; Neighborhoods</div>
-    <h1>Hilton Head<br>Plantation</h1>
-    <p>The island&rsquo;s largest gated community &mdash; nearly 4,000 acres of Lowcountry living with Intracoastal Waterway frontage, four golf courses, and an unmatched breadth of amenities at an accessible price point.</p>
-    <div class="nbhd-stats">
-      <div><div class="nbhd-stat-num">$950K</div><div class="nbhd-stat-label">Avg. Sale Price</div></div>
-      <div><div class="nbhd-stat-num">15</div><div class="nbhd-stat-label">Days on Market</div></div>
-      <div><div class="nbhd-stat-num">38</div><div class="nbhd-stat-label">Active Listings</div></div>
+<!-- HERO — full bleed gradient with CSS-painted scene -->
+<section class="hero">
+  <!-- Layered CSS sky/water scene -->
+  <div style="position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse at 30% 60%,#1a4a30 0%,#0a2818 30%,#051018 60%,#040c18 100%)"></div>
+  <!-- Subtle shimmer layer -->
+  <div style="position:absolute;inset:0;z-index:0;background:linear-gradient(160deg,rgba(129,216,208,0.04) 0%,transparent 40%,rgba(9,41,105,0.3) 100%)"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Hilton Head Island · South Carolina</div>
+    <h1 class="hero-title">Hilton Head<br><em>Plantation</em></h1>
+    <p class="hero-sub">Hilton Head's Largest Private Gated Community</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="hero-stat-val">4,000+</span><span class="hero-stat-lbl">Private Acres</span></div>
+      <div class="hero-stat"><span class="hero-stat-val">4</span><span class="hero-stat-lbl">Golf Courses</span></div>
+      <div class="hero-stat"><span class="hero-stat-val">158</span><span class="hero-stat-lbl">Marina Slips</span></div>
+      <div class="hero-stat"><span class="hero-stat-val">4,000+</span><span class="hero-stat-lbl">Private Homes</span></div>
+    </div>
+    <div class="hero-cta-group">
+      <a href="/contact" class="btn-primary">Explore Homes</a>
+      <a href="#lifestyle" class="btn-outline">Discover the Lifestyle</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><div class="scroll-line"></div><span>Scroll</span></div>
+</section>
+
+<!-- STATS BAND -->
+<div class="stats-band">
+  <div class="stat-item"><div class="stat-val">4,000+</div><div class="stat-lbl">Private Acres</div></div>
+  <div class="stat-item"><div class="stat-val">4</div><div class="stat-lbl">Golf Courses</div></div>
+  <div class="stat-item"><div class="stat-val">200 ft</div><div class="stat-lbl">Max Vessel · Skull Creek</div></div>
+  <div class="stat-item"><div class="stat-val">7+ mi</div><div class="stat-lbl">Nature Trails</div></div>
+  <div class="stat-item"><div class="stat-val">24/7</div><div class="stat-lbl">Manned Security</div></div>
+</div>
+
+<!-- ABOUT -->
+<section class="about-section">
+  <div class="about-inner">
+    <div>
+      <div class="section-eyebrow">Scale, Privacy & Natural Beauty</div>
+      <h2 class="section-title">Hilton Head's <em>Grand Estate</em> Community</h2>
+      <p class="section-body">Spanning more than 4,000 acres along Hilton Head Island's northern reaches — where the island meets Port Royal Sound — Hilton Head Plantation stands as the island's largest and most storied private gated community. With four championship golf courses, a deep-water marina capable of accommodating vessels to 200 feet, and two protected nature conservancies, it offers a breadth of lifestyle and landscape that no other community on the island can match.</p>
+      <div class="quote-card">
+        <p>"Hilton Head Plantation is where the island's history, natural grandeur, and championship amenities converge — a community of rare scale and even rarer beauty."</p>
+        <cite>— BHHP Advisory Team</cite>
+      </div>
+    </div>
+    <div class="about-image-wrap">
+      <!-- CSS-painted aerial impression -->
+      <div class="about-image" style="background:linear-gradient(145deg,#062018 0%,#0f3828 35%,#1a5038 60%,#082030 80%,#041020 100%);display:flex;align-items:flex-end;padding:24px;border-radius:4px">
+        <div style="width:100%">
+          <!-- Simulated aerial landscape elements -->
+          <div style="display:flex;gap:8px;margin-bottom:8px">
+            <div style="flex:2;height:3px;background:rgba(129,216,208,0.3);border-radius:2px"></div>
+            <div style="flex:1;height:3px;background:rgba(212,175,55,0.2);border-radius:2px"></div>
+          </div>
+          <div style="font-family:'Playfair Display',serif;font-size:16px;font-style:italic;color:rgba(255,255,255,0.55)">Port Royal Sound · Skull Creek · 4,000 Acres</div>
+        </div>
+      </div>
+      <div class="about-badge"><div class="badge-val">#1</div><div class="badge-lbl">Largest Gated Community · Hilton Head Island</div></div>
     </div>
   </div>
 </section>
 
-<div class="nbhd-body">
-  <div class="nbhd-intro">
+<!-- LIFESTYLE WIDGET -->
+<section class="lifestyle-section" id="lifestyle">
+  <div class="lifestyle-header">
+    <div class="section-eyebrow">Golf · Marina · Nature · History</div>
+    <h2 class="section-title">A Plantation <em>Lifestyle</em></h2>
+    <p>Four championship golf courses, a world-class deep-water marina on Skull Creek, protected nature conservancies, and 4,000 acres of Lowcountry beauty — Hilton Head Plantation offers the island's most complete residential lifestyle.</p>
+  </div>
+  <div class="lifestyle-grid">
+
+    <!-- Card 1 (tall): Country Club of HHI Golf -->
+    <div class="lifestyle-card bg-golf">
+      <div class="card-overlay" style="background:linear-gradient(to top,rgba(8,26,16,0.97) 0%,rgba(15,48,32,0.6) 55%,rgba(8,26,16,0.2) 100%)"></div>
+      <div class="card-content">
+        <div class="card-cat">Championship Golf</div>
+        <div class="card-title">Four World-Class Courses</div>
+        <p class="card-desc">The Country Club of Hilton Head Island — a masterpiece by Rees Jones — anchors four championship courses within the plantation. Bear Creek, Oyster Reef, and Dolphin Head complete one of the most compelling multi-course offerings in the entire Southeast.</p>
+        <div class="card-tags"><span class="card-tag">Rees Jones Design · CCHHI</span><span class="card-tag">Bear Creek</span><span class="card-tag">Oyster Reef</span><span class="card-tag">Dolphin Head</span></div>
+      </div>
+    </div>
+
+    <!-- Card 2: Skull Creek Marina -->
+    <div class="lifestyle-card bg-marina">
+      <div class="card-overlay" style="background:linear-gradient(to top,rgba(4,14,26,0.97) 0%,rgba(7,32,64,0.6) 55%,rgba(4,14,26,0.2) 100%)"></div>
+      <div class="card-content">
+        <div class="card-cat">Deep-Water Marina</div>
+        <div class="card-title">Skull Creek Marina</div>
+        <p class="card-desc">One of Hilton Head's finest deep-water marinas — 158 slips on Skull Creek, accommodating vessels to 200 feet. Direct Intracoastal Waterway access and stunning views of Port Royal Sound make this a sailor's and boater's paradise.</p>
+        <div class="card-tags"><span class="card-tag">158 Slips</span><span class="card-tag">Vessels to 200 ft</span><span class="card-tag">ICW Access</span><span class="card-tag">Port Royal Sound</span></div>
+      </div>
+    </div>
+
+    <!-- Card 3: Private Beach Access -->
+    <div class="lifestyle-card bg-beach">
+      <div class="card-overlay" style="background:linear-gradient(to top,rgba(4,8,20,0.97) 0%,rgba(9,26,53,0.6) 55%,rgba(4,8,20,0.2) 100%)"></div>
+      <div class="card-content">
+        <div class="card-cat">Oceanfront Access</div>
+        <div class="card-title">2 Miles of Private Beach</div>
+        <p class="card-desc">Two miles of exclusive Atlantic beach access — reserved entirely for Hilton Head Plantation residents. Uncrowded, unspoiled, and a world away from the island's tourist corridors.</p>
+        <div class="card-tags"><span class="card-tag">2 Miles Private</span><span class="card-tag">Residents Only</span><span class="card-tag">Atlantic Oceanfront</span></div>
+      </div>
+    </div>
+
+    <!-- Card 4: Tennis & Racquet Sports -->
+    <div class="lifestyle-card bg-tennis">
+      <div class="card-overlay" style="background:linear-gradient(to top,rgba(10,24,8,0.97) 0%,rgba(22,42,16,0.6) 55%,rgba(10,24,8,0.2) 100%)"></div>
+      <div class="card-content">
+        <div class="card-cat">Racquet Sports</div>
+        <div class="card-title">12 Tennis Courts & Fitness</div>
+        <p class="card-desc">Twelve well-maintained tennis courts serve a passionate resident community, complemented by fitness facilities and the full-service amenities of the Country Club of Hilton Head Island.</p>
+        <div class="card-tags"><span class="card-tag">12 Courts</span><span class="card-tag">Club Facilities</span><span class="card-tag">Resident Programs</span></div>
+      </div>
+    </div>
+
+    <!-- Card 5: Nature & Conservancies -->
+    <div class="lifestyle-card bg-nature">
+      <div class="card-overlay" style="background:linear-gradient(to top,rgba(8,16,10,0.97) 0%,rgba(15,32,18,0.6) 55%,rgba(8,16,10,0.2) 100%)"></div>
+      <div class="card-content">
+        <div class="card-cat">Protected Nature</div>
+        <div class="card-title">Two Nature Conservancies</div>
+        <p class="card-desc">Whooping Crane Pond Conservancy and the ancient Baynard Ruins — a pre-Civil War tabby plantation complex — anchor two irreplaceable nature preserves within the community, home to wood storks, painted buntings, and native wildlife.</p>
+        <div class="card-tags"><span class="card-tag">Whooping Crane Pond</span><span class="card-tag">Baynard Ruins</span><span class="card-tag">Protected Wetlands</span></div>
+      </div>
+    </div>
+
+    <!-- Card 6: Trails & Outdoor Living -->
+    <div class="lifestyle-card bg-nature" style="background:linear-gradient(145deg,#061408 0%,#0c2410 50%,#14361a 100%)">
+      <div class="card-overlay" style="background:linear-gradient(to top,rgba(6,20,8,0.97) 0%,rgba(12,36,16,0.6) 55%,rgba(6,20,8,0.2) 100%)"></div>
+      <div class="card-content">
+        <div class="card-cat">Outdoor Living</div>
+        <div class="card-title">7+ Miles of Trails</div>
+        <p class="card-desc">Seven-plus miles of dedicated walking, jogging, and biking trails wind through the plantation's forests and marshes, connecting the community with Hilton Head Island's broader 200-mile path network.</p>
+        <div class="card-tags"><span class="card-tag">7+ Miles Trails</span><span class="card-tag">HHI Path Network</span><span class="card-tag">Marsh & Forest</span></div>
+      </div>
+    </div>
+
+    <!-- Card 7: History & Dining -->
+    <div class="lifestyle-card bg-history">
+      <div class="card-overlay" style="background:linear-gradient(to top,rgba(18,8,4,0.97) 0%,rgba(42,21,8,0.6) 55%,rgba(18,8,4,0.2) 100%)"></div>
+      <div class="card-content">
+        <div class="card-cat">Dining & History</div>
+        <div class="card-title">Old Fort Pub & Baynard Ruins</div>
+        <p class="card-desc">The beloved Old Fort Pub overlooks Skull Creek with sweeping sunset views — one of Hilton Head's most iconic dining institutions. Nearby, the 1790s Baynard tabby ruins offer a window into the island's remarkable antebellum history.</p>
+        <div class="card-tags"><span class="card-tag">Old Fort Pub</span><span class="card-tag">Sunset Waterfront Views</span><span class="card-tag">1790s Tabby Ruins</span></div>
+      </div>
+    </div>
+
+    <!-- Card 8: Gated Security -->
+    <div class="lifestyle-card bg-security">
+      <div class="card-overlay" style="background:linear-gradient(to top,rgba(6,10,24,0.97) 0%,rgba(10,18,40,0.6) 55%,rgba(6,10,24,0.2) 100%)"></div>
+      <div class="card-content">
+        <div class="card-cat">Privacy & Security</div>
+        <div class="card-title">24/7 Manned Entry Gates</div>
+        <p class="card-desc">Multiple manned entry points, 24-hour security patrols, and a professional POA ensure the highest level of privacy and community standards across all 4,000+ acres — a non-negotiable for discerning buyers.</p>
+        <div class="card-tags"><span class="card-tag">Manned Gates 24/7</span><span class="card-tag">Security Patrols</span><span class="card-tag">Professional POA</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKULL CREEK MARINA FEATURE -->
+<section class="feature-section">
+  <div class="feature-inner">
+    <div class="feature-img-col">
+      <div class="feature-image" style="background:linear-gradient(145deg,#040e1a 0%,#072040 40%,#0a3060 70%,#051530 100%);display:flex;align-items:flex-end;padding:24px">
+        <div style="font-family:'Playfair Display',serif;font-size:15px;font-style:italic;color:rgba(255,255,255,0.4)">Skull Creek · Port Royal Sound · Deep Water Access</div>
+      </div>
+      <div class="feature-caption">"The most complete deep-water marina on Hilton Head Island."</div>
+    </div>
     <div>
-      <h2>Island Living at<br>Its Most Accessible</h2>
-      <p>Hilton Head Plantation is the largest gated community on Hilton Head Island, covering nearly 4,000 acres along the island&rsquo;s north end. With more than 4,000 homesites, it offers an extraordinary range of property types &mdash; from modest cottages to sweeping Intracoastal waterfront estates &mdash; making it one of the island&rsquo;s most sought-after communities for both primary residents and second-home buyers.</p>
-      <p>Established in the 1970s, Hilton Head Plantation has matured into a beautifully landscaped, fully amenitized community with a deep sense of neighborhood identity. Unlike many resort communities, it attracts a strong year-round residential population, giving it an authenticity that pure vacation destinations often lack.</p>
-    </div>
-    <div>
-      <p style="font-size:15px;color:#555;line-height:1.9;margin-bottom:16px">The community&rsquo;s Skull Creek waterfront is one of its crown jewels &mdash; a deepwater marina with stunning views across the Intracoastal Waterway toward Pinckney Island and the mainland beyond. Waterfront homes here command significant premiums and rarely stay on the market long.</p>
-      <p style="font-size:15px;color:#555;line-height:1.9">Four golf courses &mdash; Country Club of Hilton Head, Bear Creek, Oyster Reef, and Dolphin Head &mdash; offer variety for every level of golfer. Combined with tennis, pickleball, pools, and miles of leisure trails, Hilton Head Plantation delivers an exceptional amenity package at a price point well below Sea Pines or Wexford.</p>
-    </div>
-  </div>
-
-  <div class="feature-grid">
-    <div class="feature-card">
-      <h3>Skull Creek Marina</h3>
-      <p>A deepwater marina on the Intracoastal Waterway with stunning views toward Pinckney Island &mdash; boating access that rivals any community on the island.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Four Golf Courses</h3>
-      <p>Country Club of Hilton Head, Bear Creek, Oyster Reef, and Dolphin Head offer 72 holes of championship golf within the community&rsquo;s gates.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Intracoastal Waterfront</h3>
-      <p>Miles of Intracoastal Waterway frontage with deep-water homesites and dock potential &mdash; among the most coveted addresses in the community.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Plantation House</h3>
-      <p>The community&rsquo;s social hub, offering pools, fitness center, tennis, pickleball, and a full calendar of events for residents year-round.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Diverse Property Types</h3>
-      <p>From affordable villas and patio homes to grand waterfront estates &mdash; one of the widest ranges of property types of any community on the island.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Year-Round Community</h3>
-      <p>A strong permanent residential population gives Hilton Head Plantation an authentic neighborhood feel distinct from purely vacation-oriented communities.</p>
+      <div class="section-eyebrow">The Plantation Difference</div>
+      <h2 class="section-title">Scale That <em>Stands Alone</em></h2>
+      <p class="section-body">No community on Hilton Head Island offers the sheer breadth of Hilton Head Plantation — where 4,000 acres of protected Lowcountry landscape encompass four golf courses, a deep-water marina, private ocean beach, ancient ruins, and two wildlife conservancies in a single private enclave.</p>
+      <ul class="feature-list">
+        <li>Country Club of Hilton Head Island — Rees Jones-designed championship course with full club facilities</li>
+        <li>Skull Creek Marina: 158 deep-water slips, vessels to 200 ft, direct ICW access to Port Royal Sound</li>
+        <li>Two miles of private Atlantic beach — exclusively for plantation residents</li>
+        <li>Whooping Crane Pond Conservancy — a protected freshwater ecosystem rich in shorebirds</li>
+        <li>Baynard Ruins — 1790s tabby plantation complex, a protected national historic landmark</li>
+        <li>Old Fort Pub: waterfront dining with legendary sunset views over Skull Creek</li>
+        <li>Over 7 miles of dedicated walking and biking trails throughout the community</li>
+      </ul>
     </div>
   </div>
+</section>
 
-  <div class="market-snapshot">
-    <div class="market-item"><div class="market-num">$950K</div><div class="market-label">Avg. Sale Price</div></div>
-    <div class="market-item"><div class="market-num">15</div><div class="market-label">Median Days on Market</div></div>
-    <div class="market-item"><div class="market-num">97%</div><div class="market-label">List-to-Sale Ratio</div></div>
-    <div class="market-item"><div class="market-num">38</div><div class="market-label">Active Listings</div></div>
+<!-- MARKET SNAPSHOT -->
+<section class="market-section">
+  <div class="market-inner">
+    <h2 class="market-title">Hilton Head Plantation <em>Market Snapshot</em></h2>
+    <p class="market-sub">Current real estate data · Hilton Head Plantation · Hilton Head Island</p>
+    <div class="market-grid">
+      <div class="market-stat"><span class="market-stat-val">$890K</span><span class="market-stat-lbl">Average Sale Price</span></div>
+      <div class="market-stat"><span class="market-stat-val">21</span><span class="market-stat-lbl">Days on Market</span></div>
+      <div class="market-stat"><span class="market-stat-val">98%</span><span class="market-stat-lbl">List-to-Sale Ratio</span></div>
+      <div class="market-stat"><span class="market-stat-val">42</span><span class="market-stat-lbl">Active Listings</span></div>
+    </div>
+    <p class="market-note">Data reflects recent transactions. Contact BHHP for current detailed market analysis.</p>
   </div>
+</section>
 
-  <div class="nbhd-cta">
-    <h2>Explore Hilton Head Plantation</h2>
-    <p>With over 4,000 homesites and the widest price range on the island, there&rsquo;s a Plantation property for every buyer. Let us find yours.</p>
-    <a href="/contact" class="btn-primary">Schedule a Consultation</a>
-    <a href="/listings" class="btn-secondary">View Current Listings</a>
+<!-- CTA -->
+<section class="cta-section">
+  <h2 class="cta-title">Discover Life Inside<br><em>Hilton Head Plantation</em></h2>
+  <p class="cta-sub">From golf-front villas and deep-water marina lots to oceanfront estates — BHHP's white-glove advisory service connects you with the finest homes in Hilton Head Island's most expansive gated community.</p>
+  <div class="cta-group">
+    <a href="/contact" class="btn-primary">Request a Private Consultation</a>
+    <a href="/neighborhoods" class="btn-outline">Explore All Communities</a>
   </div>
-</div>
+</section>
 
+<!-- FOOTER -->
 <footer>
-  <div class="footer-brand">Best Hilton Head Properties</div>
-  <div class="footer-tagline">SERHANT. Exclusive Partner</div>
-  <ul class="footer-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/neighborhoods">Neighborhoods</a></li>
-    <li><a href="/our-story">Our Story</a></li>
-    <li><a href="/contact">Contact</a></li>
-  </ul>
-  <div class="footer-copy">&copy; 2025 Best Hilton Head Properties &mdash; SERHANT. All rights reserved.</div>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo-main">BHHP</div>
+      <div class="footer-logo-sub">Best Hilton Head Properties</div>
+    </div>
+    <nav class="footer-links">
+      <a href="/neighborhoods">Neighborhoods</a>
+      <a href="/listings">Listings</a>
+      <a href="/our-story">Our Story</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <div class="footer-serhant">SERHANT.</div>
+  </div>
+  <div class="footer-copy">© 2025 Best Hilton Head Properties · Licensed Real Estate Broker · Hilton Head Island, South Carolina</div>
 </footer>
-<script>var nav=document.getElementById('siteNav');if(nav)window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>50)});</script>
+
+<script>
+  const nav = document.getElementById('siteNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+</script>
 </body>
-  </html>
+</html>
