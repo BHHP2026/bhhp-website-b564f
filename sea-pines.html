@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sea Pines Resort — Hilton Head Island | Best Hilton Head Properties</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#092969;--teal:#81D8D0;--gold:#D4AF37;--ivory:#F5EFE0;--white:#FFFFFF;--charcoal:#111111;--text:#333333;--light:#f7f7f5}
+body{font-family:'Montserrat',sans-serif;color:var(--charcoal);background:var(--white)}
+.site-nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:24px 48px;display:flex;align-items:center;justify-content:space-between;transition:all 0.4s ease;background:transparent}
+.site-nav.scrolled{background:rgba(9,41,105,0.97);backdrop-filter:blur(12px);padding:16px 48px;box-shadow:0 2px 30px rgba(0,0,0,0.3)}
+.nav-logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#fff;letter-spacing:3px}
+.nav-logo-sub{font-size:8px;letter-spacing:2px;color:rgba(255,255,255,0.6);text-transform:uppercase;margin-top:2px}
+.nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:11px;letter-spacing:2px;text-transform:uppercase;transition:color 0.3s}
+.nav-links a:hover{color:var(--gold)}
+.nav-serhant{font-family:'Playfair Display',serif;font-size:13px;letter-spacing:2px;color:rgba(255,255,255,0.7);border-left:1px solid rgba(255,255,255,0.2);padding-left:24px}
+.nbhd-hero{min-height:85vh;background:linear-gradient(160deg,#0a2350 0%,#0d4a3a 60%,#1a5c3e 100%);display:flex;align-items:flex-end;padding:0 80px 80px;position:relative;overflow:hidden}
+.nbhd-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(129,216,208,0.15) 0%,transparent 60%)}
+.nbhd-hero-content{position:relative;z-index:1;max-width:700px}
+.nbhd-eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:20px}
+.nbhd-hero h1{font-family:'Playfair Display',serif;font-size:clamp(48px,6vw,80px);font-weight:400;color:#fff;line-height:1.05;margin-bottom:24px}
+.nbhd-hero p{font-size:16px;color:rgba(255,255,255,0.75);line-height:1.8;max-width:540px;margin-bottom:40px}
+.nbhd-stats{display:flex;gap:48px}
+.nbhd-stat-num{font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#fff;line-height:1}
+.nbhd-stat-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-top:4px}
+.nbhd-body{max-width:1200px;margin:0 auto;padding:100px 80px}
+.nbhd-intro{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-bottom:100px}
+.nbhd-intro h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3vw,40px);font-weight:400;color:var(--navy);line-height:1.3;margin-bottom:24px}
+.nbhd-intro p{font-size:15px;color:#555;line-height:1.9;margin-bottom:16px}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-bottom:80px}
+.feature-card{padding:40px 32px;background:var(--light);border-top:3px solid var(--teal)}
+.feature-icon{width:40px;height:40px;background:var(--navy);border-radius:50%;margin-bottom:20px;display:flex;align-items:center;justify-content:center}
+.feature-card h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:400;color:var(--navy);margin-bottom:12px}
+.feature-card p{font-size:13px;color:#666;line-height:1.8}
+.market-snapshot{background:var(--navy);padding:80px;margin:0 -80px 0;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0}
+.market-item{padding:0 40px;border-right:1px solid rgba(255,255,255,0.1);text-align:center}
+.market-item:last-child{border-right:none}
+.market-num{font-family:'Playfair Display',serif;font-size:48px;font-weight:400;color:#fff;line-height:1;margin-bottom:8px}
+.market-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5)}
+.nbhd-cta{text-align:center;padding:100px 0 0}
+.nbhd-cta h2{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,48px);font-weight:400;color:var(--navy);margin-bottom:20px}
+.nbhd-cta p{font-size:15px;color:#666;max-width:460px;margin:0 auto 36px;line-height:1.8}
+.btn-primary{display:inline-block;padding:18px 48px;background:var(--navy);color:#fff;text-decoration:none;font-size:11px;letter-spacing:3px;text-transform:uppercase;transition:all 0.3s;margin:0 8px}
+.btn-primary:hover{background:var(--gold);color:var(--navy)}
+.btn-secondary{display:inline-block;padding:17px 48px;border:1px solid var(--navy);color:var(--navy);text-decoration:none;font-size:11px;letter-spacing:3px;text-transform:uppercase;transition:all 0.3s;margin:0 8px}
+.btn-secondary:hover{background:var(--navy);color:#fff}
+footer{background:var(--charcoal);padding:60px 80px 40px;color:rgba(255,255,255,0.5);font-size:12px;text-align:center}
+footer .footer-brand{font-family:'Playfair Display',serif;font-size:22px;color:#fff;margin-bottom:8px}
+footer .footer-tagline{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:32px}
+footer .footer-links{display:flex;justify-content:center;gap:32px;margin-bottom:32px;list-style:none}
+footer .footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:11px;letter-spacing:1px;text-transform:uppercase;transition:color 0.3s}
+footer .footer-links a:hover{color:var(--gold)}
+footer .footer-copy{font-size:10px;letter-spacing:1px;border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;margin-top:24px}
+</style>
+</head>
+<body>
+<nav class="site-nav" id="siteNav">
+  <ul class="nav-links">
+    <li><a href="/neighborhoods">Neighborhoods</a></li>
+    <li><a href="/listings">Listings</a></li>
+  </ul>
+  <a href="/" style="text-decoration:none;text-align:center">
+    <div class="nav-logo-main">BHHP</div>
+    <div class="nav-logo-sub">Best Hilton Head Properties</div>
+  </a>
+  <div style="display:flex;align-items:center;gap:32px">
+    <a href="/contact" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:11px;letter-spacing:2px;text-transform:uppercase">Contact</a>
+    <div class="nav-serhant">SERHANT.</div>
+  </div>
+</nav>
+
+<section class="nbhd-hero">
+  <div class="nbhd-hero-content">
+    <div class="nbhd-eyebrow">Hilton Head Island &mdash; Neighborhoods</div>
+    <h1>Sea Pines<br>Resort</h1>
+    <p>The crown jewel of Hilton Head Island. A 5,000-acre private resort community where pristine beaches, world-class golf, and Harbour Town marina create an unparalleled lifestyle.</p>
+    <div class="nbhd-stats">
+      <div><div class="nbhd-stat-num">$1.85M</div><div class="nbhd-stat-label">Avg. Sale Price</div></div>
+      <div><div class="nbhd-stat-num">11</div><div class="nbhd-stat-label">Days on Market</div></div>
+      <div><div class="nbhd-stat-num">24</div><div class="nbhd-stat-label">Active Listings</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="nbhd-body">
+  <div class="nbhd-intro">
+    <div>
+      <h2>Where Hilton Head&rsquo;s Most<br>Coveted Addresses Live</h2>
+      <p>Sea Pines Resort is more than a neighborhood &mdash; it&rsquo;s a self-contained world. Established in 1956 as one of America&rsquo;s first master-planned communities, it set the standard for resort living that others have spent decades trying to replicate.</p>
+      <p>Home to the legendary Harbour Town Golf Links &mdash; site of the annual RBC Heritage PGA Tour event &mdash; and the iconic candy-striped lighthouse, Sea Pines commands the highest property values on the island and consistently attracts discerning buyers from around the world.</p>
+    </div>
+    <div>
+      <p style="font-size:15px;color:#555;line-height:1.9;margin-bottom:16px">The community spans from the Atlantic Ocean to Calibogue Sound, offering oceanfront estates, lagoon-side villas, golf course homes, and everything between. Properties range from lock-and-leave vacation condominiums to sprawling primary residences.</p>
+      <p style="font-size:15px;color:#555;line-height:1.9">With 24/7 gated security, 15 miles of leisure trails, private beach access, three championship golf courses, and a world-class tennis complex, Sea Pines offers a lifestyle that buyers simply cannot find elsewhere on the island.</p>
+    </div>
+  </div>
+
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h3>Harbour Town</h3>
+      <p>The iconic marina village at the heart of Sea Pines &mdash; yacht basin, boutiques, restaurants, and the famous Harbour Town Lighthouse overlooking Calibogue Sound.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Championship Golf</h3>
+      <p>Three award-winning courses including Harbour Town Golf Links, home of the PGA Tour&rsquo;s RBC Heritage tournament each April.</p>
+    </div>
+    <div class="feature-card">
+      <h3>South Beach</h3>
+      <p>A quieter beach village at the island&rsquo;s southern tip, with casual dining, kayak rentals, and direct access to unspoiled Atlantic shoreline.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Private & Gated</h3>
+      <p>24-hour security and controlled access at all entry points provides peace of mind for full-time residents and vacation homeowners alike.</p>
+    </div>
+    <div class="feature-card">
+      <h3>15 Miles of Trails</h3>
+      <p>An extensive network of paved leisure paths winds through the community &mdash; ideal for cycling, jogging, and exploring the natural beauty of the Lowcountry.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Nature Preserves</h3>
+      <p>Protected forests, lagoons, and wildlife habitats woven throughout the community, ensuring Sea Pines retains its natural character in perpetuity.</p>
+    </div>
+  </div>
+
+  <div class="market-snapshot">
+    <div class="market-item"><div class="market-num">$1.85M</div><div class="market-label">Median Sale Price</div></div>
+    <div class="market-item"><div class="market-num">11</div><div class="market-label">Median Days on Market</div></div>
+    <div class="market-item"><div class="market-num">98%</div><div class="market-label">List-to-Sale Ratio</div></div>
+    <div class="market-item"><div class="market-num">24</div><div class="market-label">Active Listings</div></div>
+  </div>
+
+  <div class="nbhd-cta">
+    <h2>Explore Sea Pines Properties</h2>
+    <p>Our team has deep expertise in Sea Pines and can guide you to the right property at the right price.</p>
+    <a href="/contact" class="btn-primary">Schedule a Consultation</a>
+    <a href="/listings" class="btn-secondary">View Current Listings</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-brand">Best Hilton Head Properties</div>
+  <div class="footer-tagline">SERHANT. Exclusive Partner</div>
+  <ul class="footer-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/neighborhoods">Neighborhoods</a></li>
+    <li><a href="/our-story">Our Story</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+  <div class="footer-copy">&copy; 2025 Best Hilton Head Properties &mdash; SERHANT. All rights reserved.</div>
+</footer>
+<script>var nav=document.getElementById('siteNav');if(nav)window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>50)});</script>
+</body>
+             </html>
