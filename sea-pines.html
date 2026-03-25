@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sea Pines Resort — Hilton Head Island | Best Hilton Head Properties</title>
 <meta name="description" content="Sea Pines Resort: Hilton Head Island's crown jewel. Home of Harbour Town Golf Links, RBC Heritage PGA Tour, 5 miles of private beach, and a world-class lifestyle. Explore homes with BHHP.">
+<link rel="canonical" href="https://besthiltonheadproperties.com/sea-pines">
+<meta property="og:title" content="Sea Pines Resort Real Estate — Hilton Head Island | BHHP">
+<meta property="og:description" content="Sea Pines Resort: Harbour Town Golf Links, RBC Heritage PGA Tour, 20 clay tennis courts, 5 miles of private beach, and Hilton Head's finest homes. Explore with BHHP.">
+<meta property="og:image" content="images/sea-pines/sp-golf.jpg">
+<meta property="og:url" content="https://besthiltonheadproperties.com/sea-pines">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Best Hilton Head Properties">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sea Pines Resort Real Estate — Hilton Head Island">
+<meta name="twitter:description" content="Harbour Town Golf Links, RBC Heritage, 5 miles private beach, and championship tennis. Explore Sea Pines real estate with BHHP.">
+<meta name="twitter:image" content="images/sea-pines/sp-golf.jpg">
+<meta name="keywords" content="Sea Pines Resort real estate, Sea Pines homes for sale, Harbour Town Golf Links, Hilton Head Island luxury homes, RBC Heritage golf, Sea Pines Racquet Club tennis, Sea Pines Beach Club, Best Hilton Head Properties, BHHP">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -22,14 +34,26 @@ body{font-family:'Montserrat',sans-serif;color:var(--charcoal);background:var(--
 .nav-links a:hover{color:var(--teal)}
 .nav-cta{color:var(--white);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:10px 22px;border:1px solid rgba(255,255,255,0.4);border-radius:2px;transition:all 0.3s}
 .nav-cta:hover{background:var(--teal);border-color:var(--teal);color:var(--navy)}
-.nav-serhant{font-size:11px;font-weight:700;letter-spacing:3px;color:var(--teal);text-transform:uppercase}
+.nav-serhant {
+  display: flex; flex-direction: column; align-items: flex-end;
+  border-left: 1px solid rgba(255,255,255,0.15);
+  padding-left: 18px; margin-left: 10px; gap: 4px;
+}
+.serhant-logo-img {
+  width: 90px; height: auto; display: block;
+}
+.serhant-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7px; font-weight: 400; letter-spacing: 2.5px;
+  text-transform: uppercase; color: rgba(255,255,255,0.35);
+}
 .hero{position:relative;height:100vh;min-height:700px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#0a1a2e}
-/* YouTube iframe background video */
+/* Hero background video */
 .hero-video-wrap{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
-.hero-video{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:177.78vh;min-width:100%;height:56.25vw;min-height:100%;opacity:0.55;border:none;pointer-events:none}
-.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(9,41,105,0.4) 0%,rgba(5,20,50,0.25) 40%,rgba(9,41,105,0.75) 100%)}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.55;pointer-events:none}
+.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(5,15,35,0.55) 0%,rgba(5,15,35,0.45) 40%,rgba(5,15,35,0.80) 100%)}
 .hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;max-width:960px}
-.hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:12px}
+.hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--white);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:12px}
 .hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:40px;height:1px;background:var(--teal);opacity:0.6}
 .hero-title{font-family:'Playfair Display',serif;font-size:clamp(56px,9vw,104px);font-weight:400;color:var(--white);line-height:1.0;letter-spacing:-1px;margin-bottom:10px}
 .hero-title em{font-style:italic;color:var(--teal)}
@@ -37,12 +61,12 @@ body{font-family:'Montserrat',sans-serif;color:var(--charcoal);background:var(--
 .hero-stats{display:flex;align-items:center;justify-content:center;margin-bottom:48px}
 .hero-stat{padding:0 30px;border-right:1px solid rgba(255,255,255,0.2);text-align:center}
 .hero-stat:last-child{border-right:none}
-.hero-stat-val{font-family:'Playfair Display',serif;font-size:30px;font-weight:600;color:var(--gold);display:block}
+.hero-stat-val{font-family:'Playfair Display',serif;font-size:30px;font-weight:600;color:var(--white);display:block}
 .hero-stat-lbl{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.6);display:block;margin-top:5px}
 .hero-cta-group{display:flex;gap:16px;justify-content:center}
-.btn-primary{padding:16px 36px;background:var(--gold);color:var(--navy);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:all 0.3s}
-.btn-primary:hover{background:#c9a227;transform:translateY(-2px)}
-.btn-outline{padding:16px 36px;border:1px solid rgba(255,255,255,0.45);color:var(--white);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:all 0.3s}
+.btn-primary{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--teal);border:1px solid var(--teal);padding:14px 32px;cursor:pointer;background:transparent;text-decoration:none;display:inline-flex;align-items:center;gap:12px;transition:all 0.25s}
+.btn-primary:hover{background:var(--teal);color:var(--navy)}
+.btn-outline{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--white);border:1px solid rgba(255,255,255,0.5);padding:14px 32px;cursor:pointer;background:transparent;text-decoration:none;display:inline-flex;align-items:center;gap:12px;transition:all 0.25s}
 .btn-outline:hover{border-color:var(--teal);color:var(--teal)}
 .scroll-hint{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,0.45);font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase}
 .scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,rgba(255,255,255,0.5),transparent);animation:scrollPulse 2s ease-in-out infinite}
@@ -50,15 +74,15 @@ body{font-family:'Montserrat',sans-serif;color:var(--charcoal);background:var(--
 .stats-band{background:var(--navy);padding:26px 48px;display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap}
 .stat-item{padding:0 40px;border-right:1px solid rgba(255,255,255,0.15);text-align:center}
 .stat-item:last-child{border-right:none}
-.stat-val{font-family:'Playfair Display',serif;font-size:32px;font-weight:600;color:var(--gold)}
+.stat-val{font-family:'Playfair Display',serif;font-size:32px;font-weight:600;color:var(--teal)}
 .stat-lbl{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-top:3px}
-.about-section{padding:100px 48px;background:var(--white)}
+.about-section{padding:72px 48px;background:var(--white)}
 .about-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
 .section-eyebrow{font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:16px}
 .section-title{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,50px);font-weight:400;color:var(--navy);line-height:1.15;margin-bottom:24px}
-.section-title em{font-style:italic;color:var(--gold)}
+.section-title em{font-style:italic;color:var(--teal)}
 .section-body{font-size:16px;line-height:1.8;color:#444;margin-bottom:32px}
-.quote-card{padding:28px 32px;border-left:3px solid var(--gold);background:var(--ivory);border-radius:0 6px 6px 0}
+.quote-card{padding:28px 32px;border-left:3px solid var(--teal);background:var(--white);border-radius:0 6px 6px 0}
 .quote-card p{font-family:'Playfair Display',serif;font-size:20px;font-style:italic;color:var(--navy);line-height:1.6}
 .quote-card cite{display:block;margin-top:14px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--teal);font-style:normal}
 .about-image-wrap{position:relative}
@@ -66,7 +90,7 @@ body{font-family:'Montserrat',sans-serif;color:var(--charcoal);background:var(--
 .about-badge{position:absolute;bottom:-20px;right:-20px;width:110px;height:110px;border-radius:50%;background:var(--navy);border:4px solid var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px}
 .badge-val{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--gold)}
 .badge-lbl{font-size:9px;font-weight:600;letter-spacing:1px;color:var(--teal);text-transform:uppercase;line-height:1.4;margin-top:3px}
-.lifestyle-section{background:var(--navy);padding:100px 48px}
+.lifestyle-section{background:var(--navy);padding:72px 48px}
 .lifestyle-header{text-align:center;max-width:680px;margin:0 auto 64px}
 .lifestyle-header .section-eyebrow{color:var(--teal)}
 .lifestyle-header .section-title{color:var(--white)}
@@ -85,7 +109,7 @@ body{font-family:'Montserrat',sans-serif;color:var(--charcoal);background:var(--
 .lifestyle-card:hover .card-desc{color:rgba(255,255,255,0.75);max-height:120px;margin-bottom:14px}
 .card-tags{display:flex;flex-wrap:wrap;gap:6px}
 .card-tag{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;background:rgba(212,175,55,0.18);border:1px solid rgba(212,175,55,0.35);color:var(--gold);border-radius:2px}
-.feature-section{padding:100px 48px;background:var(--ivory)}
+.feature-section{padding:72px 48px;background:var(--white)}
 .feature-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
 .feature-img-col{position:relative}
 .feature-image{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:4px;display:block}
@@ -93,34 +117,787 @@ body{font-family:'Montserrat',sans-serif;color:var(--charcoal);background:var(--
 .feature-list{list-style:none;margin-top:24px}
 .feature-list li{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid rgba(9,41,105,0.08);font-size:15px;color:#444;line-height:1.5}
 .feature-list li:last-child{border-bottom:none}
-.feature-list li2:before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:7px}
-.market-section{background:var(--charcoal);padding:80px 48px}
-.market-inner{max-width:1000px;margin:0 auto;text-align:center}
+.feature-list li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:7px}
+.market-section{background:var(--charcoal);padding:60px 48px;position:relative;background-image:url('images/sea-pines/sp-home.webp');background-size:cover;background-position:center 60%}
+.market-section::before{content:'';position:absolute;inset:0;background:rgba(6,18,42,0.50);z-index:0}
+.market-inner{position:relative;z-index:1;max-width:1000px;margin:0 auto;text-align:center}
 .market-title{font-family:'Playfair Display',serif;font-size:38px;color:var(--white);margin-bottom:12px}
-.market-title em{font-style:italic;color:var(--gold)}
+.market-title em{font-style:italic;color:var(--teal)}
 .market-sub{font-size:14px;color:rgba(255,255,255,0.45);margin-bottom:56px;letter-spacing:1px}
 .market-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-bottom:40px}
 .market-stat{background:rgba(255,255,255,0.04);padding:36px 20px}
-.market-stat-val{font-family:'Playfair Display',serif;font-size:42px;font-weight:600;color:var(--gold);display:block}
+.market-stat-val{font-family:'Playfair Display',serif;font-size:42px;font-weight:600;color:var(--teal);display:block}
 .market-stat-lbl{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);display:block;margin-top:8px}
 .market-note{font-size:11px;color:rgba(255,255,255,0.25)}
 .cta-section{padding:120px 48px;background:linear-gradient(135deg,var(--navy) 0%,#0d3a6b 100%);text-align:center}
 .cta-title{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,62px);font-weight:400;color:var(--white);line-height:1.15;margin-bottom:20px}
-.cta-title em{font-style:italic;color:var(--gold)}
+.cta-title em{font-style:italic;color:var(--teal)}
 .cta-sub{font-size:16px;color:rgba(255,255,255,0.62);margin-bottom:48px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.75}
 .cta-group{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rgba(255,255,255,0.06)}
 .footer-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px}
-.footer-logo-main{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--white);letter-spacing:3px}
-.footer-logo-sub{font-size:10px;font-weight:500;letter-spacing:2.5px;color:var(--teal);text-transform:uppercase;margin-top:4px}
+.footer-bhhp-logo{width:64px;height:auto;display:block}
 .footer-links{display:flex;gap:32px;flex-wrap:wrap}
 .footer-links a{color:rgba(255,255,255,0.45);text-decoration:none;font-size:12px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;transition:color 0.3s}
 .footer-links a:hover{color:var(--teal)}
-.footer-serhant{font-size:11px;font-weight:700;letter-spacing:3px;color:var(--teal);text-transform:uppercase}
+.footer-serhant-wrap{display:flex;flex-direction:column;align-items:flex-end;gap:4px;border-left:1px solid rgba(255,255,255,0.15);padding-left:18px}
+.footer-serhant-img{width:90px;height:auto;display:block}
+.footer-serhant-label{font-family:'Montserrat',sans-serif;font-size:7px;font-weight:400;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.35)}
 .footer-copy{text-align:center;margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.06);font-size:12px;color:rgba(255,255,255,0.22)}
 @media(max-width:1024px){.lifestyle-grid{grid-template-columns:repeat(2,1fr)}.lifestyle-card:first-child{grid-column:span 2;grid-row:span 1;min-height:320px;aspect-ratio:16/7}}
 @media(max-width:768px){.site-nav{padding:20px 24px}.site-nav.scrolled{padding:14px 24px}.nav-links{display:none}.about-inner,.feature-inner{grid-template-columns:1fr;gap:48px}.lifestyle-grid{grid-template-columns:1fr}.lifestyle-card:first-child{grid-column:span 1;grid-row:span 1;aspect-ratio:4/3;min-height:unset}.market-grid{grid-template-columns:repeat(2,1fr)}.hero-stats{gap:12px;flex-wrap:wrap}.hero-stat{border-right:none}.stats-band{gap:20px}.stat-item{border-right:none}.about-badge{display:none}}
-.nav-logo-img{height:110px;width:auto;display:block;filter:contrast(1.6) brightness(1.05);transition:height 0.4s ease}.site-nav.scrolled .nav-logo-img{height:88px}</style>
+.nav-logo-img{height:110px;width:auto;display:block;filter:contrast(1.6) brightness(1.05);transition:height 0.4s ease}.site-nav.scrolled .nav-logo-img{height:88px}
+
+/* ── Preservation / History section ──────────────────────── */
+.preservation-section {
+  background: var(--navy);
+  background-image: url('images/sea-pines/sp-sustainability.webp');
+  background-size: cover;
+  background-position: center center;
+  padding: 72px 48px;
+  position: relative;
+  overflow: hidden;
+}
+.preservation-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(6,18,42,0.62);
+  z-index: 0;
+}
+.preservation-section::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  border: 1px solid rgba(129,216,208,0.08);
+  pointer-events: none;
+  z-index: 2;
+}
+.preservation-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.preservation-text .section-eyebrow { color: var(--teal); }
+.preservation-text .section-title { color: var(--white); }
+.preservation-text .section-body { color: rgba(255,255,255,0.7); }
+.preservation-pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 8px;
+}
+.preservation-pillar {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(129,216,208,0.12);
+  border-radius: 4px;
+  padding: 22px 20px;
+}
+.pillar-icon {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.pillar-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.pillar-body {
+  font-size: 12px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.55);
+}
+.preservation-quote {
+  background: rgba(129,216,208,0.07);
+  border: 1px solid rgba(129,216,208,0.18);
+  border-radius: 4px;
+  padding: 36px 40px;
+  position: relative;
+}
+.preservation-quote blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--white);
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+.preservation-quote cite {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--teal);
+  font-style: normal;
+}
+.preservation-stats {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.pres-stat-val {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--teal);
+  display: block;
+}
+.pres-stat-lbl {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-top: 4px;
+  display: block;
+}
+@media(max-width:768px) {
+  .preservation-inner { grid-template-columns: 1fr; gap: 48px; }
+  .preservation-stats { flex-wrap: wrap; gap: 20px; }
+}
+
+/* ── Map section ─────────────────────────────────────────── */
+.map-section {
+  background: var(--white);
+  padding: 60px 48px;
+  text-align: center;
+}
+.map-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 14px;
+}
+.map-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.map-title em { font-style: italic; color: var(--teal); }
+.map-sub {
+  font-size: 13px;
+  color: rgba(9,41,105,0.45);
+  letter-spacing: 1px;
+  margin-bottom: 48px;
+}
+.map-frame {
+  max-width: 860px;
+  margin: 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(9,41,105,0.12);
+  border: 1px solid rgba(9,41,105,0.08);
+}
+.map-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.map-landmarks {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+.map-landmark {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(9,41,105,0.6);
+}
+.map-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--teal);
+  flex-shrink: 0;
+}
+@media(max-width:768px) {
+  .map-section { padding: 60px 24px; }
+  .map-landmarks { gap: 20px; }
+}
+/* ── Golf Excellence section ─────────────────────────────── */
+.golf-section {
+  background: var(--white);
+  padding: 72px 48px;
+}
+.golf-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.golf-header {
+  max-width: 680px;
+  margin-bottom: 64px;
+}
+.golf-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.golf-card {
+  background: var(--white);
+  border: 1px solid rgba(9,41,105,0.16);
+  border-top: 3px solid var(--navy);
+  border-radius: 4px;
+  padding: 32px 24px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(9,41,105,0.10);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.golf-card:hover {
+  box-shadow: 0 16px 48px rgba(9,41,105,0.16);
+  transform: translateY(-4px);
+}
+.golf-card-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.15);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.golf-card-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+.golf-card-designer {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 12px;
+}
+.golf-card-body {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 14px;
+}
+.golf-card-award {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--teal);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.golf-card-award::before {
+  content: '★';
+  font-size: 12px;
+}
+.golf-ranking-banner {
+  margin-top: 48px;
+  background: var(--navy);
+  border-radius: 4px;
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.golf-ranking-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: var(--white);
+  font-weight: 400;
+}
+.golf-ranking-title em { font-style: italic; color: var(--teal); }
+.golf-rankings {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.golf-rank-item {
+  text-align: center;
+}
+.golf-rank-val {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--gold);
+  display: block;
+}
+.golf-rank-lbl {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  display: block;
+  margin-top: 4px;
+}
+@media(max-width:1024px) { .golf-grid { grid-template-columns: repeat(2,1fr); } }
+@media(max-width:768px) { .golf-grid { grid-template-columns: 1fr; } .golf-section { padding: 72px 24px; } .golf-ranking-banner { padding: 24px; } }
+
+/* Dining widget — ivory bg, black headline + tiffany span, matches Sports widget */
+.dps-section { background: var(--white); }
+.dps-section .sps-heading span { color: var(--teal); font-style: italic; }
+
+/* ── Liberty Oak / Culture section ──────────────────────── */
+.culture-section {
+  background: var(--white);
+  padding: 72px 48px;
+}
+.culture-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.culture-visual {
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  box-shadow: 0 20px 56px rgba(9,41,105,0.14);
+}
+.culture-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  inset: 0;
+}
+.culture-visual::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 55%;
+  background: linear-gradient(to top, rgba(6,18,42,0.90) 0%, transparent 100%);
+  z-index: 1;
+}
+.culture-oak-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 32px 36px;
+  z-index: 2;
+}
+.culture-oak-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+.culture-oak-sub {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+@media(max-width:768px) { .culture-inner { grid-template-columns: 1fr; gap: 48px; } .culture-section { padding: 72px 24px; } }
+
+/* ══ SEA PINES SPORTS & LIFESTYLE WIDGET (matches homepage ILS card style) ══ */
+.sps-section {
+  background: var(--white);
+  padding: 60px 0 52px;
+  overflow: hidden;
+  position: relative;
+}
+.sps-watermark {
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 300px;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  color: rgba(0,0,0,0.03);
+  line-height: 1;
+  pointer-events: none;
+  letter-spacing: -0.05em;
+  user-select: none;
+}
+.sps-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 80px 48px;
+}
+.sps-eyebrow {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sps-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.15;
+  color: #0a0f1c;
+  margin: 0;
+}
+.sps-heading span { color: var(--teal); font-weight: 400; }
+.sps-subhead {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #888;
+  margin-top: 10px;
+}
+/* Track */
+.sps-track-wrapper { position: relative; }
+.sps-track {
+  display: flex;
+  gap: 16px;
+  padding: 0 80px 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  cursor: grab;
+}
+.sps-track:active { cursor: grabbing; }
+.sps-track::-webkit-scrollbar { display: none; }
+/* Individual Card */
+.sps-card {
+  flex: 0 0 340px;
+  height: 520px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.sps-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.22);
+}
+.sps-card-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+}
+.sps-card:hover .sps-card-img { transform: scale(1.04); }
+.sps-card-grad {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(8,14,28,0.92) 0%, rgba(8,14,28,0.45) 38%, rgba(8,14,28,0.0) 68%);
+}
+.sps-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 28px 26px;
+}
+.sps-card-tag {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 6px;
+}
+.sps-card-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.sps-card-desc {
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.65);
+}
+.sps-card-stats {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.sps-card-stat {
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border: 1px solid rgba(212,175,55,0.4);
+  color: var(--gold);
+  border-radius: 2px;
+}
+/* Arrows */
+.sps-arrows {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 16px 80px 0;
+}
+.sps-arrow {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(10,15,28,0.2);
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #0a0f1c;
+  transition: all 0.3s;
+}
+.sps-arrow:hover { background: var(--navy); border-color: var(--navy); color: #fff; }
+@media(max-width:768px) {
+  .sps-header { padding: 0 28px 36px; flex-direction: column; align-items: flex-start; gap: 20px; }
+  .sps-track { padding: 0 28px 16px; }
+  .sps-arrows { padding: 12px 28px 0; }
+  .sps-card { flex: 0 0 280px; height: 420px; }
+}
+
+/* ── FAQ Section ─────────────────────────────────────────── */
+.faq-section {
+  background: var(--white);
+  padding: 72px 48px;
+}
+.faq-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.faq-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.faq-header .section-eyebrow {
+  justify-content: center;
+}
+.faq-header .section-title {
+  font-size: clamp(34px, 4vw, 52px);
+  margin-bottom: 20px;
+}
+.faq-header p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  max-width: 560px;
+  margin: 0 auto;
+}
+.faq-item {
+  border-top: 1px solid rgba(9,41,105,0.12);
+  padding: 32px 0;
+}
+.faq-item:last-child {
+  border-bottom: 1px solid rgba(9,41,105,0.12);
+}
+.faq-q {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.35;
+  margin-bottom: 14px;
+  position: relative;
+  padding-left: 20px;
+}
+.faq-q::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+.faq-a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.85;
+  color: #555;
+  padding-left: 20px;
+}
+.faq-a strong {
+  color: var(--navy);
+  font-weight: 600;
+}
+@media(max-width: 768px) {
+  .faq-section { padding: 72px 24px; }
+  .faq-header { margin-bottom: 44px; }
+  .faq-q { font-size: 18px; }
+}
+
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://besthiltonheadproperties.com"},
+        {"@type":"ListItem","position":2,"name":"Neighborhoods","item":"https://besthiltonheadproperties.com/neighborhoods"},
+        {"@type":"ListItem","position":3,"name":"Sea Pines Resort","item":"https://besthiltonheadproperties.com/sea-pines"}
+      ]
+    },
+    {
+      "@type": "Place",
+      "name": "Sea Pines Resort",
+      "description": "Sea Pines Resort is Hilton Head Island's premier gated community, spanning 5,000 private acres at the island's southern tip. Home to Harbour Town Golf Links (host of the PGA Tour RBC Heritage), Heron Point by Pete Dye, Atlantic Dunes by Davis Love III, 20 clay tennis courts, 6 pickleball courts, 5 miles of private Atlantic beach, the 605-acre Forest Preserve, Lawton Stables, and the iconic Harbour Town Lighthouse.",
+      "address": {"@type":"PostalAddress","addressLocality":"Hilton Head Island","addressRegion":"SC","postalCode":"29928","addressCountry":"US"},
+      "geo": {"@type":"GeoCoordinates","latitude":32.1329,"longitude":-80.8326},
+      "url": "https://besthiltonheadproperties.com/sea-pines",
+      "amenityFeature": [
+        {"@type":"LocationFeatureSpecification","name":"Harbour Town Golf Links (PGA Tour RBC Heritage Host)","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Heron Point Golf Course by Pete Dye","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Atlantic Dunes Golf Course by Davis Love III","value":true},
+        {"@type":"LocationFeatureSpecification","name":"20 Har-Tru Clay Tennis Courts","value":true},
+        {"@type":"LocationFeatureSpecification","name":"6 Pickleball Courts","value":true},
+        {"@type":"LocationFeatureSpecification","name":"5-Mile Private Atlantic Beach","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Sea Pines Beach Club","value":true},
+        {"@type":"LocationFeatureSpecification","name":"605-Acre Forest Preserve","value":true},
+        {"@type":"LocationFeatureSpecification","name":"15-Mile Leisure Trail Network","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Lawton Stables Horseback Riding","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Harbour Town Lighthouse","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Harbour Town Yacht Basin","value":true},
+        {"@type":"LocationFeatureSpecification","name":"South Beach Marina","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Inn and Club at Harbour Town (Forbes Four-Star)","value":true}
+      ]
+    },
+    {
+      "@type": "RealEstateAgent",
+      "name": "Best Hilton Head Properties",
+      "alternateName": "BHHP",
+      "url": "https://besthiltonheadproperties.com",
+      "description": "Hilton Head Island's premier luxury real estate advisory, specializing in Sea Pines Resort, Palmetto Dunes, Hilton Head Plantation, and Wexford Plantation.",
+      "areaServed": {"@type":"City","name":"Hilton Head Island","addressRegion":"SC"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What golf courses are in Sea Pines Resort on Hilton Head Island?",
+          "acceptedAnswer": {"@type":"Answer","text":"Sea Pines Resort has four championship golf courses: Harbour Town Golf Links (designed by Pete Dye with Jack Nicklaus, host of the PGA Tour RBC Heritage), Heron Point by Pete Dye, Atlantic Dunes by Davis Love III, and the private Sea Pines Country Club. Harbour Town is consistently ranked among America's top 100 courses."}
+        },
+        {
+          "@type": "Question",
+          "name": "How many tennis courts are at Sea Pines Racquet Club?",
+          "acceptedAnswer": {"@type":"Answer","text":"Sea Pines Racquet Club features 20 Har-Tru clay tennis courts and 6 dedicated pickleball courts. USPTA/PTR-certified pros, daily clinics, round-robin events for $10 per person, and complimentary play for resort guests."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is Sea Pines a gated community on Hilton Head Island?",
+          "acceptedAnswer": {"@type":"Answer","text":"Yes. Sea Pines Resort is a private, gated community encompassing approximately 5,000 acres at the southern tip of Hilton Head Island, South Carolina. Founded in 1956 by Charles Fraser, it was one of the nation's first environmentally planned resort communities."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is the average home price in Sea Pines Resort?",
+          "acceptedAnswer": {"@type":"Answer","text":"The average sale price in Sea Pines is approximately $1.85 million (2025 data), with homes selling in just 11 days at a 98% list-to-sale ratio. Properties range from $500,000 for villas to over $10 million for oceanfront estates."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is the RBC Heritage golf tournament at Sea Pines?",
+          "acceptedAnswer": {"@type":"Answer","text":"The RBC Heritage presented by Boeing is an annual PGA TOUR event held every April at Harbour Town Golf Links within Sea Pines Resort, the week after the Masters. Justin Thomas won the 2025 edition."}
+        },
+        {
+          "@type": "Question",
+          "name": "What water sports are available at Sea Pines?",
+          "acceptedAnswer": {"@type":"Answer","text":"Sea Pines offers kayaking, stand-up paddleboarding, sailing, dolphin-watching cruises, deep-sea fishing charters, and sunset sails from Harbour Town Yacht Basin and South Beach Marina. The 5-mile private beach also offers swimming and ocean activities."}
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Harbour Town Lighthouse?",
+          "acceptedAnswer": {"@type":"Answer","text":"The Harbour Town Lighthouse is within Sea Pines Resort at the southern tip of Hilton Head Island, SC. The red-and-white striped lighthouse rises 90 feet above Calibogue Sound, open since 1970. Visitors climb 114 steps for panoramic views. It is adjacent to Harbour Town Marina and the RBC Heritage 18th hole."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Sea Pines Forest Preserve?",
+          "acceptedAnswer": {"@type":"Answer","text":"The Sea Pines Forest Preserve is a 605-acre ancient coastal ecosystem within Sea Pines Resort featuring 15 miles of leisure trails, Lawton Stables horseback riding, a 4,000-year-old Native American shell ring, and over 130 bird species. It is one of the largest private nature preserves in the Southeast."}
+        },
+        {
+          "@type": "Question",
+          "name": "Who founded Sea Pines Resort?",
+          "acceptedAnswer": {"@type":"Answer","text":"Sea Pines Resort was founded in 1956 by Charles E. Fraser, a Yale-educated attorney who developed his family's 5,000 Lowcountry acres into the world's first environmentally planned resort community. Fraser balanced residential development with conservation, establishing a foundation to protect Sea Pines' natural beauty for generations. His pioneering eco-planning approach influenced sustainable community development across the United States."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is Sea Pines a good real estate investment?",
+          "acceptedAnswer": {"@type":"Answer","text":"Sea Pines is widely considered one of the strongest real estate investments on the East Coast. A gated 5,000-acre footprint with no new land available, four championship golf courses, PGA TOUR hosting, the only Forbes Four-Star hotel on Hilton Head Island, and strong short-term rental demand from RBC Heritage week and year-round tourism all support property values. The average sale price is approximately $1.85 million, with homes selling in 11 days at a 98% list-to-sale ratio."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can you rent out your Sea Pines home?",
+          "acceptedAnswer": {"@type":"Answer","text":"Yes. Many Sea Pines homeowners rent short-term vacation rentals with strong demand during RBC Heritage week in April, summer beach season, and golf seasons. Weekly rates range from approximately $3,000 for a villa to $20,000+ for premium oceanfront homes during peak periods."}
+        },
+        {
+          "@type": "Question",
+          "name": "What restaurants are in Sea Pines Resort on Hilton Head Island?",
+          "acceptedAnswer": {"@type":"Answer","text":"Sea Pines Resort features several dining venues: Coast Oceanfront Dining at the Beach Club with Atlantic views; The Quarterdeck at Harbour Town with a rooftop oyster bar and Calibogue Sound views; Ocean Lounge at the Beach Club for sunset cocktails; and Fraser's Tavern at Harbour Town offering American cuisine honoring founder Charles Fraser."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is Liberty Oak and who is Gregg Russell at Sea Pines?",
+          "acceptedAnswer": {"@type":"Answer","text":"Liberty Oak is a 400-year-old live oak at the center of Harbour Town village in Sea Pines Resort. Beneath its canopy, folk singer Gregg Russell has performed nightly concerts for over 40 years, creating one of the most beloved traditions in the South Carolina Lowcountry. Families gather every evening during the season for his performances, making it a signature cultural experience of Sea Pines life."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Forbes Four-Star rating at Sea Pines?",
+          "acceptedAnswer": {"@type":"Answer","text":"The Inn and Club at Harbour Town within Sea Pines Resort holds a Forbes Four-Star rating, making it the only Forbes Four-Star-rated hotel property on Hilton Head Island. It offers luxury accommodations directly adjacent to the Harbour Town Golf Links and the RBC Heritage 18th hole."}
+        },
+        {
+          "@type": "Question",
+          "name": "What awards has Atlantic Dunes golf course at Sea Pines won?",
+          "acceptedAnswer": {"@type":"Answer","text":"Atlantic Dunes by Davis Love III at Sea Pines Resort was named Golf Course of the Year by the National Golf Course Owners Association (NGCOA) in 2018 following a complete renovation by Davis Love III. It is the only course at Sea Pines with ocean views, offering panoramic vistas of the Atlantic Ocean."}
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -129,22 +906,23 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
     <li><a href="/neighborhoods">Neighborhoods</a></li>
     <li><a href="/listings">Listings</a></li>
   </ul>
-  <a href="/" style="text-decoration:none;display:flex;align-items:center;align-self:flex-start;margin-top:8px"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAYAAAC+ZpjcAAB/fklEQVR42u2dd5xrVbXHvyuZ27hcegfBhjQRBERRLNiw8wQL9l5QsaGCDzsoFuy94KOoqE99ChYUKYKCgghSFERAeocLF7hlJlnvj7022YQpyUwyk/L7fj75nMyZk+ScfXb5nbXWXhuEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBA9inXiS9y9AlQA79R3CiGEEELMIlnD1M2sruIQQgghhOgxZmRtcveqmdXc/W3A44EaUFWxCiGEEKLPyBrmGDP7ZdY40/2ykQ4JtD2AvXVvhBBCCNHn/B34JTM0Qo106GTuAsbiNQ9ZsYQQQgjRP2QNMwIs78QXdkpgVYrvMuAmQAFiQgghhOhlHJgPrFvookovCazy+5YCuwK30phZKIQQQgjRS1RJVqtdgFM6rVdGunDCDtxhZnfp3gkhhBCil3H3Zd343pEune+IuxvJXSgLlhBCCCF6jSpp5mBXtFC3BJabmbs7ZiaBJYQQQoiewt2zVumKTqmoiIUQQgghOsvIbP9guA6FEEIIIWaN2faojQz6BQohhBBCzDazJrDcvWJmdXf/JLA7KbBMLkohhBBCdIscxH6kmX1npsvf9KTAopFyfmfgcbrnQgghhJgl/tSkRQZKYGXuDkWZVaWsWEIIIYToNDUay9+snO0fnwuBVSHlnrC4+H+SltVRziwhhBBCzISsJRYCW8b7rDkGXmCVQut6YCczW6U6IYQQQohO4O5bARfP5Tn0gnuuGoWh9A1CCCGEmImwqvSKvlH8kxBCCCGEBJYQQgghhASWEEIIIYQElhBCCCGEkMASQgghhJDAEkIIIYSQwBJCCCGEEBJYQgghhBASWEIIIYQQElhCCCGEEEICSwghhBBCAksIIYQQQgJLCCGEEEICSwghhBBCSGAJIYQQQkhgCSGEEEJIYAkhhBBCCAksIYQQQggJLCGEEEIICSwhhBBCCCGBJYQQQgghgSWEEEIIIYElhBBCCCEksIQQQgghJLCEEEIIISSwhBBCCCEksIQQQgghhASWEEIIIYQElhBCCCGEBJYQQgghhJDAEkIIIYSQwBJCCCGEkMASQgghhBASWEIIIYQQElhCCCGEEBJYQgghhBBCAksIIYQQQgJLCCGEEEICSwghhBBCAksIIYQQQkhgCSGEEEJIYAkhhBBCSGAJIYQQQggJLCGEEEIICSwhhBBCCAksIYQQQgghgSWEEEIIIYElhBBCCCGBJYQQQgghJLCEEEIIISSwhBBCCCEksIQQQgghJLCEEEIIIYQElhBCCCGEBJYQQgghhASWEEIIIYSQwBJCCCGEkMASQgghhJDAEkIIIYQQElhCCCGEEBJYQgghhBASWEIIIYQQElhCCCGEEEICSwghhBBCAksIIYQQQgJLCCGEEEJIYAkhhBBCSGAJIYQQQkhgCSGEEEIICSwhhBBCCAksIYQQQggJLCGEEEIIIYElhBBCCCGBJYQQQgghgSWEEEIIIYElhBBCCCEksIQQQgghJLCEEEIIISSwhBBCCCGEBJYQQgghhASWEEIIIYQElhBCCCGEkMASQgghhJDAEkIIIYSQwBJCCCGEEBJYQgghhBDdYURFIIQQE+PuFm+t3J3fmJmrlIQQElhCCDGxkKoUQqpuZvVCQHkLn/P8kvASQgJLiLkYzKpNFoGOfXXzdpAGOnevMLiu/bqZ1eeoPN3MakBtnGMWA6sB84F5QB0YBe4C7pnkcyNRD+udqoMh5qrqQeamvgghgSV6nhiUZtMyUS2EV71fRVcMKBpUOiPwcz2sx77VgUcAOwDbAw8DNgDWAxaFuMqiaRS4B7jT3W8CrgQuBi6I1+VmNtYktmozrXfx+THdQSEksISYaHB7SQxaTmcsWaPASuDusCzcAdwG3GJmy5oHpUJ09YXgcveKmdXd/SnAQ0gWk0GxZNWjLzrHzP6ar7WLda+eBb67PwDYE3gmsCuw2VRfEfV1IbAE2BDYEnhcU138p7v/Hjge+JOZjTb9vrd53mZm7u6bAc8asPs/3fpympn9s5v1RQgJLNFv4qoOPA94YZd/bhS4xd2vAf4JnB/WhfPN7IZSdIWFoZddDlmEbgZ8c0Crx2eBv4ZwqHe43lWgYTl198cD+wHPCaFUDt6jcQ7zJrkP47Ey/j+fZAl7BPDuEFvHAEeZ2XW5HbRpxa2EqNphgO9/u7wz2nXH64sQEliiLzVWPIl/AHguyYrUqgVrsvgjj062Hu8rUb83jtejimPvdPdzgVOB3wF/ye6cGIiNHrNqmVktrBhHufsBwDZxrZUBauuruiXqC2G1J3AQ8KTikBqN4PR5wILYfznwd+BvwNUkq+jdcdz6Ua8eEqLnEU1CbTTqUTXu1SeAA9z928AXzeyGsKJam6J+toWEM0582TTaZzeQq1RIYAlRCIV6mPT/5e5/Ap4SHXgrgbsrgOuKv6sxGM4nBSEvnOB7VhWiqwqsATwxXh8GLnL3XwD/a2bnjTcw9wjVGFSOAT4d71tpww5c1cMD0ljcw1uK8+2EsDKgEuL0ocDHgRc1CfJKIYQAbge+DxxLclmubPG3NgX2AF5McjnOK0Rb/q11Q9y9yt0PMbOvp4+2Vc/uBq6IMut2sLuTXKCr05orv7l9dru+LO1kfRFCAksMAhV3d+BHIbCm6iCzAPs78Hga0+GzlWpBDAJrAJsCW5OClHeJ9wuaOudypmEV2C5eB7n774BvAMdnq9E0rAzdIp/Dz0MszJti4Mv/WwU8OURWr7pTLFtKOiFqi7icmru/BvgcsBYNC2c1XrVCuH4Z+LyZXV2K7KJ8vel8762fZnYt8D3ge+6+LfAe4DXFdY0U1qCNga+5+97Afmb2b3cfKYPix3kwyWVyetTpbouKXDZHkeIla5OMF7kMz42HFpuF87P8wNBjD0FCdOjxJsWt4O7HeIPb3H3d4gmy7Khw9+OKY69x90XNx4qBrzeV2G7t7mM+NfmYM6fxWw9x91e7+4/c/Y6m76zF+5q7jzb95tnu/sKy/vZCHXV3i9ffi3OfiHpsV7j75kNYvxa5+7fHqUfNf1/s7ruV/Zq7V9q533FPqvm3Y9+T3f3CcX67XtS3m939eWV/2iNlaE19+2gL7fNP6t1ED7X/bZrq7iHN7azQJbvGMatie0An2qQsWGJO2kBsrwCuBTanxXiibFEa5wm5zLZt8WQ7ZmaXAZcBR8YMrBcDbwC2KixaI/Hb2ZVjYf36sbufCnzQzP6YG+QcPzFnl9f5pLifVuOwKkVCzJ4MCO5EzFu+P+6+PvB/pNl9Y4XFiqb7fhLwYjO7tUilMDbNc68VHXzFzE4O4fZV4BXFb1psa6QUEL9w97eb2ZensmTN4sNo1d1rtDnDd5L22ZP1RYhuIoEl5mQgjYDtle6eBZa38dnxOlef5GkmJ5K8Bvisu38NeBnwAWALGnEylWIQzq6kJwGnu/uXgA+Y2bJWBsFuFl8hTtsa+6LsBjbDeLgFa+6+MfBbkpt4lPvPBszurlOA55jZihBmYx2q33WgHt+5DHhl1PODuG/cXLUQu19y9zXN7NAW3IU+C2WZ68t02rbEjxBosWcx93Xv9i6LuXpYsmrhxhkxs+Vm9h1gJ+CLIVryNPjy/HIcigNvB/7i7o83s7EecBneoip0P8uJu/tawAkhrsbGEVf1uK8XA88vxFWtC3Uv17mqmb0f+GSIq7GmepbjiQ5x93dF/dLDrxASWELMiOWz9UNm5jF4ZaF1m5m9kxRofzmNYOeSajEAbgOc4u7vKab9Vwa93PpEXGWh8kOS63SU+1vos6VyBfAiM7uj2y7fsOTUo769HziShnvw3sOKuvc5d987i3jdXSEksISYLiuLwW+uhNbJwGOA34xjYciM0IjP+oy7f5cUZ1OfI5G1UlWn0Y+FSPo0KUXCeG5BaFivPmRmF8S9r81GfSPNZqwCbyLNtivdg1lk5fi4o91927CAqY8WQgJLiGkxZwHjhdAaMbObSVm9j5xEZJXunNcA/+fuC+dIZCnJIvcJan86cAAT5wbLS8v8A/h8iJ3abNa12K4CXhUC2ZseLPJEi8UhsubHNWqGtRASWEL0HyGy8lIqrwGOmERk5Rlgo6RM9L+KVCM+ywPh0A+6RdzVasDXaExUsEnK7EM5gHy2A7FDCI6Y2QXAx7i/FSuf4ypgZ9Ls1Wx1E0JIYAnRlyKrHoN21cxeD/x0EpEFyQU1Skrg+aMYGCuyNsxu/xX37e1MvgB2FikXkKyOlTlMtZFdhZ8hBdrnyRVenP984GdxrvcmYBVCSGAJ0c8iy8Oa9UrgPO4fkDyeyHou8JUYtGVtmAXiHtUj39V7CxHFBAIL4Ii4x5U5rGPZVTgKHEwj03sOdD8PeJ6Z7WNmfws3tlIeCCGBJcRAiCwzs3tISUnvZPLEiVlk7efub9Xsr9nru0J47AesQ2MCwv20WIjku4GfNAmuuapjOXj958A5JIvVjaQYsseY2fGRSV79sxASWEIMlMjKsTL/AvZn6uzn2cr1eXffVbO/ukskqR2L2LfX0Yi9Go98384ws2uLNQp7oJpZHTiMNLHikWb2uUi+W438bXXdbSEksIQYNJGVZxceTUpcOdmss7w8yDzSkjyLAFM8VtfIFsJnMPUyS9ny+LsiX1ZPiPjY/tTMXmNm18caiKbFi4WQwBJi0KnHoPwO0rT6yVyFFRrJSD8Sg6TaV3fI9+BF3D/VwURi7PRwKfZUPFOxSLTFigOKtxJCAkuIwSZPkQ9X4TeZ2lWYrVzvdvcdw1WoeKwOC5Io1wWkhZwns0p5/H8pcGkWzT1Wx9zMahJWQkhgCTFsZCvWYaSA95wMctzxMrYjwOHFIC86qEliuxWwKZPHX+Wyv4pY81JCRgghgSVEL4zmDSvWDcDRNKbVT0S2Yj3F3Z8WWd5lxep8n/Vo7r9A9/3EcWwvNzPXfRBCSGAJ0VtkK9Y3YkBvdaB+f2xlNek8O7Rx7FVZL6vYhBASWEL0CEVurIuA02nNilUHnujuO8mK1VmxG9ut2xBNN6jYhBASWEL0aFsJK9Yx8fdUVqmcOuCNKrrOEAHu2Zq4SRsCa6lKTwghgSVEb5Jnev2GlBV8hNbSA7zA3deKmW9yUXWG1UnZ21sVWMtVZEIICSwhepAIkq6Y2fXAn2P3ZFP+sxtxXeBpTaJLzIyFwGptHD+mIhNCSGAJ0fvt5XexncpNmBNb/leLx4spdG5s57cpVkdUdEIICSwhepcskE6LbbWF9mWkYPfV5CbsGNU2+65FKjIhhASWEL1LdgleBNzM5Evn5PblpISYj1Cb6xg12svIvpaKTAghgSVEj1LEYS0D/tEkuiYTAwC75a9RSU6bLGZHmTxNRjMbquiEEBJYQvRHm7mwadCfil3bPF5MzKp4tcpmKnshhASWEP3BRW22se3yQsUquhmzArirBdGUy36L2NZVdEIICSwhepM8oF/WYhuyYpBfD1LCTBVj++SFms1sBWnhbVote3dfI1y8KnshhASWED0ssK6N9xUmt6LkQPg1SMHu5cAv2i1899xn3dR0PyYr+/WBB6vshRASWEL0vsC6lZTRvRWya2ozDfId67OubUFgQSMY/pHq84QQElhC9D53Ane0OMjn/28sgdUx/t3m8buryIQQElhC9D7LgWVtfmZ9FVvHuLhFsZr7uMe5+4iZadkcIYQElhC9Rg6UjoDrVmaylaytEpwx2d36jyj3VrLpO7AlsC3cJ45LCCEksIToJZ0V2+Vtfm51Fd2MyWL2chpxWK0ke60Az1S/J4SQwBKi91nV5vELVWQzVLbJglg1s+XAuS0KrCyIXxBpGpSLTAghgSVEL47zsR2dpsBSRvHOlP+pLR5fjTLfGdgxizQVoxBCAkuI3sKbBvp2PydmRrZYnURrcViQrFYGvHKa904IISSwhJglRto8fpUG95ljZvVw9V1IWrLImNpNmPu6fd19DaCmrO5CCAksIXqLbIlqN6bqHhVdx6jGuo4/j79bEVg1YCPgRTELVG5CIYQElhC9Ql4TD1icd7X40WUqvY6RBdWP4n07YukdEYOlxZ+FEBJYQvQC2a3k7iOk9QXb4WaVYMdEbt3dK2Z2IfCn2D3V7MBqHPNwYK/4DlmxhBASWEL0EKsDS/J43+JnblSxdaX/+hrtxbU58MEQV65YLCGEBJYQc08ejNcG1mqznV1TDPBi5uRA9Z+TEo9WmNrtl12DOwIvMbO6+kEhhASWEL0jsDYE5oVYmswC4tHOxiSwOnwjIlDdzFYAX4z74C3eQwcOcffVkBVLCCGBJUTPCKwHxXYqi0ke8G+isbSLBFbnyFas/wGuozUrVj7mgcC7woqlWCwhhASWED3AVi2Kpfz/y8zsngjMlsDqlNptWLGWAZ+hdStWFlkHuvsWIdTUHwohJLCEmCPy4L1dm8efqzbXNbI4+gbwb1qzYmUhtgT4cgg13RshhASWEHOBmdVi9tnDW2xD2aV4pkqva/fE08ZWAAfSuhWrSoqNe667v9TMxpS2QQghgSXELFO4kDYHHtwkoMb9SAzio8BZsU/JLbsofM3sZ8DJNHJetdIH1oEvuvuG6TbLVSiEkMASYi7ayy7AfBoLCE8msAAuAK5wd4uAatElDRzbt9NY99FbuKcOrAd8Ke6PZhQKISSwhJgD9mhx8M5i6gStfdd9cmZ2M7sIOJTWrVjZVfgid9+7cAMLIYQElhCzMICPxRI5T22x/VRDhP2sSXCJ7pGXv/kk8HdghNZdhQ58xd3XQa5CIYQElhDdp7Bo7AJsSSOB6IQDfWz/Dpwr9+CsiWCP7SjwpuI+tOIqrAMbA59ThnchhASWELM0dsf2hbGdyiqSY3mOUiLLWRdZNXcfMbO/AJ+jsTzOVGRX4avc/VmaVSiEkMASootEpvCauy8qBNZkbSfHW90BfL9FQSY6S46j+hDwrzZEVnYVfs3dl6BldIQQElhCdI1quJ6eDTwgxNJkbSfPLjzSzG4Oa4qyt88ihatwOfDmQvi20ifWgS2AT8v6KISQwBKie2TLxztaODbHZt0DfD6sH4q9mhuRlV2FpwDfpL1ZhTXgze7+ZLkKhRASWEJ0mJj2X3f3PYDdQyxNNthm69Y3zexKoKLg9jklL6NzIHA1rS2jA41s8N9099WiLshVKISQwBKiw3wsa65Jjskzz24EPh4Du8TVHFIso3MH8FbaXwz6ocChZlZDrkIhhASWEDMn3Es1d38hyXo11SCbBdZ7zOzWGNgVezX3Iisvo3M88APadxW+w90fK1ehEEICS4iZiysjJa1cAhxOsnpM5iIaIyW1/JWZfS8GdM0c7Klb6hXgncBNcS9btS5WgG+5+4KibgghhASWENNgJGKnDict7jxZ4skcl3UT8PoYgGW56iHyGoNmdjNpskKr7tucG2s74ENyFQohJLCEmCbhGhx19xcAb2Ry16DTsG690sxuQIHtvSqy8qzCHwK/oPVldLKr8H3uvnO4CtV3CiEksIRoU1yNufv2wHeZ3HJFIb7eaWa/zXFbKsmepR4WxrcBS2kt6D27BEeAb7v7PMDkKhRCSGAJ0Zq4qoa42ohk4VjSNMDe53BgNAbdT5jZF7M4U0n2LnmNQTO7Bnhv9IGtWrHGgEcCB8lVKISYihEVgRD3sVxtAJwAPIiJXYMe/5sHfNbMDnb3Vt1Nc9bW4xwr7t6r7sv6bLhWi1mF33H3FwFPY+oZollk1YAPuPvPzewCd5c7WAghgSXEFOLqQcDxpIDmiQbcvIjzCPBRM/tITN2v9XBKBgdulnWt+ba7AfsBfwcWMvVM0fy/+SRX4WMJV6HScQghJLCEaIywVZLVZMzdnwIcDWwyibjKqRjqwFvM7BvFd/TiAJsFwTzgUHe/g9YTbc4mOc7tD2b2+9mwCkV2/hEzu8zdPwB8vri/k5FdhY8GDjCzz4RlUOJVCCGBJYZeWFXSGGs1dzd3fx9wGI14nGZxlV2CI8C1wKtDCPRLzFUV2L8PznM14Pe0nkJhptRCIH8ReCHwWNpzFX7U3Y8zs0vkKhRCNKMgdzEsosrcvZrXFgxx9STgNOBTNBJPVpuE1RgNl+DxwKP7TFz1E6tm88fC6uixfSOwsrjvk340touAb+R9mlUohCiRBUsMsqiq5MEwZn3VYv+jgHcD+8ah2WphxQCbxdYIcAPwATM7Ij5f7TNx5cA/Q0D0oggYI8U1XdOiwOmkyKrH/bzI3Q8BDqU9V+GT3P0tZvY1uQqFEBJYou9Fk7v7OBaFUjzUSpeNuy8Cng68GtiLRiyS07Ba1eM1EvtWAkcAh5jZDTm5ZB/lucpB26uAPSM1Qc8zB+VbD1fhp4B9SKkYWnUV1oFPuvuvgSvlKhRCSGCJfqStafzuvimwM/DMEFcPLgVYMYDWQohU4nU38EPg82Z2UXxXv7sEq1mgSgDcT9C5uxOTHd4InFkI8KlmFdZJ+dK+bmbPVIZ3IYQEluhHVnP3hxSDX5UUB7MQWAtYB9gC2BrYFtgGWL0UaPG5SiGurHh/GXAscKSZXRaC5N6Zhir+gRZZeRmdv7r74cBBtG7FGgOe4e6vNrMjFZ8nhJDAEv1CHuR2AC4p9leYOqYou/2ydSqTXYz/AY4Dfg6cYWarQliNhLDSsjfDQ55V+FGSG3kbpl4qKdfPOvBZd/8dcL0shUIImbNFXxkaCqFUKQRUjbRszSpS3NSK2I7SsHRNVNdvB64C7iofOMICUZHLZ4gqV+QyM7MVwJtoxOi1Ui+dZEH9SnyP6o0QElhC9J3IKl/Z3TePNBNtAclluCD2VYsBcCzEmBef3wn4LHA2cLG7f8fdn+XuC8xsLM8yk9AaGpGVXYWnA1+l4QKcinzc8939xRHPpbUKhRhi5CIU/UB20/wDeCvjZyMfCUG1BFiPlJH9gcCWpOD29Zrq+xj3tYJVgAcAr4vXxe5+DPB9M7sS7hOPpWVRBptaCOr3A8+OetSKqzAnSP2iu58E3KZldISQwBKil8kD1O1mdmrbH3ZfhxT0/njSbMLdSBauLK6sGBzzQLo18HHgQHc/ljSj8JIstBSbNbjErMKKmd3l7m8BfkNrmeXzSgAbAl8ws5crN5YQw4vcHqKvHgjCXZe3471Gilc1LAi3mdkfzewwM9sD2B44kLTIb3Yx1ouHjiy2xoA1SPE457j7Z9x9g3AjVZS5e6BFVnYVngD8D+25CmvAy9z9uXIVCiGBJUQ/4Dkju5lN9BorXrWwRlghvszMLjWzT5NyZO0NnE4jcH6saBsjNGK3FgPvAc5z99fHcjuuwXOgya7CA4DrmoT4pPos6s3X3H0twCXGhZDAEmIQrRFeiC8P69NI7Ps/M3sCadmcf4Woyvmy8mBZCq2NgW+7+8/dfdNs6VApD2a9SRu7nbRYttG6q7AObAZ8JtI1SIgLIYElxMAPnPVw3VjhRvwRsAvwJRr5tepNVolSaO0FnF26gWSlGMi6kl2FPwP+N+pAK/F32VX4end/qlyFQkhgCTFUForCjVg1s2Vm9g7g+aT8WJVxBtMstLI16zh3PzhclyaRNZDUw1X4duAWxp/FOm4Vi+O+4e6LkatQCAksIYZQbNXCojViZj8HnkByGVYZ32KRXYl14FB3/07+Kg2iA1c36kDFzG4A3k3DBdhK/1oHHgJ8Qq5CISSwhBjWgdTDlTNiZhcCTwLOm0RkZVfiGCl31o8ksga2boyFlfMY4FeT1Ilm8nH7u/vuchUKIYElhAZTs+uBpwIXTjKgZpfhKPAC4Jhs8ZDIGjiyi+8twJ205yo04FvuvjC+SHVDCAksIYZSZNVCZN1KyuZ9LZNP058XIuul7v61iMmSpWKw6kR2FV5FyqNWoTUrVk7/sQ3wYdUNISSwhJDISu7Cq4B9SItJT7YAcBZZ+7n7e7O7USU5kML7G8CptD+r8L3uvotchUJIYAkx7ANqjsn6C/AOpk42mWcYfsrd99BAOpBkgf0mYHnTvgmrUiG0vuXu80CuQiEksISQyBoJq8VUAc5WtKuj3X3dNI662trg1Id6WLH+BXyE9gLex4BHAgfJVSiEBJYQIuVCMmA/pg5wzrE5mwFfidgdWSoGrz5Ugc8CZ9G+q/AD7r59iHf1w0JIYAkxnOQcRmZ2NfAJps6FlF2F+7r783LsjkpyYOqDx7ZGchWOxr9adRXOJ7kKKyithxASWEIMOXnx3y8Cl7cgsiox4B4e0/OVyXuwRFaeBHEecBjtuwofA7xLrkIhJLCEGPYB1UnT9FcAH2fqPEhZgG0J7Jen+askB050V6M+XEAjw38rIqsGHOLuWxbiXQghgSXE0A6oBnwfuIKpZxVmEXaQu69FI5ZLDI7oxsxWAW+IuuC07ipcBHwzvkeuQiEksIQY6gG1amYrgW/H7qnchDVgA+AN+fMqyYGqE7UilcfnWxDdmewq3MPd95OrUAgJLCGGnTx4Hg3cTXILTeUqdODNEYtVk6Vi4Miuwg/SWCS8VZFVJ+VN2wK5CoWQwBJiWCnyIF0L/L5JdE3UzurAg4E9ZcUayDqRXYXLgTfH7lZdhQ4sAb6WXYUqUSEksIQY2jE1rFDHtnh8HmxfW/wtBktkZVfhKcDXad9V+Cx3f4lSegghgSXEMFMLa8PJpMSj1SlEU5VkmXiKu28Sg6ja3wDWi7ivBwFXMnUqj7Ivzik91kIpPYSQwBJiGDEzd/eKmd0MnBG7p5pNOAYsBp6p9je49SJt7E7gLXHfWxVYNWAT4ENK6SGEBJYQaj+NOKxW3H4OPLuN40X/iaxaxOj9GjiG9pbRqQNvdfetSSk91EcLIYElxNCRBdIZxQA51QBqwGPdffUYiOUGGtC6EeLoXcCNtGbJygHv84FPKuBdCAksIYaVPGBeCNzM1Jnd8/83BB6hNji4ZBefmd0KvI9GjNVUZCvWXu7+BAW8CyGBJcQwDqI5DmsZcEmT6JqI7CrarRBdYjDrx1i4Co8GTqP1tQqzEDu06W8hhASWEEPXhi5sczB8lAbPoeLdIa6shXuerViPd/en5rxrKkIhJLCEGEYuarPNbRPxV3UV3eBSBLyfAxxFY7bgVGQRdrCEuBASWEIMI3ngu6zFNpVdgg8E1gs3o9yEA15H4h5/hLS0UivxWNmK9SR3311WLCEksIQYVoH1n3jfisByYI0QWaXoEgNIEfB+NSnDe6tWrGzdPLCprgkhJLCEGBqBdQspo3srA2EeOB+gdjg89SSsWJ8F7mDqzP/QWER8T3ffKqxYqitCSGAJMVTcASxtUWDl/2+qYhsOCivWDcARJKtlK1asGjAPeIP6bCEksIQYpoHTY7uKhgWrVTZQCQ4V2Yr1JeAeWrNi5T76pe6+OFI/yKUshASWEEMxauYBr1UXYWYdld5QifFsxboS+AmtWbFyvNbGwJ6xT8HuQkhgCTEcY2ds72nzc0vaFGRicAT5V2htUkSuHw68XPVFCAksIYZRYK1o8/hFKrohqyhmtbSxs4G/0NqMwryG5R7uvq7WsBRCAkuIYWO0zePnq8iGut/9bmynskhlV+JawJML0SWEkMASYiiotzhgqv0NN9li9QtS3N4Irc08deDZbdYxIYQElhAD055add/UVGTDR2Tvr5rZTcBJTeJ8srplwGPdfURuQiEksIQYJlp1+WXrwyoV2fDqrBBIP2+zr34wsFWbQl4IIYElRF+SBVO7Qet3a6AcWuqRQ+1U0uSIVnJi1eK4XdR/CyGBJcQwCazFbX7uThXdcBLL3piZXQVckEVXi/VsZ5WgEBJYQgy2skqDZM7QvUYeP1v8+C0qwaEmzwT8Y5OAmlCXxXaHFgWZEEICS4i+ZxFpGn07AutGFZsA/txivcn/38LdF2QrmIpPiN5kREUgxIwwkuVhrUJgtfIZgGtjqyn3U+DubT0MxrI0vU4+xwvjfY7DsinqzYbxuqqof0IICSwhBpL1gdWaBsKJyAPp1RJYAyWY2taNsb0KuDlEUytifmGTwBJCSGAJMXhjf2w3j22e6TXZoGrAUgmsFlWI+/wo31asNTnr+ZWxLE0vi0aPGL673P2aEE31KepP/v96qhlCSGAJMQwC62EtiqUssK4ws9tzkLyKcVxhVQnL1YNIbjRjchda/t8dwDbATX1QvnktwmtobXZgvpb1muqfEEICS4iBZLsWj6vHoHph0wArJhex7fRVI312bdCY8NCqGFysaiGEBJYQg0wWRw9vGjCn4qw2jx926rRuwerHeK3b2jx+kaqEEBJYQgwkRQ6s9Wi4CKea7ZYD3P9cCAcxNVYIK2vxuH7irjaPr6pKCNHbKA+WEDNvP48A1qRhZZmI/P+rabgIFX8lIC2X0w5ax1IICSwhBpYsph5fCCimEFgO/MHMVrp7VQHuXaFKw8LTL9asdvvi5brNQkhgCTGo5Pirp7U4mGf31XF9NvjPNWO0NxFghP4Lf5jfpqjPyyxJoAshgSXE4BApBNzdtwB2aaE9OcmqcgtwYpNAE5OzEhht4/gFNJK+9gurT1NgCSEksIQYrLYT68A9Kwb0MSa3SGUxdbyZ3SH3YGs6NrZ3Ane3KD7yTMK1mgRJr7N2i+VRCbGpZZaEkMASYiCph0B6SYsDeW5r31XRtc1dwK0tCoocB7dhn1xbvp712xCENwM3SGAJIYElxEARCw+7uz8c2I2G+28iajFwngX8KdyLcg9OQbhgc1ld0aKgyP/fog3BMqdCPbYbt3HsJWZ2T3ZTq6YIIYElxMC0mxjY3kAKpm5FLBnw2fic2l37fdT5LQqszMP6QKjnPGoLgE1bEIT52s9R/y2EBJYQA0XEXdUiuegrmNp6lZfGuQj4v7A6jKkk2+aMFgRI+f+HF+Xfq+Rz3YSGBctaOP70NsWmEEICS4ieJwen708KTK4xtdXBgA+Y2ShKzdAu2Tr4F1IsVnUKYZH7tG3dfYmZ1UMU97LAehgwj8kT1WYhfxdaBUAICSwhBomIvaq7+4bA22kt9qoKnGxmP4+Zg4q9akeBNOKwbgD+GGVem0K0OLABsH2P93NZTD2qBcFUi+s6zcxuUvyVEBJYQgxUezGzOvAxUhqAqSwOkJY0ebuKriP91LG0ttZgFmB7NAmZXiMLqt1bOM983T9U3y2EBJYQA0NYn8bcfTfg9TGIV6YY5KvAx8zsIncfkfVq2uRy+zkpRUGFya09Wag8r+nzvVSfLNyX6wCPnqI/zhMjbqKxCoDqkhASWEL0vbiy2C4Avh3tZjJLyhhpduHpwGHuXtWAOH3CTThiZncC34pyr0/Rrzmwk7tvlwVyj11WNerVHiRr6GSxfPl/P1CSWiEksIQYJLL16TPAdkxuvaqHuLoZeFkM9K4BccbkYPUvA0sLETWuJot7NAK8Msq+19yEuU68OP890XFxrfcAX4gyUF0SQgJLiP7G3eeZ2ai7v5o0c3CMiQPbnUYQ9ovN7GoacVtiBkQZVszsRuDT0XfVWujbXuXua5JSa1iP1Kk8WWJT4Jmxe6I6lcX8t8zsStUnISSwhBgEcTUS4uqJwDdpxFVNJK7q8f/XmNkpirvqOPUQJ18ALmHyJK9ZgG0IvD6sRb3iJswzAF9HWuR5onUscw6124BPyHolhASWEIMgruZFUPujSMHV85g47qpeiKu3mdkxIa6UULSDZFefmS0nZdHPwnYyV6EDB0YweRZoc1mvLM5jbeBtTJ7qIwus95nZzch6JYQElhB9LKyssFw9HjiBFIQ80RI32YVTBfYzs69KXHVVZNUiyPt04GCSFWtskv6tTlpI+ePZzTjHl1CN8zgozmuiVB95osTxZnaEcqgJIYElRD+Lq6qZeViu9gV+C6xTWBLGGwSrwApgXzP7hsTVrImsETP7BPADknVxdCJBEyL4ze7+9Li3I3NYv8bcfXvgnZPUqxygfzXw2ry4uO68EBJYQvRVHSysVjV3X+Duh5OSWi6aYBD0wsJwBfBkM/uRxNWsUgvh8WrgpClEVnYVHuXum4bIqc52HYvtPOBIYD6NZZRKcn27B3iBmd2SNOWcuQbbKSctAyWEBJboIRbMobCqhCjKVqvHAH8CDoiBbjy3YM5JNAL8EtjNzM6UuOqK6J2wfyrSXowBewGnTSKysqtwI+BnsUZhbbZEVoir7OL7OrAT40+YyO7CMeCFZnZWD0yUmN+GsJqvmiuEBJbogTE0tmvM5tNvDNzVcNfUQ1ht4e5fI611t3MMcJWmc6rRCGRfCrzdzJ5rZjdm149uacfuUXbVTrpQc1h1zMzuBp4FHB8ia4z7u9SqsX9X4Dh3XyO7Grst4knB6WPu/nHSzMHxUn3kWL5RYB8z+/Uci/bptM/FeY3EHl5gWwgJLDHYFIPnRt0SWNkKEoJqJHf+ZlaLwfVB7v4p4Fxgvxj0cqLQ8YRVBfgRsLOZfTm+2xR83LH7lO9RdtVuOtVgHfWoEiJrL+Arcf9ystGSHBD/JOAkd39gdhd2enZh4Xaux/V8FvhvGq7lkrFCuD/bzI6fa4to0T43bqF95v+tByxRjRai0eEIMesDarh41gMe2IbAsrA4mLv7FE/fHhYOb/rt9YEnAvsAzyHlISotCDmgOAcaZ0vDqcBhZva7+J5+cwmORNlV3L2Xpvp7CNScRwx334OUNX9td9/BzO4q6sxkYgAz29/dzwMO575L0FSKPq8G7AKc5e7vMrPvx+9mq2V9upn3C3fgGDDm7g8kuQWfUdSpTK6fI8CFwMvN7O9zXbeKsl4f2KJFgeXAunH8+cU+ISSwhJhF8iC/I8kF0er0+dF2Bp4QFBsBDwMeBewO7BYDQbP1wIrBuFq0jd8CXzOz44pBmD50Cd7Sy+fs7g8BngbsGwI48313fxHJdeaTWFw8u38jrcEfgM9y3wWfs9DKMwvXB74XM0Y/amZ/Lc6nWoiEev6NccRU+aqHqB9z90XAG4EPkWailjFXOW9armNHAO8ys2U94m7O7fOR8QDSSvvM4nFXd7+AqRfkFkICS4guYDEgPqcYcCpTPCEDbOHuB4/zdJz/XkCyiq0FbBKvTYHVxhkMmvMPVYpzuJaUXPTIPOjGYFrpU3dgFfiAuy/tEcuCkWKl1iVlWt8K2Dr2EWIqv98w7t/SyaxYhQDKKRz+Dezl7i8IkbN9ce/z/c5JSp8DPMvdf0HK2H+6md3TQiW+X5JTd98c2Bt4c1wXhbjKFqvsbr4Q+G8zOz6L9x6pX7l9PrfF9lm20b3N7Ds9ZiUVQgJLDD4xSI65+2oxENWLTnwy6sADgEPb/UlgVSGostuvOcj4GtJMtJ8BvzezO/KgFwNOjcnXvpv1oiwsIfUpjqsA7+nxqlGP+zQ/xNVSkpvwk9kF2KrbLupXtjT+xN2PA14FvIO0WHcmL1GT46KeH6//uPsfSZMe/g78B7jVzEab6vJ8YAPgQcCjgaeQrKSrN4k5574zUq8gLffzLTNbEdayei9kaS/a52Lgv9pon/l6n+juW5jZlSEYJbSEBJYQs2hNGQNeC2xWWBO6aS1pnj4+ClwVFoQzgTOAc83srmKgqdKI4+rVtlthcKbG52u5Dvg+8NVY3Jh2xFUhsnI8V9XMVgHfdvejQkC9lhToPr9JHOTZow+M18vjf8uAW9x9WSE0jGQpXZ/7W0hXTlDvzgG+DRxrZncW51frwfb5OpL1t932uRrw7hCzchMKCSwhZpGcf+gJwEW0Hn/VjmVnVbxWAncCNwM3hiXi8rAgXB0DL02iirAm9KorMAuN24B/MP6U/37B4/5cB/wzi93CepgtO9N2acYMvuzeXUWaBfojd9+K5Bp8HinWaElTOeaJDsT/lkxyDWNN/WmZ2+0fpDi+n5nZH5vqWi/Ws9w+Hz+N9pnv0w6Ra2zZdMSxEBJYQkxvwPOIz3jJXA8uzYHM/RBflc/RzH7p7r8axMGrsB7WOlXnQjjkIHc3s0uAS4DPuvsmpPxnu5GSgG5Jiv1a3MrXF/3oLSTL6PnAX0lJay8oryMmXtR6ta4V7XPf6Z5jmcBV4kpIYAkxy504XY5nGmeGV/mU7Z0cwOe4HPtdTGXR03WhW9a7nAA0xM51JCtaDjafR3L9bRqvPHFiCY2YrZXAXSQL3E3x+WvN7LZxrnEk17d+mH060/apvHBCSGCJ3hhcuzJAjDfDS+U3nGJ7gt+9d3JAk8irRzB7Fl1nT+O+5H61HsJqbNjqlyxXQkhgibkfXIXKr6dEXpP1E6ZOgltaRX1Qlk1S/RJCAksIITotLCQuhBAzQmsRCiGEEEJIYAkhhBBCSGAJIYQQQkhgCSGEEEIICSwhhBBCCAksIYQQQggJLCGEEEIIIYElhBBCCCGBJYQQQgghgSWEEEIIISSwhBBCCCEksIQQQgghJLCEEEIIISSwhBBCCCGEBJYQQgghhASWEEIIIYQElhBCCCGEkMASQgghhJDAEkIIIYSQwBJCCCGEEBJYQgghhBASWEIIIYQQElhCCCGEEKJgREUwmLi75fdm5t347la/t9vHT3TdnaTTZTjTa5rL8+n2PezVej8o7bAX6/1c3Ld+bFdCAkv0AN3sKNr97m4fPygdpLtXAIsXQN3M6uNd03jHAt4r15/PIwYxM7N6v9f7YWuHg1JO7fxm1NdK0a482qGEl5DAEvd2FIuik6iZ2coOfu8IMD/+XGlmtSmOrwILpnn8KjMba/P8FgDVThcnsKIbnWxcr5nZ2EQixN3nF9c0Bkx2bLUQZz5Hde/eOmJm96RdXp3q3nfIIrEw6v2Yma3qgXa4MAbsupmt6HC9abmdhCBfOI2fWj4b9cjdVyuEzz2z8HsGLCp21aOvHAVqE5Rfvo91hJDAGjpRZWbm0Vn9Adg0ti9x98pMOgZ3H4lOfC/gy7H7TcDxxf/GO/5ZwDdj91uB/5vg+DwAPw34bux+N/DD8Y4frwOM6/se8JjoJCcTWtXyCXUSYWXA7cDuwJ25jDvQuVdDVNWK/VsAj4jXQ4EHAOsCS6KtGrACWOXutwPXA5cDFwHnAf8qRUUMwj5bA0Jxn14EHA7U3P0y4AAzO6db1qzinqwLnAasBRwHvHk2hN0UHA9sB1wIPL0Twiqu57HAj2L3B4EjpmhXuwI/i7puxXaiumzRhp4AXDnT/mOya3H3pwJHx8PDiLu/3MxO7sa9K67jgcDpWTQBo9GulgK3AP8B/gWcC1xoZrflfqKwHsuyJSSwhhALcbUxsEGHv3txfC/Aai0cv1px/OIuHN/MlsBmHb7mzTphFcvuhxg0xmLfo0O07gE8HFh9ml8/Blzh7mcCvwJOMrNbiwGBWXzyXr24h5sBf3T3j5rZJ7tszaqGKF0dWK9H2uLG8bq1w9+7sCjjNVo4fkFxfDss6HI/RTxUbRwCphJ/n1z8vxvMiz6yFW5w978BvwWON7Mrmh5iJLSEBNaQsSqeTkc7/L214qm3lQG7Xhxf68LxpbWJsFxcVnTW47EEeHL8/9KwLoz3NJ8tWMuiPGdssQqrzkbAvsBLgV0mGEiWAjfHwLwUWBnnsygGvbWbBPRIiMstgVfGoPBz4LtmdvYsC61aUffmhxg4zN33AN5sZle0YpWcTlFHOS3uQr2faTvstLuybCdjLZZNttZeCVwdgtQnODZbsO7ucj2BZI3LZbQg/m63/U+nrqwKoXVZ9AFLol2tG+0quxA3IlninwUc6u4nkSxux+c63AOWUiGBJWYR475B0J3+3uk8qVqXjr83YNXMPtSC4Nk8OlUD/tfMPtDu77QhrnLHO+buGwNvA17P/S2LVwJ/Ibm4zgWuAG6JmJCJvnsd4CHA9sDjgceFwMqDwpuBN7j7b4BPm9np8bluiJvx6kgF+AGwZwxaTwf+7O6vM7Nfdunpv1v1vhfPZzrtqgp82cy+0NYPdcmt6+4bADvEuS2I7Q7uvp6Z3dIJl/wUIsuAX5jZe4pzWy3az9bxAPR4YCdgnRBh/xWv89z988D3w9Upa5aQwBKDSxEfMR453mLNYt/C6BhHJrMETOfpNAuZCLx/N/AOYMPikJuAn5Niac4ys7vGG4iaBugsJOsRF3IbcDbw3fidRwHPj9eDYkB9DvBsdz8W+IiZXTpLs/tGgG8AHwqhtSuwPilu72Az+0S+ZwocnlXmRTupMoX1q4tioUKyUO0coqVOI25yzRA0vyuO6yYLog+omtmqCLK/PF6/jjq6CfAk4OXAU0mWrx2Bo4C3hwv8+KaHKjHkKNGoGChCeNTGe5FmCdWaOmwv/zfJZ9t6Og/RMObuuwNnAJ8oxNVlwPuAHczsTWZ2spnd5e5Vdx+JreWn96ZruncWUxxz72fMbKWZ/dHMDiAFyr8srGLZevFS4Gx3f2/+3mLWYbdYz8wuA54YYiu7nj7u7ke6+/w4D/VFs/gcEnXIox5M+OpmU43t42M7GmIlC74nNB3X7fKo0QhiN3evFG2rYmbXmdkPzOxZ8aDwdeDO+PzOwHHufpS7rx/WLBkvhASWEB3tqVNnnMXLh4FT4mkc0qy/dwGPNLPPmNkN0YlXQ0zV8szCVga4OObez5SCy8zuMrMfALuF0PpHfGxN4NPu/lt3f8AsDAajIZ5GzWw/ktuyHq9XAb9193VmSeyJ3iE/tDwutneQZiff2bR/1i2bTQ81Y1E3c9uqmNl5ZvaWaNffLEThK+MB5pnxcFXtVuJjIYElxLCJq2p0xuu6+y+Bj9Bwwx8N7GxmXzCzZfFkbIVlasbWglJw5QEh9v2A5Do8lBQEDo14qCfG8d0SWdkNaSH8vgk8gzQVHpLb5RR336yIYxGD3U5y/NX6JEsrwL/N7Hzg3/H3I9x93Sxu5vqci7ZVz9YtM7vMzN4cdfivcegWwK/d/f1hFTOJLAksIcTMxVXN3R8EnAo8O/51G/BSM3uVmV1fCKuxbmf5zq7NOLd7zOyDJNfLRXHYJiQL0gu7LLIguWHG3H2emZ1MchlengdT4CR331wia6jGnZ1JOcsAzoztn2O7Dg3Lb0+NU9m6FUJrxMz+RLK4HR6H1IFPuPs3iocLiSwJLCHEDMTVw0JcPTz+dQHwODM7draE1QQDQnYfjpjZWSS34Q/j31XgxzGzr9siCzMbjfO4OJ78L4h/PSxE1qYSWQNPc/wVpNmzkBIj0/T/nhQnIbTGov2vMrP3Ai8BlofIelNMLHGgIpElgSWEaE9cVUIQbEGa9bR5/OtU4IlmdnGeTTiX07fDopUHg2Vm9pJ44h4hBRh/JzJoz4bIyudxNSkfWXavPBQ4IVxDNQW+Dyw5rmr32N4BnBXvz6IRh7V70/G9qRYbDzDzzOyHJPf7LSGs9gWODGuyRJYElhCiRXFlaeNrAb8kxV8A/AZ4ppndHkJirFfOuQyGjyfuD5GmnI8CR7r7U7MAmoXzqJrZLTEg/S3+9XDSjKyFRRmLAWozEce0Hil/G8AFecKHmV1Hw4XdU3FYLTzAjIbIOgN4CnBDiKxXuvvhIbJkmZXAEkK0IK4qYZX6AQ234OnA881sRbZu9eJgANTDsnYI8LEQWZDchQ+dDQtSIbJuJ8WsXRr/eizwvYhf0UyswRxzdiJlTQf4U2znNf29LvDIfhqrChf4haQEu7eTZkwe4O5vmY2HFyGBJUS/k+OuDgGeGU+q/wH2MbOVeUZhLz9xk5btGTGzDwPfiqfrtUNkLWQWgnMLkXUDaSmSm0guoX3iqX9MT/0DRa5PTyj25fgrb/obGm7CvhHZ2c1uZhcA+8R11YAvuftjFGMogSWEmIDs9nP3JwEfIOXBWQm8wMxu7pdMzoXIqgJvAf4Y/3okaWmd2mz0ETkXl5n9m7QEycoo0wPc/ZWzERcmZo380FHmvzon3mdX+tn0WRzWBCJrnpmdCrw9HhIqwNHuvnr0I7LMSmAJIQpxleOuFpGsPk4KFH+3mZ0TQqFvlskIkZVTOryElFaiBuzv7rvP1tN28dR/JvAaGksXfdPdd5RrZTDaTs4TRyP/1QVmdmMxWcTCmpnjsHZw97X7IQ5rnDqdY7K+TgojMNJaoR+brYcXIYElRF+1mXD9vTc6SwNOMLOvz8Iiyt0aCHI81jXA/vG07SSXxggN181sPfX/CPhkiKyFwPdjAV499Q/GeJMXToZGvFX+X7Vp/3r0WRxWEzmW8W3AtSRL3P7u/ki5CiWwhBCNJ/AKKTh8sxBYdVLOm/1j4O/bBYsLC9IPSOkmLAa2V2YBNkunks/j/cDvY9+2wOc1C6vvGS//1em5eTVtyzisns6HNdXDSzyU3Q68J8bckXiAEBJYYkCEQSUyD0/rlT/fj51cJ9tLuNTeC6we7eerETvU00HtrVaV2L6HlLahDhwcAe+12bAeFTMcjeQqvDXO443uvlc/uwpn0v463A7z5AXLi4pP9OpwEYwXf/XXCQRWGYc1Z+sSdvDhpRo5ss6Ia3y6u+8hK5YEluhv6jnjcGyn+1oVAmLVsIrU6Cg3BF4dneRtwKf63XpVDAR5Rt8FpEzvFeDBpJmRzixZj4qn/muAN8Z51IGvufva6Xb0XRJSn2H7y6/RDrTDvJj4aF5UfKJXB9tPjr9aB9ghdl9YxF/V870fJw5rR3dfqx/jsMbhA4U4PrBJVIoBQzNzBp/VIst4dYYioBpWjY2H+GGkDrwKWCP2HWFmt/Rr7NVkgyHwaVIW6hHSDMPvz6aILGYW/szdvwe8nLR24qfN7A19+NS/wN0f2KF6OAZsNoPvWBzJcfNEgsm4s0OW2Qpp8sQjSfmt4L7xV/WmvmYs/r8bsH587pTie/rx4aViZqe4+59Iud6e4u7bmdlFpcgUElii98kD0G7AP+iMay/PmBuqWJgQHLWIQ3pllMMK4BuDYr0aZyC40N1PJOWmeoy772Rmf5vlgaAelqp3kjJjbwi83t2PMrM/9kk6jNxOtgqLTKfaYRYh7fbhdeB9wFvjXHyC77do548D/tOB+56ve/diX3P+K5r+Po3krs6fO4X+DlHIQvLLUa4jJGv4e8cRmUICS/QB82hkSO4UtSErwzyF/NHAdrHvJDO7vF9yXrV7ve7uwHdCYFVI1qy/zeZAEC6hqpnd6u4HkKa6O/B5d38M/eVaGelCfztdq+nq8WqF+Z0Sy00Cq4y/qk9w7F+BZcAS+jQf1gT95i+Ba0hWyL3c/WCSd0BIYIl+MbzE9hbg3A48+WVLzcakWV3DRC67/yr2/TAHCg/g9dbMzMOCdX3c82e6+/tnW1wXcWHHuvtrgacCuwAvNbNjwlVY74N2eAcpcJsOtcN1acQytfv5S0mrDtgkIjVbsO5quo72C6ARf7U294+/suZYr6h7ZmbXu/uFJCv8ju6+ppndMd5n+qITSddVNbO73f2XwJtJC5zvbGZnDujDmgSWGEjyoHO2mT2rY6OF+wuBHw9ZWeYZdE+Jv5cBJ0eHOXAdYjEQ3OXup5ISkG4NbD3H8SLvJmX9rgIfcfefkLK+G71rzcrl9G8ze1oH2+HjaGTeb1dgfcXMvtRunZjB6ea4qR1J8VTQiL/Krs5m8v4zQmBtEJ//A30ah1UKTpIV681xP/YEzmS4Z2gPJJpFOAQiOqZ4j8xwivj8iIdZOEyFF2LCgc1DZACcF0/XlX58km51TI2B4MTiYeyxc9FvNM1uPJrG7MbX5wWh+6Gv7USaBnefF+1wtRmcy4KyTU+RFqIjtzC2Zf6rieKvmunrdQnHE9zRZ/yZNAsZ+jwNhZDAGmY8BqEZTQ/Pn2f4phTnzvwRwKJ4f+YQtJ88EJxVWBgeNbda1w34KMltVQfe4+6L+8Wa0Yk0DUU7rM9Gn9CputQkkCaLv8rke3o2yWJcCrR+Tujr8WB2K400FNu6++oDkoZCSGAJ0bbA2r7Y97dhEOaxvRy4Lt5v0zT4zao4IU02uBo4MvquzYlM86qmPVqJGvFXa5FcfDBJ/FWTEDEzux64MHbv6O5rDIAQyePu+bHdAHhQU38jJLCEGBqhsXXx9Hxpvz9Jt/ikbWa2HLgidm/u7ovy/+ZmvHYDPgfcE/dmf3efr2ra82PMjowffzUZ+f9nxHZDGkHygzB2/SO2IxJYElhCDLPAyokdl9Gw6Ay6uzQPcFfFdm0aSSJnfSAorFhXAD+Jc9gGeEYILy050oNaPbZl/qvTW2w/A7Uu4TjX9Z9i3+YSWBJYQgzX6NBwP60T26WkGJJh4vrYLgbWmvPRKYmpL5FclQ7sF64mLTnSezTHX93J1PFXzUKkjMMahHxYmZuK9xuqqkhgCTE0ZDeYu88LcQFwNymL+zCxtOgvlszlk3bkCTIzO4eGZePJ7v6guDeyAPRQ+4l4qTVJS90AXGBmN7SSy6pYl/B67rsu4ZI+j8PK172MxpqSa6rGSGAJMYxUaeSMq+WBYYBTNDRzd/F+tR44n9xvHRGCaj7wUlJcltyEvTe+7EAK5IZGPFW1jbYHjbitjUkzegdh/FpRCKxFqi4SWEIMI3WmvyzJoFx/L1EuOXJjvN+H5MbVkiO9QzvrD07EeHFYg5APK7crH5BrERJYQkyLseJJc14sz8IQ5axZ1PTUPbejdiPT/B3A8bF7e+DR3NfaJnpDmOfA9DL+ql2BldclLL+v3+OwFtBYJ3aFqosElhDD8/jdSFVQJ7mfIMViLRyyoli7GOxmvDZdpwiB+9P4c4S0VuRK1dy5p4i/WoP75r+6oWhTrbTBHId1HY04rEcOSGLOJSGyYPgmzkhgCSHuNd3fEtu1GL6A1I1iexeN5T3mmpxp/nTg2tj3bBppJERvjC07FPWn1fxXzTTnw+r3OKzcp2xQvL9RVUYCS4hhbSN5EF89OviyoxxUspVhi9guBW7NRoo5HaEabsK7gVOKAWvNIbk3/SIiHlfsO22Gdee04rsf18f3OZ/zA4t9V/ZCuxISWELMBf8sOseHDXr7KVw8C0kLKwNcaWb3tDLFfrYGqnAR/bYQhBqgekucjxd/1W7s1ECuSwhsV1zf5RJYElhCDBu5w7uo2LfLEFkgHgxs2iQyeyUVQukmXEEjlYboDXG+hEb+qwtbzX91v4rYiIUs47B2cvfFfRqHlQXjjrG9iUZWdwksCSwhhk5g/b14en70ADw9T9k3xMC1K42ZTn/uKQXYGFyvAi4egnvSb+PKI5h5/BVNn8txWJvQWIC9b8axLDDdfX3g4bH7H2a2zN0rQ5RbTwJLiGGnKZt0tuDs4O6bxv8GtQ15dPZPj7/HCoHVSyKmGud5lgRW7zSb2O5evG91/cGp6Pc4rGo8FOxGY3bu6RqPJbCEGFby0/OJsV0deGp0lAPXhkJQ1mKK/ZPzUzZwSTtT7GeZM/twsB1UvBBYkOKvzp6hAM6fGy8Oq5+sPvnBZa/i3H/Xh9chJLCE6OiAcVzxft/oKAfRYpKfsveksQjtr2MdwGqP3psLmsSwmFtxvjqwU+yedvxVZoJ8WDu7+2rxe9ZHZbMGKaUIwKXAOTMUn0ICS4j+pOjAzwHOj0H9Se7+kNRvDpybMAePvy6utQb8sEefsvOgdDlwOwp075UxZXsa6UzaXX9wQuEf22yt3JT+isPK579X8eDyCzNb5e4jir+SwBJiWKmGBecYkhtqIfCm6BQHxi0VywC5u+8APCV2/9nM/h5BuLUeE795htntNKa6izm8JbEt469mmv+Kps+XcViPb/rdnn5wiQe1txUPLsc0PSgICSwhho4sLI4hWUoceK27rxcd58C0pRCNB5KsQQZ8ucf7i3xeV6qazr2IiG2Z/+rsDgusMg5r934QKJEUt05yu+8au08xswviwUUCSwJLiCF9LG9kDr8JODKEx7rAgSFI+r4txfXV3H0n4EUxoF0C/F88edd69fbEVhasua0/Of/VYsaPv6rPsA3mOKxrSZMuoBGH1bP5sPJ5xUPYodGuDPhkU/0VElhCDPMY4gZ8hrQ4ax14q7tvCdQGwIqVO/rPkeJFDPiIma0C+iFHz39URXtiPNmelKcKOhd/RdP35O/thzisHF7wamDnaFenmNlJveh2FxJYQsy++khP4JXIifWpaD+LgC/2uxUrgmzH3P21wBNj95+BH/fRIHCTamlPCPTH0fn4K5q+py/yYcVDV83dNyRZrPJyTgf26jkLCSwh5oocb/U5GolHn+nubwmB0nez2MI1OBazIr9AcgXWgf1DVPb6IJAH3ZvH2Sdm/z7k+KtlwN+ivZi7V2b6yt9DmtF7d9Pv9eI9z5bfbwHrx5j7dTM7O7vkVW0ksIQQ3BsAbma2EngTjdlAh7v7TiFU+iYXU3ZruvsC4AfAEpIb5tNm9tc+GQTywHqbhNWc1aOc42k1khsM4Fwzu9bM6mY2FtuZvvL3XA2cF7+zUy/mw3L3edEfHAA8L+rmf4CDot0psH3AUc4YIdoXWbVwqZ3u7ocCHySlbfipuz/KzG7ph5lBORN9DAL/Q2N201+AD4ZQ7KdBYDmwCligWjonD+s10vp6eXHwK919uxhnxjo8bo2RZo0+DtgM2I40uzCfRy+Iq1F3fxZwODAa5/3qWHewqpmDElhCiPGphTvwwyFM9gQeCPzC3Z9uZnf3ssgKcZVdg4cBr4iBaSnw0tjfb4vPLgdWSmDNzXNHbHP+q1HgxcBL6I6LOa+iMEpajPyxIbCsB9rWSIirx5AS9OZzPMjM/pDjHVVlhuOpQwjR7mhy32VyXkpa8oLo6I8vpo73nLsw3BPZcnUIcBDJ8mPAS8zs8j57ws4icFWHLSWi/XvwhNjOA+bHQ3y1C6+R+P55Tb/rc9y2sltwV+DXwGpxjseY2afioUxxV0OCLFhCTF9k1cPKc5u7Pxs4nbQExh7Ab9x9n3AX9swTaxlT5e6fBd4dwmQ+8EozO1FP2KLNOjVe/NWNpEWMrUuiJ3/vnsAGwC7uvtDMVsxkzcOZlAHJIjzq7k8BfkIjnvFXwGviYaumJXEksIQQrYusqpld6u5PB35DygH0BOBP7r6vmZ2bl6CZK6tQk0twHeB/SIG3YyGu3mBmx0hciWmQ4562o5H/6qdm9tZZqNffIE02yXFY53RR1E310DLm7vsBX4pzqAK/BV5AWLslroavYQghZiayatHJng88iZT9HOBhwGnu/mozq4UYG5ntmU55IdkQV7uTkjTmWU01YF8z+47ElZhuE4jt44ox5U9R1xfGttOvheFu+2Mxlj12Nse1SB2RVz9Y092/DXwt/l0Ffgw8z8xWpG5C4koCSwgxE5F1Kcl6dXL8azHwP+7+U3d/cEwz924LLXe3HP8VwmqJu38GOBXYKg67Hniamf1I4krMpLrFNuejWkFaIHwMWBV1vqOv/L2kZLgr43dnJQ6rEFb1aPfPA/4KvJ5kqRoBPmNmLwZGtdagBJYQonMi6yZSbMini6f7vYGz3f1Ad1+zEFrVeM1YbGVRVVisavH3y0gzrN5DY6mR3wCPjlQTEldi2nUu6tkiGvFXlwD/6cT6g5O0tbz24OXAv2L3zhGH1fF8WCGqRrJYit/Y3t2PBX4BPDQOXQa83Mzel3PMSVxJYAkhOieyKqRg1gOBZxYDwDqk5TLOdff3uPvG4TqsFWJrJLaVyQaJEFNWfiaLqrBYLXb3V5JyWn2PhtXqHuA9ZvYsM7smZ3HXnRPTrfKx3RZ4QLz/c4iKbs+gzTNd/xJ/bw5s3XRe031QqRRty8okp+7+qMgbdzawb/HRE+Kh5fuFhUtuwSFGQe6ipzvvnFKghYWUvVc6s/x0HZahE2LK9odIwbiLgQeRFox+v7v/Dvhf4A9mdutEHX7TgFFea604bj6wEym+6sXAg5u+6gTgQDM7v3i61pRxtatJ63ILD+l17ht/9YdZvp4/kNxz1TiP84rzaqc8LK7ZaXIzuvuDSVbpF5DW6izF4+XAx83su3GslsARElii51kRHfyqvhvBUic9Fp3tHcABEQR7EPBCUn6cdeIJeF/gBnf/C3Am8DeS1etmM7tngg5/HrB2iLXtSQkedyMF1jdzOnC4mR0Xn5VLcLhZ2cF2NV781Vnxvtuusfz9OQ5rASkO66u0F4c1GuVRj/axBmk25DbAo6Jt7RQPRyVXA98AvmJmd+YHIYkrIYE1+Hjx6sZ3d/v4OmnNrpfH06hP0slWgY+a2ZltBJR2q2yahVatWJLmYuDVkTn9dcCLgC3i0I2AveIFaSHbW939tni/nJRSoQKsGeJsvRBZ43EHKc7qO2Z2Ugwc2Wo1Nkv1b9Dq/SC0Qwf2c/c9o934BMdZtK3Xm9n14+WWKuKvFpDirzweDK7oZvxV0bbKOKxLSWkadnb3+Wa2qoV8WLlf2dvdHwGsHiJqPWBdGklMm8vmbOBI4FgzWxplka1WcgkKCawhubc5F0tH+zUa7irr4vHVsMxs3+J5faeN3yjLp+txiNHJ59gsM7NLgPdFFvU9gOeQ3A4PLc5ncbw2b+OnbiBNW/8lcHIsiFuuOThbT9bt3vN+qPfTpdpj7dBIcUpbt/g7qxef93EESl5/8EGx7y85HQmzk1U/53Y7K87jIaR4sPOYel3CLKC2KB50xuMe4HxS4tRfmdlZhcisAnVZrYQE1nCxLDqGezr8vaPFd4524fixOH6M1hIG1mLwWt7GNdSBO6ODXTFbNyQ/0RdL1SwDjgOOi/ipbYFdgB1Irr6NgLVIGaHzEhtjJNfOUlKahUuAf8SAclF+oi46/xxnNZsDQL7n3uI976RFZ1nc1+U90g7vjrK4u8PfOxbfabTm6svH12lYpyYrRyvq22SiDZIbLd/vk+aonH9Piju0OJ/zphCeuQ/IC5o7yc14J3A7yf13MXAucI6ZXX6fApKwEhJYw0VhDr+HlPByJAuImZrrC7fSL0gxPQC3Nf1vvONPoBEXNNnxuaM6MY5vx9RuwK1N3zOhwAH+HWLGYkBmNmOScrxHtizFvlUxKJzX1JGvRrJkzY8Bb2UeLMe7p9Hx21x0/kUZ/jjuoxf3vDYL9f7WGFyrWdT3wAC4V9y7VR261nw9Z0Y7sRDbU7Wrsxk/Pm8qbpqo/yh+74fA8XG/b5rN9lT8zk9oBNffM0l55Ou4khRjVbI82tWqcdpVtkLWc5oGjThCAmt4hdaNXfru5cC1XTx+RTvHz6BTvq5H7lOt6MBLl2XuyCe0QmZLWGF16ImOf7JzngXhekOPtcWbu/S9K9upwyEaruvSuSzNIm8Oy3m0zfKYsA8oHnysbItoIXEhgSWaBuyOpi8oUwa0ahUrpoK3dC5xvNNabImnU2nPQtet8pmh2MrB/c3nCeO4S8uZTz1a92Y9yWKv3ddunk8X25W3c85zeb9nWB5lHJuP9+AjhASWmGzAnvPvbbfTLY5v9Xe8V8qnS+UNfTQ7aS7LttfuazfPp8vtyvutzKdRHo5m/YkuokzuQgghhBASWEIIIYQQElhCCCGEEBJYQgghhBBCAksIIYQQQgJLCCGEEEICSwghhBBCSGAJIYQQQkhgCSGEEEJIYAkhhBBCCAksIYQQQoguo7UIhRBCiBaJRaIrNBZgr5uZT7RfJSaBJQavE6hO9C9aXG2+y53TeOfFXJ7bHHfYRMdsg1A27l6Z5Frm9DomaRut0NKgOdf1fIbX2NJPtLq4cnkuZlabYf3p6LlNp07HNdzvOuJ+1sa5dgktCSwxSEzVkUVnUZntJ63xOqFeObdZFFPl4FsvBgNv8Tuqvf6U3MoAV1xHvRsD4nTbxizW865d/2xcYzfPZTbrQ6ttLl+Hu68LPBF4HPBQYENgAXA3cA1wPnCymf25+Ey1l+6JkMASM3t6fTKwCMgd1XLgTuA24GYzu7P4X/6Md6tjc3cLM/rqwB5NT/TLgaVxbjeZ2d1N5zYy24NwF0RVfvody8Ko+P98YG1gHWBNYPXosEeBFcCyKJvbzezO5o66EKRzXkbFfd4JeECIDIvtPcDNwA1mdmt5HUUZdV0wuvsTgLXiHrRjJXHgVDO7K1/nJNe/BbAjMBbXVYsBeGmUwc1mNtr02RGg1onrd/cnRl1q9xpbKYMqcKmZ/WOicmi6picDC6M+n2JmK1qoP1sC2xb1p51zu8jM/j3VubXzQGRmNXd/IPBu4EUhqibixfHZvwHfAI40s1GJLAks0efWkehQFgI/jkGkmZXAbe7+L+DPwKnAGSG48mDdjSfIbHHZHDhugmOWA7e6+2XAGcBJcW7LZ0MEduF+VIBKiKpasW8b4DHAo4Gtgc1CXC1h4okny4E73f1a4DLgvCijC83slizYmtwYc0EWEx8E/muc/9eB2939KuAC4I8hWi4tyqjbA9G3gK2m+dltgX8W9bmZaoiq5wJfnuA7lgE3uvs/gNOBk8zs3KgnnXIrfRvYsotl+GXg7cX1TtQXLQZ+Gg8N9RDd100ifvL3vSLq0HT4EHDIROc2jf7U3f0dwIfjQWg8xsYZT3eKuvYWd3+3mZ0ikSWBJQaDZTFge9N9XgBsHK8nAgcCV7v78fGkdXYHO3kmGGDHaLjJyqfTRSE2Notzez9wubv/CPifGIR73tzeJHLq8RT/WGAv4GkxSLcbI7MoXhtGx/3C2H+Lu/8F+CXwazO7qjiPuSyne0IwjUWdKwXYuvF6JPBKYKW7nwYcCfwsWzjcvdIlMX1XnFsdmNel6181wfUT7XIJyb30vBjA/wr8D/AjM7utA/ev2mab9HHa41RCulWr0p1Rd++kRTd4PAhOVH6t/GZHHlbdfRFwVLS38nv/CvwuHnKuCuvcGvHA9FjgOcCm8ZkdgZPd/V1m9gWJLAks0efGrOgAq9Hwfx2d1RJgg2j4axbHPwB4C7Cfu/8SOMzMzuzSIJ3PrRIi8MSwuC0BNopzW604/sEhtN7p7j8EPmlm/+ryADztTjksVtkS8wDgtdE5bzfFYHJTvJbG3yti4FsU1q11onzWbPrsesCz47XM3U8M68Vvw61xn3OaZUtWHuTPAq4OK8b6wCZxLaXof1q8/unuh4fYr7v7SLbsdOHcDPgHyXVnU9RZi/uxvMXfsOL6rwD+FnV8zXi42aTofw14VLwOdvdvAF80s2UzeND5Ocla7BNcW7bALQL2jHNZAZwwhdWnFtd1dhtiJpd3O6KvLL/rSbFNlSl+rxaC+eqZCK3sFnT3BfHg8uRokwtCUH3QzE6e4ONnAUe7+9rR9g8Oq9co8Hl3X2hmn+y1vkv05pP6SGyP8Qa3RRBgOTvq3pkk7n5ccew18YRwn2PFjAZ43H2xu18dZbzM3ddqOm5Dd9/D3T/s7mf6/am7+9eK+zjSgXOrxHZrdx+L3/lnc31y983d/Tnufri7XzDOuS1z9/8u6l61R8q+Wrx/kLt/LtrCePzH3X/k7vu7+xPj+NWmKr+4b7u4+yvc/avufq671yb4jb+4+wvK85uNNla082OLc3l+0zFruPvO7v5udz/R3ZePc/5/jDiufO3WwXP8W/E7O3SpT3xT8RtfbTpmtWgHL3X3I939unGu/1/uvndz++nC/Vocbcrd/bou9EVruPv18f13uPvGk/X3Rfl9oCiLj89FW4426kX9/FTRj1n0V9Won5V4P1L2l+7+YHc/Iz5/T2zf0Et91wCOg/kebRPlPRrbQ5rHs+Je7xrHrIrtAZ0a+ySwBltg3eXuD8yNf4LPPdbdj3b3lfGZLIAui2DZGXcGEwisf7n7vNxJjVe/3P3Z7v7Los5kQXG6uz90rhtBdLT52tZz98NiIGnmshCNe7j74sm+K8qjfNkkv7+Dux/s7udMILROc/cnjScEZ1FgvSKuY/4En3mYu3+kqLO5fqzIHV0nRUaTwNolyr0a20lf0xRY38nXP953uPvacfx549y/r7n7wnbv3Th1qPmVxcFm0Ud4CKE1mv4/0asyiwLrsCj/eZ24Ry3W3zc0iat3F2K/2mK/MFII6t8X7XHXst8QElgSWP0tsB5QWgKKAWWk6R5t7+7fb+rgx9z9zTMdnItKv1UxgF7S9ERYCoyRps8/seik8udvcfdnzFVDaLJavaIo85IT3X2fZgtV0yA2pYVmnPs2Ms7/nxBtcXmTGHV3P8LdN+i2yJpAYL2sqb/I93mkHGTcfZ0QWvc0dYzHFiKj0oFzLAXWzh0Wb+MJrG9PcP3Vpjo0z91f7e6XxufyA8+fY1Zix+5d0Vds3CSwFneiP+60wJqNNl60sfWib8n9zGeL+2PTbA/rufs7ir813g2BwJKCHjLMzONVM7OxCOSsRKzVBWb2MtLsr+vjI3Xg6+7+0YjpmWknZxO8z+dWz+dWCIqKmf3BzJ4KvI0UQAwpLunX7v6KOH5kFhvxSJTHuu5+LHA0KTg/83vg6Wb2NDP7qZndUwgqK8q/Ftfsbd63sUI0j8T/TjOzV5CCx79FI5ZmjBQP8ld33zvHZs1VJ1/c57GIs8rXcJuZfYQ0w/IMGnFB+wK/dPfFcbwNQBvM9TzfixEzGzWzI4FdSHF080mxO48GTnP3beN4uZa6QzXa4X6kSRgVUozeQVHmY+3GwuX7a2a3mNkX4++KEo8OBxJYgtzZFwPdL4BdSVPI58Ug9yF3/9BsCplCUNQLofVV4PGkVAUW4uFod3/JbJ1bDrx2991IqS72LUTfZcCLQ1idWFgqrBBU3uF7N1ZYxapmdrGZvSkG5l+FUHHSZIafuvthWbD1gpsiX0MhNM4nzSL9ImkCxArgKcBxYcmyQbIAxL0YK+rWHWb2RuA1cUiNFLB+ortvmduqeq7OWq+AWgS2v5rG5ICPRr6yaefUysvoZI+BgtslsMTwCq2x6OSvAZ5OylmVB7mPuvtr45jqLJ9bFlrzzOycGID/HgJwNETW47t9boW4ehUph9hDSVa++aSkgruY2Y8Lq2C906JqijKqFb99npk9JwbqW+OwVfFEfpy7L8nitZeERpxPzczeCbyvqH9PBr4XA1R1EN0sTULzSFI+rRUhsjYBjs+TVuRm6uxYGG10F9LMZSOlXzgui69O1G1ZriSwhITWWFiLVgB7k6Z8L4zB+Rvu/qi5clVERuQRM7sWeGohsirAj9x9Q1LuqY7X7UJcvYeUsyn/xp3AC8xsPzNbWgqrORTKWWhVYqDeNQTh/Biwn0vKzbNhr7mdijQXI2b2GeC9hcjax93fHxafyoC2vyw055nZb0kpOFbFg8RWwFEhMtV/d7DYY7tbse/30QfKpScksERnB+kQKXXgJaTEevNJ7qbvRzCsz8VTdLZyRAbz5wE3kkz6GwPfjc6wo+dViKsPA58h5cUZIWX13t3Mflq4AGq9cg+LXFJXkNxsXwmxsjKe1k9y9017ze2U1/ILkXE4cHgh8g91990GPR4pHibmmdkfgJfHg8RK4Hnu/k7FY3WFhxXv/9YkvoSQwBKdG6Dj6W0FKVnmUpKpfEvgkLl8is4B95G5/KVxHqPAs9z9VZ0cfApxdRDwkbCkLABOAR5vZhflY3p04eWxEE9uZvsDB8X5ryQlQD3B3dcpRHUviazssn4vaemk+THgfSvSPvggu8oKkfUz4ONx38aAT0SakrrisTrzDBXbdYp9N6lYhASWmA0h8x9gf5LVpgbs7+7bzGUHX7hRTiZZleaRLG6HRZxKvQPTzbO4eg1wWIirhaRlMp5pZreGNW2sx+9jvbieTwFvKkTWw4FfRIBvTwWQh8jK9/F1JHdsPc75LUPiKsuTNz5MyqBeJWVg/3Q3rLUSWvd7L/egkMASXRUyI2b2PeDk6OBHgI/1QAefg6I/ClwZ+zYG3h7nNpPcXdW49icA3yG5pxYCfwD+y8xWRoxTrU/uYxnb8y3S8kgLQjTuDnwrrqXaY+ddJ02hv5JkQayGyHp/p4R0r983kvWxRkpT4nH9zx8GV+lsFXNslxX71mr6nxASWKKrT3YHkixYHh38jnPZwWeBZ2b3AB+isV7ZW919jTwraxriqhID94bAD2L3fOACYC8zW96v64kVbqevR5nlAPJXuvvb52KWaAvkGLGvApfGoLcB8OqZCuk+uWe1EPxnAT8u+u73qWvqKFcV7x+qmZpCAkvMZgf/V9Li0Xkx1rf00OB7LHBJMfjuE/+vTu+SzUmzBTcNi8EdwD5mdkeeKdjHtzRbJQ+JcssB5Ie7+849OLPQSfGAq0gB73mx4jeG+6w2DO0wBvxDaSSRfaa7P1i5sTrGhcX7x2QXtYpFSGCJ2ergv1Ls+i93XzNnLJ7jwXeUlMGcGHxfEe/rbV5jNa7nTcAzQniMAK81s0tzFvc+F8xeCNM3kGZDzovXd919XnG/e4Vcx35ImjlqwDbAYyOZ48BbsUL4X0Ry1UNy8b5Y/fmMyX3E2aS4RIBdYoatJhIICSzR/Q4+BuZTgctj9/qkpJ9zXZ9yB/m/wPIYfHdz983b6SAL1+CmwKfCUjAf+LqZ/SwHvQ/I/czu1btJaQDGSDMxHwG8Kwb0XptVWDGzO0m52TJ750OGoc8OkXl0sW+vLEDVS027btUjxcqVpJQ0DiwGXqSxUkhgiVkhBMYq4Dd5F/C0uR7gsogys6uBv8TuhcAT2qzr2TX4CWDNuKargQNDfA3UIFbMEv0bKQ3AvLjGD7j7ZvRgGoAQGP9X7NpjEO/NBOSHnN/TCMjeIR4kXJaWGZEtoN+j4YJ+a8yurSseS0hgia6Pb7E9uRBVj+6RJ+hK07lBmh3X6sBdjY50R+BlcT1VkjVnGTNYj6zXB+249sNoxLAtAT7Sg2kA8sLYZwO3x76HAZsNg8DI12hmNwLnFQ8SO6tP70g7MNKklpy8+CHA6/JMVhWRkMASsyGw/k5jgeOHRqLKuU76mM/t7GLf9u2Ivxi8PxidaQU4PbK0V/s97mqKayYskwfGdddJswq3pIesWLmOmdltwEWFwNi6EPzD0m+X9XxHdU0daQfVcEF/Psq5RlqDdSOU1FVIYIlZEjHXANfH+7WAB/TAAJfP7VJSLBHA5u6+aCrxl/NZuft2pOV3suXmI0MyuNSiDH4B/DmufR7wzh60YmVLwsXFvi2nWf8sBs1KXrtxsleP3baLivdbNbWBgaqe7dyjGT7klelAroj6tB7wNa3/KCSwxGxZEFYWAstIyT17RWDdTMN9tDaN5S+shbbwNtKMQYA/mtnJ/ZRMtEP9waFFWb3M3defy1mik3B58f4B0/yOFbFm41heu3GyV4895FxZ7NtkgAXWaJT/qlbu0Uzc+MXEj7tIKWgqJEv98939zTnpskYC0QqqKGK6A3ENuKHY14qImS3uAm4h5cJaBKwLXDvhaJUE45i7r0Ejd5YBXy+ud+Bz4RRJWU8AzifNJlyTlAbgKyTLUS/NoLyxeL/hND5fJy1cfheNoOaphM3LzOzKOU4ym8/zpriGCrBePqeoz4MitGrAa9z9yS3coxwz+Q0zO2a6bv1i4scJ7v51YL8QWV9y93+Y2WmDNJtYSGCJHhuLY3tbsW9xDwiEbF2ru/sdhThaMoX4y8LhKaS0E4RA+3XRcQ8LeXmgb5LcJE6KxfpqD5bDHcX7tZrER6s8os3jV+uh619KY/mmJaScWMsHrD46KdHvpm185jcdeNjLEz8OAB4L7BD1///cfXcz++cgx2WKzlkihJip0MrWgF6t21N1gnlQfmHx/ngzWxqd6DAt9prL6mckS6ABOwHb9OAsvZE5qH/Wo+2vhhYl7tg9KtZ/XB79wtL41zrAL919Y60BKdrpoIRo56kSYPVi3z090bM2xNCiYvfKiawbYfGqufvqwB5F5/zTYcx7U6QBuMHdTwOeRbLw7Qn8g95yly6eYf2rkGZNXkZjDcuJ6nt2T109UV2aA1YjTUTIdXx0AKtklZTz7HsxXk1W93IqhfNbfLCaqi3U4wHrUnd/EckyNgo8GDjB3Z9sZrfKkiUksEQ3BNb6xb5b53rgybEn7r6IhstoRfH0OdEgWyNNc9+ouJY/xXcN4zpkFXd34FchsACeTJq63ktWko2K9zdP03rxCzO7ZAZCfk50cGzXpTGjcmmeiDBgFlcDzjezn83FPSrisU5091cDx4SYfQTwa3ffs7B0S2SJ+w0uQrQrYuoxk2bT4snxuh56sl+vEH93kOKpJjq3PFg9rth3dnSalSFzD95rCYjrPq2wAjzS3VfrsdmEDy7eXzXN71jT3avuPi+2U7164drzOWxR7LtugPv0RVH2C1q4PyOddmPnmYNm9j1gf1Ks20pgV+DEYpat3IVCAkt0pHPfhMbU+FuLAc57oD5vScNFeJWZLZvkyT7ve1Sx78whbx9lPrHsEtsYeGhTHZgrsujbrth3yTTrXy0sD7VYa3OqVy8J7u2L9xf3yL3pluBv9R6NdWN2ZyGyvgK8qxBZuwAnufsmEllCAkt0qs7sSJq9BHCxmd3ZA+6JPLg8ptiX4zGqE3Sc2SKzTbH73B4Qi3NXiI04rJWkuKt837ed636jcAOvX9yzFTSSbg7DPauPU8/PVdfU9XaRRdYXgLeHyFoVQvdkd98iuxRVWkICS8yEPYsB7czJRMwcDDxPL/adNtlgHW/Xo+HurAH/HmaB1dQ3/LPYt1UPnFd20+1GytGVz/Hq7L4e5JtSuOg3pLH+4EoaC5zXEbMhsr4MvBmYTwp83wo4xd0fqmSkQgJLTLdzH3P3hcCzc58D/HauBUmRZPGBNBafXg6cOsnAkwXWhsAa8f52GglUNe39vtnSH9gL1TCspHsX+07O68gNwf3IAvMZNPK7nQdcNQwCs8dE1jeBV9LIo/cgkrtwW4ksIYElptu5P51GgO2VwBk98PSc6/LLSK5LB/5sZldNknU7C6wNive3ct8ElkOrp2NbZsDfcC7vc9S9uruvB+xV/OunQySI8wSE1xb7fjFEArPXRNYxURfHol1sTnIXPkIiS0hgielYD95RDGY/NLMV0dnMyQBXDLyLgDfQyFt0dIv1fK3i/dIBXG5kJtw2TjnNVblUC3GxVpzH+cBZOZ/ZQDe+FEDt7v4o4PGxeyXwwx54wBlWkTXPzH5JSmdyT9yDDUmzCyWyJLCEaK1zjwDOJ5ByIkEK8DyiBzr3alioXkPDsnYdKRs5TJxwMFutxktYacN+y5vKA2Jm5lwIz0JELyEFGGcR/dUQVsNgvcmi/wNF/TzezK6I9imBNfs3ZDQeLk8hhU1kkbVBiKztQmTJuiiBJcSEg1vefrYY3P43shzPWeceOW/q7r4O8KHo3Az4YsxsbMWyVnZ+ShZ4X1YVYmteU12YCxF9IGlCgpPc09+Pcxl461UM1E8DnkdjaZxPqorOucjK7sLTCpFVC5F1grs/SCkcJLCEmGxwq5Fcg7tE57ES+EgMbj7H51YHPk0jRuhK4GshvloZeGsTiC2R+ogspnL8z6xasQpxsQPwHlK8SwX4kJndTcN1OOgPOIuAL9NYEuYHZnaOsoj3jMiaFyLrOdE/jgGbAb91941CZGnMlcAS4t7OfSQ6j53jaXmUtMTS4Wb2b6Ayh9arkTDR7wu8LqwtFeAAM7uLhktlKpYX7xfkrx/2MSO2C4t9K8sBf5bucSVtfDXSMiXzo/6dARyTxdeA34uREFBfJqUDqJMmYhzUAw84oiGysrvwD8B/xX0ZJSU+Pi7qMMO4xqkElhATWw42BH5CWlh2HnABcEh2z/WA8PtOdGTzgR+b2U9bfKrPA9Odxb61orN0dYSN8giWNYmvbt9jKwT8d0kJHcdC6L0xxLMPeBucFwP3/vEQsSIE5gFmds1cPuCIcUVWtmSdCOwb92olaaWI78W9qqpvkcASwy2uRsKkvQZwHCkHUo0UX/DSyPI9VwHPWVw9DDieFHw9j7S0yxvbEH753G8p9q3t7otVA+4VURsX+26aLYEV97AS9/mLwItDXMwD3mZmFw1yYLe7WyGuXgx8KQbqhcDRZnZEbqOqqj0nskbj3v0M2I9kFV8BPN/dPx4WV4UiSGCJIRVX82Jg2xg4kbSo6coY3F5lZhfOxeAWg04WVzsBJxcC4A7g+WZ2xzSE3000ZsutQ2OhaD1l3je56NWzUS5xj+sh8L9MmjW4PMTFF83sO4MsLkJcWgzUrwWOjfa3gOQafVMETEtc9b7I+iYpPnRh3MP/dvfnaGahBJYYPmFVjaSco+7+GOCPIa5WRef+djP7yVwMbiHoPDqmfUJc5dlkK4D/moZVwwuBla0zCwpRMcwCK5fN1sW+S7stLAoBvZ67/wx4W9zfRcD3zeydgyouigeIeuRiO5SUBmU06uX5Uc9X0MhJJ3qXPLvwQOA3cQ9rwBERduEKepfAEoMtqqwQVrVo9O8B/gA8ODqE+cBbzOzLeQCczQEnnghr7r66u3+JFA+2ehx2J/AcMzu1XeFXLGq8isb6g5BifYZaYBUznrYrdv+jSXx1UthXQ1iMufuepLX1nk/DLXYU8Irs/h0kcVEIy/wAsZW7nwQcHNc/HzgbeLqZ3TzJygSit9qQk1LIGPAqUm4+SOkbvhL3UFZyCSwxKG0+REvF3UcKq1AtnpifSrJafaaoGyuAF5jZ17ssriY6t7HY/zLgr8D+JItaNUTRHmZ2ygzOLV/nucW+x3RDSPTTgB9vHwA8NN7fAVwc7+sz+O58j6uleA5Bt7W7HwGcEOLe46n/UDN7dQxGfW25ab7+vH5g1PN13P3DIaaeTMNydRzwVDO7UQlF+05k1UlpRG4GXk9j3cIXuPszlR9rsFEK/yER0jkTdjHzqh4d/hLSwrFvBJ5aDKAjITpeY2Z/76K4qngaZeqFqMnntn5YMd5Ayr+VmU+yYr0lnuhncm55sD6zFFjuPt/MVg3pkjkVd/cQmjlNw0Vmdss0y8PyrKnmmX+xf/cYfF5IcgXmzOy3xD3+SQxC/Wq5sixax5v56O5bAy8PK8dmTeL/w2b2sSx8FdTelyIruwp/4+7HAK+IOvBpd/89UNPSXBJYoo8elJv+vifcYVV3XzM68e1DUD0lLBUlK0gZ2z8R6wx2K9dQPX9vWDPWJsU/PZK0oPQTgfXi2Jy5+irgEDM7Mj4303PLZfVn4G7SsjkPAh5Bspi1mqx0oOpP1JdnFftOjW1+Am+HlfF9HrNSNwIeHsJqD2DHpuOrwA+A/zazKwcgkeZoPEDU3X0haRLFlsCj4+Hm0TTyr41GnTwLONDMzsi5wGS56muyq/D9pMWhV4828FIzOyr6vzEVkwSW6JMHp9guAH4RnfRaIVjWYXzf/wrSjKVPmdklXXxqzr/9AHc/NUTNmjHwrDXJ56oki9pp7j4PGJvpuYVrtGJm17v7WTHgG/DcEFhDFSORF01299VD5GZ+M4F4n4oaKeP/O+Perh11cN4Ex/8eOMzMTi4EdD+LqxrwPHffJur42lHPV5tA7I8AN5BcgitnM+ZRdLEzTv3MiJld6+5fJy355MAB7v59NCNUAkv0nbgiLDC7TXH8pcDPge+a2cV5YCNZmOpdPL/VSFaqCZ/8gZNIqRi2j8+9GTiNzrqLct6sX4TAAtjH3T82hB1f1d1rJOvmRrHvCuDs7GZuV7MB205xzE3Ar4CjIgt2rn8+AC4xBzaJ10TcTkqH8tQQoRsDL3X3o9SVDRTZivVl0uzYxdGvPc7M/qAljySwRP939ncAN4ao+ivJ9fOXmPo92wObF2IrL/9xHXBenNcfzexid38CaVajAy92908CF3SwQ8qi4f+Aw0hxQNsBjwNOH7KOrx7uvNcW9+cnHbSmLAeWApdH/Tsl7vOtUf9y9vZBLe9VIaiuJM2UPBX4s5ldF/U6WzbeT3KTjio+Z0CeepMVqxpWrOOAl8S9flH0b5pRKIEl+khMQZrm/RLgmujcbwRubR7AIgagPsvC6po4tzHSMiw3xbmVQdAj4RL8A/AEkrXpYDN7cYrD7mjHd5W7/w54Xpzf2+O3h6PCNNb92xrYM8qgBhzdJETboQp8lJRxvx7i4lYzW9b029W4FzUGy2pYJc0C/ET8fStwk5ndOc71f4FkoV1CitF6iZkdqficwdJZ8RBxbPR9Bjy1yNovMS2BJfrJIgGcbma3jdOh54Vi67Mc55E7kHvM7E/jDPT53MoB/RBSfE4d2Nvdtwcu7IJ16aukIFQnxc5sC/xzSHIPWYjN95JmajpwcmTun+71G3CBmZ3TdI8txIfPorCfkzIFrjWzv0x2/VH2N7j7N4H3xf6D3P0HpISVGngHg1pYiP8YDxtrk1KSPISUBkWLdw8QyoM1HCwp8ktZDmQ2s7HYzlWDrrj7vJxocpxzy/mBKmZ2Ein2yuLB4OBOnneRWPMkIIuBeaSZbKUrcyDJCTxjfceX0bAyfqYQCtNltah/82NrOcfZHNe/2WJ+1O/Jrj/H53yBlDzXga1IVqw6WrtuUJ5gcnLj24ELC0PHdh1oZ0ICS8wBOVi9Hh17Lw1otbBeTHZuudM5hIZlax93f3gMTJ0afLKV5hM03GP7uvvOQ5AQsBJlfxiNlAF/MrMTOzCTtKx/9SG0xHhRx8e9/iifipldD3wr+mYH3u/u85lBclfRs+PuJcW+h0hgSWAJMRdPfbUY5H8PnE7DivXfHbZijYUl5+ekAORKWA6+GNaFexNmDtToH7nE3P3ZwN6keB8jLdWiTn9Wb4Ub8DlSTGK2Yu2bp/mriAaKq4r3G6k4JLCEmDOdFdvSivVCd9+OzlqxLKwJB8TvjJJmE+4fcWoDZcWKAd0jAe3XSFa7EeDHmjo+6w8SeVmV8axY82i4EcVgcGvxfomKQwJLiLkafLIV60TSeondsmLVQlT8KQa5eSGyPuXuDw9LzyCJrJEY2L8KbE4jlccBWXyp9s0q9XGsWFsTViwUizVI1MZ5gBQSWELMjc6K7aHc14q1LZ21YtXDVXggcHUMaguBH7r7YhqunL6mmBr+ZlJg+8oQrQeY2TUka4pif2b3QSLHYl0HfAdZsQaZtYr3d6o4JLCEmMvBJ1uxfgucESKrnOnXqd/xtLGlwGuinawizfQ5KlsS+nmgi/xio+6+Bymz9CpScPv/mtkRWqJlrm+PG2k90LtCYG0DvFhWrIFii+L9tSoOCSwh5lxnxbaMxXpRrPWWLU+dEnMjkR7iA6S8UMtJsxc/neOx+lFkZfHk7juRstdbXN/FwBtyygZVtTl7kMhWrGuZwIqlUuprsmvwEcW+f+XmqeKRwBJirgafnK/qt8CZ3N+K1UnBk0XWx4EfkZbQWQ68190/2I8iK9yCY+7+CODXpAWIjRTvs4+Z3VEM8mJOb9X9rFjbAi/UjMK+vqmVyIW1EbBD7F4BnC+BJYElRI/oLHPub8Xams5asTxEVgV4FWndvEXRIX7M3T+W3Wid+s0ud+7ZLbgrKSv+hqSUDGPA3mb2jwjwl7ia+wqeZxReA3yXhhXrv/OyVorF6s8xN+7b04DV455eAFwVCWjV9iSwhJjTwSeLnhOAP9NwcXXcipVju8xsJWkJnTNIAe8rgA+6+xHETLxetSpE9vCc62ov4ERgfZKrwoAXmNnvQ4ApJUPvkEXU4cDdMRhvR1ixUCxWX97T6FPelLsY4BexT/dTAkuIXtFZ5tx3RuGLO23FytaEMO0vA55FWrIni6zXAie6+wNyCodesiyEaKqHKD2YlER19fj3GPB8MzteQe09WcFzLNbVwP/QsGIdnK1YKqWOtBGbDQt0tg67+1NJufWcFHJwTBZfuhsSWEL0wuCTrVi/JmVdz1asg7qxdmAhsu4AngH8NETWSuCJwFnuvk9eWy6v+ziHg0Y1znvM3R/o7seFGF0V7f4m4OkSV/0w/nteE/IeGlasFygWqyOFW4kluurdFFnFShDVuJe5jzrWzK6Sa14CS4ge1Fn3s2K9xN23osNWrCaRtdzMXkBy3SyIznIj4CfufmS2Zs220Ion8WpeMDt+++2kxaufG2JwPvB34PFmdprEVc9X8GzFugpZsTreXqJNr+7u28f7brnpcjv7CLAjyT2/HPi4EvpKYAnRi4NPtmL9CjibhhXr/d2wYhUiy0JovZeUoPO2+PcqUjD8ue7+3+6+diG0qt1yH0aM1Ug8iWcL2nNJ8WJfBNaOQxcAR4S4+leOy1JN6gctcD8r1sNJsz5lxZqmuCJZlHYETgXOdPdto0+Z1+Hfygl99yalfMkJfT9qZpfTWGReSGAJ0Ws6634zCvd194fRBStW/GB2KVTN7AfAo4DjQtwBrAt8HDjP3Q92981D+NQKsTUSwqhtwVVYqkay6AtX4AJ339vdT4nzeRSNQParSMHRrzezZSEQFdDeHxU8W7GuBI5inBmFKqX2izXK8ZvAzqTZwSfGclij7j5vpg9D0U7zzN3nAsfSSOh7KvCZsJjp/klgCdGTg09pxfprdJwL6KIVq+m3q2Z2hZntBbwauLw4ZHOS+/J8dz/G3Z/p7quF0BoLYeSlYJriVS0EXq1IEbGzux9GyqXzU+BJRaddJy3ivIuZ/aRwIapTT2ShOtJC+c9lXF22Yn2a5FpyUqLK5w+BFavS5j2qtNh+x4A3kCzQBmwCnOLue5rZ6HRd/IWw8njweRMpoW8lHsL+A7w07qF3chUKIYElRBe0jtW5rxXrJe6+JV2yYjULvLAIHQXsBHwIuLk4bE3g5aSA/Ivc/Xvu/gZ339Hdl5SCaYpXLTrwTdz96e5+iLufHcLyIOBhTU/oPwMebWZvNbObQwzW1KHfh9ujbFe1UP5jc1V2hRXrP01WrA8MgRXknij7FS3eo3or5Rlt9nzgeaRkrgDrAL9x94+5++pNsZTV8azOOWQghwEUwmpjdz8S+EbcnxHS2qZ7mtn1yDU48Mh3LwbJivVLUkD3TmHFOsjMXtftKdi5k4zO9Q7gEHf/Nike69XA1sXhD4zXy+Lv6939suh4rwduIWVVXxUD6DzSorAPiNcDwzK2ZCLBEMLqW2Z2Vj4vUv4duQSbjA3Aq9z9P4Vgmei4HIj8EzNbGlbA2RZbpRXrVVHHsxXrJwM6YcGBR7v762K8mkyQ5NxgfzGzv4eAqk8hskbM7E/u/pRoN5sBo8AHSaEGhwM/NLM7J/keL+uOu28W9+dtpMkvq2hMLnm+mV2RH3bUBCWwRH9SK1691mHWinPspBWr5u6HkHI9jUYHeWh0aF1/Wozft3gyvQH4lLt/npQ766WkdA4bNH1s43jNhNEQlv8L/CjWsLs3u/wcdeT14v56j7aNOnBwm589A1haCK5W6nm9Q/Urx/1d4e5Hk5JVjgLvB34yg/bU7b5iOt+f688Y8Mx4tcqHQ8xMuaZmzl1nZme7+27A14HnxL+3JMVoHezuvyElNr4QuNbMlheCanVgU2BX0mzdp5Os1pn5wPeAt5rZnRJXEliiz406YfWoAmvQW67gKo1g8LU6LG4qwPHAucAjw/rzGXd/IV2MxRrnaTYLraqZrQrB93N3Xxd4LPBUYHfgoXF/2mUlcGWIqlOBP5jZJUWHXyXFdsyl+2F1Gpmp5/dY+1gzzq2bmbMXFN+/uJMPKFG3PkWKH5oH7OTurzOzI6ZhxbKiDq7VhXZS9kVrt/H9i2Zwj3wafUdelui5YS07GHhQHLJ5iNk3kaxRN7j70hBvFdKqCOvFvWjmUuAjMRkGTS6RwBL9zxhpFtl6pGzj9/SAJSH/9p0kV14VuLbD55StWO8FDqDhMljbzG6bTbdO/M5YtmjFvltDAB4fne3GwINDaG0e92vjYkBeSQpovgO4McrrclKQ7FXlQJoFHVCb4w7cC0tPHnCu7IH6V/Jb4N9RP6zNa7tzimvJ+/8N/Cben9Wp6y9ih65w9/8mWUUd2DrqQLuiegUpAHshKdi70y7G0XjAWCf6oRUt1p+LovxqbTwgZsFzcbvlXTygeQjVn5Dc+68Dtm+yRm0er8n4Oyklyv+Y2V3FdyvmSrT8KDUS22O8wW3xpE4ZDJhnQLn7ccWx17j7ouZjhRjQ9nKf9Aod+L5qO7OmxGDVJZVC18q22tTGnhgTSk509/+4+93uXo8xrO7u97j7le7+e3f/iLs/pmyTXUxeKsa/f5XYbhP3aDS2h5S6pUmX7BrHrIrtAc3HTgdZsIagk+g1k3Rxbl15oosGZt38jWlaH8q4HArrlo3zBH+fjzb9P0/vrvVw/Suvq95LMxebzq3de1hr8TessLx0vA7mfGrlT073N7rdV0zn+5vKr11mVN+aYilrwB/iRRgE1iO5PUdIFr87gJvLuKziujW5ZIiRwBpQerlRd/vc+sUM3yy4Bqz+1Yf53Gbj3naqHc1Ce6z1W9toiqXMgrweIurqeI0n3PNsVAkrIYElhBBCtCL08hI74xyaLYiKsRISWEIIIcQ0BJcS9YqWUHCsEEIIIYQElhBCCCGEBJYQQgghhASWEEIIIYSQwBJCCCGEkMASQgghhJDAEkIIIYQQElhCCCGEEBJYQgghhBASWEIIIYQQQgJLCCGEEEICSwghhBBCAksIIYQQQgJLCCGEEEJIYAkhhBBCSGAJIYQQQkhgCSGEEEIICSwhhBBCCAksIYQQQggJLCGEEEIIIYElhBBCCCGBJYQQQgghgSWEEEIIISSwhBBCCCEksIQQQgghJLCEEEIIISSwhBBCCCGEBJYQQgghhASWEEIIIYQElhBCCCGEkMASQgghhJDAEkIIIYSQwBJCCCGEEBJYQgghhBASWEIIIYQQElhCCCGEEEICSwghhBBCAksIIYQQQgJLCCGEEEICSwghhBBCSGAJIYQQQkhgCSGEEEJIYAkhhBBCCAksIYQQQggJLCGEEEIICSwhhBBCCCGBJYQQQgghgSWEEEIIIYElhBBCCCEksIQQQgghJLCEEEIIISSwhBBCCCEksIQQQgghhASWEEIIIYQElhBCCCGEBJYQQgghhJDAEkIIIYSQwBJCCCGEkMASQgghhBASWEIIIYQQElhCCCGEEBJYQgghhBASWEIIIYQQQgJLCCGEEEICSwghhBBCAksIIYQQQkhgCSGEEEJIYAkhhBBCSGAJIYQQQggJLCGEEEIICSwhhBBCCAksIYQQQgghgSWEEEIIIYElhBBCCCGBJYQQQgghgSWEEEIIISSwhBBCCCEksIQQQgghJLCEEEIIIYQElhBCCCGEBJYQQgghhARWx6kBmJnrdgghhBBiuphZPd7W5/pcRubwt+vABsDf3L0OGCCRJYQQQohpa6zQEguHUWDVSVarWvz+dqoPQgghhOgwWWvMiQFnLgTWYqAaLyGEEEKIblBqjQWDLLCyejwHWBSqUkH2QgghhOgW2Vt2aZMWGRyBlQPPzOwg3W8hhBBCzDZmVhs4gZVxd9MtFkIIIcQsi6tZjcMaGfQLFEIIIYSYbRQDJYQQQgjRYbplwbJwBZq7DFZCCCGE6Dnu1Sr9JLDGwhUodSWEEEKIXmQMwN3H+kVgGbBmnHBFIksIIYQQPUg1RNaSfhBYY8AawFn0wDpAQgghhBCT4MD8eN9RV2GnBFY9xNUYMI+0xqAQQgghRD+QNUzWND0jsFaP7xrRPRJCCCFEn1FqmEW9ILByfNUpofxqaI1BIYQQQvQfWcOc36RxhBBCCCFEL9CRgC53r9CYMailcIQQQgjRb2QNU8/rJwshhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIQaS/wfQVoQs7aq7sQAAAABJRU5ErkJggg==" alt="Best Hilton Head Properties" class="nav-logo-img"></a>
+  <a href="/" style="text-decoration:none;display:flex;align-items:center;align-self:flex-start;margin-top:8px"><img class="nav-logo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAADcCAYAAAAbWs+BAAAp80lEQVR42u2debhkVXX2f6vq3u6maQYRBQdEMOAURUFMNIIyj0IiavCROCKCgiEK34cDiohJBAnORoNCwigBFGRSJgEhDCKNgAwBDIIyy9x097233vyx1+67+6TmO1b3ep+nnrq3qs45++yz373WXnsNEAgEAoFAIBAIBAKBQYG1+kJSDahFFwUCPaNhZo3ohkBgtkk4SXUzG5P0UeBtwPyQdIFAd5INeAY4z8xOzFwqfzDUhoQ7A7sClwDDgKI/A4G2wmsE2A1YDJzYTKANdWDrpWa2XfRlINAdJP3audMU7QhXA+ZJqgN1M1sa3RkItCTasBNtLm2MkUOdzuPruYav6bYBVgHq0cWBAGPAIuCnwElmJkltl15D3ZzVT7QDsDtwsRMu1nSBlX3NNkayczxpZid2c9BQDxcQcLmZbR99HQgsUyVvbLdmmwjhrFzTObsDgZUVtW7WbBMhXLmmo7q/EAisZJJNZtbotGZrxtJAIDCNYjEQCAThAoEgXCAQCMIFAkG4QCAQhAsEgnCBQBAuEAgE4QKBIFwgEAjCBQJBuEAgCBcIBIJwgUAQLhAIBOECgSBcIBAIwgUCQbhAIAgXCASCcIFAEC4QCAThAoEgXCAQhAsEAkG4QCAIFxgQSDJJFj0x8xhaiQZdN0UkRSpYoskY5JM9oXVbQEVSza8tMxsr78f7wYCGmTWmq+1N0JiMfg7CzVL0Uu3HB1y93aDs4npimkt6OdHkbW5UJxsn31iVWNW+mYm2B+FWLOk2DOzI8qWSjVTbC2AUeBJ4APi9mT3un7UclO3I6hVjXwC82c+T1bk6MNwPf4GngHNbSQVJ9dxGSZsCOwHbAS8D5vvnzwC/Ay4BzjGz64GxfGzR9nWBrehc5VbAkspn3dRLM+BnZvanfM0g3IpDtprP1gcDW1S+ftTfV8mD0o+5HrgA+KmZXeODstalumk+EGvAqU36+OHiN12pXk7Uu4DzWFaabDk1seaEeQvwOWAH/+oq4Ht+rAEbAtsChwGHSboI+LKZ/cLvL5fRfQXwDf+71uYe5wBrVL57LE9WbUhqwPbAn/z8K680lTTk72dJuqL4/ExJV/WwHppt97OXpFFJz/r7g5LWlFSTtKqk9SXtJunfJC3SOC6WtGOFwF2tFyWd6td6xt/P7Kf/Whk83BiSr3WopIa3+S4nX6vzvULShcU9HpHbla/VzsiS+0DSq/y+Rvz9KUkv6tRPK4IBp+iDWyV9v/j8Zkk/KMdeiZXBSpklwe8LlS6XTZaZNczsGTO7x8zONrOPAOsDR/lxWwPnSzpe0ppe9bJTv2Wr4O/8OrXinR6kW7mmaoYs2Y4BDvfz3gdsbWa/lDTkr7q/hlx9vM0lzMl+ns9K+o6rpNbhmmX7VfTlsj7tdI8ro7FkZSJcxtJCHVp2/y4lav6qSxoys4fN7P8Bb/e13SjwfuCXkjbohnQ+qJa0sgBmU30vr2ZrNkl7Awf6/dWA/czsHklzzGzUX2P+GvVjsoT9ALAQGAH2k/QFv7d6h3bU2lgya93cYxBu5ZF0y33mxMiSbszMRn1QDJvZOcAe/tvFwKuBi9yooC4knVoQUWbW86tC2oakdYCv+oQwB7jKzM5xMi7tYLGtmdkIsK9L/ceAZ/zcndqx7L1Dn3a8lyBcAB8UIy4lLgI+A8xz0m0I/Mgl5UzN1nUftPu60SIbKU7w9lgX95itktcA+wObm9lX/btGjIIg3ExgxNWvo4EbnXRLgC2BA7OkmIF2jTmx9nApM+zvVzkRG91OLE66b5vZXS4ZFY89CDdjki69WQP45yxdfEB/TtLaWVJMp3XM2/ViYGOXZnXgcTeY9GSUcdLV89ZCPPUg3EwjE+qnpI3xIdK+0XOAvQoSTts84O8vJW0yZ5I8Qdoc72diGQs1Mgg3m6RczcyeIXlo4BJOwLuL/6cbq1eu3aDH7YZAEG7W8s6l3C+LfjPgdZJe1OXe3KRrlxWJN59xV7VAEG6gkU3Zt1TWcauQtgrKgT9deLryDNcC1p6htgSCcFMiTe5n3L8wr502nOZBntvykJM+t2UO8MogXBBuRSLck8Czle+eP0NtuQ94xP/O5H9bEC4ItyJhxF8lVp3WxWQy49fM7GngJsa97wF2833DMO8H4VYINPPiaMzgczu/aFPDVcq3wmBFdAThAs2IBslIMq/y3RMz0J5M8tNJ7mb14rODwlskCLei4LlOuFKNu3fa2e8e/WZ2D/Djoi0NYCdJW1aiAgJBuIGUcBsUAzsP5tsrxozpgnxv8MuMp3HIbTimCEwNA0oQbmAJt6m/50DNB4BbZ2It565YNTO7BfhuMQGMeTsPdt/IkHJBuIFDJtPWhTQTcKmZPTODXvbZw+VQV21rBekOk/RKj++L5xyEGwzk5EGS/gzY3Ik25BLuuBkVu+PRDE8AH2N5C+pc4Ps5Pi5UyyDcwPSRD+yPkrw5lrqadh1w8UyHtbhxZMij00+qqJZvAQ4I1TIIN0jSbUzSek64RtFn/+DrqNkgObJqeSDJ5csK0v2jpA0ZT/UXCMLNWrJl6fZ9YDWXbsPAEWZ2ZZl8tVuB5KnThoqMWt2+6h0MKGZmjwB/X3muqwLfz+pnPNkg3GwjmrmK1nCDwzGkrM1LSHtwx5nZoU6AXi2Tiz1z1pIio1a3r7EuVMu6mZ0K/KSiWm4jaZ/Ym5t5DK3k91/PxS0kgRe/AEYlLQCOAfYujBBHm9lBLv16KUaRB/lfSTqF3jMv10hbEJ/yTe9W6cHz3tz+JEfm1f06DeAoSecD9/m6MyK8g3DTK8yAx6oDT9LqpOQ8nyXl5Qe4EzjEzM7oIeV5q/5erUfC5bTpHdMnFB4of5B0EHAs4xm9Vge+Y2Zvj7VcEG4mMIfkXb+IlGruRaQN4y1I+UJGgZ8BpwGnm9mTfazZKNS6YeByM3v3RBvejuyF1fIHkv6WVNBjzF+7StrLzE6cwL0EgnC9jVd/X43xVN/DTfriUeAK0ub2k6XKNoFN7rluNOknhEY9EKThquW+wG8Yd7huAF+TdCHwcKiWYTSZLlUSUqbhlwPrkFITrAO8DvggyQt/DeAI4G5JF0nayQ0pmoBKJjMbBUYn22hSVS1JyWLvdtW4Xtz7c4FvZtewoEAQbrrXcE+Z2RNm9pCZ3Whmx5vZu0i5Sr7lv90GOE/SKZKel9dKs/z+skXyG8CVBelGgXdJ2sOtsGG1DMJNG4YrxTxqRYWZu83sAGB3UpLVBrAncLWkTWa7ib1SA2AfxguL5GDVb0lai3HLZiAIN/VSrlLMo1FUmKl5QY+zgV1JgZ5LSEmDLpb06vy7WUy6hhtQfksqZ1WqlusCx2T1M6gQhJvxwVoU9LgS+AhpL26Jr4POkrSGW1Jms4TIkvhI4AaW3xB/n6SdQ7UMws0m4i11SXcycJaTbjFpj+6Y2W58yBZVN9Z8hOWtowK+63uPoVoG4WYNspn9s4zXYhsFPihp8wFYz+W9uetd0uW2NoCXAF8Jq2UQblYN2PRmt5DqC5SJYA8ekNvIk8IXSVHqpWq5r6StwtcyCDer+sql3KmVvttZ0rrTXbZqAqrlEpLVsrp5/x1Jc0O1DMLNGrXSB+3lpGSww65Wrkrap4NZbu0rVMtfkvYYSyn3CmD/sFoG4WYLskS4x195DSSS/+WgIG9lfA74YzEGGsAhvjc3FlIuCDfjKpn7Ho6SogeWfQW8phi0s/4+SIG1T/p6rsxpuTawj/8mpFwQbtb0132Vz1/k+3WNAZEMWcodD9zF8hvi+0qaF1IuCDeb8Hgh3QAWMM1FPSZJyi0FvlncSwNYH9g2/yYedRBuNmBx5f9hfw0S8rbGKaTg1nqxJt2jMqEEgnAziur6pjEI67cma9K6mT0EXFpZk77FrZmjoVYG4WYDVivWPJCKNC6arot7hMNyr35558deWPn8pSQPlJByQbgZRSbYupXPHzGzRcX6aMqlU/XV7/34sTcUkrtBin5/aRBu8jEUXdATstq4fuXzu1zyTGmekJwSQdL3SdHpeQP+YjP7dB8pE8ryxUsZ9xGtkbYIgnBBuBkSbZ7LRNJzgI0qg/GaaR6cmwKbFf8/2Of1M+GedpV4TvHZvHjqoVLOaF/5euf1wJqF6kWxBpquCjpPk6yMz/r70klQlattXxSPPAg3k8jZunb3/0f8/TfADS4BpzrtXJZgz/h6K7+e0yfh8/nmk8op53UcJLev6ZxEgnCBcXWSFBO3AHh30XfGeAas6XCFygS5vUKEF/v6sV9Pl3VchcwxcU8Cd1TWrYEg3LSh7qTal2ShzEU9bgNOyFV2poP7/v5zJ18m+UsZN+T0QrisJr+qkNoCfmVmj7gRJiRcEG5apVvdN4DXI0V8jxWDeh+PL7NpGphZgl0K3O3PL5N/2z6ead4W2K4iRY+P8RGEmwmyDeUYMlKW5jUZT1v+STO7YjpThhc+kEuAwxj3f4QUVNr1msuJm62uu/h55rq6epp/H6nQg3BTv16TVC9cm+YDZ5CqiTZIpvNDzeyYTMjplLaF1D3B2zWP5Nu5maT3+wQxp4vTDbua/ClgLcaLfuznhA51cgowtBJOLuUgGnLpZZIarmI18swu6U2kzMVv8N8/SSrhm4thjPYqpHJtgT6MG2OZ3Dl5LfA+J8tWvv76mqQbzWyhX0csb/K3/PJsZFsCnywmkgPN7NIepHatiVEnNspXcgmXB0CexUfyu5k94olfR8xszK18q0raWtLJwFVOtiWk+tmb9Vh5puHXyq9FEyjIKElbSHpPrmbq7mQ7+5pr2FXeC7wOwmi+p8IFrOGfjUrahVS4cRWfYD5mZl/vUmrnPl2z0qd1xv1MAyu5hNvT7zff87qS/tPVsTqpftpLSAU+skp2O/BT4EQzu7FQ57pVI+f79Rb4/ztIOsEnul7UtVWBV3rbTpT0I19/1cxsMSld31nAZ4DNSXUQLgKOA64l1f2WTzqbAx8mVXUFuBj4jJld24PUzoT72yZjaA9SEZQasaWw8hHOZ/M5pKDRk33gZdVnzYIMo8BNwDnALcBC4PY8AH391G3JqEym60jxZmM+AOcw7qPYC0aA84EPmdlVZcksV03NzH7ipNvOB/2OLpUheY3IpVkNuBf4DnCamV3Wx0SS0+ktLvo0B6yWiYkCK6OE88jmA/o0VAyRMnb1Ui5qzN/PBM6cbKNOaczItREKwvzcX0haB1jPJRs+6dxrZveX53PC9nJ/ckId3OE3gZVVpcy1vAsJ1836S30YRspr1opr9WtMKNvbUsIWeTFrTqBRM3uQccfmZhNJPp8moU/zPTaiyGMQjpkorzvdA6+QPMskVxOya6ITyUz2aRAuMFsnGBGOx7MOsfEdCAThAoEgXCAQCMIFAoODgTKaVPegJvOYTr6NvVw3n2sie1G93OtU9kunPuq2b3u5l4n2XRBuktDPQ+j2mImSg/EI8LHyXMVeVU/7U0Wi1rGZ7JfJ6KNejqt40CzzWllRCDhoEm6o3cDN4SulVz0wZGYjnc7hxQiXbTAz7qqUsaT60DPR/HpjxefD/vmSkjC+Ed5xfy5vmJdFHlsNuGb32ENfjrU5b7O+HGb5Pb1GN9f1czU6kaa4hvy8o72eI9Zwk0O0PNOdhDvdlqVxffBAct/65+LQdYCfedH4jG8BHyiP8/dzgF8DvyL5VP4WuN4/+y/g+SVpcvoBJ8WakvaWdJqk60iJVX8taaGkSyQdKemN7q3faFXWt/j8tcBdkj6dPf3zdavkJaVXOD/HwHVSjYvvz8LDjspzF335JVKsHMV1bvW+Wejv/149vnodv6cbgM9Xzt/sXjbya9wg6TpJZ0jaT9LaHuWgQS+JPGgb3y+hffjH2sALKve3QWVieSHjWa4yxoAPkYI5R4H9SIlWP+rnGAEezdIpq3pe1ukw4J3A70jp8v6VlPFqFFgDeDUp/cHJku4DPmtmV/oga5U1eW2XsG+XtD2wm5k91ULFnOP32Kvr2EtJ0QytsA7LFyhZ3ftiV5Lbm+Gp9FpI7OzytTGpft4zpHp07aT7Gn7cHqTcMW8AdgM+Jels4PNm9nQODg7CTT2W0N4LfYTlczTKjymxtFRVCnXt3mLG/QPwYjP7XTNVzCMQ3ugS9ybgb8zsphZtuh74D0mrAh8DTpd0kpkdJKkmqZm6WAfuM7MtJB0H3CxpSzO7pwnpmt1jt33Z6NCXVXXxcTO7tQftqQHsQIqamCPpxWZ2XwcjyhNmdjspNOoy4GhJrwC+APxG0gfM7PJBJd2gbQt0iihu9r11cw6Poh52VWgOKRq8/KxMKLQzcAnwZTN7h5ndlNMyOInKV07X8IyZHeWz9jaSznbJUGuiBuZQGszsg8APXc1a3yVrrcM9dtuXvfZ13e8n31u7c2RC7QD8G/AA46WZ24278vxD3ue3mdl7gEOAcyW905/DwKmX4Uu5vFUwr5fU5LOaD/Y3+PpnJzO7yA0kY52sidnqZmZ/kLQpcLWkE81sLx841eMbftwcM/uipDHgWp/tH5/BybIr44f31TApcPYc4GWkVBCndCJ7oaI2ijVe3cxOk/R74BeSHjazy/qopxASrtc2+wDNs+2yv6fqfgoJN58UAb6fk22Op2dodEPoyqy8JbCtpA/74Gw1W49KGjazI4AfAxdNYnXSdn1pbSTQMknXQXq+1iej+93wtFlJpB4mw4aZjXg/XA28x1XzNbsxFAXhJqZSPuUWq6X+PlaY3xcxNUlsciLYw4FbzexYf/g95/T3duZUd3sAX5G0RmGIaKaajbpauq8PsK/2ug3QZr00VuR0KftycaU9eY9xtPhto8O42hq41QlxLfBcSev2myG6IN2PgV8AR2a1PFTKqcEIsLWbwIeKmbLu372e8frbk6ht2ojPpu/3608oZ2POdenWyhuAj5vZP7pkGW2h7uZB+nbgTs/Hci39p1hvALtIeqmfQ5W+fIVLpWWSFljDkw/lQf6omV3dxAiS/34rcKl/d7+kh0jpBk/34/vpw7yG/STwK0mfN7MH+vGcCcJ1xlKXCm9tMtBGSekETpts6eYD8F3AXW4gmYx1g5xA3wC+DPxjuwHoUmHIzP4o6RDgWDN7TV5v9km49wNPtOjLDd0wVH72PNI2SK6lcANwNUXUd2X9tjFwaHGOa1zqnd6vJlJsy9wr6XrgvcDR3p7RINzkYlXg783s7BYj+LOM126bbOxM2mDOblwTJVzDJdelwAJJGzTbhqgMtlEfbN+QdICk3Uip/Ib6fPbvNbPrWvTlt0lJljLm+oSzeRsjBwX5/tz/v7mYoC4mpYtngv2XSyWfQ9qnO5oBCbYdtDWcgHluMh4uzMdzXM2YMwUdn6XOhsB1kxVJXVg+nyblHXlND+tYfD35Wb/nfgfvKoX5vdqXw03us9bFtkC5frvd15pZgl4JrC1pnQlU+lk2WZH2OF80TaXCVlorZc6O3MiuUoz7Rk7FLJctiKsw+TXTcv8/SvKA6Yaooz5QTyV5iuxC/9sE/fTlst+2WDOV67fLCvW5ZmYPAw8DfzXB8Zev8aBPOPMHxVoZ8XC9SZWp2u8Z6VEtrLvkOBP4CMmiOCueZVH85OXFGrC0JF7r0g8mblEeHbSlURCuiz5yF6KljOd3nEwVGV8r/alHgwekTeTNSH6PIzPdUcW+XF6/3VTcZ77Xi4E3TnACK1OtN0h+mkG4FQR5/fEA8OrCaDJZ0qBOctS9tYfjGr5uuQ24i+SMPTqLxtNWwB2+nVJ31bNRWcc9fwLrOCsKSf7J1eyBqPYThOt+Nr0S2G6yjCaF0WETN1Dc0sZzo91E8F8kC+JsGmzl+s0qRqKHgEeAN09gDOY9t+wYPTBjOQjXvfp2EvAmL2CoSVig5xn5I8AV7rUy3Md5Fs6amSlJmiHSpvklTdTGch23TT/ruKLe+jxge+CEKV5fB+Gmm3CuFt3hg/vTbsXre6Hukqwh6XmkCjRH9jFoskS709eXM2qhK6Tzq7xvbi1q4Q2VfwOXA3/RJ1Gym93fk0KYrh8kB+YgXNfjSeYP+QBJL/f1yVAfJ7Ji0JwAnGFmt+YUAn0Q7kHg2VnwLPP1twGuNrNni9p7o5W6eKcBq+V1XLeTRREe9WJSfNwnKindZz0iPKd7I0XdzG6T9DngMkl/1mv0sUuBmpP1MFe9/rogWz+keZoUTDpbJs/NSeWPf8Dy/q4lxkhueJuQouQ7+lUWgb9zXEL+i5ldN5011oNw00u67HB8tKSXAws9CvuPmUiMV9xRRaItq2jjquQRpDQOm5rZ4mxh69MtctQH60zP8tni+hqS6f9JmheezD6PN7o0vJAWAcGF5MyhTWuTogSuNbPPDWLU98pKuFwju9Yht0gzo0DdzPaR9M+kKOyDzew/ypm8WM+oUtFmI1IhxBcBr3MH3NqAlXeqlTODS/+av78SmG9mH+tC2u9Oqtj6f9ZxlT7Jfbcn8DXgdDPbv0XQbhBusg0YtDd/q4kK02jym0X+QJf2cJ5S0tXN7BBJOefGASQr5rnAnSWB3Kr5JmAvkofFacCOxXnGerl+m36Z7L5s9v1Ii/Zm6f5W4I7CF7PZb7Nz86+A50l6jpk9VrlGjvR+GSlL2/tIe40fN7MzstFpEFPmDRrhFtDedD6X5TNRGSnLl1VUsM9Lei/jJXKPMLNzC3VnLikygQ6kO1/SBcAHgb8DDgQWS3rKz7MKKdvVIuAiYAsz++9iFh9r81wW9GCsWK3Pvmz3/Oe7MWYZEYBNJF3FeHjOQjPbr+jf3YDLXdqNtVL3/N7/IGkRKaPZfxbX2FTStX5PqwC/J+V0+UGhYQxsXbpBIVyewQ8A7mkyq+cHcJw/pIxHSPFSTxefHUGK0xouSPnbgoyQHIPPr5y7FenGfED80KXZy0mOyEPAY6SQlrtLSxutk9nmz64jpehrl7U4f36vS8+RDr+n8v2Hi/tWk748iuXdxe5xQi1gvCrrw5V+OwK4rV2/Va73Pl/rZdzp1xgmefbcbmaPVqyUK1YRyCI56lmSrig+P9NnNwY9Geck95d1yO+xrF979CQJsMwjpz7bIgGKhMC3Svp+8fnNbqFtmvR20FKdtzVwNEslXp0VK3W3l0mWJpZF6zY5EP+3zO9yJX49lGW0FxIznkK9m9/3PPN3Sh3eqi+bSfpuz9npeVb8VHNp5BWqXvigFfNo9Pp9dSD2QKJ+i11MSnBqLxa4ftSsTsd005cTbUf1Gr3edxBumlS4fqxTg5JkZrLutcW6re9zT0Y5rwmUuyrT9imMJtMr5dSuPFSnAdFv+ah2qh/jpu5GcZ28GS76NGEX91rv5Tw99seyTft2/TEZk1Uf9ehqro6PNel3G0R1cyALMlZVj27WMMWxfa85WqyxxtqoS40JrG/Kex3t9l57KUDp51/Wzl7KSvXzmx4LM9aK/bitGQ9avcrMLsf9WwdNaxkaEKLlQfZdSduS9ofuBc4DTjCzJ5p5bBRVbj4KHCRphBRZ/Qvgh9lc3+NAyG3JqQS2I1WUeS2p6s1ckjn9MVJQ6YXAuWb2RCfC5HZ46MkFktYDniKZy88ETmm1YV589m1JOxUq2BDJFeodnkR1RNLfkBLQjpHyoVzl/XFLOdiL9pzt9zfm0nCp33tpdd2+2GN8LnCOpL81s9/7Zy8klQ5bw38/RjL/H2JmJ5ZuWsX1NyZt0bwQuMXv6UBPd/4+920dKE+dQVMpX+9k+SkpvGNv0ib2l8zsm02smHnQbUTKv/h5Uvj/jsD+kk4EDiwihjsVSiwdaD8F7OvXuIZUb+Bu0r7SKqRyUG8g5Zz8pqQfAYeZ2UNdSOQcmPp54CHgbcA/AV+S9HEzu6DNOV5HCpb9EePOw49WfrO+q6mfIDlQ7wBcKekcYF93yi7740ukDfy8/3Y6cIxfJ3uZ/LGYuIa9n+cU15znz2FfxtNJGMmnMhNwmeXSIwKuJXnwHGxmi/z71YBvOqFfCzw7iJJuuUHl77NmHy5fT9KVkvarfLe7pIcknZx/W9QCyPdylKTTK8e9TtKvJN0kaa1OhoHiXG+T9D+SbpT07lwIsUP7d5R0uaTHJH2o2s6qUUHSPEl/kPSqsg8kfUrSUkkHl22q9NEvJX28wz0cWD5b/2xjSRdLukfS+sXgb3aeO1zNo0X715H0oLtm5e82lPSApFW6fNbnSfpx5f7LIpwbzeS+Zr/7cINYW2BV7/x5PgufRarQsoWkH+Tc/U2OnVscVzezhWb2BlIhxStymeBmpCsk2/4kF63vmNkmZnaamS3NAZZFkYsy6BIzu8DMtiTVh/umpO/mdrYheQ1Y3c81x3P5H00q+XSkFwFpVbJpgR83t82m/JziN0NmdoeZbQP8jFTZZ/VMomLzOQ/6IVI8W93zWNZbtL+KOrBW0T/LTTpF1ua1San0DsnXzvUMvD1mZv89iEaTQfR8yFarUdfzh939543AByX9dYtqNCqOG8sD0cyyK9FXm5G1CHo8kJSWfFszO7L0gCgCLMeK12ixJqn7eU4hha+8U9Jxfr16N/fqA22OmV0D7AQc63UBGk0IlY9rV3Sj7I/RnBDWzPbxNeNxuVBGthTmV7Nr9PD8xiptU2VCxdXxRcC9VeNTqxLMQbjp2ybIFVXuJxV4+LqTTbSJEfOHnr9/N/BxSeuVBQ8Lo8sOvmbZwsx+4ddrNBkwLa+V8+27oWYT4D2SDum2sKAPtKV+jgt8HXuUX98moR8bTl4D9gR2l/S6FgUgpxqP+yS4oEN7g3AzhFEfFP9KqhP91m7KGBUWv4WkcJG9c7/4wJOrVmcAB3i1mzn9lorKaRnM7I+k4Mt/kvTnPtC7XRdniXY4sIOkNSuTR25/Wfet1gPp6mb2B1Le/gOmYJzUK22z8vr+/+9IUexbFfuQKwRWCMLlWd7MFrvFcNeKitL2cH+oZ7uJH5eOOe/Il4C7zexbTpalE2xrLrB4JSm64d96cQkrVMTrXRJU04Yb8ExZ661XaeD9cSaptBS+BTIZzsMCHitU7mYaQra+Hgt8qeJnGYSbTbzzh3IzKUSm60HgD/U3wAtyGjYnxprAPsAns8SbpLZmNe0QUvzX5r0UFiySq/6elCWrnFyW+jl3kbSbpF0lvbmHCShvfN8CrClp/iSZ3PN2wR7etl28betXCJX75p/caHS4r4VXiOwEK1SKBV9MP8Z4TFwvA+UJHxDZHUvAO0h7WBcX677JaGdOSvSQpPOAjwMfoPsihXlyedpV6BKLSDX0tnGC1Un7WX/T41rvqWwVZryy7ESI1/DnciTJcyanGvz/pFi7uhtwsgfJYkk7A9dLus3MTs4b90G4WQIfhM9jvApqLwNsLWBJUYyi4YP0Ah8EQ0xuOvFMmh+RijHSw/lzbbnn8H83tdcgRbAf1STJTi+q5Zr++6f6mLyart38XK9vVrG0bGcxIf1a0h7AGZKWeHqFgSbdiqRSZtVwU3rLRpwH/l8wHk2e8WpSSrapQFbdrnXV7QU9+EA2fMN9A+DXTQihCZAkG4zeADycs4pN5nMq1t2dDFpDZnYmyWp6uqT3Zqt0EG5mJVt2B3o+qZrMmT3M6Jmo7yqOG3OPiNVJxTImY4ZvOvCA+33dtV6PhNjepcbVed3ZZBKp9WFsyP2xF8lXFcbTsk/KmCs20zuF/Iw66X4E7A6cKOlDg0y6FUWlHPI9qsOBm8zs5pzZqQNRszPvO0gOsv9ROOzO9wH99BQRLmOxE25BFxPLsigFT9N3rJktcXVXTdaz6jHmLXvU/CXwl6T9yV5V0a4ILYkeUhMOm9nZvh/6M0kjZnZC5KWcmTXbsJNtK1Lindd3Sn/t3w852dYGTibVDn+yWKst9UE8ZxqeQZ0O9d18Aql7mw/1CeJw/3xsItpKpT/mkbZIvmxm982GxD2Fc8PPJe0CnCvpQf9/oBILDaJKWcuFIQrvi21IlsT9fRO7WT4Qqxw3IuklwA3Af5rZ9yrJRZ8mhQG9sA8DTC9Yi+RJ/0AzQ0MOg3HPlhFJ/4BvepvZM92sh9qsXYecaLk/nutryoVmdmgf9Q6mg3TnkSoOnecRBQPl5jWIzstP5sIQkl4g6Wu+1jjAzL7tasZYk+MWF8et6l77C0lWyL8rgy+Lfa57gM2nqGBErTDMjDQx2AA8kn0yJb1W0k+BQ0kuZjmvfqPPflxa9MdcSe8m7UXeCew4G5OtFqQ7FvgxcPKguXgNmkq5CHiXh61sRoq5uhV4SzEAm+n0z5KSmB7px2zikmvfQrI1msTRXQzs5HnsG1MweUDKw3hzjjrw9mcjyGc8aHZzt0heALzSzB6coCq1GNhA0ldIkRavITkMf8HMDu8l/fsMIG+M7wM8KGlrM7tkUFTLQZNwY6S8/OuQIqm3M7M3d1FFZZS0P7UBKfnpe0gVOjcenzyXG1yZXCc4UTecTNWlKCpYI9WH+2GLn27k6ubxpFoEe04C2XJ/LAD+jOS3uDcp+/Erp8AqOdlSLkcwPOZr709Mscq/Uku41YCvm9n3KoPXOgzA1UhVRt9VHPcZUpTzV4EHygjnYuP1Dg+6PdzM9prENU0O+fmwP4PT/T7yPcgnww95Icjc5iyJJzqTL3Cpukdx7v8B7pT0Zbz88SxW11T4v/5LtmbGGm4KOpoU+DhUBKB2kyxUpADUfNywmV1Fqo/9RZ/Nay0k0SeA90ratCipO5GRkqufrgZ8i5Q+YGmLZ/Fcb/OcXItgMv0a/dxzPQLiLlJUxJGTFfIzleOg8CWd51s4A+HgPKgBqKN4AGqPD2nU1akcBnIw8GFJ6xZrg6y6jLnqciPwVeDn7sg72m+KiZz12dt9NnCNmR3fRkUc6/Nee+2PUe+PTwM7SXo1zQNbZxvmucYxMK5eK2Wu+xw/5iEy17aRclm1PJgUhXClpLk5mLTbGdU9K4Zy0Kqkk0gRDbtnA8UsWRf9t1v/ZkzKVXOXtBq33vdvAh5w62VtEBIJrczFJawi5dZpIuVUzPTbk/bmbpa0kdeuVpGbI7ssla+6Ey1X8FxT0oXAlsDmOXXeVKyV8tq2BzUrr4sOAXZ2S/CUSLl2bSui4+tttIT8bPYH/n2QxvJKS7hCyv2SFMx5WDMpl4NDzWypmW1Bsm7eKOkLklYvAikbOd9G8RrLKqjnxrzTpcZrvD7aVBkm8hqn6320QsrdAfwE+MoUSbncN9UCKjmtxZ6ez3Is51kpEzPlwiiSjiKFU/1r4W0ThJvs9Vuf6leriqJ5lj0I+IiktXNCnSrpimxRe5McnfcE7pZ0nKfqW0/S3EItWkfSVpK+DvwPKcfkp81sWzN7vAuy9Xuv3RzXqj9KKberpI1b5DTp5hqNLj+rPguAUyV9MpOrTMzkBqRvuHTbwcyWFBPjrMegbQusSn++jdXKqMuknA/8KyRdT0oU9HeMJzdtRrq6V0s9V9JfAx8i5VKZDyyRtNSlwiq+mL/FyXaSb27nTeVOkm0B/eXyGCUljD3AB3Edz7xcTLBzaFLhtdgOuV3SWS49tmki5TpVT82VZ2sVkj8fWOib+TkA9RAzO3G8CXaqpAeB4yXtQ8qtcrP/djOSo8BjwGZm9tvIvDx1kg2Sd8FD2YLXxXH5N98qBthYi1n9HW7IaLmnk2saFHkSfwL8xLcKXkbalM8R0g8Av8sZg7Pka7eHVszSS4G3k7xo6FLS5T76JMmLpl4M/kcLMkIKer2shdTJFtwP+wBvtsf5TuD26vFF+/9ESuV3X3HM/aScMWU0fo3xzMulW92lkjYiRcG/3Y8TKbP1QZ5ukEEjW6sFbVRA7d7y2NGiVqw/jEC3fVubjN9MRxtX6gqonTqn3WxY7JF1tfjupvIpE6hlNoHKPs0qvKpSybRjuad2VVi7aVurgiPNJHP1PEW6vJxfVIXNIRuDBlKyrVAVUCdy3EQe4GRVPm1iRZ2qe+3Y3nbVSLtpW7Pf9HJP1TJdXRhdBgJR5D0QCMIFAkG4QCAQhAsEgnCBQCAIFwgE4QKBIFwgEAjCBQJBuEAgEIQLBIJwgUAQLhAIBOECgSBcIBAIwgUCQbhAIBCECwSCcIFAEC4QCAThAoEgXCAQCMIFAkG4QCAIFwgEgnCBwIqDXlOd5/JHdUnRe4GVWlgVNSWmhHACFnt++LHo78BKjlzIZQk91JXohXAGbCnp54xXNQkEVlaYk+61wLWTSjgXnT8jVTNZhf4qcwYCK6KUOw24zMtRa6KEW7ZmM7PvAd+LPg4EmgqlYUmNTmu6doRrxJotEOhSvzQb6WZN145wNWArSRcCw7FmCwQ6rulGgNcDC3shXCbWeaTi8POJ/bpAoBs0gFOASypcCgQCMyUGWy0CayHZAoH+JN1EasYHAoFAIBAIBAKBQGB24H8BzhXb6EnRjNwAAAAASUVORK5CYII=" alt="Best Hilton Head Properties"></a>
   <div style="display:flex;align-items:center;gap:32px">
-    <a href="/contact" class="nav-cta">Contact</a>
-    <div class="nav-serhant">SERHANT.</div>
+    <a href="https://besthiltonheadproperties.com/contact" class="nav-cta">Contact</a>
+    <!-- SERHANT. badge -->
+    <div class="nav-serhant">
+      <img src="images/serhant-logo.png" alt="SERHANT." class="serhant-logo-img">
+      <span class="serhant-label">Partner</span>
+    </div>
   </div>
 </nav>
 
 <section class="hero">
-  <!-- YouTube background video: Sea Pines Flyover -->
+  <!-- Local hero video -->
   <div class="hero-video-wrap">
-    <iframe class="hero-video"
-      src="https://www.youtube.com/embed/bzmzug-psE0?autoplay=1&mute=1&loop=1&playlist=bzmzug-psE0&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
-      frameborder="0"
-      allow="autoplay; encrypted-media; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="Sea Pines page hero video.mp4" type="video/mp4">
+    </video>
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
@@ -154,11 +932,11 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
     <div class="hero-stats">
       <div class="hero-stat"><span class="hero-stat-val">$1.85M</span><span class="hero-stat-lbl">Avg Sale Price</span></div>
       <div class="hero-stat"><span class="hero-stat-val">11</span><span class="hero-stat-lbl">Days on Market</span></div>
-      <div class="hero-stat"><span class="hero-stat-val">5*000</span><span class="hero-stat-lbl">Private Acres</span></div>
+      <div class="hero-stat"><span class="hero-stat-val">5,000</span><span class="hero-stat-lbl">Private Acres</span></div>
       <div class="hero-stat"><span class="hero-stat-val">4</span><span class="hero-stat-lbl">Championship Courses</span></div>
     </div>
     <div class="hero-cta-group">
-      <a href="/contact" class="btn-primary">Explore Homes</a>
+      <a href="https://besthiltonheadproperties.com/contact" class="btn-primary">Explore Homes</a>
       <a href="#lifestyle" class="btn-outline">Discover the Lifestyle</a>
     </div>
   </div>
@@ -176,185 +954,97 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 <section class="about-section">
   <div class="about-inner">
     <div>
-      <div class="section-eyebrow">The Standard of Luxury Living</div>
-      <h2 class="section-title">Where <em>Championship</em><br>Golf Meets Private Island Life</h2>
-      <p class="section-body">Sea Pines Resort is more than a neighborhood — it is the defining address on Hilton Head Island. Spanning 5,000 private acres at the island's southern tip, Sea Pines is home to four world-renowned golf courses, including Harbour Town Golf Links, host of the PGA TOUR's RBC Heritage presented by Boeing. Its 5 miles of pristine private beach, 15-mile leisure trail network, and a 605-acre Forest Preserve make it a community unlike any other on the East Coast.</p>
+      <div class="section-eyebrow">Founded 1956 · A Vision Ahead of Its Time</div>
+      <h2 class="section-title">Charles Fraser &amp;<br>the Birth of <em>Sea Pines</em></h2>
+      <p class="section-body">In 1956, a young Yale-educated attorney named Charles Fraser looked out over 5,000 acres of pristine Lowcountry barrier island and saw something extraordinary — not a resort to be imposed upon the land, but one designed to live in perfect harmony with it. His father had purchased the land, but it was Charles who transformed it into the world's first environmentally planned resort community.</p>
+      <p class="section-body" style="margin-top:-16px">Fraser balanced homes, golf courses, and gathering spaces with preserved tidal marshes, ancient live oaks, and the island's native ecosystem. He established a conservation foundation to safeguard Sea Pines' natural beauty well beyond his own lifetime — a foresight that, nearly seven decades later, is woven into the very character of Hilton Head Island itself.</p>
       <div class="quote-card">
-        <p>"Owning in Sea Pines is not simply buying a home — it is joining a legacy that has defined gracious coastal living for nearly seven decades."</p>
-        <cite>— BHHP Advisory Team</cite>
+        <p>"Hilton Head is the very first community in the United States to have been eco-planned. Charles Fraser was way ahead of his time — and his legacy stands to this day."</p>
+        <cite>— Talita, BHHP</cite>
       </div>
     </div>
     <div class="about-image-wrap">
-      <!-- Sea Pines Resort aerial — YouTube thumbnail (freely accessible) -->
       <img class="about-image"
-        src="https://img.youtube.com/vi/-XvBLuH7JNU/maxresdefault.jpg"
-        alt="Sea Pines Resort aerial view" loading="lazy">
-      <div class="about-badge"><div class="badge-val">RBC</div><div class="badge-lbl">Heritage PGA Tour Host</div></div>
+        src="images/sea-pines/sp-golf.jpg"
+        alt="Sea Pines Resort aerial view — Hilton Head Island" loading="lazy">
+      <div class="about-badge"><div class="badge-val">1956</div><div class="badge-lbl">Year Sea Pines Was Founded</div></div>
     </div>
   </div>
 </section>
 
-<section class="lifestyle-section" id="lifestyle">
-  <div class="lifestyle-header">
-    <div class="section-eyebrow">Sports &amp; Lifestyle</div>
-    <h2 class="section-title">A Life <em>Fully Lived</em></h2>
-    <p>From championship golf to dolphin cruises at dusk — Sea Pines delivers an unmatched collection of world-class experiences, all within a private, gated 5,000-acre resort.</p>
-  </div>
-  <div class="lifestyle-grid">
+<!-- ══ PRESERVATION & SUSTAINABILITY ══════════════════════════════════════ -->
+<section class="preservation-section" id="preservation">
+  <div class="preservation-inner">
 
-    <!-- Card 1: Golf (tall hero card) -->
-    <div class="lifestyle-card">
-      <img class="card-img"
-        src="https://img.youtube.com/vi/tsR7dPoYU1s/maxresdefault.jpg"
-        alt="Harbour Town Golf Links" loading="lazy">
-      <div class="card-overlay"></div>
-      <div class="card-content">
-        <div class="card-cat">World-Class Golf</div>
-        <div class="card-title">Four Championship Courses</div>
-        <p class="card-desc">Harbour Town Golf Links hosts the PGA TOUR's RBC Heritage. Heron Point by Pete Dye, Atlantic Dunes by Davis Love III, and Sea Pines Country Club complete an extraordinary collection.</p>
-        <div class="card-tags"><span class="card-tag">RBC Heritage · PGA Tour</span><span class="card-tag">Pete Dye Design</span><span class="card-tag">Davis Love III</span></div>
+    <div class="preservation-text">
+      <div class="section-eyebrow">Green by Design · Since 1956</div>
+      <h2 class="section-title">America's First<br><em>Eco-Planned</em> Community</h2>
+      <p class="section-body">Long before sustainability became a movement, Sea Pines was built on its principles. Fraser's vision — to inhabit this barrier island in harmony with nature rather than impose upon it — created a blueprint that communities across the country would spend decades trying to replicate. The 605-acre Sea Pines Forest Preserve, home to a 4,000-year-old Native American shell ring and over 130 bird species, stands as living proof.</p>
+
+      <div class="preservation-pillars">
+        <div class="preservation-pillar">
+          <div class="pillar-icon">🌿</div>
+          <div class="pillar-title">Conservation Foundation</div>
+          <div class="pillar-body">Charles Fraser established a foundation to oversee conservation well beyond his lifetime. Its work continues today, protecting native flora, fauna, and tidal ecosystems.</div>
+        </div>
+        <div class="preservation-pillar">
+          <div class="pillar-icon">🐢</div>
+          <div class="pillar-title">Wildlife Protection</div>
+          <div class="pillar-body">Native loggerhead sea turtle nesting programs, "lights out" beach policies, and urban forestry programs sustain diverse wildlife in their natural habitat.</div>
+        </div>
+        <div class="preservation-pillar">
+          <div class="pillar-icon">🌳</div>
+          <div class="pillar-title">Ancient Forest Preserve</div>
+          <div class="pillar-body">605 protected acres featuring 15 miles of leisure trails, Lawton Stables, freshwater lagoons, and a 4,000-year-old Native American Shell Ring.</div>
+        </div>
+        <div class="preservation-pillar">
+          <div class="pillar-icon">🏗️</div>
+          <div class="pillar-title">Sustainable Development</div>
+          <div class="pillar-body">Green building standards, LEED lighting, native plant landscaping, and community stewardship programs have kept Sea Pines pristine for 70 years.</div>
+        </div>
+      </div>
+
+      <div class="preservation-stats">
+        <div><span class="pres-stat-val">605</span><span class="pres-stat-lbl">Acres Preserved</span></div>
+        <div><span class="pres-stat-val">4,000</span><span class="pres-stat-lbl">Year-Old Shell Ring</span></div>
+        <div><span class="pres-stat-val">130+</span><span class="pres-stat-lbl">Bird Species</span></div>
+        <div><span class="pres-stat-val">15 mi</span><span class="pres-stat-lbl">Leisure Trails</span></div>
       </div>
     </div>
 
-    <!-- Card 2: Tennis -->
-    <div class="lifestyle-card">
-      <img class="card-img"
-        src="https://img.youtube.com/vi/Gjx3Nbb5AZE/maxresdefault.jpg"
-        alt="Sea Pines Racquet Club" loading="lazy">
-      <div class="card-overlay"></div>
-      <div class="card-content">
-        <div class="card-cat">Racquet Sports</div>
-        <div class="card-title">Sea Pines Racquet Club</div>
-        <p class="card-desc">World-renowned tennis facility with 100+ courts island-wide and 6 dedicated pickleball courts. Complimentary play included for residents.</p>
-        <div class="card-tags"><span class="card-tag">100+ Courts</span><span class="card-tag">6 Pickleball Courts</span></div>
-      </div>
-    </div>
-
-    <!-- Card 3: Beach -->
-    <div class="lifestyle-card">
-      <img class="card-img"
-        src="https://img.youtube.com/vi/4koQ87EvJSo/maxresdefault.jpg"
-        alt="Sea Pines Beach Club" loading="lazy">
-      <div class="card-overlay"></div>
-      <div class="card-content">
-        <div class="card-cat">Private Beachfront</div>
-        <div class="card-title">5 Miles of Pristine Beach</div>
-        <p class="card-desc">Exclusive resident access to five uncrowded miles of Atlantic shoreline with the Sea Pines Beach Club, pools, the Coast restaurant and Ocean Lounge.</p>
-        <div class="card-tags"><span class="card-tag">Residents-Only</span><span class="card-tag">Beach Club</span><span class="card-tag">Ocean Lounge</span></div>
-      </div>
-    </div>
-
-    <!-- Card 4: Harbour Town Marina -->
-    <div class="lifestyle-card">
-      <img class="card-img"
-        src="https://img.youtube.com/vi/XV5C3vSOfMc/maxresdefault.jpg"
-        alt="Harbour Town Lighthouse and Marina" loading="lazy">
-      <div class="card-overlay"></div>
-      <div class="card-content">
-        <div class="card-cat">Iconic Village</div>
-        <div class="card-title">Harbour Town</div>
-        <p class="card-desc">The candy-stripe lighthouse, deep-water marina, Quarterdeck rooftop oyster bar, boutiques, and live music. One of the East Coast's most beloved destinations.</p>
-        <div class="card-tags"><span class="card-tag">Iconic Lighthouse</span><span class="card-tag">Marina</span><span class="card-tag">Quarterdeck Rooftop</span></div>
-      </div>
-    </div>
-
-    <!-- Card 5: Water Sports -->
-    <div class="lifestyle-card">
-      <img class="card-img"
-        src="https://img.youtube.com/vi/DfQiIo-yelw/maxresdefault.jpg"
-        alt="Water sports and dolphin cruises at Sea Pines" loading="lazy">
-      <div class="card-overlay"></div>
-      <div class="card-content">
-        <div class="card-cat">On the Water</div>
-        <div class="card-title">Water Sports &amp; Marine Life</div>
-        <p class="card-desc">Kayaking, paddleboarding, sailing, dolphin-watching cruises, deep-sea fishing charters, and sunset sails — bottlenose dolphins are a daily sighting.</p>
-        <div class="card-tags"><span class="card-tag">Dolphin Cruises</span><span class="card-tag">Fishing Charters</span><span class="card-tag">Kayak &amp; Sail</span></div>
-      </div>
-    </div>
-
-    <!-- Card 6: Nature & Trails -->
-    <div class="lifestyle-card">
-      <img class="card-img"
-        src="https://img.youtube.com/vi/NFmJ5zxa1W4/maxresdefault.jpg"
-        alt="Sea Pines Forest Preserve wildlife" loading="lazy">
-      <div class="card-overlay"></div>
-      <div class="card-content">
-        <div class="card-cat">Nature &amp; Exploration</div>
-        <div class="card-title">Forest Preserve &amp; Trails</div>
-        <p class="card-desc">605 acres of ancient coastal ecosystem, 15 miles of leisure trails, and Lawton Stables for horseback riding through the Sea Pines Forest Preserve.</p>
-        <div class="card-tags"><span class="card-tag">605-Acre Preserve</span><span class="card-tag">Lawton Stables</span><span class="card-tag">15-Mile Trails</span></div>
-      </div>
-    </div>
-
-    <!-- Card 7: South Beach -->
-    <div class="lifestyle-card">
-      <img class="card-img"
-        src="https://img.youtube.com/vi/PSCdHMxfJws/maxresdefault.jpg"
-        alt="South Beach Village Sea Pines" loading="lazy">
-      <div class="card-overlay"></div>
-      <div class="card-content">
-        <div class="card-cat">Casual Village</div>
-        <div class="card-title">South Beach Village</div>
-        <p class="card-desc">The legendary Salty Dog Café, fresh seafood, bike rentals, kayak launches, and the unhurried charm that makes Sea Pines a family destination like no other.</p>
-        <div class="card-tags"><span class="card-tag">Salty Dog Café</span><span class="card-tag">Bike Rentals</span><span class="card-tag">Fresh Seafood</span></div>
-      </div>
-    </div>
-
-    <!-- Card 8: Dining -->
-    <div class="lifestyle-card">
-      <img class="card-img"
-        src="https://img.youtube.com/vi/i5vIqMOlKOs/maxresdefault.jpg"
-        alt="Dining at Sea Pines Resort" loading="lazy">
-      <div class="card-overlay"></div>
-      <div class="card-content">
-        <div class="card-cat">Culinary Excellence</div>
-        <div class="card-title">Dining Within the Gates</div>
-        <p class="card-desc">Coast at Sea Pines Beach Club, the Ocean Lounge, Harbour Town Bakery &amp; Café, the Quarterdeck rooftop oyster bar — every meal is an occasion.</p>
-        <div class="card-tags"><span class="card-tag">Coast Beach Club</span><span class="card-tag">Ocean Lounge</span><span class="card-tag">Rooftop Dining</span></div>
-      </div>
-    </div>
-
-    <!-- Card 9: Family & Wellness -->
-    <div class="lifestyle-card">
-      <img class="card-img"
-        src="https://img.youtube.com/vi/WdI8Ow5QsQo/maxresdefault.jpg"
-        alt="Family resort life at Sea Pines" loading="lazy">
-      <div class="card-overlay"></div>
-      <div class="card-content">
-        <div class="card-cat">Family &amp; Wellness</div>
-        <div class="card-title">Resort Life for All Ages</div>
-        <p class="card-desc">State-of-the-art fitness center, resort pools, beach yoga at sunrise, children's programs, and cycling the 15-mile network — the entire family thrives here.</p>
-        <div class="card-tags"><span class="card-tag">Fitness Center</span><span class="card-tag">Resort Pools</span><span class="card-tag">Kids Programs</span></div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="feature-section">
-  <div class="feature-inner">
-    <div class="feature-img-col">
-      <!-- Harbour Town / Inn & Club — YouTube thumbnail -->
-      <img class="feature-image"
-        src="https://img.youtube.com/vi/wu-OFteV9U0/maxresdefault.jpg"
-        alt="The Inn and Club at Harbour Town Sea Pines" loading="lazy">
-      <div class="feature-caption">Harbour Town Lighthouse — an icon of the Carolina coast</div>
-    </div>
     <div>
-      <div class="section-eyebrow">Icon of the Carolina Coast</div>
-      <h2 class="section-title">Harbour Town:<br><em>The Heart</em> of Sea Pines</h2>
-      <p class="section-body">The red-and-white striped Harbour Town Lighthouse is the most recognizable landmark on Hilton Head Island. Rising 90 feet above Calibogue Sound, it has guided mariners and golfers alike since 1970. Climb its 114 steps for panoramic views, then step out into one of the East Coast's most charming marina villages.</p>
-      <ul class="feature-list">
-        <li>90-foot lighthouse with 114-step observation deck and panoramic views of Calibogue Sound</li>
-        <li>Deep-water marina with berths for vessels to 100+ feet</li>
-        <li>Quarterdeck Restaurant with rooftop oyster bar and sunset cocktails</li>
-        <li>Curated boutiques, galleries, and waterfront dining</li>
-        <li>Live music and seasonal outdoor events throughout the year</li>
-        <li>Home of the RBC Heritage clubhouse and the famous 18th hole gallery</li>
-      </ul>
+      <div class="preservation-quote">
+        <blockquote>"Adoring the local natural beauty, Fraser took great care to balance building homes with preserving green spaces — and had the foresight to establish a foundation that would ensure conservation well beyond his time."</blockquote>
+        <cite>— Douglas, BHHP</cite>
+      </div>
+      <div style="margin-top:28px;background:rgba(255,255,255,0.04);border:1px solid rgba(129,216,208,0.1);border-radius:4px;padding:28px 28px 24px">
+        <div style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:16px">The Sea Pines Forest Preserve</div>
+        <p style="font-size:14px;line-height:1.8;color:rgba(255,255,255,0.65);margin-bottom:16px">One of the largest private nature preserves in the Southeast, the Forest Preserve sits entirely within Sea Pines Resort. Residents explore it on horseback from Lawton Stables, by bicycle along 15 miles of shaded trails, or on foot through ancient cypress and live-oak canopies draped in Spanish moss.</p>
+        <p style="font-size:14px;line-height:1.8;color:rgba(255,255,255,0.65)">At its heart stands a 4,000-year-old Native American shell ring — one of the oldest monuments of indigenous coastal culture in South Carolina, quietly coexisting with the resort world around it.</p>
+      </div>
     </div>
+
   </div>
 </section>
+
+<!-- ══ SEA PINES MAP ══════════════════════════════════════════════════════ -->
+<section class="map-section">
+  <div class="map-eyebrow">Sea Pines Resort · Hilton Head Island, SC</div>
+  <h2 class="map-title">5,000 Acres. <em>One Master Vision.</em></h2>
+  <p class="map-sub">From the Atlantic shore to Calibogue Sound — every path, preserve, and fairway designed with purpose.</p>
+  <div class="map-frame">
+    <img src="images/sea-pines/sp-map.png" alt="Sea Pines Resort master plan map — Hilton Head Island" loading="lazy">
+  </div>
+  <div class="map-landmarks">
+    <div class="map-landmark"><span class="map-dot"></span>Harbour Town Marina</div>
+    <div class="map-landmark"><span class="map-dot"></span>Sea Pines Beach Club</div>
+    <div class="map-landmark"><span class="map-dot"></span>605-Acre Forest Preserve</div>
+    <div class="map-landmark"><span class="map-dot"></span>4 Championship Golf Courses</div>
+    <div class="map-landmark"><span class="map-dot"></span>South Beach Marina</div>
+  </div>
+</section>
+
+
 
 <section class="market-section">
   <div class="market-inner">
@@ -371,25 +1061,699 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
   </div>
 </section>
 
+<!-- ══ SEA PINES SPORTS & LIFESTYLE — HORIZONTAL SCROLL CARD GALLERY ════════ -->
+<section class="sps-section" id="sports-recreation">
+  <div class="sps-watermark">SP</div>
+
+  <div class="sps-header">
+    <div>
+      <div class="sps-eyebrow">Sea Pines Resort · Hilton Head Island</div>
+      <h2 class="sps-heading">Sports &amp; <span>Lifestyle<br>Like Any Other</span></h2>
+      <div class="sps-subhead">Eight Passions. One Extraordinary Address.</div>
+    </div>
+    <a href="https://besthiltonheadproperties.com/contact" class="btn-outline" style="color:var(--navy);border-color:rgba(9,41,105,0.35);white-space:nowrap;margin-bottom:8px">Explore Sea Pines &nbsp;&#8594;</a>
+  </div>
+
+  <div class="sps-track-wrapper">
+    <div class="sps-track" id="spsTrack">
+
+      <!-- CARD 1: GOLF -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('images/sea-pines/sp-golf.jpg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Championship Play</div>
+          <div class="sps-card-name">Golf</div>
+          <div class="sps-card-desc">Four world-class courses including Harbour Town Golf Links, host of the PGA TOUR's RBC Heritage. Designed by Pete Dye, ranked top-100 in America.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Harbour Town Golf Links</span>
+            <span class="sps-card-stat">RBC Heritage PGA Tour</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: TENNIS -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/hero_desktop/public/media/images/Tennis%20%20%281%29.jpeg?h=3cbd9138&itok=e0aRRQ0U')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Racquet Sports</div>
+          <div class="sps-card-name">Tennis &amp; Pickleball</div>
+          <div class="sps-card-desc">20 Har-Tru clay courts and 6 pickleball courts at Sea Pines Racquet Club. USPTA/PTR pros, daily clinics, and round-robin events.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">20 Clay Courts</span>
+            <span class="sps-card-stat">6 Pickleball Courts</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: BEACH CLUB -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/hero_desktop/public/media/images/Beach-Club-Pergola-JUN24-DJI_0778.jpg?h=d3efe0a9&itok=C4gIuD-G')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Private Beach</div>
+          <div class="sps-card-name">Beach Club</div>
+          <div class="sps-card-desc">Five miles of private Atlantic beach exclusively for Sea Pines residents and guests. Coast Restaurant, Ocean Lounge, and resort pools on the sand.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">5 Miles Private Beach</span>
+            <span class="sps-card-stat">Residents Only</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4: WATER SPORTS -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/hero_desktop/public/media/images/watersports-hero.jpg?h=5c593260&itok=3Krbmyj5')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Open Water</div>
+          <div class="sps-card-name">Water Sports</div>
+          <div class="sps-card-desc">Kayaking, paddleboarding, sailing, dolphin cruises, and deep-sea fishing from Harbour Town Yacht Basin and South Beach Marina.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Harbour Town Marina</span>
+            <span class="sps-card-stat">Dolphin Cruises</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5: FOREST PRESERVE & TRAILS -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/hero_desktop/public/media/images/Forest%20Preserve%20Tile%20Option%203.jpg?h=55b7a51c&itok=jPM639M1')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Nature &amp; Exploration</div>
+          <div class="sps-card-name">Forest Preserve</div>
+          <div class="sps-card-desc">605 acres of ancient coastal ecosystem with 15 miles of leisure trails. Discover 130+ bird species and a 4,000-year-old Native American shell ring.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">605-Acre Preserve</span>
+            <span class="sps-card-stat">15-Mile Trails</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6: HORSEBACK RIDING -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/hero_desktop/public/media/images/C30A5317resize.jpg?h=16b768a2&itok=OnWTz5kN')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Equestrian</div>
+          <div class="sps-card-name">Lawton Stables</div>
+          <div class="sps-card-desc">Guided horseback rides through the Sea Pines Forest Preserve at Lawton Stables — a unique equestrian experience inside a private coastal reserve.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Guided Trail Rides</span>
+            <span class="sps-card-stat">Forest Preserve</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 7: HARBOUR TOWN MARINA -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/hero_desktop/public/media/images/Harbour%20town%20cover%20photo%20.jpg?h=e4f440a4&itok=U36_CnaC')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Iconic Landmark</div>
+          <div class="sps-card-name">Harbour Town</div>
+          <div class="sps-card-desc">The 90-foot Harbour Town Lighthouse, deep-water marina, Quarterdeck rooftop bar, boutique shops, and the RBC Heritage's legendary 18th hole.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">90-Ft Lighthouse</span>
+            <span class="sps-card-stat">Deep-Water Marina</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 8: CYCLING & FITNESS -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/hero_desktop/public/media/images/SP-lifestyle-21-C30A6225_0.jpg?h=f2fcf546&itok=cwtKeS0E')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Fitness &amp; Wellness</div>
+          <div class="sps-card-name">Cycling &amp; Fitness</div>
+          <div class="sps-card-desc">15 miles of dedicated bike paths, state-of-the-art fitness facilities, resort pools, beach yoga at sunrise, and world-class spa services.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">15-Mile Bike Network</span>
+            <span class="sps-card-stat">Resort Spa</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /sps-track -->
+  </div><!-- /sps-track-wrapper -->
+
+  <div class="sps-arrows">
+    <button class="sps-arrow" onclick="spsScroll(-1)" aria-label="Previous">&#8592;</button>
+    <button class="sps-arrow" onclick="spsScroll(1)" aria-label="Next">&#8594;</button>
+  </div>
+
+</section>
+
+<!-- ══ GOLF EXCELLENCE ═══════════════════════════════════════════════════ -->
+<section class="golf-section" id="golf">
+  <div class="golf-inner">
+    <div class="golf-header">
+      <div class="section-eyebrow">World-Class Golf · Four Championship Courses</div>
+      <h2 class="section-title">Golf at Sea Pines:<br><em>A Legacy</em> Unmatched</h2>
+      <p class="section-body">Sea Pines Resort is one of the greatest golf destinations on Earth. Four championship courses — each with its own designer pedigree and distinct personality — share a single 5,000-acre address on Hilton Head Island, South Carolina.</p>
+    </div>
+
+    <div class="golf-grid">
+
+      <div class="golf-card">
+        <div class="golf-card-num">01</div>
+        <div class="golf-card-name">Harbour Town Golf Links</div>
+        <div class="golf-card-designer">Pete Dye · Jack Nicklaus</div>
+        <div class="golf-card-body">Consistently ranked in Golf Digest's Top 100 Courses in America. Host of the PGA TOUR's RBC Heritage presented by Boeing every April — the event played the week after the Masters. The 18th hole, with its lighthouse backdrop over Calibogue Sound, is one of the most photographed finishing holes in golf.</div>
+        <div class="golf-card-award">PGA TOUR Host · Top 100 Courses in America</div>
+      </div>
+
+      <div class="golf-card">
+        <div class="golf-card-num">02</div>
+        <div class="golf-card-name">Heron Point by Pete Dye</div>
+        <div class="golf-card-designer">Pete Dye Design</div>
+        <div class="golf-card-body">A masterful redesign by Pete Dye weaving through Sea Pines' tidal marshes and ancient live oaks. Heron Point plays to the natural topography of the Lowcountry, rewarding strategic shot-making over brute force. Stunning water views on nearly every hole.</div>
+        <div class="golf-card-award">Pete Dye Signature Design</div>
+      </div>
+
+      <div class="golf-card">
+        <div class="golf-card-num">03</div>
+        <div class="golf-card-name">Atlantic Dunes by Davis Love III</div>
+        <div class="golf-card-designer">Davis Love III Design</div>
+        <div class="golf-card-body">Voted Golf Course of the Year by the National Golf Course Owners Association (NGCOA) in 2018 following a complete renovation by Davis Love III. The oceanside setting delivers panoramic views of the Atlantic — the only course in Sea Pines designed with ocean vistas.</div>
+        <div class="golf-card-award">2018 NGCOA Golf Course of the Year</div>
+      </div>
+
+      <div class="golf-card">
+        <div class="golf-card-num">04</div>
+        <div class="golf-card-name">Sea Pines Country Club</div>
+        <div class="golf-card-designer">Private Member Course</div>
+        <div class="golf-card-body">An exclusive, members-only course offering a quiet retreat from resort activity. Surrounded by the natural beauty of the Sea Pines Forest Preserve, this traditional layout is a beloved sanctuary for residents who call Sea Pines home year-round.</div>
+        <div class="golf-card-award">Private Resident Course</div>
+      </div>
+
+    </div>
+
+    <div class="golf-ranking-banner">
+      <div class="golf-ranking-title">Sea Pines Resort —<br><em>Ranked Among the World's Best</em></div>
+      <div class="golf-rankings">
+        <div class="golf-rank-item">
+          <span class="golf-rank-val">#5</span>
+          <span class="golf-rank-lbl">Golf Magazine<br>Golf Resort in the World</span>
+        </div>
+        <div class="golf-rank-item">
+          <span class="golf-rank-val">Platinum</span>
+          <span class="golf-rank-lbl">Golf Digest<br>Best Places to Play</span>
+        </div>
+        <div class="golf-rank-item">
+          <span class="golf-rank-val">Top 200</span>
+          <span class="golf-rank-lbl">Golfweek<br>Best Resort Courses</span>
+        </div>
+        <div class="golf-rank-item">
+          <span class="golf-rank-val">4</span>
+          <span class="golf-rank-lbl">Championship<br>Courses On-Property</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ HARBOUR TOWN FEATURE ══════════════════════════════════════════════ -->
+<section class="feature-section">
+  <div class="feature-inner">
+    <div class="feature-img-col">
+      <img class="feature-image"
+        src="https://www.seapines.com/sites/default/files/styles/hero_desktop/public/media/images/Harbour%20town%20cover%20photo%20.jpg?h=e4f440a4&itok=U36_CnaC"
+        alt="The Inn and Club at Harbour Town Sea Pines" loading="lazy">
+      <div class="feature-caption">Harbour Town Lighthouse — an icon of the Carolina coast</div>
+    </div>
+    <div>
+      <div class="section-eyebrow">Icon of the Carolina Coast</div>
+      <h2 class="section-title">Harbour Town:<br><em>The Heart</em> of Sea Pines</h2>
+      <p class="section-body">The red-and-white striped Harbour Town Lighthouse is the most recognizable landmark on Hilton Head Island. Rising 90 feet above Calibogue Sound, it has guided mariners and golfers alike since 1970. Climb its 114 steps for panoramic views, then step out into one of the East Coast's most charming marina villages — framed by the Calibogue Sound on one side and the legendary 18th hole of the RBC Heritage on the other.</p>
+      <ul class="feature-list">
+        <li>90-foot lighthouse open since 1970 — climb 114 steps for panoramic Calibogue Sound views</li>
+        <li>Deep-water Harbour Town Yacht Basin with berths for vessels to 100+ feet</li>
+        <li>The Inn &amp; Club at Harbour Town — the only Forbes Four-Star hotel on Hilton Head Island</li>
+        <li>The Pete Dye Room — a museum celebrating the legendary designer's career and Harbour Town legacy</li>
+        <li>Quarterdeck Restaurant &amp; rooftop oyster bar, Fraser's Tavern, and waterfront dining</li>
+        <li>Liberty Oak — a 400-year-old live oak, home stage of Gregg Russell's beloved nightly concerts for over 40 years</li>
+        <li>RBC Heritage 18th hole gallery — one of golf's most iconic finishing scenes</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DINING AT SEA PINES — HORIZONTAL SCROLL CARD GALLERY ══════════════ -->
+<section class="sps-section dps-section" id="dining">
+  <div class="sps-watermark">DINE</div>
+
+  <div class="sps-header">
+    <div>
+      <div class="sps-eyebrow">Sea Pines Resort · Dining &amp; Cuisine</div>
+      <h2 class="sps-heading">Dine at <span>Sea Pines</span></h2>
+      <div class="sps-subhead">Eight Exceptional Venues. Oceanfront. Waterfront. Harbour Town.</div>
+    </div>
+    <a href="https://www.seapines.com/dining" target="_blank" rel="noopener" class="btn-outline" style="color:var(--navy);border-color:rgba(9,41,105,0.35);white-space:nowrap;margin-bottom:8px">View All Dining &nbsp;&#8594;</a>
+  </div>
+
+  <div class="sps-track-wrapper">
+    <div class="sps-track" id="diningTrack">
+
+      <!-- CARD 1: QUARTERDECK -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/card/public/media/images/QD-MAY22-DJI_0475.jpg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Harbour Town · Waterfront</div>
+          <div class="sps-card-name">Quarterdeck</div>
+          <div class="sps-card-desc">Next to the iconic Harbour Town Lighthouse, Quarterdeck delivers seafood and southern classics with a rooftop oyster bar and stunning waterfront views of Calibogue Sound. Live music nightly.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Rooftop Oyster Bar</span>
+            <span class="sps-card-stat">Live Music</span>
+            <span class="sps-card-stat">Calibogue Sound Views</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: LINKS -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/card/public/media/images/Links%20%20%281%29.jpeg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Fine Dining · Harbour Town Clubhouse</div>
+          <div class="sps-card-name">Links</div>
+          <div class="sps-card-desc">Sea Pines' premier fine dining destination inside the Harbour Town Clubhouse. An exceptional wine selection paired with elevated steak and seafood, with views over the legendary golf links.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Steak &amp; Seafood</span>
+            <span class="sps-card-stat">Wine Dinners</span>
+            <span class="sps-card-stat">Fine Dining</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: COAST -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/card/public/media/images/coast-pergola-MAY24-AB3A0527.jpg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Beach Club · Oceanfront</div>
+          <div class="sps-card-name">Coast</div>
+          <div class="sps-card-desc">Fresh seafood with stunning Atlantic Ocean views at the world-class Sea Pines Beach Club. Frozen cocktails, pergola seating, and live music make every meal a celebration beside the sea.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Atlantic Ocean Views</span>
+            <span class="sps-card-stat">Live Music 4–7pm</span>
+            <span class="sps-card-stat">Beach Club</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4: OCEAN LOUNGE -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/card/public/media/images/Beach-Club-Pergola-JUN24-DJI_0821.jpg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Beach Club · Upscale Bar</div>
+          <div class="sps-card-name">Ocean Lounge</div>
+          <div class="sps-card-desc">The Beach Club's upscale oceanfront bar and restaurant — sweeping Atlantic views, an extensive bourbon selection, and wrap-around outdoor seating. The ultimate golden-hour destination at Sea Pines.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Bourbon Selection</span>
+            <span class="sps-card-stat">Walk-Up Beach Bar</span>
+            <span class="sps-card-stat">Live Entertainment</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5: FRASER'S TAVERN -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/card/public/media/images/Fraser%27s%20tavern%20%20%281%29.jpeg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Plantation Golf Club</div>
+          <div class="sps-card-name">Fraser's Tavern</div>
+          <div class="sps-card-desc">Named for Sea Pines founder Charles Fraser, this welcoming tavern is the perfect post-round gathering spot. Southern BBQ, sports viewing, and a relaxed atmosphere that honours the legacy of Sea Pines.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Southern BBQ</span>
+            <span class="sps-card-stat">Post-Round Dining</span>
+            <span class="sps-card-stat">Sports Viewing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6: HARBOURSIDE -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/card/public/2022-06/harbourside.jpg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Marina · Open Air</div>
+          <div class="sps-card-name">Harbourside</div>
+          <div class="sps-card-desc">Set along the marina, this open-air gem serves American classics and fresh coastal seafood with live music nightly. Where good food, great views, and great company all come together in Sea Pines.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Live Music Nightly</span>
+            <span class="sps-card-stat">Marina Views</span>
+            <span class="sps-card-stat">Fresh Coastal Seafood</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 7: HARBOUR TOWN BAKERY -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/card/public/2022-06/harbour-town-bakery-card.jpg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Harbour Town · Café</div>
+          <div class="sps-card-name">HT Bakery &amp; Café</div>
+          <div class="sps-card-desc">A beloved local favourite at the heart of Harbour Town. Delicious breakfast and lunch with kid-friendly options — enjoy the veranda with a coffee, or grab a pastry on your way to the first tee.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Breakfast &amp; Lunch</span>
+            <span class="sps-card-stat">Veranda Seating</span>
+            <span class="sps-card-stat">Kid-Friendly</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 8: QUARTERDECK MARKET -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/card/public/media/images/Quarterdeck%20Market%20%20%281%29.jpeg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Harbour Town · Market</div>
+          <div class="sps-card-name">QD Market</div>
+          <div class="sps-card-desc">Fresh local seafood, prepared meals, sweet treats, ice cream, and Sea Pines branded merchandise — everything you need at the heart of Harbour Town Marina. A quick-stop favourite for residents year-round.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Fresh Local Seafood</span>
+            <span class="sps-card-stat">Ice Cream</span>
+            <span class="sps-card-stat">Harbour Town</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sps-arrows">
+    <button class="sps-arrow" onclick="dpsScroll(-1)" aria-label="Previous">&#8592;</button>
+    <button class="sps-arrow" onclick="dpsScroll(1)" aria-label="Next">&#8594;</button>
+  </div>
+
+</section>
+
+
+
+
+<script>
+(function() {
+  function makeDraggable(trackId, scrollFnName) {
+    var track = document.getElementById(trackId);
+    if (!track) return;
+    var cardW = 340 + 16;
+    window[scrollFnName] = function(dir) {
+      track.scrollBy({ left: dir * cardW * 1.5, behavior: 'smooth' });
+    };
+    var isDown = false, startX, scrollLeft;
+    track.addEventListener('mousedown', function(e) {
+      isDown = true; track.style.cursor = 'grabbing';
+      startX = e.pageX - track.offsetLeft; scrollLeft = track.scrollLeft;
+    });
+    track.addEventListener('mouseleave', function() { isDown = false; track.style.cursor = 'grab'; });
+    track.addEventListener('mouseup', function() { isDown = false; track.style.cursor = 'grab'; });
+    track.addEventListener('mousemove', function(e) {
+      if (!isDown) return;
+      e.preventDefault();
+      var x = e.pageX - track.offsetLeft;
+      track.scrollLeft = scrollLeft - (x - startX) * 1.5;
+    });
+  }
+  makeDraggable('spsTrack', 'spsScroll');
+  makeDraggable('diningTrack', 'dpsScroll');
+})();
+</script>
+
+
+<section class="lifestyle-section" id="lifestyle">
+  <div class="lifestyle-header">
+    <div class="section-eyebrow">Sports &amp; Lifestyle</div>
+    <h2 class="section-title">A Life <em>Fully Lived</em></h2>
+    <p>From championship golf to dolphin cruises at dusk — Sea Pines delivers an unmatched collection of world-class experiences, all within a private, gated 5,000-acre resort.</p>
+  </div>
+  <div class="lifestyle-grid">
+
+    <!-- Card 1: Golf (tall hero card) -->
+    <div class="lifestyle-card">
+      <img class="card-img"
+        src="images/sea-pines/sp-golf.jpg"
+        alt="Harbour Town Golf Links" loading="lazy">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-cat">World-Class Golf</div>
+        <div class="card-title">Four Championship Courses</div>
+        <p class="card-desc">Harbour Town Golf Links hosts the PGA TOUR's RBC Heritage. Heron Point by Pete Dye, Atlantic Dunes by Davis Love III, and Sea Pines Country Club complete an extraordinary collection.</p>
+        <div class="card-tags"><span class="card-tag">RBC Heritage · PGA Tour</span><span class="card-tag">Pete Dye Design</span><span class="card-tag">Davis Love III</span></div>
+      </div>
+    </div>
+
+    <!-- Card 2: Tennis -->
+    <div class="lifestyle-card">
+      <img class="card-img"
+        src="images/sea-pines/sp-tennis.jpg"
+        alt="Sea Pines Racquet Club" loading="lazy">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-cat">Racquet Sports</div>
+        <div class="card-title">Sea Pines Racquet Club</div>
+        <p class="card-desc">World-renowned tennis facility with 100+ courts island-wide and 6 dedicated pickleball courts. Complimentary play included for residents.</p>
+        <div class="card-tags"><span class="card-tag">100+ Courts</span><span class="card-tag">6 Pickleball Courts</span></div>
+      </div>
+    </div>
+
+    <!-- Card 3: Beach -->
+    <div class="lifestyle-card">
+      <img class="card-img"
+        src="https://www.seapines.com/sites/default/files/styles/hero_desktop/public/media/images/Beach-Club-Pergola-JUN24-DJI_0778.jpg?h=d3efe0a9&itok=C4gIuD-G"
+        alt="Sea Pines Beach Club" loading="lazy">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-cat">Private Beachfront</div>
+        <div class="card-title">5 Miles of Pristine Beach</div>
+        <p class="card-desc">Exclusive resident access to five uncrowded miles of Atlantic shoreline with the Sea Pines Beach Club, pools, the Coast restaurant and Ocean Lounge.</p>
+        <div class="card-tags"><span class="card-tag">Residents-Only</span><span class="card-tag">Beach Club</span><span class="card-tag">Ocean Lounge</span></div>
+      </div>
+    </div>
+
+    <!-- Card 4: Harbour Town Marina -->
+    <div class="lifestyle-card">
+      <img class="card-img"
+        src="https://www.seapines.com/sites/default/files/styles/hero_desktop/public/media/images/Harbour%20town%20cover%20photo%20.jpg?h=e4f440a4&itok=U36_CnaC"
+        alt="Harbour Town Lighthouse and Marina" loading="lazy">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-cat">Iconic Village</div>
+        <div class="card-title">Harbour Town</div>
+        <p class="card-desc">The candy-stripe lighthouse, deep-water marina, Quarterdeck rooftop oyster bar, boutiques, and live music. One of the East Coast's most beloved destinations.</p>
+        <div class="card-tags"><span class="card-tag">Iconic Lighthouse</span><span class="card-tag">Marina</span><span class="card-tag">Quarterdeck Rooftop</span></div>
+      </div>
+    </div>
+
+    <!-- Card 5: Water Sports -->
+    <div class="lifestyle-card">
+      <img class="card-img"
+        src="https://www.seapines.com/sites/default/files/styles/hero_desktop/public/media/images/watersports-hero.jpg?h=5c593260&itok=3Krbmyj5"
+        alt="Water sports and dolphin cruises at Sea Pines" loading="lazy">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-cat">On the Water</div>
+        <div class="card-title">Water Sports &amp; Marine Life</div>
+        <p class="card-desc">Kayaking, paddleboarding, sailing, dolphin-watching cruises, deep-sea fishing charters, and sunset sails — bottlenose dolphins are a daily sighting.</p>
+        <div class="card-tags"><span class="card-tag">Dolphin Cruises</span><span class="card-tag">Fishing Charters</span><span class="card-tag">Kayak &amp; Sail</span></div>
+      </div>
+    </div>
+
+    <!-- Card 6: Nature & Trails -->
+    <div class="lifestyle-card">
+      <img class="card-img"
+        src="https://www.seapines.com/sites/default/files/styles/hero_desktop/public/media/images/Forest%20Preserve%20Tile%20Option%203.jpg?h=55b7a51c&itok=jPM639M1"
+        alt="Sea Pines Forest Preserve wildlife" loading="lazy">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-cat">Nature &amp; Exploration</div>
+        <div class="card-title">Forest Preserve &amp; Trails</div>
+        <p class="card-desc">605 acres of ancient coastal ecosystem, 15 miles of leisure trails, and Lawton Stables for horseback riding through the Sea Pines Forest Preserve.</p>
+        <div class="card-tags"><span class="card-tag">605-Acre Preserve</span><span class="card-tag">Lawton Stables</span><span class="card-tag">15-Mile Trails</span></div>
+      </div>
+    </div>
+
+    <!-- Card 7: South Beach -->
+    <div class="lifestyle-card">
+      <img class="card-img"
+        src="https://www.seapines.com/sites/default/files/styles/card_portrait/public/media/images/SP-lifestyle-21-C30A5631.jpg?h=33ed222b&itok=yophBYtM"
+        alt="South Beach Village Sea Pines" loading="lazy">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-cat">Casual Village</div>
+        <div class="card-title">South Beach Village</div>
+        <p class="card-desc">The legendary Salty Dog Café, fresh seafood, bike rentals, kayak launches, and the unhurried charm that makes Sea Pines a family destination like no other.</p>
+        <div class="card-tags"><span class="card-tag">Salty Dog Café</span><span class="card-tag">Bike Rentals</span><span class="card-tag">Fresh Seafood</span></div>
+      </div>
+    </div>
+
+    <!-- Card 8: Dining -->
+    <div class="lifestyle-card">
+      <img class="card-img"
+        src="https://www.seapines.com/sites/default/files/styles/card/public/2022-06/harbourside.jpg?h=9ba45700&itok=n45n8nYk"
+        alt="Dining at Sea Pines Resort" loading="lazy">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-cat">Culinary Excellence</div>
+        <div class="card-title">Dining Within the Gates</div>
+        <p class="card-desc">Coast at Sea Pines Beach Club, the Ocean Lounge, Harbour Town Bakery &amp; Café, the Quarterdeck rooftop oyster bar — every meal is an occasion.</p>
+        <div class="card-tags"><span class="card-tag">Coast Beach Club</span><span class="card-tag">Ocean Lounge</span><span class="card-tag">Rooftop Dining</span></div>
+      </div>
+    </div>
+
+    <!-- Card 9: Family & Wellness -->
+    <div class="lifestyle-card">
+      <img class="card-img"
+        src="https://www.seapines.com/sites/default/files/styles/hero_desktop/public/media/images/SP-lifestyle-21-C30A6225_0.jpg?h=f2fcf546&itok=cwtKeS0E"
+        alt="Family resort life at Sea Pines" loading="lazy">
+      <div class="card-overlay"></div>
+      <div class="card-content">
+        <div class="card-cat">Family &amp; Wellness</div>
+        <div class="card-title">Resort Life for All Ages</div>
+        <p class="card-desc">State-of-the-art fitness center, resort pools, beach yoga at sunrise, children's programs, and cycling the 15-mile network — the entire family thrives here.</p>
+        <div class="card-tags"><span class="card-tag">Fitness Center</span><span class="card-tag">Resort Pools</span><span class="card-tag">Kids Programs</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ LIBERTY OAK & CULTURE ══════════════════════════════════════════════ -->
+<section class="culture-section" id="culture">
+  <div class="culture-inner">
+
+    <div class="culture-visual">
+      <img src="images/sea-pines/sp-liberty-oak.jpg" alt="Liberty Oak — 400-year-old live oak at Harbour Town, Sea Pines Resort" loading="lazy">
+      <div class="culture-oak-caption">
+        <div class="culture-oak-title">Liberty Oak</div>
+        <div class="culture-oak-sub">Harbour Town's Living Stage · Est. ~1620</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-eyebrow">Culture, Entertainment &amp; Community</div>
+      <h2 class="section-title">A Life Beyond<br><em>the Fairways</em></h2>
+      <p class="section-body">Sea Pines is more than golf and beach — it is a living community steeped in culture, history, and the warmth of the Lowcountry. From nightly entertainment under ancient live oaks to world-class cuisine overlooking the Atlantic, every day in Sea Pines offers something extraordinary.</p>
+      <ul class="feature-list">
+        <li><strong>Gregg Russell at Liberty Oak</strong> — Nightly performances by the folk singer who has captivated Sea Pines audiences for 40+ years. A Sea Pines rite of passage for families.</li>
+        <li><strong>Forbes Four-Star Inn &amp; Club at Harbour Town</strong> — The only Forbes Four-Star-rated property on Hilton Head Island, offering world-class accommodations steps from the 18th green.</li>
+        <li><strong>The Shell Ring</strong> — A 4,000-year-old Native American monument within the Forest Preserve, one of the oldest in the Southeast, a quiet testament to the island's ancient story.</li>
+        <li><strong>Lawton Stables &amp; Equestrian Center</strong> — Guided trail rides, pony rides, and educational farm experiences for all ages inside the Forest Preserve.</li>
+        <li><strong>Dolphin-Watching &amp; Water Adventures</strong> — Kayaking, paddleboarding, sailing, and dolphin cruises from South Beach Marina and Harbour Town Yacht Basin on Calibogue Sound.</li>
+        <li><strong>Annual RBC Heritage Week</strong> — Sea Pines transforms each April as the PGA TOUR comes to Harbour Town, one of the most intimate and beloved stops on tour.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ FAQ — AI & VOICE SEARCH DISCOVERABILITY ════════════════════════ -->
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <div class="faq-header">
+      <div class="section-eyebrow" style="color:var(--teal)">Frequently Asked Questions</div>
+      <h2 class="section-title">Everything You Need to <em>Know</em></h2>
+      <p style="font-size:16px;color:#666;max-width:580px;margin:0 auto;line-height:1.8">BHHP's experts answer the most important questions about Sea Pines Resort real estate, lifestyle, and amenities.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What golf courses are in Sea Pines Resort?</div>
+      <div class="faq-a">Sea Pines Resort is home to four championship golf courses: <strong>Harbour Town Golf Links</strong> (designed by Pete Dye with Jack Nicklaus, host of the PGA TOUR's RBC Heritage presented by Boeing), <strong>Heron Point by Pete Dye</strong>, <strong>Atlantic Dunes by Davis Love III</strong>, and the private <strong>Sea Pines Country Club</strong>. Harbour Town is consistently ranked among America's top 100 courses and is famous for its lighthouse backdrop at the 18th hole along Calibogue Sound. Justin Thomas won the 2025 RBC Heritage.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How many tennis and pickleball courts are at Sea Pines Racquet Club?</div>
+      <div class="faq-a">The <strong>Sea Pines Racquet Club</strong> features <strong>20 Har-Tru clay tennis courts</strong> and <strong>6 dedicated pickleball courts</strong>, making it one of the finest racquet sports facilities in the Southeast. The club offers USPTA and PTR-certified professional instruction, daily clinics, round-robin events for $10 per person, and complimentary court time for resort guests.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is Sea Pines a gated community on Hilton Head Island?</div>
+      <div class="faq-a">Yes. Sea Pines Resort is a <strong>private, gated community</strong> spanning approximately <strong>5,000 private acres</strong> at the southern tip of Hilton Head Island, South Carolina. Founded in <strong>1956 by Charles Fraser</strong>, it was one of the nation's first environmentally planned resort communities. Access is controlled at the Sea Pines security gate, and the community maintains its own roads, security, and services year-round.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What is the average home price in Sea Pines Resort in 2025?</div>
+      <div class="faq-a">The average sale price in Sea Pines is approximately <strong>$1.85 million</strong> (2025 trailing 12-month data), reflecting consistent year-over-year appreciation. Homes sell in just <strong>11 days on average</strong> with a <strong>98% list-to-sale ratio</strong>, indicating exceptional demand. Properties range from approximately $500,000 for villas to over $10 million for oceanfront and lagoon-front estates. The community has approximately 3,839 residences.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What is the RBC Heritage golf tournament at Harbour Town?</div>
+      <div class="faq-a">The <strong>RBC Heritage presented by Boeing</strong> is a prestigious annual PGA TOUR event held every April at Harbour Town Golf Links within Sea Pines Resort — the week following the Masters Tournament at Augusta. <strong>Justin Thomas won the 2025 edition.</strong> The tournament draws the world's top players and thousands of spectators and is beloved for its intimate island atmosphere, charitable legacy, and the dramatic 18th hole finishing alongside the Calibogue Sound with the Harbour Town Lighthouse as backdrop.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What water sports and outdoor activities are available at Sea Pines?</div>
+      <div class="faq-a">Sea Pines offers one of the East Coast's richest outdoor lifestyle programs: <strong>kayaking, stand-up paddleboarding, sailing, dolphin-watching cruises, deep-sea fishing charters,</strong> and sunset sails from Harbour Town Yacht Basin and South Beach Marina; <strong>horseback riding</strong> at Lawton Stables through the Forest Preserve; <strong>15 miles of leisure trails</strong> for walking, jogging, and cycling; guided eco-tours; bird watching (130+ species); alligator observation; and five miles of private Atlantic beach for swimming and water sports.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How tall is the Harbour Town Lighthouse and where is it located?</div>
+      <div class="faq-a">The <strong>Harbour Town Lighthouse</strong> stands <strong>90 feet tall</strong> above Calibogue Sound and is located within Sea Pines Resort at the southern tip of Hilton Head Island, SC. Open since 1970, the iconic red-and-white striped lighthouse features <strong>114 steps</strong> visitors can climb for panoramic views of the Sound, ocean, and coastal marshland. The lighthouse is the centerpiece of Harbour Town Marina village and the instantly recognizable backdrop for the RBC Heritage's famous finishing hole.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What is the Sea Pines Forest Preserve and what can you do there?</div>
+
+      <div class="faq-a">The <strong>Sea Pines Forest Preserve</strong> is a <strong>605-acre ancient coastal ecosystem</strong> within Sea Pines Resort — one of the largest private nature preserves in the Southeast. Activities include hiking and cycling on <strong>15 miles of leisure trails</strong>, guided horseback riding through Lawton Stables, wildlife photography (130+ bird species, alligators, deer), and exploring a <strong>4,000-year-old Native American shell ring</strong>. The preserve is a cornerstone of what makes Sea Pines a conservation-minded community founded on Charles Fraser's vision of harmonious resort development.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Who founded Sea Pines Resort and what is its history?</div>
+      <div class="faq-a">Sea Pines Resort was founded in <strong>1956 by Charles E. Fraser</strong>, a Yale-educated attorney who transformed his family's 5,000-acre Lowcountry landholding into the world's first environmentally planned resort community. Fraser was decades ahead of his time — designing Sea Pines to be inhabited in harmony with nature rather than imposed upon it. He balanced residential development with the preservation of tidal marshes, ancient live oaks, and native wildlife corridors, and established a conservation foundation to protect the land well beyond his lifetime. His pioneering vision didn't just create Sea Pines — it influenced sustainable community planning throughout the United States and set the standard that Hilton Head Island still lives by today.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Is Sea Pines a good real estate investment?</div>
+      <div class="faq-a">Sea Pines is widely regarded as one of the strongest real estate investments on the East Coast. Properties in Sea Pines benefit from a combination of factors that consistently support value: a finite, gated 5,000-acre footprint with no available land for new development, four championship golf courses, the only Forbes Four-Star hotel on Hilton Head Island, a PGA TOUR event, and a national reputation as a top leisure destination. The average sale price is approximately <strong>$1.85 million</strong>, with homes selling in just 11 days at a 98% list-to-sale ratio. For those who rent their properties, short-term vacation rental demand from RBC Heritage week, summer beach season, and year-round golf tourism creates strong income potential. Contact BHHP for a personalized investment analysis.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Can you rent out your Sea Pines home as a vacation rental?</div>
+      <div class="faq-a">Yes. Many Sea Pines homeowners rent their properties as short-term vacation rentals, and demand is exceptionally strong. Peak rental periods include <strong>RBC Heritage week in April</strong> (one of the highest-demand weeks in South Carolina), summer beach season (June–August), and shoulder seasons popular with golfers. Weekly rental rates for Sea Pines properties range broadly — from approximately $3,000/week for a villa to $20,000+ per week for a premium oceanfront home during peak periods. Best Hilton Head Properties can guide you through owner associations, HOA rental rules, and income projections as part of your purchase advisory.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What restaurants are in Sea Pines Resort?</div>
+      <div class="faq-a">Sea Pines offers a full range of dining experiences within the resort: <strong>Coast Oceanfront Dining</strong> at the Beach Club features fresh seafood with Atlantic Ocean views; <strong>The Quarterdeck</strong> at Harbour Town offers a rooftop oyster bar and waterfront views of Calibogue Sound; <strong>Ocean Lounge</strong> at the Beach Club is the go-to spot for sunset cocktails and light fare; and <strong>Fraser's Tavern</strong> at Harbour Town celebrates the legacy of founder Charles Fraser with classic American cuisine in a convivial setting. Beyond the resort, Sea Pines residents are a short drive from Hilton Head Island's broader dining scene, including dozens of acclaimed restaurants in the Forest Beach, Shelter Cove, and Main Street corridors.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What is the Harbour Town Lighthouse and can you go inside?</div>
+      <div class="faq-a">The <strong>Harbour Town Lighthouse</strong> is Sea Pines Resort's most iconic landmark — a red-and-white striped beacon that has stood 90 feet above Calibogue Sound since 1970. It was not built for navigation but as an architectural centerpiece of Harbour Town village, and it has since become the most photographed structure on Hilton Head Island. Visitors can climb its 114 steps to an observation deck with panoramic views of Calibogue Sound, the RBC Heritage 18th hole, and the South Carolina marshlands. Inside the lighthouse, a small museum traces the history of Sea Pines Resort and the RBC Heritage PGA TOUR event. The lighthouse sits at the heart of Harbour Town Marina village, surrounded by boutique shops, restaurants, and live entertainment.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Who is Gregg Russell and what is Liberty Oak at Harbour Town?</div>
+      <div class="faq-a"><strong>Gregg Russell</strong> is a legendary folk singer and guitarist who has performed nightly under Liberty Oak at Harbour Town in Sea Pines for over 40 years. His intimate concerts — held beneath the canopy of a magnificent 400-year-old live oak at the center of Harbour Town village — have become one of the most beloved traditions in the South Carolina Lowcountry. Families gather every evening during the season to hear Gregg perform his signature songs, many written specifically for Hilton Head Island audiences. <strong>Liberty Oak</strong> itself, estimated to be approximately 400 years old, is a living monument at the heart of Harbour Town — a symbol of the timeless spirit of Sea Pines that has shaded generations of residents and visitors alike.</div>
+    </div>
+
+  </div>
+</section>
+
+
+
 <section class="cta-section">
   <div class="section-eyebrow" style="color:var(--teal);text-align:center;margin-bottom:24px">Your Sea Pines Address Awaits</div>
   <h2 class="cta-title">Live Inside<br>Hilton Head's <em>Finest</em> Address</h2>
-  <p class="cta-sub">BHHP specializes exclusively in Hilton Head's most prestigious communities. Our deep knowledge of Sea Pines — its micro-markets, off-market opportunities, and lifestyle nuances — delivers an advisory experience simply unmatched.</p>
+  <p class="cta-sub">BHHP serves buyers and sellers across Hilton Head Island, Bluffton, and the Lowcountry's most sought-after communities. Our deep knowledge of Sea Pines — its micro-markets, off-market opportunities, and lifestyle nuances — delivers an advisory experience simply unmatched.</p>
   <div class="cta-group">
-    <a href="/contact" class="btn-primary">Schedule a Private Tour</a>
-    <a href="/listings" class="btn-outline" style="border-color:rgba(255,255,255,0.4)">View Sea Pines Listings</a>
+    <a href="https://besthiltonheadproperties.com/contact" class="btn-primary">Schedule a Private Tour</a>
+    <a href="https://search.besthiltonheadproperties.com/search?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[locations][0][community]=Sea%20Pines&s[locations][0][state]=SC" target="_blank" rel="noopener" class="btn-outline" style="border-color:rgba(255,255,255,0.4)">View Sea Pines Listings</a>
   </div>
 </section>
 
 <footer>
   <div class="footer-inner">
-    <div><div class="footer-logo-main">BHHP</div><div class="footer-logo-sub">Best Hilton Head Properties</div></div>
+    <img src="images/bhhp-logo-square.png" alt="Best Hilton Head Properties" class="footer-bhhp-logo">
     <nav class="footer-links">
-      <a href="/">Home</a><a href="/neighborhoods">Neighborhoods</a><a href="/listings">Listings</a><a href="/our-story">Our Story</a><a href="/contact">Contact</a>
+      <a href="/">Home</a><a href="/neighborhoods">Neighborhoods</a><a href="/listings">Listings</a><a href="/our-story">Our Story</a><a href="https://besthiltonheadproperties.com/contact">Contact</a>
     </nav>
-    <div class="footer-serhant">SERHANT.</div>
+    <div class="footer-serhant-wrap">
+      <img src="images/serhant-logo.png" alt="SERHANT." class="footer-serhant-img">
+      <span class="footer-serhant-label">Partner</span>
+    </div>
   </div>
-  <div class="footer-copy">© 2025 Best Hilton Head Properties · A SERHANT. Company · All Rights Reserved</div>
+  <div class="footer-copy">© 2026 Best Hilton Head Properties · All Rights Reserved</div>
 </footer>
 
 <script>
