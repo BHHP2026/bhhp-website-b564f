@@ -232,25 +232,25 @@ footer {
   min-height: 600px;
   background: linear-gradient(160deg, #040814 0%, #092969 60%, #0d1f4a 100%);
   display: flex; align-items: flex-end;
-  padding: 0 80px 80px;
+  padding: 0 80px 80px 52%;
   position: relative; overflow: hidden;
 }
 .story-hero::after {
   content: '';
-  position: absolute; right: 0; top: 0; bottom: 0;
-  width: 45%;
-  background: linear-gradient(90deg, transparent 0%, rgba(4,8,20,0.15) 100%);
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 55%;
+  background: linear-gradient(90deg, rgba(4,8,20,0.10) 0%, transparent 100%);
   z-index: 1;
 }
 .story-hero-photo {
   position: absolute;
-  right: 0; top: 0; bottom: 0;
+  left: 0; top: 0; bottom: 0;
   width: 48%;
   object-fit: cover;
   object-position: center top;
   display: block;
 }
-.story-hero-text { position: relative; z-index: 1; max-width: 700px; }
+.story-hero-text { position: relative; z-index: 2; max-width: 600px; }
 .story-eyebrow {
   font-family: 'Montserrat', sans-serif;
   font-size: 11px; font-weight: 400; letter-spacing: 4px;
