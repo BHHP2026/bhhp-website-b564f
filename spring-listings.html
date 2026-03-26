@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spring 2026 Hilton Head Listings — Exclusive Access | Best Hilton Head Properties</title>
+<meta name="description" content="Get exclusive access to Spring 2026 Hilton Head Island listings — including off-market properties not on Zillow. Homes from $600K.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#092969;
+  --navy-deep:#061848;
+  --navy-mid:#0d3b8c;
+  --gold:#D4AF37;
+  --gold-light:#e8cc6a;
+  --white:#ffffff;
+  --cream:#f8f6f1;
+  --dark:#1a1a1a;
+  --text:#333333;
+  --border:#e0ddd6;
+  --ff-serif:'Playfair Display',Georgia,serif;
+  --ff-sans:'Montserrat',Arial,sans-serif;
+}
+body{font-family:var(--ff-sans);color:var(--text);background:var(--white);-webkit-font-smoothing:antialiased}
+
+/* ── NAV ── */
+.lp-nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(9,41,105,0.97);backdrop-filter:blur(8px);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 40px;height:72px;
+}
+.lp-nav__logo img{height:52px;width:auto}
+.lp-nav__cta{
+  display:flex;align-items:center;gap:24px;
+}
+.lp-nav__phone{
+  font-family:var(--ff-sans);font-size:14px;font-weight:600;
+  color:var(--gold);letter-spacing:0.05em;text-decoration:none;
+  display:flex;align-items:center;gap:8px;
+}
+.lp-nav__phone::before{content:'✆';font-size:16px}
+.lp-nav__btn{
+  background:var(--gold);color:var(--navy);
+  font-family:var(--ff-sans);font-size:12px;font-weight:700;
+  letter-spacing:0.12em;text-transform:uppercase;
+  padding:10px 22px;border-radius:2px;text-decoration:none;
+  transition:background 0.2s;
+}
+.lp-nav__btn:hover{background:var(--gold-light)}
+
+/* ── HERO ── */
+.lp-hero{
+  min-height:88vh;padding-top:72px;
+  background:linear-gradient(155deg,var(--navy-deep) 0%,var(--navy) 55%,var(--navy-mid) 100%);
+  display:grid;grid-template-columns:1fr 1fr;align-items:center;
+  gap:0;overflow:hidden;position:relative;
+}
+.lp-hero::after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 70% 50%,rgba(212,175,55,0.08) 0%,transparent 70%);
+  pointer-events:none;
+}
+.lp-hero__content{padding:80px 60px 80px 80px;position:relative;z-index:1}
+.lp-hero__label{
+  font-family:var(--ff-sans);font-size:11px;font-weight:600;
+  letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);
+  display:block;margin-bottom:20px;
+}
+.lp-hero__title{
+  font-family:var(--ff-serif);font-size:clamp(42px,4.5vw,66px);
+  font-weight:500;line-height:1.1;color:var(--white);
+  margin-bottom:24px;
+}
+.lp-hero__title em{font-style:italic;color:var(--gold-light)}
+.lp-hero__sub{
+  font-family:var(--ff-sans);font-size:16px;font-weight:300;
+  line-height:1.75;color:rgba(255,255,255,0.75);
+  max-width:480px;margin-bottom:36px;
+}
+.lp-hero__trust{
+  display:flex;align-items:center;gap:28px;flex-wrap:wrap;
+}
+.lp-hero__trust-item{
+  font-family:var(--ff-sans);font-size:12px;font-weight:500;
+  letter-spacing:0.06em;color:rgba(255,255,255,0.55);
+  display:flex;align-items:center;gap:8px;
+}
+.lp-hero__trust-item strong{color:var(--white);font-weight:700}
+
+/* ── FORM CARD ── */
+.lp-form-wrap{
+  padding:60px 80px 60px 40px;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;z-index:1;
+}
+.lp-card{
+  background:var(--white);border-radius:4px;
+  padding:44px 40px 40px;width:100%;max-width:460px;
+  box-shadow:0 24px 80px rgba(0,0,0,0.35);
+}
+.lp-card__eyebrow{
+  font-family:var(--ff-sans);font-size:10px;font-weight:700;
+  letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);
+  margin-bottom:10px;
+}
+.lp-card__title{
+  font-family:var(--ff-serif);font-size:26px;font-weight:600;
+  color:var(--navy);line-height:1.25;margin-bottom:8px;
+}
+.lp-card__sub{
+  font-size:13px;color:#777;line-height:1.6;margin-bottom:28px;
+  padding-bottom:24px;border-bottom:1px solid var(--border);
+}
+.lp-form{display:flex;flex-direction:column;gap:18px}
+.lp-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.lp-field{display:flex;flex-direction:column;gap:6px}
+.lp-field label{
+  font-family:var(--ff-sans);font-size:10px;font-weight:700;
+  letter-spacing:0.2em;text-transform:uppercase;color:#888;
+}
+.lp-field input,
+.lp-field select,
+.lp-field textarea{
+  font-family:var(--ff-sans);font-size:14px;color:var(--dark);
+  background:transparent;border:none;border-bottom:1.5px solid #d0ccc4;
+  padding:10px 0 8px;outline:none;width:100%;
+  transition:border-color 0.2s;
+}
+.lp-field input:focus,
+.lp-field select:focus,
+.lp-field textarea:focus{border-color:var(--navy)}
+.lp-field select{cursor:pointer;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M0 0l6 8 6-8z' fill='%23888'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 4px center}
+.lp-submit{
+  margin-top:8px;
+  background:var(--navy);color:var(--white);border:none;cursor:pointer;
+  font-family:var(--ff-sans);font-size:12px;font-weight:700;
+  letter-spacing:0.15em;text-transform:uppercase;
+  padding:17px 24px;width:100%;border-radius:2px;
+  transition:background 0.2s,transform 0.1s;
+}
+.lp-submit:hover{background:var(--gold);color:var(--navy)}
+.lp-submit:active{transform:scale(0.99)}
+.lp-privacy{
+  font-size:11px;color:#aaa;text-align:center;margin-top:14px;line-height:1.5;
+}
+.lp-serhant{
+  display:flex;align-items:center;gap:10px;
+  margin-top:20px;padding-top:20px;border-top:1px solid var(--border);
+}
+.lp-serhant img{height:22px;opacity:0.6}
+.lp-serhant span{font-size:11px;color:#aaa;letter-spacing:0.05em}
+
+/* ── SOCIAL PROOF STRIP ── */
+.lp-proof{
+  background:var(--cream);padding:44px 80px;
+  display:flex;align-items:center;justify-content:space-between;
+  border-top:1px solid var(--border);gap:40px;flex-wrap:wrap;
+}
+.lp-stat{text-align:center}
+.lp-stat__num{
+  font-family:var(--ff-serif);font-size:38px;font-weight:500;
+  color:var(--navy);display:block;margin-bottom:4px;
+}
+.lp-stat__label{
+  font-family:var(--ff-sans);font-size:11px;font-weight:500;
+  letter-spacing:0.18em;text-transform:uppercase;color:#888;
+}
+.lp-proof__badge{
+  display:flex;flex-direction:column;align-items:center;gap:12px;
+  text-align:center;
+}
+.lp-proof__badge img{height:32px;opacity:0.7}
+.lp-proof__badge span{font-size:11px;color:#999;letter-spacing:0.1em;text-transform:uppercase}
+
+/* ── AGENT SECTION ── */
+.lp-agent{
+  padding:56px 80px;background:var(--white);
+  display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;
+  max-width:860px;margin:0 auto;
+}
+.lp-agent__photo{
+  width:100px;height:100px;border-radius:50%;
+  object-fit:cover;object-position:top;
+  border:3px solid var(--gold);flex-shrink:0;
+}
+.lp-agent__label{
+  font-size:10px;font-weight:700;letter-spacing:0.25em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:6px;
+}
+.lp-agent__name{
+  font-family:var(--ff-serif);font-size:28px;font-weight:500;
+  color:var(--navy);margin-bottom:4px;
+}
+.lp-agent__title{font-size:13px;color:#888;margin-bottom:14px;letter-spacing:0.04em}
+.lp-agent__quote{
+  font-family:var(--ff-serif);font-size:16px;font-style:italic;
+  color:var(--text);line-height:1.7;
+}
+
+/* ── FOOTER ── */
+.lp-footer{
+  background:var(--navy-deep);padding:28px 80px;
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:16px;
+}
+.lp-footer__copy{font-size:12px;color:rgba(255,255,255,0.4);letter-spacing:0.05em}
+.lp-footer__links{display:flex;gap:24px}
+.lp-footer__links a{font-size:12px;color:rgba(255,255,255,0.4);text-decoration:none}
+.lp-footer__links a:hover{color:var(--gold)}
+
+/* ── SUCCESS ── */
+.lp-success{
+  display:none;text-align:center;padding:32px 20px;
+}
+.lp-success__icon{font-size:48px;margin-bottom:16px}
+.lp-success__title{
+  font-family:var(--ff-serif);font-size:24px;color:var(--navy);margin-bottom:8px;
+}
+.lp-success__msg{font-size:14px;color:#777;line-height:1.6}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .lp-hero{grid-template-columns:1fr}
+  .lp-hero__content{padding:60px 32px 40px}
+  .lp-form-wrap{padding:0 24px 56px}
+  .lp-card{padding:36px 28px}
+  .lp-proof{padding:36px 32px;justify-content:center}
+  .lp-agent{padding:40px 32px;grid-template-columns:1fr;text-align:center}
+  .lp-agent__photo{margin:0 auto}
+  .lp-footer{padding:24px 32px;flex-direction:column;text-align:center}
+  .lp-nav{padding:0 20px}
+}
+@media(max-width:520px){
+  .lp-row{grid-template-columns:1fr}
+  .lp-hero__title{font-size:36px}
+}
+</style>
+</head>
+<body>
+<nav class="lp-nav">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a rKd�"/" class="lp-nav__logo">
+      <img src="/images/bhhp-logo-square.png" alt="Best Hilton Head Properties">
+    </a>
+    <div class="lp-nav__cta">
+      <a href="tel:8437850888" class="lp-nav__phone">(843) 785-0888</a>
+      <a href="/contact.html" class="lp-nav__btn">Contact Us</a>
+    </div>
+  </nav>
+  <main>
+  <section class="lp-hero">
+    <div class="lp-hero__content">
+      <span class="lp-hero__label">Spring 2026 · Hilton Head Island</span>
+      <h1 class="lp-hero__title">
+        New &amp; Off-Market<br>
+        Listings Before<br>
+        <em>They Hit Zillow.</em>
+      </h1>
+      <p class="lp-hero__sub">
+        Prices are up 16% on Hilton Head Island. Spring inventory is moving fast. 
+        Get weekly access to new listings — including exclusive off-market properties 
+        from $600K — before the public ever sees them.
+      </p>
+      <div class="lp-hero__trust">
+        <div class="lp-hero__trust-item"><strong>SERHANT.</strong> Partner</div>
+        <div class="lp-hero__trust-item"><strong>2+</strong> Years Island Expertise</div>
+        <div class="lp-hero__trust-item"><strong>14-Day</strong> Avg. On Market</div>
+      </div>
+  
+  
+  
+  
+  
+  </div>
+  </div>
+  </section>
