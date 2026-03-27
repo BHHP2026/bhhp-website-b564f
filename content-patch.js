@@ -244,6 +244,9 @@
         .replace(/LUXURY/g, 'ELEGANCE')
         .replace(/Luxury/g, 'Elegance')
         .replace(/luxury/g, 'elegance');
+      // Reveal the element now that it has the correct text.
+      // The head CSS snippet hides it at load to prevent any flash of old copy.
+      heroEm.style.visibility = 'visible';
     }
 
     // Background watermark behind the headline
@@ -265,6 +268,9 @@
     if (heroSub.textContent.match(/trusted|luxury|hilton head/i)) {
       heroSub.textContent = 'Find your next home with precision. Sell your current one with confidence. Carolina Sea Islands real estate, elevated.';
     }
+    // Always reveal the sub regardless of whether we rewrote the text —
+    // the head CSS snippet hides it at load to prevent flash of old copy.
+    heroSub.style.visibility = 'visible';
     heroSub.style.color = '#ffffff';
     heroSub.style.fontSize = '13px';
     heroSub.style.fontWeight = '300';
@@ -301,6 +307,19 @@
     setTimeout(patchHeroSub,   2000);
     setTimeout(patchHeroLuxury, 5000);
     setTimeout(patchHeroSub,   5000);
+
+    // Safety net: if the hero selectors never matched, force-reveal after 3s
+    // so nothing stays permanently hidden due to a selector mismatch.
+    setTimeout(function () {
+      var hidden = document.querySelectorAll(
+        '.hero-headline em, .hero-sub, [class*="hero"] h1 em, [class*="hero"] h2 em, .hero em, #hero em'
+      );
+      hidden.forEach(function (el) {
+        if (getComputedStyle(el).visibility === 'hidden') {
+          el.style.visibility = 'visible';
+        }
+      });
+    }, 3000);
 
     // ── Serhant CTA body: remove "first and only" claim ──────────────────────
     var serhantCta = document.querySelector('p.serhant-cta-body');
