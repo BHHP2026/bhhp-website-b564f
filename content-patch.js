@@ -1,5 +1,5 @@
 /**
- * BHHP Content Patch Ã¢ÂÂ Carolina Sea Islands Rebrand
+ * BHHP Content Patch — Carolina Sea Islands Rebrand
  * Replaces "Lowcountry" references with contextually appropriate alternatives
  * across all pages (index.html, discover-bluffton.html, etc.)
  *
@@ -17,10 +17,7 @@
   }
 
   function patchContent() {
-    // Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ CONTEXT-AWARE REPLACEMENT MAP Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ
-    // Order matters: longer/more-specific phrases first to avoid partial matches
     const replacements = [
-      // === HEADINGS & TITLES ===
       ["The Lowcountry's Best-Kept Secret", "The Carolina Sea Islands' Best-Kept Secret"],
       ["THE LOWCOUNTRY'S BEST-KEPT SECRET", "THE CAROLINA SEA ISLANDS' BEST-KEPT SECRET"],
       ["World-Class Communities, Lowcountry Soul", "World-Class Communities, Coastal Soul"],
@@ -29,14 +26,10 @@
       ["Golf & Lowcountry Living", "Golf & Coastal Living"],
       ["Your Lowcountry Home Awaits", "Your Carolina Sea Islands Home Awaits"],
       ["YOUR LOWCOUNTRY HOME AWAITS", "YOUR CAROLINA SEA ISLANDS HOME AWAITS"],
-
-      // === TAGLINES & SUBTITLES ===
       ["discovering the Lowcountry", "discovering the Carolina Sea Islands"],
       ["DISCOVERING THE LOWCOUNTRY", "DISCOVERING THE CAROLINA SEA ISLANDS"],
-      ["Golf ÃÂ· Deep-Water Access ÃÂ· Equestrian ÃÂ· Lowcountry Elegance", "Golf ÃÂ· Deep-Water Access ÃÂ· Equestrian ÃÂ· Coastal Elegance"],
-      ["GOLF ÃÂ· DEEP-WATER ACCESS ÃÂ· EQUESTRIAN ÃÂ· LOWCOUNTRY ELEGANCE", "GOLF ÃÂ· DEEP-WATER ACCESS ÃÂ· EQUESTRIAN ÃÂ· COASTAL ELEGANCE"],
-
-      // === BODY COPY Ã¢ÂÂ SPECIFIC PHRASES ===
+      ["Golf · Deep-Water Access · Equestrian · Lowcountry Elegance", "Golf · Deep-Water Access · Equestrian · Coastal Elegance"],
+      ["GOLF · DEEP-WATER ACCESS · EQUESTRIAN · LOWCOUNTRY ELEGANCE", "GOLF · DEEP-WATER ACCESS · EQUESTRIAN · COASTAL ELEGANCE"],
       ["perfect Lowcountry property", "perfect Carolina Sea Islands property"],
       ["perfect Lowcountry home", "perfect Carolina Sea Islands home"],
       ["elegant Lowcountry homes", "elegant coastal homes"],
@@ -47,8 +40,6 @@
       ["heart of the Lowcountry", "heart of the Carolina Sea Islands"],
       ["soul of the Lowcountry", "soul of the Carolina Sea Islands"],
       ["Lowcountry planter families", "Carolina Sea Islands planter families"],
-
-      // === LIFESTYLE & CULTURE ===
       ["Lowcountry shrimp and grits", "coastal shrimp and grits"],
       ["Lowcountry charm", "coastal charm"],
       ["Lowcountry elegance", "coastal elegance"],
@@ -59,15 +50,11 @@
       ["Lowcountry marshes", "coastal marshes"],
       ["Lowcountry pace", "coastal pace"],
       ["Lowcountry homes", "coastal homes"],
-
-      // === MARKET / REGION REFERENCES ===
       ["fastest-growing Lowcountry market", "fastest-growing Carolina Sea Islands market"],
       ["Lowcountry market", "Carolina Sea Islands market"],
       ["Carolina Lowcountry", "Carolina Sea Islands"],
       ["the wild Lowcountry", "the wild Carolina Sea Islands"],
       ["pristine Lowcountry", "pristine Carolina Sea Islands"],
-
-      // === CATCH-ALL (last resort for any remaining) ===
       ["the Lowcountry's", "the Carolina Sea Islands'"],
       ["THE LOWCOUNTRY'S", "THE CAROLINA SEA ISLANDS'"],
       ["the Lowcountry", "the Carolina Sea Islands"],
@@ -76,23 +63,18 @@
       ["LOWCOUNTRY", "CAROLINA SEA ISLANDS"]
     ];
 
-    // Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ WALK ALL TEXT NODES Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ
-    // Skip elements injected by editorial-widget.js (it handles its own text)
     const walker = document.createTreeWalker(
       document.body,
       NodeFilter.SHOW_TEXT,
       {
         acceptNode: function (node) {
-          // Skip editorial widget content (already patched in editorial-widget.js)
           if (node.parentElement.closest('.editorial-widget, [class*="editorial-widget"]')) {
             return NodeFilter.FILTER_REJECT;
           }
-          // Skip script and style tags
           const tag = node.parentElement.tagName;
           if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'NOSCRIPT') {
             return NodeFilter.FILTER_REJECT;
           }
-          // Only process nodes that contain "lowcountry" (case-insensitive)
           if (node.textContent.toLowerCase().indexOf('lowcountry') !== -1) {
             return NodeFilter.FILTER_ACCEPT;
           }
@@ -107,7 +89,6 @@
       textNodes.push(node);
     }
 
-    // Apply replacements to each text node
     textNodes.forEach(function (textNode) {
       var text = textNode.textContent;
       for (var i = 0; i < replacements.length; i++) {
@@ -120,8 +101,6 @@
       }
     });
 
-    // Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ PATCH SCHEMA.ORG JSON-LD Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ
-    // Also fix Lowcountry in structured data
     var scripts = document.querySelectorAll('script[type="application/ld+json"]');
     scripts.forEach(function (script) {
       if (script.textContent.toLowerCase().indexOf('lowcountry') !== -1) {
@@ -135,7 +114,6 @@
       }
     });
 
-    // Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ PATCH META TAGS & TITLE Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     var metaTags = document.querySelectorAll('meta[content*="Lowcountry"], meta[content*="lowcountry"], meta[content*="LOWCOUNTRY"]');
     metaTags.forEach(function (meta) {
       var content = meta.getAttribute('content');
@@ -147,7 +125,6 @@
       meta.setAttribute('content', content);
     });
 
-    // Patch document title
     if (document.title.toLowerCase().indexOf('lowcountry') !== -1) {
       var title = document.title;
       for (var i = 0; i < replacements.length; i++) {
@@ -158,7 +135,6 @@
       document.title = title;
     }
 
-    // Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ PATCH IMAGE ALT TEXT Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     var images = document.querySelectorAll('img[alt*="Lowcountry"], img[alt*="lowcountry"]');
     images.forEach(function (img) {
       var alt = img.getAttribute('alt');
@@ -174,10 +150,6 @@
 
 /* ============================================================
    BHHP Luxury Listings Patch
-   - Fixes listing-info positioning (copy anchored to bottom)
-   - Raises anchor z-index so entire card is clickable
-   - Sets correct listing URLs
-   - Injects additional listing slides dynamically
    ============================================================ */
 (function () {
   'use strict';
@@ -185,32 +157,32 @@
   var LISTINGS = [
     {
       name: 'Collier Beach Ocean Estate',
-      address: '10 Collier Beach Road ÃÂ· Hilton Head Island, SC 29928',
-      specs: '6 Beds  ÃÂ·  8 Baths  ÃÂ·  5,000 Sq Ft  ÃÂ·  Active',
+      address: '10 Collier Beach Road · Hilton Head Island, SC 29928',
+      specs: '6 Beds  ·  8 Baths  ·  5,000 Sq Ft  ·  Active',
       price: '$7,950,000',
       url: 'https://search.besthiltonheadproperties.com/search/detail/256909813?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[mainInputSearch]=false&s[circle][lat]=32.1889992&s[circle][lng]=-80.7002976&s[circle][radius]=3&s[address]=10%20Collier%20Beach%20Rd%2C%20Hilton%20Head%20Island%2C%20SC%2029928',
-      image: null  // uses existing slide in HTML
+      image: null
     },
     {
       name: 'Island Creek Estate',
-      address: '29 Island Creek Drive ÃÂ· Okatie, SC 29909',
-      specs: '4 Beds  ÃÂ·  5 Baths  ÃÂ·  3,570 Sq Ft  ÃÂ·  Active',
+      address: '29 Island Creek Drive · Okatie, SC 29909',
+      specs: '4 Beds  ·  5 Baths  ·  3,570 Sq Ft  ·  Active',
       price: '$1,950,000',
       url: 'https://search.besthiltonheadproperties.com/search/detail/258417153?s[orderBy]=sourceCreationDate%2Cdesc&s[page]=1&s[mainInputSearch]=false&s[circle][lat]=32.329027&s[circle][lng]=-80.840907&s[circle][radius]=3&s[address]=29%20Island%20Creek%20Dr%2C%20Okatie%2C%20SC%2029909',
       image: '/images/29%20Island%20Creek.jpg'
     },
     {
       name: 'Blue Dasher Estate',
-      address: '35 Blue Dasher Lane ÃÂ· Bluffton, SC 29909',
-      specs: '5 Beds  ÃÂ·  4.5 Baths  ÃÂ·  3,282 Sq Ft  ÃÂ·  Active',
+      address: '35 Blue Dasher Lane · Bluffton, SC 29909',
+      specs: '5 Beds  ·  4.5 Baths  ·  3,282 Sq Ft  ·  Active',
       price: '$1,225,000',
       url: 'https://hhimls.mlsmatrix.com/Matrix/Results.aspx?c=H4sIAAAAAAAEAItWMjEyMlDSUTIDYksgNjS2MFTSySvNyaGIUDI0AJlqogTjYpipZEQFa6hIYHEiGYakHe4(tDym1MDAIA3duFgA0ExYO2wBAAA)',
       image: '/images/35%20Blue%20Dash%20Lane%20.jpg'
     },
     {
       name: 'Hidden Lake Estate',
-      address: '4 Hidden Lake Court ÃÂ· Bluffton, SC 29910',
-      specs: '5 Beds  ÃÂ·  5.5 Baths  ÃÂ·  4,858 Sq Ft  ÃÂ·  Active',
+      address: '4 Hidden Lake Court · Bluffton, SC 29910',
+      specs: '5 Beds  ·  5.5 Baths  ·  4,858 Sq Ft  ·  Active',
       price: '$1,185,000',
       url: 'https://hhimls.mlsmatrix.com/Matrix/Results.aspx?c=H4sIAAAAAAAEAItWMjEyMlDSUTIDYksgNjS2MFTSySvNyaGIUDI0AJlqqgTjYpipZEQFa6hIYHEiGYa4x5QaGBgaHuo5tA7duFgAN8pI2WwBAAA)',
       image: '/images/4%20Hidden%20Lane.png'
@@ -242,11 +214,66 @@
     return slide;
   }
 
+  // ── HERO LUXURY→ELEGANCE ──────────────────────────────────────────────────
+  // Uses multiple fallback selectors + retries at 2s and 5s to handle
+  // cases where Ylopo renders or re-renders the hero after DOMContentLoaded.
+  function patchHeroLuxury() {
+    var heroEm = null;
+
+    // 1. Try the primary known selector
+    heroEm = document.querySelector('.hero-headline em');
+
+    // 2. Broader fallback: any em inside a hero-ish container
+    if (!heroEm) {
+      heroEm = document.querySelector(
+        '[class*="hero"] h1 em, [class*="hero"] h2 em, .hero em, #hero em'
+      );
+    }
+
+    // 3. Last resort: walk ALL em tags looking for one that is just "Luxury"
+    if (!heroEm) {
+      document.querySelectorAll('em').forEach(function(em) {
+        if (!heroEm && em.textContent.trim().match(/^luxury$/i)) {
+          heroEm = em;
+        }
+      });
+    }
+
+    if (heroEm) {
+      heroEm.textContent = heroEm.textContent
+        .replace(/LUXURY/g, 'ELEGANCE')
+        .replace(/Luxury/g, 'Elegance')
+        .replace(/luxury/g, 'elegance');
+    }
+
+    // Background watermark behind the headline
+    var quoteBg = document.querySelector('.quote-bg-text');
+    if (quoteBg && quoteBg.textContent.trim().match(/luxury/i)) {
+      quoteBg.textContent = quoteBg.textContent
+        .replace(/LUXURY/g, 'ELEGANCE')
+        .replace(/Luxury/g, 'Elegance')
+        .replace(/luxury/g, 'elegance');
+    }
+  }
+
+  // ── HERO SUB COPY ─────────────────────────────────────────────────────────
+  // Rewrites the sub-headline if it still contains any Ylopo default copy.
+  // Always applies styling regardless of text content.
+  function patchHeroSub() {
+    var heroSub = document.querySelector('.hero-sub');
+    if (!heroSub) return;
+    if (heroSub.textContent.match(/trusted|luxury|hilton head/i)) {
+      heroSub.textContent = 'Find your next home with precision. Sell your current one with confidence. Carolina Sea Islands real estate, elevated.';
+    }
+    heroSub.style.color = '#ffffff';
+    heroSub.style.fontSize = '13px';
+    heroSub.style.fontWeight = '300';
+    heroSub.style.opacity = '1';
+  }
+
   function patchListings() {
 
-    // Ã¢ÂÂÃ¢ÂÂ ALL-PAGES patches (run regardless of carousel) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
-
-    // Ã¢ÂÂÃ¢ÂÂ 0a. Nav: About dropdown Ã¢ÂÂ remove "Our Team", link "Talita Haggist" Ã¢ÂÂÃ¢ÂÂ
+    // ── Nav patches ───────────────────────────────────────────────────────────
     document.querySelectorAll('li').forEach(function(li) {
       var t = li.textContent.trim();
       if (t === 'Our Team' || t === 'Wexford' || t === 'Harbour Town') li.remove();
@@ -258,8 +285,6 @@
         a.rel = 'noopener noreferrer';
       }
     });
-
-    // Ã¢ÂÂÃ¢ÂÂ 0b. Nav: "Blog" Ã¢ÂÂ "Editorial" Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     document.querySelectorAll('a.nav-link, .mobile-menu a').forEach(function(a) {
       if (a.textContent.trim() === 'Blog') {
         a.textContent = 'Editorial';
@@ -269,29 +294,38 @@
       }
     });
 
-    // Ã¢ÂÂÃ¢ÂÂ 0b. Hero headline: "Luxury" Ã¢ÂÂ "Elegance" Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
-    var heroEm = document.querySelector('.hero-headline em');
-    if (heroEm && heroEm.textContent.trim().match(/Luxury/i)) {
-      heroEm.textContent = 'Elegance';
-    }
-    var quoteBg = document.querySelector('.quote-bg-text');
-    if (quoteBg && quoteBg.textContent.trim().match(/LUXURY/i)) {
-      quoteBg.textContent = 'ELEGANCE';
+    // ── Hero: Luxury→Elegance + sub copy (immediate + retried) ───────────────
+    patchHeroLuxury();
+    patchHeroSub();
+    setTimeout(patchHeroLuxury, 2000);
+    setTimeout(patchHeroSub,   2000);
+    setTimeout(patchHeroLuxury, 5000);
+    setTimeout(patchHeroSub,   5000);
+
+    // ── Serhant CTA body: remove "first and only" claim ──────────────────────
+    var serhantCta = document.querySelector('p.serhant-cta-body');
+    if (serhantCta && serhantCta.textContent.match(/first and only/i)) {
+      serhantCta.textContent = 'Best Hilton Head Properties brings cutting-edge marketing solutions to the Hilton Head Island marketplace through our partnership with SERHANT. \u2014 New York\u2019s most avant-garde creative powerhouse. Cinematic campaigns, advanced analytics, and a global marketing mindset that empowers every client to excel in their real estate goals.';
     }
 
-    // Ã¢ÂÂÃ¢ÂÂ 0b. Hero sub copy Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
-    var heroSub = document.querySelector('.hero-sub');
-    if (heroSub && heroSub.textContent.includes('trusted name')) {
-      heroSub.textContent = 'Find your next home with precision. Sell your current one with confidence. Carolina Sea Islands real estate, elevated.';
+    // ── Video widget: button → OUR STORY, sub text → remove London ───────────
+    var cinvidBtn = document.querySelector('a.cinvid-btn');
+    if (cinvidBtn && cinvidBtn.textContent.match(/meet talita/i)) {
+      cinvidBtn.textContent = 'OUR STORY';
     }
-    if (heroSub) {
-      heroSub.style.color = '#ffffff';
-      heroSub.style.fontSize = '13px';
-      heroSub.style.fontWeight = '300';
-      heroSub.style.opacity = '1';
+    var cinvidSub = document.querySelector('p.cinvid-sub');
+    if (cinvidSub && cinvidSub.textContent.match(/london/i)) {
+      cinvidSub.textContent = 'HILTON HEAD ISLAND \u00b7 INTERNATIONAL MARKETS';
     }
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. Quote widget: update text + attribution tiffany blue Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+    // ── Talita bio: approved copy + white text ────────────────────────────────
+    var bioPara = document.querySelector('p.bio-body');
+    if (bioPara) {
+      bioPara.textContent = 'Talita Haggist is a Global Real Estate Advisor whose life and career have been shaped by an uncommon international journey. The daughter of property developers, she pursued engineering studies across Brazil, Russia, Germany, and Italy \u2014 a foundation that gave her an avant-garde perspective on markets, value, and opportunity that few advisors can match. After founding a full-service property management company and serving as senior liaison to one of Brazil\u2019s most prominent corporations, she relocated from London to Hilton Head Island, drawn by the island\u2019s understated elegance and enduring investment strength. That rare international lens is what Talita brings to every client relationship \u2014 translating global insight into the kind of clear, confident guidance that helps people find the properties that truly elevate their lives.';
+      bioPara.style.color = '#ffffff';
+    }
+
+    // ── Quote widget ──────────────────────────────────────────────────────────
     var quoteText = document.querySelector('p.quote-text');
     if (quoteText && quoteText.textContent.trim().match(/hilton head is not just/i)) {
       quoteText.textContent = 'Every home here tells a story that begins the moment you arrive and never quite ends. My work is making sure the right story finds the right person.';
@@ -299,18 +333,16 @@
     var quoteAttr = document.querySelector('.quote-attr');
     if (quoteAttr) quoteAttr.style.color = '#0ABAB5';
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. "A Lifestyle UNLIKE ANY OTHER" Ã¢ÂÂ tiffany blue span Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+    // ── Tiffany blue accent patches ───────────────────────────────────────────
     var ilsSpan = document.querySelector('h2.ils-heading span');
     if (ilsSpan) ilsSpan.style.color = '#0ABAB5';
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. "Your Time TO SHINE" Ã¢ÂÂ tiffany blue span Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     var shineSpan = document.querySelector('h2.fiftyfive-heading span');
     if (shineSpan) shineSpan.style.color = '#0ABAB5';
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. Editorial widget: desc copy + white, button tiffany blue Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     var editorialDesc = document.querySelector('p.editorial-intro-desc');
     if (editorialDesc && editorialDesc.textContent.trim().match(/elegant, inspired|stories from the Carolina/i)) {
-      editorialDesc.textContent = 'The latest in architecture, lifestyle, and island living Ã¢ÂÂ curated news from the Carolina Sea Islands, by Best Hilton Head Properties.';
+      editorialDesc.textContent = 'The latest in architecture, lifestyle, and island living — curated news from the Carolina Sea Islands, by Best Hilton Head Properties.';
     }
     if (editorialDesc) editorialDesc.style.color = '#ffffff';
     var editorialIssue = document.querySelector('.editorial-intro-issue');
@@ -321,12 +353,10 @@
       editorialBtn.style.borderColor = '#0ABAB5';
     }
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. "Now Publishing" Ã¢ÂÂ tiffany blue Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     document.querySelectorAll('*').forEach(function(el) {
       if (el.children.length < 2 && el.textContent.trim() === 'Now Publishing') el.style.color = '#0ABAB5';
     });
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. Old green rgb(111,191,176) Ã¢ÂÂ brand tiffany across site Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     document.querySelectorAll('.advsearch-h-ghost').forEach(function(el) { el.style.color = '#0ABAB5'; });
     document.querySelectorAll('.strip-icon-phone').forEach(function(el) { el.style.backgroundColor = '#0ABAB5'; });
     document.querySelectorAll('.dbw-eyebrow').forEach(function(el) { el.style.color = '#0ABAB5'; });
@@ -338,12 +368,9 @@
       }
     });
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. "YOUR BLUFFTON HOME SEARCH" Ã¢ÂÂ tiffany blue em (all pages) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     var articlesEm = document.querySelector('h2.articles-heading em');
     if (articlesEm) articlesEm.setAttribute('style', 'color:#0ABAB5 !important');
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. "RESORT EDITORIAL ARTICLES PREVIEW" Ã¢ÂÂ tiffany blue ARTICLES Ã¢ÂÂÃ¢ÂÂ
-    // .dim class has rgba(0,0,0,0.25) with higher specificity Ã¢ÂÂ need !important via setAttribute
     document.querySelectorAll('h2').forEach(function(h) {
       if (h.textContent.indexOf('RESORT EDITORIAL') !== -1) {
         var span = h.querySelector('em span') || h.querySelector('em');
@@ -351,12 +378,11 @@
       }
     });
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. discover-bluffton.html: remove Moss Creek community card Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+    // ── discover-bluffton.html specific ───────────────────────────────────────
     document.querySelectorAll('article.comm-card').forEach(function(card) {
       if (card.textContent.match(/moss creek/i)) card.remove();
     });
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. Bluffton widget: tagline + button Ã¢ÂÂ tiffany blue Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     var dbwTagline = document.querySelector('.dbw-tagline');
     if (dbwTagline) dbwTagline.style.color = '#0ABAB5';
     var dbwCta = document.querySelector('a.dbw-cta');
@@ -364,8 +390,6 @@
     var dbwDesc = document.querySelector('p.dbw-desc');
     if (dbwDesc) dbwDesc.style.color = '#ffffff';
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. Bluffton video: skip burned-in intro (0Ã¢ÂÂ7s) and outro (56s+) title cards Ã¢ÂÂÃ¢ÂÂ
-    // Targets homepage widget (.discover-bluffton-video) AND discover-bluffton.html hero (video with bluffton-hero.mp4)
     var bluffVid = document.querySelector('.discover-bluffton-video');
     if (!bluffVid) {
       document.querySelectorAll('video').forEach(function(v) {
@@ -375,9 +399,8 @@
       });
     }
     if (bluffVid) {
-      var VID_START = 8;   // skip "experience bluffton IN 60 SECONDS" intro card
-      var VID_END   = 56;  // skip "bluffton ÃÂ· HEART OF THE LOWCOUNTRY" outro card
-      // Remove native loop so we control restart point
+      var VID_START = 8;
+      var VID_END   = 56;
       bluffVid.removeAttribute('loop');
       bluffVid.loop = false;
       var vidJumping = false;
@@ -396,7 +419,6 @@
         bluffVid.currentTime = VID_START;
         bluffVid.play();
       });
-      // Set start point immediately (handles already-loaded case)
       if (bluffVid.readyState >= 1) {
         jumpTo(VID_START);
       } else {
@@ -404,11 +426,10 @@
       }
     }
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. discover-bluffton.html hero: tagline Ã¢ÂÂ tiffany blue Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     var heroTagline = document.querySelector('.hero-tagline');
     if (heroTagline) heroTagline.setAttribute('style', 'color:#0ABAB5 !important');
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. 55+ cards + VIEW ALL Ã¢ÂÂ search site, new tab Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+    // ── 55+ cards ─────────────────────────────────────────────────────────────
     document.querySelectorAll('.fiftyfive-card').forEach(function(card) {
       card.style.position = 'relative';
       var overlay = document.createElement('a');
@@ -426,7 +447,6 @@
       }
     });
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. "Explore the Islands" Ã¢ÂÂ search site, new tab Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     document.querySelectorAll('a').forEach(function(a) {
       if (a.textContent.trim().match(/explore the islands/i)) {
         a.href = 'https://search.besthiltonheadproperties.com';
@@ -435,7 +455,7 @@
       }
     });
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. Island Neighborhoods: "Neighborhoods" Ã¢ÂÂ Tiffany blue, remove active listing counts Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+    // ── Island Neighborhoods widget ───────────────────────────────────────────
     var neighborhoodsSection = document.querySelector('.neighborhoods-section');
     if (neighborhoodsSection) {
       var neighborhoodsDim = neighborhoodsSection.querySelector('h2.section-h2 .dim');
@@ -453,7 +473,7 @@
       });
     }
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. Contact strip: outline button + tiffany mail icon Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+    // ── Contact strip ─────────────────────────────────────────────────────────
     var stripBtn = document.querySelector('a.strip-btn');
     if (stripBtn) {
       stripBtn.style.backgroundColor = 'transparent';
@@ -469,13 +489,12 @@
     var stripBtnIcon = document.querySelector('a.strip-btn svg path');
     if (stripBtnIcon) stripBtnIcon.style.fill = '#0ABAB5';
 
-    // Ã¢ÂÂÃ¢ÂÂ 0. Rename heading: "Luxury Listings" Ã¢ÂÂ "Featured Estates" Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+    // ── Featured Estates heading ───────────────────────────────────────────────
     var listingsTitle = document.querySelector('.listings-title');
     if (listingsTitle) listingsTitle.style.fontSize = '14px';
 
     var headline = document.querySelector('.listings-headline');
     if (headline) {
-      // Replace bare text node with a styled gold span
       Array.from(headline.childNodes).forEach(function(node) {
         if (node.nodeType === 3 && node.textContent.trim().match(/Luxury|Featured/i)) {
           var span = document.createElement('span');
@@ -495,11 +514,10 @@
       }
     }
 
-    // Ã¢ÂÂÃ¢ÂÂ CAROUSEL-ONLY patches Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+    // ── Carousel ──────────────────────────────────────────────────────────────
     var carousel = document.querySelector('.listing-carousel');
     if (!carousel) return;
 
-    // Ã¢ÂÂÃ¢ÂÂ 1. Fix the existing HTML slide Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     var existingSlides = carousel.querySelectorAll('.listing-slide');
     existingSlides.forEach(function (slide) {
       var anchor = slide.querySelector('a');
@@ -530,7 +548,6 @@
       }
     });
 
-    // Ã¢ÂÂÃ¢ÂÂ 2. Inject additional slides Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     var injected = LISTINGS.filter(function (l) { return l.image !== null; });
     injected.forEach(function (listing) {
       var already = carousel.querySelector('[data-bhhp-listing="' + listing.name + '"]');
@@ -542,7 +559,6 @@
       carousel.appendChild(slide);
     });
 
-    // Ã¢ÂÂÃ¢ÂÂ 3. Also inject image-less slides Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     var noImage = LISTINGS.filter(function (l) { return l.image === null && l.name !== 'Collier Beach Ocean Estate'; });
     noImage.forEach(function (listing) {
       var already = carousel.querySelector('[data-bhhp-listing="' + listing.name + '"]');
@@ -554,7 +570,6 @@
       carousel.appendChild(slide);
     });
 
-    // Ã¢ÂÂÃ¢ÂÂ 4. Hook nav arrows to cycle through all slides Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
     var allSlides = Array.from(carousel.querySelectorAll('.listing-slide'));
     var total = allSlides.length;
     var current = 0;
@@ -565,7 +580,6 @@
       s.style.zIndex = i === 0 ? '1' : '0';
     });
 
-    // Update counter total Ã¢ÂÂ fix text node directly to handle any spacing format
     var counterEl = document.querySelector('.listings-counter');
     if (counterEl) {
       Array.from(counterEl.childNodes).forEach(function(node) {
@@ -587,7 +601,6 @@
       if (curEl) curEl.textContent = String(current + 1).padStart(2, '0');
     }
 
-    // Nav uses .lnav-btn divs
     var navBtns = document.querySelectorAll('.lnav-btn');
     navBtns.forEach(function (btn) {
       var newBtn = btn.cloneNode(true);
