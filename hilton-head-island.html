@@ -3,263 +3,881 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hilton Head Island — South Carolina | Best Hilton Head Properties</title>
+<title>Discover Hilton Head Island, SC | Best Hilton Head Properties</title>
+<meta name="description" content="Discover Hilton Head Island — 12 miles of pristine Atlantic beach, 26 championship golf courses, world-class tennis, and a unique eco-planned lifestyle unlike anywhere on the East Coast. Explore with BHHP.">
+<link rel="canonical" href="https://besthiltonheadproperties.com/hilton-head-island">
+<meta property="og:title" content="Discover Hilton Head Island, SC | Best Hilton Head Properties">
+<meta property="og:description" content="12 miles of beach, 26 golf courses, 350+ tennis courts, and one of America's most coveted island addresses. Discover Hilton Head Island with BHHP.">
+<meta property="og:image" content="images/sea-pines/sp-sps-beach.jpg">
+<meta property="og:url" content="https://besthiltonheadproperties.com/hilton-head-island">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Best Hilton Head Properties">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Discover Hilton Head Island, SC | BHHP">
+<meta name="twitter:description" content="12 miles of beach, 26 championship golf courses, 350+ tennis courts. Discover island life with Best Hilton Head Properties.">
+<meta name="twitter:image" content="images/sea-pines/sp-sps-beach.jpg">
+<meta name="keywords" content="Hilton Head Island real estate, Hilton Head homes for sale, Hilton Head Island South Carolina, BHHP, Best Hilton Head Properties, Hilton Head golf, Hilton Head beach, Sea Pines, Palmetto Dunes, Port Royal Plantation">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
+:root{--navy:#092969;--teal:#81D8D0;--gold:#D4AF37;--ivory:#F5EFE0;--white:#FFFFFF;--charcoal:#111111}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--navy:#092969;--teal:#81D8D0;--gold:#D4AF37;--ivory:#F5EFE0;--white:#FFFFFF;--charcoal:#111111;--text:#333333;--light:#f7f7f5}
-body{font-family:'Montserrat',sans-serif;color:var(--charcoal);background:var(--white)}
-.site-nav{position:fixed;top:0;left:0;right:0;z-index:999;padding:24px 48px;display:flex;align-items:center;justify-content:space-between;transition:all 0.4s ease;background:transparent}
-.site-nav.scrolled{background:rgba(9,41,105,0.97);backdrop-filter:blur(12px);padding:16px 48px;box-shadow:0 2px 30px rgba(0,0,0,0.3)}
-.nav-logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#fff;letter-spacing:3px}
-.nav-logo-sub{font-size:8px;letter-spacing:2px;color:rgba(255,255,255,0.6);text-transform:uppercase;margin-top:2px}
-.nav-links{display:flex;align-items:center;gap:32px;list-style:none}
-.nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:11px;letter-spacing:2px;text-transform:uppercase;transition:color 0.3s}
-.nav-links a:hover{color:var(--gold)}
-.nav-serhant{font-family:'Playfair Display',serif;font-size:13px;letter-spacing:2px;color:rgba(255,255,255,0.7);border-left:1px solid rgba(255,255,255,0.2);padding-left:24px}
-/* HERO — full-bleed, cinematic */
-.island-hero{min-height:100vh;background:linear-gradient(170deg,#051840 0%,#092969 35%,#0d4a6e 65%,#0a3d2e 100%);display:flex;align-items:center;padding:0 80px;position:relative;overflow:hidden}
-.island-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 75% 55%,rgba(129,216,208,0.2) 0%,transparent 55%),radial-gradient(ellipse at 20% 80%,rgba(212,175,55,0.1) 0%,transparent 45%)}
-.island-hero-content{position:relative;z-index:1;max-width:780px}
-.island-eyebrow{font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--teal);margin-bottom:28px;display:flex;align-items:center;gap:16px}
-.island-eyebrow::before{content:'';display:block;width:40px;height:1px;background:var(--teal)}
-.island-hero h1{font-family:'Playfair Display',serif;font-size:clamp(56px,7vw,96px);font-weight:400;color:#fff;line-height:1.0;margin-bottom:32px}
-.island-hero h1 em{font-style:italic;color:var(--gold)}
-.island-hero p{font-size:18px;color:rgba(255,255,255,0.75);line-height:1.8;max-width:580px;margin-bottom:56px}
-.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(255,255,255,0.15);padding-top:48px;max-width:640px}
-.hero-stat{padding-right:32px}
-.hero-stat-num{font-family:'Playfair Display',serif;font-size:40px;font-weight:400;color:#fff;line-height:1}
-.hero-stat-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:6px}
-/* INTRO */
-.island-intro{max-width:1200px;margin:0 auto;padding:120px 80px;display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}
-.island-intro h2{font-family:'Playfair Display',serif;font-size:clamp(36px,4vw,52px);font-weight:400;color:var(--navy);line-height:1.2;margin-bottom:32px}
-.island-intro p{font-size:15px;color:#555;line-height:1.9;margin-bottom:20px}
-.island-intro-visual{background:linear-gradient(135deg,var(--navy) 0%,#0d4a6e 100%);height:520px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;padding:48px}
-.island-intro-badge{text-align:center;border:1px solid rgba(255,255,255,0.15);padding:32px 40px}
-.island-intro-badge-title{font-family:'Playfair Display',serif;font-size:28px;color:#fff;margin-bottom:8px}
-.island-intro-badge-sub{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--teal)}
-/* LIFESTYLE PILLARS */
-.island-lifestyle{background:var(--navy);padding:100px 0}
-.island-lifestyle-inner{max-width:1200px;margin:0 auto;padding:0 80px}
-.section-header{text-align:center;margin-bottom:72px}
-.section-eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:16px}
-.section-title{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,48px);font-weight:400;color:#fff;line-height:1.2}
-.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(255,255,255,0.06)}
-.pillar{background:rgba(9,41,105,0.6);padding:56px 40px;border-bottom:3px solid transparent;transition:border-color 0.3s}
-.pillar:hover{border-bottom-color:var(--gold)}
-.pillar-num{font-family:'Playfair Display',serif;font-size:64px;font-weight:400;color:rgba(255,255,255,0.06);line-height:1;margin-bottom:-16px}
-.pillar h3{font-family:'Playfair Display',serif;font-size:24px;font-weight:400;color:#fff;margin-bottom:16px}
-.pillar p{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.8}
-/* NEIGHBORHOODS */
-.island-neighborhoods{max-width:1200px;margin:0 auto;padding:100px 80px}
-.nbhd-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:64px}
-.nbhd-card{background:var(--light);padding:48px 40px;border-left:4px solid var(--teal);text-decoration:none;display:block;transition:all 0.3s}
-.nbhd-card:hover{background:var(--navy);border-left-color:var(--gold)}
-.nbhd-card:hover .nbhd-card-title,.nbhd-card:hover .nbhd-card-price{color:#fff}
-.nbhd-card:hover .nbhd-card-desc{color:rgba(255,255,255,0.65)}
-.nbhd-card-tag{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:12px}
-.nbhd-card-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:400;color:var(--navy);margin-bottom:12px;transition:color 0.3s}
-.nbhd-card-desc{font-size:13px;color:#666;line-height:1.7;margin-bottom:20px;transition:color 0.3s}
-.nbhd-card-price{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--navy);font-weight:500;transition:color 0.3s}
-/* MARKET */
-.island-market{background:var(--ivory);padding:100px 0}
-.island-market-inner{max-width:1200px;margin:0 auto;padding:0 80px}
-.market-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-top:64px}
-.market-numbers{display:grid;grid-template-columns:1fr 1fr;gap:32px}
-.market-box{background:var(--white);padding:36px;border-bottom:3px solid var(--navy)}
-.market-box-num{font-family:'Playfair Display',serif;font-size:44px;font-weight:400;color:var(--navy);line-height:1;margin-bottom:8px}
-.market-box-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#888}
-.market-text h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3.5vw,44px);font-weight:400;color:var(--navy);line-height:1.3;margin-bottom:24px}
-.market-text p{font-size:15px;color:#555;line-height:1.9;margin-bottom:20px}
-/* CTA */
-.island-cta{background:var(--navy);padding:120px 80px;text-align:center;position:relative;overflow:hidden}
-.island-cta::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(129,216,208,0.12) 0%,transparent 60%)}
-.island-cta h2{position:relative;font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,64px);font-weight:400;color:#fff;line-height:1.1;margin-bottom:24px}
-.island-cta h2 em{font-style:italic;color:var(--gold)}
-.island-cta p{position:relative;font-size:17px;color:rgba(255,255,255,0.7);max-width:520px;margin:0 auto 48px;line-height:1.8}
-.btn-primary{display:inline-block;padding:20px 56px;background:var(--gold);color:var(--navy);text-decoration:none;font-size:11px;letter-spacing:3px;text-transform:uppercase;transition:all 0.3s;font-weight:500;margin:0 8px;position:relative}
-.btn-primary:hover{background:#fff;color:var(--navy)}
-.btn-outline{display:inline-block;padding:19px 56px;border:1px solid rgba(255,255,255,0.4);color:#fff;text-decoration:none;font-size:11px;letter-spacing:3px;text-transform:uppercase;transition:all 0.3s;margin:0 8px;position:relative}
-.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,0.08)}
-footer{background:var(--charcoal);padding:60px 80px 40px;color:rgba(255,255,255,0.5);font-size:12px;text-align:center}
-footer .footer-brand{font-family:'Playfair Display',serif;font-size:22px;color:#fff;margin-bottom:8px}
-footer .footer-tagline{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:32px}
-footer .footer-links{display:flex;justify-content:center;gap:32px;margin-bottom:32px;list-style:none}
-footer .footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:11px;letter-spacing:1px;text-transform:uppercase;transition:color 0.3s}
-footer .footer-links a:hover{color:var(--gold)}
-footer .footer-copy{font-size:10px;letter-spacing:1px;border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;margin-top:24px}
+html{scroll-behavior:smooth}
+body{font-family:'Montserrat',sans-serif;color:var(--charcoal);background:var(--white);overflow-x:hidden}
+.site-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:88px;transition:all 0.4s ease}
+.site-nav.scrolled{background:rgba(9,41,105,0.97);backdrop-filter:blur(12px);padding:0 40px;box-shadow:0 4px 30px rgba(0,0,0,0.25)}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;transition:color 0.3s}
+.nav-links a:hover{color:var(--teal)}
+.nav-cta{color:var(--white);text-decoration:none;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:10px 22px;border:1px solid rgba(255,255,255,0.4);border-radius:2px;transition:all 0.3s}
+.nav-cta:hover{background:var(--teal);border-color:var(--teal);color:var(--navy)}
+.nav-serhant{display:flex;flex-direction:column;align-items:flex-end;border-left:1px solid rgba(255,255,255,0.15);padding-left:18px;margin-left:10px;gap:4px}
+.serhant-logo-img{width:90px;height:auto;display:block}
+.serhant-label{font-family:'Montserrat',sans-serif;font-size:7px;font-weight:400;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.35)}
+/* HERO */
+.hero{position:relative;height:100vh;min-height:700px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#071a38}
+.hero-bg{position:absolute;inset:0;background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2023-02/birds-2_0.png');background-size:cover;background-position:center 35%;opacity:0.75}
+.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(5,15,35,0.45) 0%,rgba(5,15,35,0.35) 40%,rgba(5,15,35,0.82) 100%)}
+.hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;max-width:980px}
+.hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--white);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:12px}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:40px;height:1px;background:var(--teal);opacity:0.6}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(52px,9vw,100px);font-weight:400;color:var(--white);line-height:1.0;letter-spacing:-1px;margin-bottom:12px}
+.hero-title em{font-style:italic;color:var(--teal)}
+.hero-sub{font-size:13px;font-weight:300;letter-spacing:5px;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-bottom:40px;margin-top:28px}
+.hero-stats{display:flex;align-items:center;justify-content:center;margin-bottom:48px}
+.hero-stat{padding:0 28px;border-right:1px solid rgba(255,255,255,0.2);text-align:center}
+.hero-stat:last-child{border-right:none}
+.hero-stat-val{font-family:'Playfair Display',serif;font-size:28px;font-weight:600;color:var(--white);display:block}
+.hero-stat-lbl{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.6);display:block;margin-top:5px}
+.hero-cta-group{display:flex;gap:16px;justify-content:center}
+.btn-primary{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--teal);border:1px solid var(--teal);padding:14px 32px;cursor:pointer;background:transparent;text-decoration:none;display:inline-flex;align-items:center;gap:12px;transition:all 0.25s}
+.btn-primary:hover{background:var(--teal);color:var(--navy)}
+.btn-outline{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--white);border:1px solid rgba(255,255,255,0.5);padding:14px 32px;cursor:pointer;background:transparent;text-decoration:none;display:inline-flex;align-items:center;gap:12px;transition:all 0.25s}
+.btn-outline:hover{border-color:var(--teal);color:var(--teal)}
+.scroll-hint{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,0.45);font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,rgba(255,255,255,0.5),transparent);animation:scrollPulse 2s ease-in-out infinite}
+@keyframes scrollPulse{0%,100%{opacity:0.4}50%{opacity:1}}
+/* STATS BAND */
+.stats-band{background:var(--navy);padding:26px 48px;display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap}
+.stat-item{padding:0 40px;border-right:1px solid rgba(255,255,255,0.15);text-align:center}
+.stat-item:last-child{border-right:none}
+.stat-val{font-family:'Playfair Display',serif;font-size:32px;font-weight:600;color:var(--teal)}
+.stat-lbl{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-top:3px}
+/* ABOUT SECTION */
+.about-section{padding:72px 48px;background:var(--white)}
+.about-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.section-eyebrow{font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:16px}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,50px);font-weight:400;color:var(--navy);line-height:1.15;margin-bottom:24px}
+.section-title em{font-style:italic;color:var(--teal)}
+.section-body{font-size:16px;line-height:1.8;color:#444;margin-bottom:24px}
+.quote-card{padding:28px 32px;border-left:3px solid var(--teal);background:var(--white);border-radius:0 6px 6px 0}
+.quote-card p{font-family:'Playfair Display',serif;font-size:19px;font-style:italic;color:var(--navy);line-height:1.6}
+.quote-card cite{display:block;margin-top:14px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--teal);font-style:normal}
+.about-image-wrap{position:relative}
+.about-image{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;display:block}
+.about-badge{position:absolute;bottom:-20px;right:-20px;width:110px;height:110px;border-radius:50%;background:var(--navy);border:4px solid var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px}
+.badge-val{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--gold)}
+.badge-lbl{font-size:9px;font-weight:600;letter-spacing:1px;color:var(--teal);text-transform:uppercase;line-height:1.4;margin-top:3px}
+/* ══ SPORTS & LIFESTYLE WIDGET ══ */
+.sps-section{background:var(--white);padding:60px 0 52px;overflow:hidden;position:relative}
+.sps-watermark{position:absolute;right:-60px;top:50%;transform:translateY(-50%);font-size:300px;font-family:Georgia,serif;font-weight:700;color:rgba(0,0,0,0.03);line-height:1;pointer-events:none;letter-spacing:-0.05em;user-select:none}
+.sps-header{display:flex;align-items:flex-end;justify-content:space-between;padding:0 80px 48px}
+.sps-eyebrow{font-size:10px;font-weight:500;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.sps-heading{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,52px);font-weight:400;text-transform:uppercase;letter-spacing:1px;line-height:1.15;color:#0a0f1c;margin:0}
+.sps-heading span{color:var(--teal);font-weight:400}
+.sps-subhead{font-size:11px;font-weight:400;letter-spacing:0.28em;text-transform:uppercase;color:#888;margin-top:10px}
+.sps-track-wrapper{position:relative}
+.sps-track{display:flex;gap:16px;padding:0 80px 24px;overflow-x:auto;scroll-behavior:smooth;-ms-overflow-style:none;scrollbar-width:none;cursor:grab}
+.sps-track:active{cursor:grabbing}
+.sps-track::-webkit-scrollbar{display:none}
+.sps-card{flex:0 0 340px;height:520px;border-radius:16px;overflow:hidden;position:relative;cursor:pointer;transition:transform 0.4s ease,box-shadow 0.4s ease}
+.sps-card:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(0,0,0,0.22)}
+.sps-card-img{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 0.6s ease}
+.sps-card:hover .sps-card-img{transform:scale(1.04)}
+.sps-card-grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,14,28,0.92) 0%,rgba(8,14,28,0.45) 38%,rgba(8,14,28,0.0) 68%)}
+.sps-card-content{position:absolute;bottom:0;left:0;right:0;padding:28px 26px}
+.sps-card-tag{font-size:9px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:6px}
+.sps-card-name{font-family:'Playfair Display',serif;font-size:28px;font-weight:400;text-transform:uppercase;letter-spacing:1px;line-height:1.1;color:#fff;margin-bottom:8px}
+.sps-card-desc{font-size:10px;font-weight:300;letter-spacing:0.5px;line-height:1.65;color:rgba(255,255,255,0.65)}
+.sps-card-stats{margin-top:12px;display:flex;flex-wrap:wrap;gap:5px}
+.sps-card-stat{font-size:8px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:3px 8px;border:1px solid rgba(212,175,55,0.4);color:var(--gold);border-radius:2px}
+.sps-arrows{display:flex;gap:10px;justify-content:flex-end;padding:16px 80px 0}
+.sps-arrow{width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(10,15,28,0.2);background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:18px;color:#0a0f1c;transition:all 0.3s}
+.sps-arrow:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+/* DINING WIDGET */
+.dps-section{background:var(--ivory)}
+.dps-section .sps-heading span{color:var(--teal);font-style:italic}
+/* COMMUNITIES SECTION */
+.comm-section{background:var(--ivory);padding:80px 0 72px;overflow:hidden;position:relative}
+.comm-watermark{position:absolute;right:-60px;top:50%;transform:translateY(-50%);font-size:280px;font-family:'Bodoni Moda',serif;font-weight:700;color:rgba(0,0,0,0.024);line-height:1;pointer-events:none;letter-spacing:-0.05em;user-select:none;text-transform:uppercase}
+.comm-header{display:flex;align-items:flex-end;justify-content:space-between;padding:0 80px 48px}
+.comm-heading{font-family:'Bodoni Moda',serif;font-size:clamp(32px,4vw,52px);font-weight:400;font-style:normal;text-transform:uppercase;letter-spacing:1px;line-height:1;color:var(--charcoal)}
+.comm-heading em{font-weight:400;font-style:italic;color:rgb(153,153,153)}
+.comm-subtitle{font-family:Montserrat,sans-serif;font-size:12px;font-weight:400;letter-spacing:3px;text-transform:uppercase;color:rgb(136,136,136);margin-top:10px}
+.comm-track-wrapper{position:relative;overflow:hidden;padding:0 0 0 80px}
+.comm-track{display:flex;gap:20px;overflow-x:auto;scroll-behavior:smooth;padding:0 80px 20px 0;scrollbar-width:none}
+.comm-track::-webkit-scrollbar{display:none}
+.comm-card{min-width:340px;max-width:340px;height:520px;border-radius:16px;overflow:hidden;position:relative;cursor:pointer;flex-shrink:0;transition:transform 0.4s,box-shadow 0.4s}
+.comm-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,0.15)}
+.comm-card-img{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 0.6s}
+.comm-card:hover .comm-card-img{transform:scale(1.05)}
+.comm-card-grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.78) 0%,rgba(0,0,0,0.3) 35%,rgba(0,0,0,0.05) 65%,rgba(0,0,0,0.12) 100%);transition:opacity 0.4s}
+.comm-card:hover .comm-card-grad{opacity:0.9}
+.comm-card-content{position:absolute;bottom:0;left:0;right:0;padding:28px 24px;z-index:2}
+.comm-card-tag{font-family:Montserrat,sans-serif;font-size:9px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+.comm-card-name{font-family:'Bodoni Moda',serif;font-size:24px;font-weight:400;font-style:italic;color:#fff;line-height:1.25;margin-bottom:8px}
+.comm-card-desc{font-family:Montserrat,sans-serif;font-size:12px;font-weight:300;color:rgba(255,255,255,0.75);line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.comm-card-cta{font-family:Montserrat,sans-serif;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-top:14px;display:inline-block;opacity:0;transform:translateY(8px);transition:opacity 0.3s,transform 0.3s}
+.comm-card:hover .comm-card-cta{opacity:1;transform:translateY(0)}
+.comm-arrows{display:flex;gap:10px;padding:28px 80px 0;justify-content:flex-end}
+.comm-arrow{width:44px;height:44px;border-radius:50%;border:1px solid rgba(0,0,0,0.15);background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:0.3s;font-size:18px;color:var(--charcoal)}
+.comm-arrow:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+/* MARKET SECTION */
+.market-section{background:var(--charcoal);padding:60px 48px;position:relative;background-image:url('images/sea-pines/sp-home.webp');background-size:cover;background-position:center 60%}
+.market-section::before{content:'';position:absolute;inset:0;background:rgba(6,18,42,0.55);z-index:0}
+.market-inner{position:relative;z-index:1;max-width:1000px;margin:0 auto;text-align:center}
+.market-title{font-family:'Playfair Display',serif;font-size:38px;color:var(--white);margin-bottom:12px}
+.market-title em{font-style:italic;color:var(--teal)}
+.market-sub{font-size:14px;color:rgba(255,255,255,0.45);margin-bottom:56px;letter-spacing:1px}
+.market-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-bottom:40px}
+.market-stat{background:rgba(255,255,255,0.04);padding:36px 20py}
+.market-stat-val{font-family:'Playfair Display',serif;font-size:42px;font-weight:600;color:var(--teal);display:block}
+.market-stat-lbl{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);display:block;margin-top:8px}
+.market-note{font-size:11px;color:rgba(255,255,255,0.25)}
+/* FAQ SECTION */
+.faq-section{background:var(--white);padding:72px 48px}
+.faq-inner{max-width:860px;margin:0 auto}
+.faq-header{text-align:center;margin-bottom:64px}
+.faq-header .section-eyebrow{justify-content:center}
+.faq-header .section-title{font-size:clamp(34px,4vw,52px);margin-bottom:20px}
+.faq-header p{font-family:'Montserrat',sans-serif;font-size:16px;line-height:1.8;color:#666;max-width:560px;margin:0 auto}
+.faq-item{border-top:1px solid rgba(9,41,105,0.12);padding:32px 0}
+.faq-item:last-child{border-bottom:1px solid rgba(9,41,105,0.12)}
+.faq-q{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy);line-height:1.35;margin-bottom:14px;position:relative;padding-left:20px}
+.faq-q::before{content:'';position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.faq-a{font-family:'Montserrat',sans-serif;font-size:15px;line-height:1.85;color:#555;padding-left:20px}
+.faq-a strong{color:var(--navy);font-weight:600}
+/* CTA SECTION */
+.cta-section{padding:120px 48px;background:linear-gradient(135deg,var(--navy) 0%,#0d3a6b 100%);text-align:center}
+.cta-title{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,62px);font-weight:400;color:var(--white);line-height:1.15;margin-bottom:20px}
+.cta-title em{font-style:italic;color:var(--teal)}
+.cta-sub{font-size:16px;color:rgba(255,255,255,0.62);margin-bottom:48px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.75}
+.cta-group{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+/* FOOTER */
+footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rgba(255,255,255,0.06)}
+.footer-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px}
+.footer-bhhp-logo{width:64px;height:auto;display:block}
+.footer-links{display:flex;gap:32px;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,0.45);text-decoration:none;font-size:12px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;transition:color 0.3s}
+.footer-links a:hover{color:var(--teal)}
+.footer-serhant-wrap{display:flex;flex-direction:column;align-items:flex-end;gap:4px;border-left:1px solid rgba(255,255,255,0.15);padding-left:18px}
+.footer-serhant-img{width:90px;height:auto;display:block}
+.footer-serhant-label{font-family:'Montserrat',sans-serif;font-size:7px;font-weight:400;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.35)}
+.footer-copy{text-align:center;margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.06);font-size:12px;color:rgba(255,255,255,0.22)}
+/* NAV LOGO */
+.nav-logo-img{height:110px;width:auto;display:block;filter:contrast(1.6) brightness(1.05);transition:height 0.4s ease}
+.site-nav.scrolled .nav-logo-img{height:88px}
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .nbhd-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  .site-nav{padding:20px 24px}
+  .site-nav.scrolled{padding:14px 24px}
+  .nav-links{display:none}
+  .about-inner{grid-template-columns:1fr;gap:48px}
+  .about-badge{display:none}
+  .sps-header{padding:0 28px 36px;flex-direction:column;align-items:flex-start;gap:20px}
+  .sps-track{padding:0 28px 16px}
+  .sps-arrows{padding:12px 28px 0}
+  .sps-card{flex:0 0 280px;height:420px}
+  .comm-header{flex-direction:column;align-items:flex-start;padding:0 24px 36px;gap:16px}
+  .comm-track-wrapper{padding-left:24px}
+  .comm-track{padding-right:24px}
+  .market-grid{grid-template-columns:repeat(2,1fr)}
+  .stats-band{gap:20px}
+  .stat-item{border-right:none}
+  .hero-stats{gap:12px;flex-wrap:wrap}
+  .hero-stat{border-right:none}
+  .faq-section{padding:72px 24px}
+  .about-section{padding:72px 24px}
+}
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://besthiltonheadproperties.com"},
+        {"@type":"ListItem","position":2,"name":"Hilton Head Island","item":"https://besthiltonheadproperties.com/hilton-head-island"}
+      ]
+    },
+    {
+      "@type": "Place",
+      "name": "Hilton Head Island",
+      "description": "Hilton Head Island is a 12-mile barrier island off the coast of South Carolina, home to 26 championship golf courses, 12 miles of pristine Atlantic beach, more than 350 tennis courts, 70 miles of paved bike paths, and some of the most sought-after real estate on the East Coast. Founded as an eco-planned resort community in the 1950s and 60s, Hilton Head remains one of America's premier island destinations.",
+      "address": {"@type":"PostalAddress","addressLocality":"Hilton Head Island","addressRegion":"SC","postalCode":"29928","addressCountry":"US"},
+      "geo": {"@type":"GeoCoordinates","latitude":32.2163,"longitude":-80.7526},
+      "url": "https://besthiltonheadproperties.com/hilton-head-island",
+      "amenityFeature": [
+        {"@type":"LocationFeatureSpecification","name":"12 Miles of Atlantic Beach","value":true},
+        {"@type":"LocationFeatureSpecification","name":"26 Championship Golf Courses","value":true},
+        {"@type":"LocationFeatureSpecification","name":"350+ Tennis Courts","value":true},
+        {"@type":"LocationFeatureSpecification","name":"70 Miles of Paved Bike Paths","value":true},
+        {"@type":"LocationFeatureSpecification","name":"PGA Tour RBC Heritage","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Harbour Town Lighthouse","value":true}
+      ]
+    },
+    {
+      "@type": "RealEstateAgent",
+      "name": "Best Hilton Head Properties",
+      "alternateName": "BHHP",
+      "url": "https://besthiltonheadproperties.com",
+      "description": "Hilton Head Island's premier luxury real estate advisory, specializing in Sea Pines Resort, Palmetto Dunes, Hilton Head Plantation, and Wexford Plantation.",
+      "areaServed": {"@type":"City","name":"Hilton Head Island","addressRegion":"SC"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where is Hilton Head Island?",
+          "acceptedAnswer": {"@type":"Answer","text":"Hilton Head Island is a barrier island off the coast of South Carolina, located in Beaufort County. It sits approximately 95 miles north of Savannah, Georgia, and 40 miles south of Beaufort, SC. The island is roughly 12 miles long and 5 miles wide, accessible by the US-278 causeway."}
+        },
+        {
+          "@type": "Question",
+          "name": "How many golf courses are on Hilton Head Island?",
+          "acceptedAnswer": {"@type":"Answer","text":"Hilton Head Island is home to approximately 26 championship golf courses, earning it the nickname 'Golf Island.' Notable courses include Harbour Town Golf Links (host of the PGA Tour RBC Heritage), Palmetto Dunes Oceanfront Resort's three courses, Port Royal Golf & Racquet Club, Palmetto Hall Plantation, and Wexford Golf Club."}
+        },
+        {
+          "@type": "Question",
+          "name": "What are the best neighborhoods on Hilton Head Island?",
+          "acceptedAnswer": {"@type":"Answer","text":"Hilton Head Island's premier residential communities include Sea Pines Resort (5,000-acre gated resort at the southern tip, home of Harbour Town Golf Links), Palmetto Dunes Oceanfront Resort (3,000 acres with 3 miles of beach and 25 miles of lagoons), Port Royal Plantation (oceanfront gated community with 3 golf courses), Hilton Head Plantation (4,000 acres, largest community on the island), and Wexford Plantation (private gated community with a private harbour and championship golf)."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is the real estate market like on Hilton Head Island?",
+          "acceptedAnswer": {"@type":"Answer","text":"Hilton Head Island real estate is among the most coveted on the East Coast. The island's limited footprint (no new land available), world-class amenities, strong short-term rental demand, and consistent appreciation have supported property values for decades. Home prices range from approximately $400,000 for entry-level villas to $10 million+ for oceanfront estates, with the island-wide median price around $850,000."}
+        },
+        {
+          "@type": "Question",
+          "name": "What are the best restaurants on Hilton Head Island?",
+          "acceptedAnswer": {"@type":"Answer","text":"Hilton Head Island offers exceptional dining across all categories. Top restaurants include The Salty Dog Cafe at South Beach Marina (a beloved island institution for casual waterfront seafood), Hudson's Seafood House on the Docks (legendary waterfront dining since 1967 on Port Royal Sound), Skull Creek Boathouse (scenic waterfront seafood with spectacular sunsets), One Hot Mama's (award-winning BBQ and American cuisine), Lucky Rooster Kitchen + Bar (creative farm-to-table), and Poseidon (upscale waterfront dining at Shelter Cove Harbour)."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is the RBC Heritage golf tournament?",
+          "acceptedAnswer": {"@type":"Answer","text":"The RBC Heritage presented by Boeing is an annual PGA Tour event held every April at Harbour Town Golf Links within Sea Pines Resort, traditionally the week after the Masters. It is one of the most scenic and beloved events on the PGA Tour, with the iconic Harbour Town Lighthouse serving as the backdrop for the dramatic par-4 18th hole."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is Hilton Head Island a good real estate investment?",
+          "acceptedAnswer": {"@type":"Answer","text":"Hilton Head Island is consistently ranked among the strongest real estate investment markets on the East Coast. The island's limited land supply (protected by conservation easements and the absence of any developable land), sustained demand from retirees, second-home buyers, and vacation rental investors, combined with strong appreciation history and robust rental income potential, make it a compelling long-term holding. BHHP can provide detailed market analysis for specific communities and price points."}
+        }
+      ]
+    }
+  ]
+}
+</script>
+
 </head>
 <body>
+
+<!-- NAV -->
 <nav class="site-nav" id="siteNav">
+  <a href="/"><img src="images/bhhp-logo-square.png" alt="Best Hilton Head Properties" class="nav-logo-img"></a>
   <ul class="nav-links">
     <li><a href="/neighborhoods">Neighborhoods</a></li>
+    <li><a href="/sea-pines">Sea Pines</a></li>
+    <li><a href="/palmetto-dunes">Palmetto Dunes</a></li>
     <li><a href="/listings">Listings</a></li>
+    <li><a href="/our-story">Our Story</a></li>
   </ul>
-  <a href="/" style="text-decoration:none;text-align:center">
-    <div class="nav-logo-main">BHHP</div>
-    <div class="nav-logo-sub">Best Hilton Head Properties</div>
-  </a>
-  <div style="display:flex;align-items:center;gap:32px">
-    <a href="/contact" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:11px;letter-spacing:2px;text-transform:uppercase">Contact</a>
-    <div class="nav-serhant">SERHANT.</div>
+  <div style="display:flex;align-items:center;gap:16px">
+    <a href="https://besthiltonheadproperties.com/contact" class="nav-cta">Contact</a>
+    <div class="nav-serhant">
+      <img src="images/serhant-logo.png" alt="SERHANT." class="serhant-logo-img">
+      <span class="serhant-label">Partner</span>
+    </div>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="island-hero">
-  <div class="island-hero-content">
-    <div class="island-eyebrow">South Carolina Lowcountry</div>
-    <h1>Hilton Head<br><em>Island.</em></h1>
-    <p>Twelve miles of pristine Atlantic beach. Five thousand acres of protected forest. Twenty-four world-class golf courses. One island that has quietly become one of the most desirable addresses in America.</p>
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Naturally Your Favorite</div>
+    <h1 class="hero-title">Hilton Head<br><em>Island</em></h1>
+    <div class="hero-sub">From Marsh to Fairway to Shoreline</div>
     <div class="hero-stats">
-      <div class="hero-stat"><div class="hero-stat-num">12</div><div class="hero-stat-label">Miles of Beach</div></div>
-      <div class="hero-stat"><div class="hero-stat-num">24</div><div class="hero-stat-label">Golf Courses</div></div>
-      <div class="hero-stat"><div class="hero-stat-num">40K</div><div class="hero-stat-label">Residents</div></div>
-      <div class="hero-stat"><div class="hero-stat-num">#1</div><div class="hero-stat-label">Family Island USA</div></div>
+      <div class="hero-stat">
+        <span class="hero-stat-val">12</span>
+        <span class="hero-stat-lbl">Miles of Beach</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-val">26</span>
+        <span class="hero-stat-lbl">Golf Courses</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-val">350+</span>
+        <span class="hero-stat-lbl">Tennis Courts</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-val">70 mi</span>
+        <span class="hero-stat-lbl">Bike Paths</span>
+      </div>
+    </div>
+    <div class="hero-cta-group">
+      <a href="/listings" class="btn-primary">View Listings &nbsp;&#8594;</a>
+      <a href="https://besthiltonheadproperties.com/contact" class="btn-outline">Talk to an Advisor</a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    Discover
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<div class="stats-band">
+  <div class="stat-item">
+    <div class="stat-val">12 mi</div>
+    <div class="stat-lbl">Atlantic Shoreline</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-val">26</div>
+    <div class="stat-lbl">Championship Courses</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-val">350+</div>
+    <div class="stat-lbl">Tennis Courts</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-val">70 mi</div>
+    <div class="stat-lbl">Paved Bike Paths</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-val">5</div>
+    <div class="stat-lbl">Premier Gated Communities</div>
+  </div>
+</div>
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+  <div class="about-inner">
+    <div>
+      <div class="section-eyebrow">America's Favorite Island®</div>
+      <h2 class="section-title">Every Moment Shaped<br><em>by Nature</em></h2>
+      <p class="section-body">Dolphins in the surf, turtles on the shore, families on bikes, and golf where marsh meets sky — every moment on Hilton Head Island is shaped by the Lowcountry's natural beauty. This 12-mile barrier island off the South Carolina coast was designed from its founding to live in harmony with its breathtaking natural surroundings: ancient live oaks, tidal marshes, pristine beaches, and the warm waters of the Atlantic.</p>
+      <p class="section-body">Today, Hilton Head is home to 26 championship golf courses, 12 miles of wide, flat Atlantic beach, more than 350 tennis courts, 70 miles of paved bike paths, and some of the most sought-after residential communities on the East Coast. Its no-billboard aesthetic, carefully planned greenways, and conservation-first ethos have preserved a lifestyle genuinely unlike anywhere else.</p>
+      <div class="quote-card" style="margin-top:8px">
+        <p>"12 miles of pristine white sand, tranquil waters, and warm days filled with endless sunshine — it's no wonder Hilton Head Island has been lauded as the #1 Island in the U.S., year after year."</p>
+        <cite>— Condé Nast Traveler &amp; Travel + Leisure</cite>
+      </div>
+    </div>
+    <div class="about-image-wrap">
+      <img src="https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2022-11/beach1.jpg" alt="Hilton Head Island beaches with bikes" class="about-image">
+      <div class="about-badge">
+        <span class="badge-val">#1</span>
+        <span class="badge-lbl">Island in the U.S.</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- INTRO -->
-<section class="island-intro">
-  <div>
-    <h2>America&rsquo;s Most<br>Beloved Island</h2>
-    <p>Hilton Head Island sits at the southern tip of South Carolina, connected to the mainland by a single bridge that has kept it beautifully insulated from overdevelopment. What you find here is a rare thing: natural beauty preserved at scale, with a sophisticated infrastructure layered gently over it.</p>
-    <p>The island spans roughly 42 square miles, almost a third of which is protected natural land. Building height restrictions, underground utilities, and meticulous land-use planning have kept Hilton Head looking almost exactly as its founders envisioned &mdash; a destination where the environment comes first.</p>
-    <p>That philosophy has paid off. Travel + Leisure readers have consistently voted Hilton Head Island among the best islands in the United States &mdash; a recognition that draws thousands of visitors every year and a growing cohort of buyers who decide, mid-vacation, that they never want to leave.</p>
+<!-- SPORTS & LIFESTYLE WIDGET -->
+<section class="sps-section" id="sports-recreation">
+  <div class="sps-watermark">HHI</div>
+
+  <div class="sps-header">
+    <div>
+      <div class="sps-eyebrow">Hilton Head Island · South Carolina</div>
+      <h2 class="sps-heading">Sports &amp; <span>Lifestyle<br>Beyond Compare</span></h2>
+      <div class="sps-subhead">Six Passions. One Extraordinary Island.</div>
+    </div>
+    <a href="https://besthiltonheadproperties.com/contact" class="btn-outline" style="color:var(--navy);border-color:rgba(9,41,105,0.35);white-space:nowrap;margin-bottom:8px">Explore the Island &nbsp;&#8594;</a>
   </div>
-  <div class="island-intro-visual">
-    <div class="island-intro-badge">
-      <div class="island-intro-badge-title">Hilton Head Island</div>
-      <div class="island-intro-badge-sub">South Carolina &mdash; Est. 1956</div>
+
+  <div class="sps-track-wrapper">
+    <div class="sps-track" id="spsTrack">
+
+      <!-- CARD 1: GOLF -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2025-03/sea_pines_resort.jpg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Championship Play</div>
+          <div class="sps-card-name">Golf</div>
+          <div class="sps-card-desc">America's "Golf Island" — 26 championship courses including Harbour Town Golf Links, host of the PGA Tour's RBC Heritage, and Palmetto Dunes' three acclaimed layouts.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">26 Courses</span>
+            <span class="sps-card-stat">RBC Heritage PGA Tour</span>
+            <span class="sps-card-stat">Harbour Town Golf Links</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: TENNIS -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2024-02/palmetto_hall_1.jpg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Racquet Sports</div>
+          <div class="sps-card-name">Tennis &amp; Pickleball</div>
+          <div class="sps-card-desc">Eight of the world's top 100 tennis resorts call Hilton Head home. With 350+ courts islandwide, Stan Smith's legacy at Sea Pines Racquet Club, and world-class pickleball, HHI is a racquet sports paradise.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">350+ Courts</span>
+            <span class="sps-card-stat">Top 100 Tennis Resorts</span>
+            <span class="sps-card-stat">Pickleball</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: BEACH -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2022-11/beach1.jpg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Atlantic Shoreline</div>
+          <div class="sps-card-name">The Beach</div>
+          <div class="sps-card-desc">Twelve miles of wide, flat, pristine Atlantic beach — one of the finest on the entire East Coast. Multiple beach access points across the island's plantation communities, from Sea Pines to Port Royal.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">12 Miles</span>
+            <span class="sps-card-stat">Atlantic Ocean</span>
+            <span class="sps-card-stat">Multiple Access Points</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4: WATER SPORTS -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2025-09/696d583dd40cc8311a8dad532850b93b17238907.jpg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Open Water</div>
+          <div class="sps-card-name">Water Sports</div>
+          <div class="sps-card-desc">Kayaking, paddleboarding, sailing, dolphin cruises, deep-sea fishing, and windsurfing from Harbour Town Marina, Shelter Cove Harbour, and Palmetto Bay Marina. Warm Calibogue Sound for year-round adventure.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Harbour Town Marina</span>
+            <span class="sps-card-stat">Dolphin Cruises</span>
+            <span class="sps-card-stat">Deep-Sea Fishing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5: BIKING -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2025-09/476f270263b729a5cd82af082e02a56e0e0938cb.jpg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Active Lifestyle</div>
+          <div class="sps-card-name">Biking</div>
+          <div class="sps-card-desc">Over 70 miles of paved pathways wind through the island's lush plantations, linking beaches to town centers, marinas to nature preserves. Biking is the quintessential way to experience Hilton Head's island pace.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">70+ Miles</span>
+            <span class="sps-card-stat">Paved Pathways</span>
+            <span class="sps-card-stat">All Ability Levels</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6: NATURE & WILDLIFE -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2023-02/birds-2_0.png')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Nature &amp; Wildlife</div>
+          <div class="sps-card-name">Wild Hilton Head</div>
+          <div class="sps-card-desc">Ancient maritime forests, tidal creeks teeming with dolphins, loggerhead sea turtle nesting beaches, and 130+ bird species. Sea Pines Forest Preserve, Audubon Newhall Preserve, and the island's conservation network protect this irreplaceable ecosystem.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Sea Turtle Nesting</span>
+            <span class="sps-card-stat">130+ Bird Species</span>
+            <span class="sps-card-stat">Dolphin Watching</span>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div style="width:100%;border-top:1px solid rgba(255,255,255,0.1);padding-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:24px;text-align:center">
-      <div><div style="font-family:'Playfair Display',serif;font-size:32px;color:#fff">42</div><div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:4px">Square Miles</div></div>
-      <div><div style="font-family:'Playfair Display',serif;font-size:32px;color:#fff">1/3</div><div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:4px">Protected Land</div></div>
-      <div><div style="font-family:'Playfair Display',serif;font-size:32px;color:#fff">340</div><div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:4px">Sunny Days / Year</div></div>
-      <div><div style="font-family:'Playfair Display',serif;font-size:32px;color:#fff">70&deg;</div><div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:4px">Avg. Temperature</div></div>
-    </div>
+  </div>
+
+  <div class="sps-arrows">
+    <button class="sps-arrow" id="spsPrev" aria-label="Previous">&#8592;</button>
+    <button class="sps-arrow" id="spsNext" aria-label="Next">&#8594;</button>
   </div>
 </section>
 
-<!-- LIFESTYLE -->
-<section class="island-lifestyle">
-  <div class="island-lifestyle-inner">
-    <div class="section-header">
-      <div class="section-eyebrow">The Hilton Head Lifestyle</div>
-      <div class="section-title">Everything You Want.<br>Nothing You Don&rsquo;t.</div>
+<!-- NEIGHBORHOODS SECTION -->
+<section class="comm-section" id="neighborhoods">
+  <div class="comm-watermark">Communities</div>
+  <div class="comm-header">
+    <div>
+      <div class="articles-eyebrow">Premier Communities</div>
+      <h2 class="comm-heading">Where Hilton Head's <em>Finest</em> Call Home</h2>
+      <div class="comm-subtitle">Golf · Oceanfront · Private Harbour · Beach Access</div>
     </div>
-    <div class="pillars">
-      <div class="pillar">
-        <div class="pillar-num">01</div>
-        <h3>World-Class Golf</h3>
-        <p>Twenty-four championship courses &mdash; including Harbour Town Golf Links, host of the annual PGA Tour&rsquo;s RBC Heritage &mdash; make Hilton Head one of the premier golf destinations on the planet.</p>
+    <a href="https://besthiltonheadproperties.com/contact" class="btn-outline" style="color:var(--navy);border-color:rgba(9,41,105,0.35);white-space:nowrap;margin-bottom:8px">Find Your Community &nbsp;&#8594;</a>
+  </div>
+  <div class="comm-track-wrapper">
+    <div class="comm-track" id="commTrack">
+
+      <!-- Sea Pines Resort -->
+      <div class="comm-card">
+        <div class="comm-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2025-03/sea_pines_resort.jpg')"></div>
+        <div class="comm-card-grad"></div>
+        <div class="comm-card-content">
+          <div class="comm-card-tag">Gated Resort Community · 5,000 Acres</div>
+          <div class="comm-card-name">Sea Pines Resort</div>
+          <div class="comm-card-desc">Harbour Town Golf Links, the RBC Heritage PGA Tour, Forbes Four-Star hotel, and the iconic candy-stripe lighthouse — all within one legendary community at the island's southern tip.</div>
+          <div class="comm-card-cta">Explore Community →</div>
+        </div>
       </div>
-      <div class="pillar">
-        <div class="pillar-num">02</div>
-        <h3>Pristine Beaches</h3>
-        <p>Twelve miles of wide, hard-packed Atlantic beach &mdash; one of the most family-friendly shorelines on the East Coast, with calm surf, warm water, and miles of unspoiled natural scenery.</p>
+
+      <!-- Palmetto Dunes -->
+      <div class="comm-card">
+        <div class="comm-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2024-02/palmetto_hall_1.jpg')"></div>
+        <div class="comm-card-grad"></div>
+        <div class="comm-card-content">
+          <div class="comm-card-tag">Oceanfront Resort · Three Miles of Beach</div>
+          <div class="comm-card-name">Palmetto Dunes</div>
+          <div class="comm-card-desc">Three miles of private Atlantic beach, 25 miles of interconnected lagoons, three championship golf courses, and the Omni Hilton Head Oceanfront Resort.</div>
+          <div class="comm-card-cta">Explore Community →</div>
+        </div>
       </div>
-      <div class="pillar">
-        <div class="pillar-num">03</div>
-        <h3>World-Class Tennis</h3>
-        <p>Hilton Head has earned a global reputation as a tennis destination, with more courts per capita than virtually any comparably sized community in America.</p>
+
+      <!-- Port Royal Plantation -->
+      <div class="comm-card">
+        <div class="comm-card-img" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="comm-card-grad"></div>
+        <div class="comm-card-content">
+          <div class="comm-card-tag">Private Oceanfront Enclave</div>
+          <div class="comm-card-name">Port Royal Plantation</div>
+          <div class="comm-card-desc">Hilton Head's only completely private oceanfront residential community — 1,000 acres where Port Royal Sound meets the Atlantic, with one pristine mile of shoreline and three golf courses.</div>
+          <div class="comm-card-cta">Explore Community →</div>
+        </div>
       </div>
-      <div class="pillar">
-        <div class="pillar-num">04</div>
-        <h3>Dining &amp; Culture</h3>
-        <p>From celebrated chef-driven restaurants to waterfront tiki bars, the island&rsquo;s dining scene punches well above its weight. The Arts Center of Coastal Carolina brings Broadway-caliber performances year-round.</p>
+
+      <!-- Hilton Head Plantation -->
+      <div class="comm-card">
+        <div class="comm-card-img" style="background-image:url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="comm-card-grad"></div>
+        <div class="comm-card-content">
+          <div class="comm-card-tag">Island's Largest Community · 4,000 Acres</div>
+          <div class="comm-card-name">Hilton Head Plantation</div>
+          <div class="comm-card-desc">The island's most diverse residential address — four championship golf courses, private beach club, tennis, pools, and a true neighborhood feel across 4,000 protected acres.</div>
+          <div class="comm-card-cta">Explore Community →</div>
+        </div>
       </div>
-      <div class="pillar">
-        <div class="pillar-num">05</div>
-        <h3>Water Sports &amp; Marina Life</h3>
-        <p>Kayaking, paddleboarding, deep-sea fishing, dolphin cruises, and sailing &mdash; with the Atlantic on one side and the Intracoastal Waterway on the other, water activities are a way of life here.</p>
+
+      <!-- Wexford Plantation -->
+      <div class="comm-card">
+        <div class="comm-card-img" style="background-image:url('https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="comm-card-grad"></div>
+        <div class="comm-card-content">
+          <div class="comm-card-tag">Ultra-Private · Deep-Water Access</div>
+          <div class="comm-card-name">Wexford Plantation</div>
+          <div class="comm-card-desc">450 homes, a championship golf course, and — uniquely — a private inland harbour with 18 deepwater boat slips. The most exclusive and intimate of Hilton Head's gated communities.</div>
+          <div class="comm-card-cta">Explore Community →</div>
+        </div>
       </div>
-      <div class="pillar">
-        <div class="pillar-num">06</div>
-        <h3>Nature &amp; Wildlife</h3>
-        <p>Packs of bottle-nosed dolphins, loggerhead sea turtles nesting on the beach, great blue herons in the salt marshes &mdash; Hilton Head&rsquo;s natural world is an ever-present reminder of what makes this place extraordinary.</p>
+
+      <!-- Shipyard Plantation -->
+      <div class="comm-card">
+        <div class="comm-card-img" style="background-image:url('https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="comm-card-grad"></div>
+        <div class="comm-card-content">
+          <div class="comm-card-tag">Golf & Beach · South End</div>
+          <div class="comm-card-name">Shipyard Plantation</div>
+          <div class="comm-card-desc">800 beachfront acres on Hilton Head's south end — three championship golf courses, Van der Meer tennis academy, and direct Atlantic access along a serene, tree-lined enclave.</div>
+          <div class="comm-card-cta">Explore Community →</div>
+        </div>
       </div>
+
     </div>
+  </div>
+  <div class="comm-arrows">
+    <button class="comm-arrow" onclick="document.getElementById('commTrack').scrollBy({left:-380,behavior:'smooth'})">&#8592;</button>
+    <button class="comm-arrow" onclick="document.getElementById('commTrack').scrollBy({left:380,behavior:'smooth'})">&#8594;</button>
   </div>
 </section>
 
-<!-- NEIGHBORHOODS -->
-<section class="island-neighborhoods">
-  <div class="section-header" style="text-align:left">
-    <div class="section-eyebrow" style="color:var(--teal)">Explore the Island</div>
-    <div class="section-title" style="color:var(--navy)">Find Your Neighborhood</div>
+<!-- DINING WIDGET -->
+<section class="sps-section dps-section" id="dining" style="padding-top:60px">
+  <div class="sps-watermark" style="color:rgba(0,0,0,0.025)">EAT</div>
+
+  <div class="sps-header">
+    <div>
+      <div class="sps-eyebrow">Hilton Head Island · Culinary Scene</div>
+      <h2 class="sps-heading">Dining on <span>Hilton Head</span></h2>
+      <div class="sps-subhead">Waterfront Tables. Island Flavors. Unforgettable Meals.</div>
+    </div>
+    <a href="https://besthiltonheadproperties.com/contact" class="btn-outline" style="color:var(--navy);border-color:rgba(9,41,105,0.35);white-space:nowrap;margin-bottom:8px">Plan Your Visit &nbsp;&#8594;</a>
   </div>
-  <div class="nbhd-cards">
-    <a href="/sea-pines" class="nbhd-card">
-      <div class="nbhd-card-tag">South End</div>
-      <div class="nbhd-card-title">Sea Pines Resort</div>
-      <div class="nbhd-card-desc">The island&rsquo;s crown jewel. Harbour Town, three golf courses, private beach club, and the most prestigious addresses on the island.</div>
-      <div class="nbhd-card-price">Avg. $1.85M &mdash; Explore &rarr;</div>
-    </a>
-    <a href="/wexford" class="nbhd-card">
-      <div class="nbhd-card-tag">Mid-Island</div>
-      <div class="nbhd-card-title">Wexford Plantation</div>
-      <div class="nbhd-card-desc">Ultra-private, deep-water marina community. The island&rsquo;s most exclusive address for serious boaters and privacy seekers.</div>
-      <div class="nbhd-card-price">Avg. $2.4M &mdash; Explore &rarr;</div>
-    </a>
-    <a href="/palmetto-dunes" class="nbhd-card">
-      <div class="nbhd-card-tag">Mid-Island</div>
-      <div class="nbhd-card-title">Palmetto Dunes</div>
-      <div class="nbhd-card-desc">Resort living at its most balanced. Three courses, an 11-mile lagoon, and exceptional variety for primary residents and investors alike.</div>
-      <div class="nbhd-card-price">Avg. $1.35M &mdash; Explore &rarr;</div>
-    </a>
-    <a href="/hilton-head-plantation" class="nbhd-card">
-      <div class="nbhd-card-tag">North End</div>
-      <div class="nbhd-card-title">Hilton Head Plantation</div>
-      <div class="nbhd-card-desc">The island&rsquo;s largest gated community. Four golf courses, Intracoastal frontage, and the widest range of property types anywhere on the island.</div>
-      <div class="nbhd-card-price">Avg. $950K &mdash; Explore &rarr;</div>
-    </a>
+
+  <div class="sps-track-wrapper">
+    <div class="sps-track" id="diningTrack">
+
+      <!-- CARD 1: THE SALTY DOG -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Island Institution · Sea Pines</div>
+          <div class="sps-card-name">Salty Dog Cafe</div>
+          <div class="sps-card-desc">Hilton Head's most beloved waterfront dining experience at South Beach Marina Village inside Sea Pines Resort. Fresh locally caught seafood, live music, and an irresistible festive atmosphere that captures the spirit of the island.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">South Beach Marina</span>
+            <span class="sps-card-stat">Live Music</span>
+            <span class="sps-card-stat">Local Seafood</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: HUDSON'S -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Since 1967 · Port Royal Sound</div>
+          <div class="sps-card-name">Hudson's on the Docks</div>
+          <div class="sps-card-desc">A Hilton Head legend since 1967. Hudson's sits at the edge of Port Royal Sound where the local fishing fleet comes in daily. The kitchen sources 90% of its seafood from these very waters — it doesn't get fresher, or more local, than this.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Port Royal Sound</span>
+            <span class="sps-card-stat">Local Catch Daily</span>
+            <span class="sps-card-stat">Aquaculture</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: SKULL CREEK BOATHOUSE -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Waterfront Sunsets · Skull Creek</div>
+          <div class="sps-card-name">Skull Creek Boathouse</div>
+          <div class="sps-card-desc">Perched on the banks of Skull Creek, this beloved waterfront venue is the go-to spot for dramatic Lowcountry sunsets. Fresh local seafood, hand-crafted cocktails, and a relaxed outdoor atmosphere that defines island living.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Skull Creek Views</span>
+            <span class="sps-card-stat">Outdoor Dining</span>
+            <span class="sps-card-stat">Live Music</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4: ONE HOT MAMA'S -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Award-Winning BBQ · Main Street</div>
+          <div class="sps-card-name">One Hot Mama's</div>
+          <div class="sps-card-desc">Multiple award-winning American BBQ and casual cuisine on Main Street. Known island-wide for its creative takes on Southern classics, extensive craft beer selection, and lively atmosphere that draws locals and visitors alike year after year.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">BBQ &amp; Southern</span>
+            <span class="sps-card-stat">Award-Winning</span>
+            <span class="sps-card-stat">Main Street</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5: LUCKY ROOSTER -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Farm-to-Table · Shelter Cove</div>
+          <div class="sps-card-name">Lucky Rooster Kitchen + Bar</div>
+          <div class="sps-card-desc">Creative, seasonally driven cuisine in the heart of Hilton Head. Lucky Rooster's farm-to-table philosophy and inventive cocktail program have earned it a devoted following among island residents who demand more than great views with their meals.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Farm-to-Table</span>
+            <span class="sps-card-stat">Craft Cocktails</span>
+            <span class="sps-card-stat">Local Favorite</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6: POSEIDON -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Upscale Waterfront · Shelter Cove</div>
+          <div class="sps-card-name">Poseidon</div>
+          <div class="sps-card-desc">Elevated waterfront dining at Shelter Cove Harbour with panoramic marina views. Poseidon's sophisticated menu of fresh seafood and prime cuts, paired with a curated wine list, makes it the island's premier choice for celebrations and special evenings.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Shelter Cove Harbour</span>
+            <span class="sps-card-stat">Fine Dining</span>
+            <span class="sps-card-stat">Marina Views</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 7: QUARTERDECK -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('images/sea-pines/sp-dining-quarterdeck.jpg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Rooftop Oyster Bar · Harbour Town</div>
+          <div class="sps-card-name">Quarterdeck</div>
+          <div class="sps-card-desc">Next to the iconic Harbour Town Lighthouse in Sea Pines, Quarterdeck delivers southern classics and fresh seafood with a legendary rooftop oyster bar and stunning views over Calibogue Sound. Live music every night.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Rooftop Oyster Bar</span>
+            <span class="sps-card-stat">Harbour Town</span>
+            <span class="sps-card-stat">Live Music</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sps-arrows">
+    <button class="sps-arrow" id="dpsPrev" aria-label="Previous">&#8592;</button>
+    <button class="sps-arrow" id="dpsNext" aria-label="Next">&#8594;</button>
   </div>
 </section>
 
-<!-- MARKET -->
-<section class="island-market">
-  <div class="island-market-inner">
+<!-- MARKET STATS SECTION -->
+<section class="market-section" id="market">
+  <div class="market-inner">
+    <h2 class="market-title">The Hilton Head<br><em>Real Estate Market</em></h2>
+    <p class="market-sub">Island-wide data · 2025</p>
     <div class="market-grid">
-      <div class="market-text">
-        <div style="font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:16px">Market Overview</div>
-        <h2>A Market That<br>Performs Like No Other</h2>
-        <p>Hilton Head Island real estate has proven consistently resilient across multiple market cycles. The combination of finite land supply, strong demand from retirees and remote workers, and growing international interest from SERHANT.&rsquo;s global network has kept values strong.</p>
-        <p>Properties across the island average just 13 days on market &mdash; a reflection of the intensity of buyer demand relative to available inventory. For sellers, this is one of the most favorable markets in the Southeast. For buyers, having the right representation is essential.</p>
+      <div class="market-stat">
+        <span class="market-stat-val">$850K</span>
+        <span class="market-stat-lbl">Island Median Price</span>
       </div>
-      <div class="market-numbers">
-        <div class="market-box"><div class="market-box-num">$1.2M</div><div class="market-box-label">Island-Wide Avg. Sale</div></div>
-        <div class="market-box"><div class="market-box-num">13</div><div class="market-box-label">Avg. Days on Market</div></div>
-        <div class="market-box"><div class="market-box-num">98%</div><div class="market-box-label">List-to-Sale Ratio</div></div>
-        <div class="market-box"><div class="market-box-num">120+</div><div class="market-box-label">Active Listings</div></div>
+      <div class="market-stat">
+        <span class="market-stat-val">98%</span>
+        <span class="market-stat-lbl">List-to-Sale Ratio</span>
+      </div>
+      <div class="market-stat">
+        <span class="market-stat-val">18 days</span>
+        <span class="market-stat-lbl">Average Days on Market</span>
+      </div>
+      <div class="market-stat">
+        <span class="market-stat-val">+12%</span>
+        <span class="market-stat-lbl">Year-Over-Year Appreciation</span>
       </div>
     </div>
+    <p class="market-note">Data represents island-wide averages. Individual community performance varies. Contact BHHP for community-specific analysis.</p>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="island-cta">
-  <h2>Your Island Home<br><em>Is Waiting.</em></h2>
-  <p>Whether you&rsquo;re drawn by the golf, the beaches, the lifestyle, or simply the feeling you get the moment you cross the bridge &mdash; we know this island, and we know how to find your perfect place in it.</p>
-  <a href="/contact" class="btn-primary">Start the Conversation</a>
-  <a href="/neighborhoods" class="btn-outline">Explore Neighborhoods</a>
+<!-- FAQ SECTION -->
+<section class="faq-section" id="faq">
+  <div class="faq-inner">
+    <div class="faq-header">
+      <div class="section-eyebrow">Your Questions, Answered</div>
+      <h2 class="section-title">Frequently Asked<br><em>Questions</em></h2>
+      <p>Everything you need to know about Hilton Head Island — the lifestyle, the real estate, and the island communities that define life here.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Where is Hilton Head Island?</div>
+      <div class="faq-a">Hilton Head Island is a barrier island off the coast of South Carolina's Lowcountry, approximately <strong>95 miles north of Savannah, Georgia</strong> and 40 miles south of Beaufort, SC. The island is roughly 12 miles long and 5 miles wide, accessible via the US-278 causeway. Its position — sheltered by the larger islands of the Sea Islands chain — gives it unusually calm, warm waters and one of the most beautiful stretches of Atlantic shoreline on the East Coast.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How many golf courses are on Hilton Head Island?</div>
+      <div class="faq-a">Hilton Head Island is home to approximately <strong>26 championship golf courses</strong>, earning it the well-deserved nickname "Golf Island." The island's marquee layout is <strong>Harbour Town Golf Links</strong> in Sea Pines Resort — designed by Pete Dye with Jack Nicklaus and ranked consistently among America's top 100 courses. It hosts the <strong>PGA Tour RBC Heritage</strong> each April. Other celebrated courses include the three layouts at Palmetto Dunes (Robert Trent Jones, George Fazio, and Arthur Hills), Port Royal's three courses, Palmetto Hall, and Wexford Golf Club.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What are the best communities to buy a home on Hilton Head Island?</div>
+      <div class="faq-a">Hilton Head's premier residential communities each offer a distinct lifestyle: <strong>Sea Pines Resort</strong> is the island's crown jewel — a 5,000-acre gated community with Harbour Town Golf Links, the RBC Heritage, a Forbes Four-Star hotel, private beach, and the iconic Harbour Town Lighthouse. <strong>Palmetto Dunes</strong> offers oceanfront resort living with 3 miles of beach and 25 miles of lagoons. <strong>Port Royal Plantation</strong> is entirely private and oceanfront, where Port Royal Sound meets the Atlantic. <strong>Hilton Head Plantation</strong> is the island's largest community — 4,000 acres with four golf courses and a true neighbourhood character. <strong>Wexford Plantation</strong> is the most exclusive, with a private inland harbour and deep-water boat slips available only to residents.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What is the Hilton Head Island real estate market like?</div>
+      <div class="faq-a">Hilton Head's real estate market is among the most resilient on the East Coast. With <strong>no new developable land</strong>, a conservation-protected island footprint, sustained demand from retirees and second-home buyers, and a robust short-term rental market, island properties have demonstrated consistent appreciation over time. The island-wide median price is approximately <strong>$850,000</strong>, though Sea Pines averages closer to $1.85 million and oceanfront estates regularly trade above $5 million. BHHP can provide detailed community-specific market analysis tailored to your investment goals.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What is the RBC Heritage golf tournament?</div>
+      <div class="faq-a">The <strong>RBC Heritage presented by Boeing</strong> is an annual PGA Tour event held each April at Harbour Town Golf Links within Sea Pines Resort — traditionally the week after The Masters. It is one of the most scenic and beloved events on Tour, with the candy-stripe <strong>Harbour Town Lighthouse</strong> forming the backdrop for the dramatic par-4 18th hole finishing beside Calibogue Sound. RBC Heritage week is the island's most festive and sought-after week of the year, and properties in Sea Pines command significant premium rental rates during this period.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Is Hilton Head Island a good place to invest in real estate?</div>
+      <div class="faq-a">Hilton Head Island consistently ranks among the strongest real estate investment markets on the East Coast, and for compelling reasons: the island's land supply is permanently constrained by conservation easements and geography; demand from retirees, second-home buyers, and vacation rental investors is structural and growing; the island's world-class amenities (golf, beach, tennis, marina, dining) support both long-term appreciation and strong short-term rental yields. Properties in top communities like Sea Pines can generate <strong>$30,000–$100,000+ annually</strong> in vacation rental income during peak season. Contact BHHP for a tailored investment analysis.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What are the best restaurants on Hilton Head Island?</div>
+      <div class="faq-a">Hilton Head's culinary scene is exceptional for an island of its size. Must-visit dining experiences include <strong>The Salty Dog Cafe</strong> at South Beach Marina in Sea Pines (a true island institution for casual waterfront seafood); <strong>Hudson's Seafood House on the Docks</strong> (a Hilton Head legend since 1967, sourcing 90% of seafood locally from Port Royal Sound); <strong>Skull Creek Boathouse</strong> (spectacular waterfront sunsets and live music); <strong>One Hot Mama's</strong> (multiple award-winning BBQ on Main Street); <strong>Lucky Rooster Kitchen + Bar</strong> (the island's best farm-to-table); and <strong>Poseidon</strong> at Shelter Cove Harbour (upscale waterfront fine dining). Sea Pines also offers <strong>The Quarterdeck</strong> rooftop oyster bar at Harbour Town — the island's finest post-round destination.</div>
+    </div>
+
+  </div>
 </section>
 
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <h2 class="cta-title">Your Hilton Head<br><em>Story Starts Here</em></h2>
+  <p class="cta-sub">Whether you're searching for a vacation retreat, a permanent island residence, or a high-yield investment property — our advisors know every home, every community, and every nuance of this extraordinary island. Let's talk.</p>
+  <div class="cta-group">
+    <a href="/listings" class="btn-primary">Browse Listings &nbsp;&#8594;</a>
+    <a href="https://besthiltonheadproperties.com/contact" class="btn-outline">Schedule a Consultation</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  <div class="footer-brand">Best Hilton Head Properties</div>
-  <div class="footer-tagline">SERHANT. Exclusive Partner</div>
-  <ul class="footer-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/neighborhoods">Neighborhoods</a></li>
-    <li><a href="/our-story">Our Story</a></li>
-    <li><a href="/contact">Contact</a></li>
-  </ul>
-  <div class="footer-copy">&copy; 2025 Best Hilton Head Properties &mdash; SERHANT. All rights reserved.</div>
+  <div class="footer-inner">
+    <img src="images/bhhp-logo-square.png" alt="Best Hilton Head Properties" class="footer-bhhp-logo">
+    <nav class="footer-links">
+      <a href="/">Home</a>
+      <a href="/neighborhoods">Neighborhoods</a>
+      <a href="/listings">Listings</a>
+      <a href="/our-story">Our Story</a>
+      <a href="https://besthiltonheadproperties.com/contact">Contact</a>
+    </nav>
+    <div class="footer-serhant-wrap">
+      <img src="images/serhant-logo.png" alt="SERHANT." class="footer-serhant-img">
+      <span class="footer-serhant-label">Partner</span>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 Best Hilton Head Properties · All Rights Reserved · Hilton Head Island, SC</div>
 </footer>
-<script>var nav=document.getElementById('siteNav');if(nav)window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>50)});</script>
+
+<script>
+// Nav scroll
+const nav = document.getElementById('siteNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// Drag to scroll
+function makeDraggable(trackId) {
+  const track = document.getElementById(trackId);
+  if (!track) return;
+  let isDown = false, startX, scrollLeft;
+  track.addEventListener('mousedown', e => { isDown = true; track.classList.add('active'); startX = e.pageX - track.offsetLeft; scrollLeft = track.scrollLeft; });
+  track.addEventListener('mouseleave', () => { isDown = false; });
+  track.addEventListener('mouseup', () => { isDown = false; });
+  track.addEventListener('mousemove', e => { if (!isDown) return; e.preventDefault(); const x = e.pageX - track.offsetLeft; track.scrollLeft = scrollLeft - (x - startX) * 1.5; });
+}
+makeDraggable('spsTrack');
+makeDraggable('diningTrack');
+
+// Arrow scroll
+function bindArrows(prevId, nextId, trackId) {
+  const track = document.getElementById(trackId);
+  const prev = document.getElementById(prevId);
+  const next = document.getElementById(nextId);
+  if (!track || !prev || !next) return;
+  const SCROLL = 380;
+  prev.addEventListener('click', () => track.scrollBy({ left: -SCROLL, behavior: 'smooth' }));
+  next.addEventListener('click', () => track.scrollBy({ left: SCROLL, behavior: 'smooth' }));
+}
+bindArrows('spsPrev', 'spsNext', 'spsTrack');
+bindArrows('dpsPrev', 'dpsNext', 'diningTrack');
+</script>
+
 </body>
-      </html>
+</html>
