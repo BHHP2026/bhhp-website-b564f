@@ -636,21 +636,3 @@
     patchListings();
   }
 })();
-
-/* BLUFFTON GALLERY INJECT */
-(function() {
-  if (!document.querySelector('.comm-section')) return;
-    if (document.querySelector('.bluffton-gallery-section')) return;
-      var css='.bluffton-gallery-section{background:#0d1117;padding:70px 0 80px}.gallery-eyebrow{text-align:center;font-family:"Cormorant Garamond",Georgia,serif;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:#0ABAB5;margin-bottom:14px}.gallery-section-title{text-align:center;font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(1.6rem,3vw,2.4rem);font-weight:300;color:#f0ebe0;letter-spacing:.04em;margin:0 0 50px}.gallery-section-title em{font-style:italic;color:#d4af7a}.bluffton-gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1200px;margin:0 auto;padding:0 24px}.gallery-item{overflow:hidden}.gallery-img-wrap{overflow:hidden;aspect-ratio:3/4}.gallery-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease}.gallery-item:hover .gallery-img-wrap img{transform:scale(1.04)}.gallery-caption{padding:16px 4px 0;border-top:1px solid rgba(10,186,181,.25)}.gallery-caption-label{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.05rem;font-weight:600;letter-spacing:.06em;color:#f0ebe0;text-transform:uppercase}.gallery-caption-text{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:.85rem;letter-spacing:.12em;color:#0ABAB5;margin-top:4px}@media(max-width:768px){.bluffton-gallery-grid{grid-template-columns:1fr;gap:24px;padding:0 20px}.gallery-img-wrap{aspect-ratio:4/3}}';
-        var s=document.createElement('style');s.textContent=css;document.head.appendChild(s);
-          var imgs=[
-              {src:'https://www.visitbluffton.org/sites/default/files/2023-06/Bluffton%20Final%20Image%20Cover-1280.jpg',label:'Bluffton, SC',cap:'Heart of the Lowcountry'},
-                  {src:'https://www.visitbluffton.org/sites/default/files/2023-06/TBFBuild-GarvinGarey-BlufftonOyster-min.jpg',label:'Old Town Bluffton',cap:'Where History Lives'},
-                      {src:'https://www.visitbluffton.org/sites/default/files/2023-06/TBFBuild-HHI%20Oct%2021%2022%201732.jpg',label:'The May River',cap:'Heart of Bluffton'}
-                        ];
-                          var items=imgs.map(function(i){
-                              return '<div class="gallery-item"><div class="gallery-img-wrap"><img src="'+i.src+'" loading="lazy" alt="'+i.label+'"></div><div class="gallery-caption"><span class="gallery-caption-label">'+i.label+'</span><span class="gallery-caption-text">'+i.cap+'</span></div></div>';
-                                }).join('');
-                                  var h='<section class="bluffton-gallery-section"><div class="gallery-eyebrow">A Sense of Place</div><h2 class="gallery-section-title">Bluffton <em>in Focus</em></h2><div class="bluffton-gallery-grid">'+items+'</div></section>';
-                                    document.querySelector('.comm-section').insertAdjacentHTML('beforebegin',h);
-                                    })();
