@@ -636,3 +636,78 @@
     patchListings();
   }
 })();
+
+
+/* HOMEPAGE CONVERSION PATCHES */
+(function () {
+  function patchHomepageUI() {
+
+    var heroBtn = Array.from(document.querySelectorAll('a.btn-outline')).find(function (a) {
+      return a.textContent.trim() === 'Our Neighborhoods';
+    });
+    if (heroBtn) {
+      heroBtn.textContent = 'Get Your Free Home Valuation →';
+      heroBtn.href = 'https://search.besthiltonheadproperties.com/seller';
+    }
+
+    var quoteSection = document.querySelector('.quote-section');
+    if (quoteSection) quoteSection.style.display = 'none';
+
+    var searchBody = document.querySelector('.advsearch-body');
+    if (searchBody && searchBody.textContent.includes('45 years')) {
+      searchBody.textContent = 'Browse every listing on Hilton Head Island and Bluffton — filtered by community, price, waterfront, lifestyle, and more. Backed by Talita Haggist’s elite market expertise and the global reach of SERHANT.';
+    }
+
+    var serhant  = document.querySelector('.serhant-section');
+    var buysell  = document.querySelector('.buysell-section');
+    var listings = document.querySelector('.listings-section');
+    var cinvid   = document.querySelector('.cinvid-section');
+    var tst2     = document.querySelector('.tst2-section');
+    if (serhant  && buysell)  serhant.after(buysell);
+    if (buysell  && listings) buysell.after(listings);
+    if (tst2     && cinvid)   tst2.after(cinvid);
+
+    var serhantSection = document.querySelector('.serhant-section');
+    var statsSection   = document.querySelector('.stats-section');
+    if (serhantSection && statsSection && !document.querySelector('.serhant-stats-bar')) {
+      var logoImg   = document.querySelector('.serhant-logo-img');
+      var logoClone = logoImg ? logoImg.cloneNode(true) : null;
+      if (logoClone) {
+        logoClone.style.cssText = 'height:44px;width:auto;display:block;margin:8px auto 0;';
+        logoClone.className = '';
+        logoClone.alt = 'SERHANT.';
+      }
+      var bar = document.createElement('div');
+      bar.className = 'serhant-stats-bar';
+      bar.style.cssText = 'background:#fff;padding:36px 80px 60px;text-align:center;border-top:1px solid #e8e8e8;font-family:Montserrat,sans-serif;';
+      var ey = document.createElement('div');
+      ey.style.cssText = 'font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:rgb(212,175,55);margin-bottom:28px;';
+      ey.textContent = 'SERHANT. · 2025 Office Numbers';
+      var hl = document.createElement('div');
+      hl.style.cssText = 'font-family:"Playfair Display",serif;font-size:48px;font-weight:400;color:rgb(17,17,17);line-height:1.4;margin-bottom:32px;';
+      hl.textContent = 'The Numbers Behind the';
+      if (logoClone) hl.appendChild(logoClone);
+      var nd = document.createElement('div'); nd.textContent = 'Network'; hl.appendChild(nd);
+      var bp = document.createElement('p');
+      bp.style.cssText = 'font-size:14px;font-weight:500;line-height:1.8;color:rgb(80,80,80);max-width:720px;margin:0 auto 52px;letter-spacing:0.3px;';
+      bp.textContent = 'SERHANT. — one of the fastest-growing real estate brokerages in the country. As proud founding members of SERHANT. in South Carolina, Best Hilton Head Properties brings this level of reach, resources, and marketing power directly to Hilton Head Island. When you work with us, you’re backed by a national network built for a new era of real estate.';
+      var gr = document.createElement('div');
+      gr.style.cssText = 'display:flex;justify-content:center;gap:80px;align-items:flex-start;flex-wrap:wrap;';
+      [{num:'$6B+',label:'Sales Volume in 2025'},{num:'2,500+',label:'Agents Nationwide'},{num:'Top 30',label:'Brokerage in the U.S.'}].forEach(function (item) {
+        var col = document.createElement('div'); col.style.cssText = 'text-align:center;';
+        var nm  = document.createElement('div'); nm.style.cssText  = 'font-family:"Playfair Display",serif;font-size:48px;font-weight:400;color:rgb(9,41,105);line-height:1;'; nm.textContent = item.num;
+        var lb  = document.createElement('div'); lb.style.cssText  = 'font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgb(153,153,153);margin-top:12px;'; lb.textContent = item.label;
+        col.appendChild(nm); col.appendChild(lb); gr.appendChild(col);
+      });
+      bar.appendChild(ey); bar.appendChild(hl); bar.appendChild(bp); bar.appendChild(gr);
+      serhantSection.appendChild(bar);
+      statsSection.style.display = 'none';
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', patchHomepageUI);
+  } else {
+    patchHomepageUI();
+  }
+})();
