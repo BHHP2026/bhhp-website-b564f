@@ -713,3 +713,5 @@
 })();
 // Hide YouTube section until channel is ready
 (function(){var yt=document.querySelector('.bhhp-yt-section');if(yt)yt.style.display='none';})();
+// Move contact strip to immediately after testimonials
+(function(){var tst=document.querySelector('.tst2-section'),strip=document.querySelector('.bhhp-contact-strip');if(tst&&strip)tst.after(strip);})();
