@@ -317,7 +317,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg"><iframe id="yt-hero" src="" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen></iframe></div>
+  <div class="hero-bg"><iframe id="yt-hero" src="https://www.youtube-nocookie.com/embed/VLwIDbPU_S8?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&disablekb=1&start=0&loop=1&playlist=VLwIDbPU_S8&playsinline=1" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen></iframe></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">Naturally Your Favorite</div>
@@ -744,22 +744,6 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
     </div>
 
-      <!-- CARD 8: SAGE ROOM -->
-      <div class="sps-card">
-        <div class="sps-card-img" style="background-image:url('images/sea-pines/sp-dining-coast.jpg')"></div>
-        <div class="sps-card-grad"></div>
-        <div class="sps-card-content">
-          <div class="sps-card-tag">Elevated Fine Dining · Central</div>
-          <div class="sps-card-name">Sage Room</div>
-          <div class="sps-card-desc">Casually upscale fine dining with an open kitchen concept and intimate chef's table. Woman-owned, seasonally driven, and one of the island's most sophisticated culinary experiences.</div>
-          <div class="sps-card-stats">
-            <span class="sps-card-stat">Open Kitchen</span>
-            <span class="sps-card-stat">Chef's Table</span>
-            <span class="sps-card-stat">Seasonal Menu</span>
-          </div>
-        </div>
-      </div>
-  </div>
 
   <div class="sps-arrows">
     <button class="sps-arrow" id="dpsPrev" aria-label="Previous">&#8592;</button>
@@ -905,13 +889,9 @@ bindArrows('dpsPrev', 'dpsNext', 'diningTrack');
 </script>
 
 
-<!-- YouTube Hero Video -->
+<!-- Hero video 30-second loop -->
 <script>
-var tag=document.createElement("script");tag.src="https://www.youtube.com/iframe_api";document.head.appendChild(tag);
-var ytHeroPlayer;
-function onYouTubeIframeAPIReady(){
-  ytHeroPlayer=new YT.Player("yt-hero",{videoId:"VLwIDbPU_S8",playerVars:{autoplay:1,mute:1,controls:0,showinfo:0,rel:0,modestbranding:1,iv_load_policy:3,disablekb:1,start:0,end:30,loop:1,playlist:"VLwIDbPU_S8",playsinline:1},events:{onReady:function(e){e.target.mute();e.target.playVideo()},onStateChange:function(e){if(e.data===YT.PlayerState.ENDED||e.target.getCurrentTime()>=30){e.target.seekTo(0);e.target.playVideo()}}}});
-}
+setInterval(function(){var f=document.getElementById("yt-hero");if(f){var s=f.src;f.src="";f.src=s;}},30000);
 </script>
 </body>
 </html>
