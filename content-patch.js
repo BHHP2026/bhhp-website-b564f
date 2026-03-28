@@ -711,3 +711,5 @@
     patchHomepageUI();
   }
 })();
+// Hide YouTube section until channel is ready
+(function(){var yt=document.querySelector('.bhhp-yt-section');if(yt)yt.style.display='none';})();
