@@ -45,7 +45,8 @@ body{font-family:'Montserrat',sans-serif;color:var(--charcoal);background:var(--
 .serhant-label{font-family:'Montserrat',sans-serif;font-size:7px;font-weight:400;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.35)}
 /* HERO */
 .hero{position:relative;height:100vh;min-height:700px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#071a38}
-.hero-bg{position:absolute;inset:0;background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2023-02/birds-2_0.png');background-size:cover;background-position:center 35%;opacity:0.75}
+.hero-bg{position:absolute;inset:0;overflow:hidden;z-index:0;opacity:0.75}
+.hero-bg iframe{position:absolute;top:50%;left:50%;width:180vw;height:180vh;transform:translate(-50%,-50%);pointer-events:none}
 .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(5,15,35,0.45) 0%,rgba(5,15,35,0.35) 40%,rgba(5,15,35,0.82) 100%)}
 .hero-content{position:relative;z-index:2;text-align:center;padding:0 24px;max-width:980px}
 .hero-eyebrow{font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--white);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:12px}
@@ -316,7 +317,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-bg"><iframe id="yt-hero" src="" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen></iframe></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">Naturally Your Favorite</div>
@@ -389,7 +390,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
       </div>
     </div>
     <div class="about-image-wrap">
-      <img src="https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2022-11/beach1.jpg" alt="Hilton Head Island beaches with bikes" class="about-image">
+      <img src="images/sea-pines/sp-sps-beach.jpg" alt="Hilton Head Island beaches with bikes" class="about-image">
       <div class="about-badge">
         <span class="badge-val">#1</span>
         <span class="badge-lbl">Island in the U.S.</span>
@@ -416,7 +417,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
       <!-- CARD 1: GOLF -->
       <div class="sps-card">
-        <div class="sps-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2025-03/sea_pines_resort.jpg')"></div>
+        <div class="sps-card-img" style="background-image:url('images/sea-pines/sp-golf.jpg')"></div>
         <div class="sps-card-grad"></div>
         <div class="sps-card-content">
           <div class="sps-card-tag">Championship Play</div>
@@ -432,7 +433,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
       <!-- CARD 2: TENNIS -->
       <div class="sps-card">
-        <div class="sps-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2024-02/palmetto_hall_1.jpg')"></div>
+        <div class="sps-card-img" style="background-image:url('images/sea-pines/sp-sps-tennis.jpg')"></div>
         <div class="sps-card-grad"></div>
         <div class="sps-card-content">
           <div class="sps-card-tag">Racquet Sports</div>
@@ -448,7 +449,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
       <!-- CARD 3: BEACH -->
       <div class="sps-card">
-        <div class="sps-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2022-11/beach1.jpg')"></div>
+        <div class="sps-card-img" style="background-image:url('images/sea-pines/sp-sps-beach.jpg')"></div>
         <div class="sps-card-grad"></div>
         <div class="sps-card-content">
           <div class="sps-card-tag">Atlantic Shoreline</div>
@@ -464,7 +465,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
       <!-- CARD 4: WATER SPORTS -->
       <div class="sps-card">
-        <div class="sps-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2025-09/696d583dd40cc8311a8dad532850b93b17238907.jpg')"></div>
+        <div class="sps-card-img" style="background-image:url('images/sea-pines/sp-sps-watersports.jpg')"></div>
         <div class="sps-card-grad"></div>
         <div class="sps-card-content">
           <div class="sps-card-tag">Open Water</div>
@@ -480,7 +481,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
       <!-- CARD 5: BIKING -->
       <div class="sps-card">
-        <div class="sps-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2025-09/476f270263b729a5cd82af082e02a56e0e0938cb.jpg')"></div>
+        <div class="sps-card-img" style="background-image:url('images/sea-pines/sp-sps-lifestyle.jpg')"></div>
         <div class="sps-card-grad"></div>
         <div class="sps-card-content">
           <div class="sps-card-tag">Active Lifestyle</div>
@@ -496,7 +497,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
       <!-- CARD 6: NATURE & WILDLIFE -->
       <div class="sps-card">
-        <div class="sps-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2023-02/birds-2_0.png')"></div>
+        <div class="sps-card-img" style="background-image:url('images/sea-pines/sp-sps-forest.jpg')"></div>
         <div class="sps-card-grad"></div>
         <div class="sps-card-content">
           <div class="sps-card-tag">Nature &amp; Wildlife</div>
@@ -535,7 +536,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
       <!-- Sea Pines Resort -->
       <div class="comm-card">
-        <div class="comm-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2025-03/sea_pines_resort.jpg')"></div>
+        <div class="comm-card-img" style="background-image:url('images/sea-pines/sp-golf.jpg')"></div>
         <div class="comm-card-grad"></div>
         <div class="comm-card-content">
           <div class="comm-card-tag">Gated Resort Community · 5,000 Acres</div>
@@ -547,7 +548,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
       <!-- Palmetto Dunes -->
       <div class="comm-card">
-        <div class="comm-card-img" style="background-image:url('https://www.hiltonheadisland.org/sites/default/files/styles/background_container_1920/public/2024-02/palmetto_hall_1.jpg')"></div>
+        <div class="comm-card-img" style="background-image:url('images/sea-pines/sp-sps-tennis.jpg')"></div>
         <div class="comm-card-grad"></div>
         <div class="comm-card-content">
           <div class="comm-card-tag">Oceanfront Resort · Three Miles of Beach</div>
@@ -559,7 +560,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
       <!-- Port Royal Plantation -->
       <div class="comm-card">
-        <div class="comm-card-img" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="comm-card-img" style="background-image:url('images/article-communities.jpg')"></div>
         <div class="comm-card-grad"></div>
         <div class="comm-card-content">
           <div class="comm-card-tag">Private Oceanfront Enclave</div>
@@ -571,7 +572,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
       <!-- Hilton Head Plantation -->
       <div class="comm-card">
-        <div class="comm-card-img" style="background-image:url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="comm-card-img" style="background-image:url('images/article-family.jpg')"></div>
         <div class="comm-card-grad"></div>
         <div class="comm-card-content">
           <div class="comm-card-tag">Island's Largest Community · 4,000 Acres</div>
@@ -583,7 +584,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
       <!-- Wexford Plantation -->
       <div class="comm-card">
-        <div class="comm-card-img" style="background-image:url('https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="comm-card-img" style="background-image:url('images/sea-pines/sp-home.webp')"></div>
         <div class="comm-card-grad"></div>
         <div class="comm-card-content">
           <div class="comm-card-tag">Ultra-Private · Deep-Water Access</div>
@@ -595,7 +596,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
       <!-- Shipyard Plantation -->
       <div class="comm-card">
-        <div class="comm-card-img" style="background-image:url('https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="comm-card-img" style="background-image:url('images/sea-pines/sp-sps-southbeach.jpg')"></div>
         <div class="comm-card-grad"></div>
         <div class="comm-card-content">
           <div class="comm-card-tag">Golf & Beach · South End</div>
@@ -631,7 +632,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
       <!-- CARD 1: THE SALTY DOG -->
       <div class="sps-card">
-        <div class="sps-card-img" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="sps-card-img" style="background-image:url('images/sea-pines/sp-sps-southbeach.jpg')"></div>
         <div class="sps-card-grad"></div>
         <div class="sps-card-content">
           <div class="sps-card-tag">Island Institution · Sea Pines</div>
@@ -647,7 +648,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
       <!-- CARD 2: HUDSON'S -->
       <div class="sps-card">
-        <div class="sps-card-img" style="background-image:url('https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="sps-card-img" style="background-image:url('images/article-communities.jpg')"></div>
         <div class="sps-card-grad"></div>
         <div class="sps-card-content">
           <div class="sps-card-tag">Since 1967 · Port Royal Sound</div>
@@ -663,7 +664,7 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
 
       <!-- CARD 3: SKULL CREEK BOATHOUSE -->
       <div class="sps-card">
-        <div class="sps-card-img" style="background-image:url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="sps-card-img" style="background-image:url('images/article-mayriver.jpg')"></div>
         <div class="sps-card-grad"></div>
         <div class="sps-card-content">
           <div class="sps-card-tag">Waterfront Sunsets · Skull Creek</div>
@@ -677,41 +678,41 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
         </div>
       </div>
 
-      <!-- CARD 4: ONE HOT MAMA'S -->
+      <!-- CARD 4: ELA'S ON THE WATER -->
       <div class="sps-card">
-        <div class="sps-card-img" style="background-image:url('https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="sps-card-img" style="background-image:url('images/sea-pines/sp-dining-links.jpg')"></div>
         <div class="sps-card-grad"></div>
         <div class="sps-card-content">
-          <div class="sps-card-tag">Award-Winning BBQ · Main Street</div>
-          <div class="sps-card-name">One Hot Mama's</div>
-          <div class="sps-card-desc">Multiple award-winning American BBQ and casual cuisine on Main Street. Known island-wide for its creative takes on Southern classics, extensive craft beer selection, and lively atmosphere that draws locals and visitors alike year after year.</div>
+          <div class="sps-card-tag">Award-Winning · Shelter Cove Harbour</div>
+          <div class="sps-card-name">ELA's On the Water</div>
+          <div class="sps-card-desc">Award-winning waterfront dining at Shelter Cove Harbour, featured in Bon Appétit. Wrap-around marina patio with spectacular sunset views, creative seafood and steaks, and nightly entertainment that captures the essence of island living.</div>
           <div class="sps-card-stats">
-            <span class="sps-card-stat">BBQ &amp; Southern</span>
-            <span class="sps-card-stat">Award-Winning</span>
-            <span class="sps-card-stat">Main Street</span>
+            <span class="sps-card-stat">Shelter Cove Harbour</span>
+            <span class="sps-card-stat">Bon Appétit Featured</span>
+            <span class="sps-card-stat">Sunset Views</span>
           </div>
         </div>
       </div>
 
-      <!-- CARD 5: LUCKY ROOSTER -->
+      <!-- CARD 5: FISHCAMP ON BROAD CREEK -->
       <div class="sps-card">
-        <div class="sps-card-img" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="sps-card-img" style="background-image:url('images/sea-pines/sp-dining-frasers.jpg')"></div>
         <div class="sps-card-grad"></div>
         <div class="sps-card-content">
-          <div class="sps-card-tag">Farm-to-Table · Shelter Cove</div>
-          <div class="sps-card-name">Lucky Rooster Kitchen + Bar</div>
-          <div class="sps-card-desc">Creative, seasonally driven cuisine in the heart of Hilton Head. Lucky Rooster's farm-to-table philosophy and inventive cocktail program have earned it a devoted following among island residents who demand more than great views with their meals.</div>
+          <div class="sps-card-tag">Waterfront · Broad Creek</div>
+          <div class="sps-card-name">Fishcamp on Broad Creek</div>
+          <div class="sps-card-desc">A restored historic fishing camp on serene Broad Creek with fire pits, oyster roasting, bocce courts, and live entertainment. Fresh-off-the-boat seafood in a charming waterfront setting that feels like old Hilton Head.</div>
           <div class="sps-card-stats">
-            <span class="sps-card-stat">Farm-to-Table</span>
-            <span class="sps-card-stat">Craft Cocktails</span>
-            <span class="sps-card-stat">Local Favorite</span>
+            <span class="sps-card-stat">Broad Creek Marina</span>
+            <span class="sps-card-stat">Fire Pit &amp; Oyster Roasting</span>
+            <span class="sps-card-stat">Live Entertainment</span>
           </div>
         </div>
       </div>
 
       <!-- CARD 6: POSEIDON -->
       <div class="sps-card">
-        <div class="sps-card-img" style="background-image:url('https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=700&q=80')"></div>
+        <div class="sps-card-img" style="background-image:url('images/sea-pines/sp-dining-oceanlounge.jpg')"></div>
         <div class="sps-card-grad"></div>
         <div class="sps-card-content">
           <div class="sps-card-tag">Upscale Waterfront · Shelter Cove</div>
@@ -742,6 +743,22 @@ footer{background:var(--charcoal);padding:60px 48px 40px;border-top:1px solid rg
       </div>
 
     </div>
+
+      <!-- CARD 8: SAGE ROOM -->
+      <div class="sps-card">
+        <div class="sps-card-img" style="background-image:url('images/sea-pines/sp-dining-coast.jpg')"></div>
+        <div class="sps-card-grad"></div>
+        <div class="sps-card-content">
+          <div class="sps-card-tag">Elevated Fine Dining · Central</div>
+          <div class="sps-card-name">Sage Room</div>
+          <div class="sps-card-desc">Casually upscale fine dining with an open kitchen concept and intimate chef's table. Woman-owned, seasonally driven, and one of the island's most sophisticated culinary experiences.</div>
+          <div class="sps-card-stats">
+            <span class="sps-card-stat">Open Kitchen</span>
+            <span class="sps-card-stat">Chef's Table</span>
+            <span class="sps-card-stat">Seasonal Menu</span>
+          </div>
+        </div>
+      </div>
   </div>
 
   <div class="sps-arrows">
@@ -887,5 +904,14 @@ bindArrows('spsPrev', 'spsNext', 'spsTrack');
 bindArrows('dpsPrev', 'dpsNext', 'diningTrack');
 </script>
 
+
+<!-- YouTube Hero Video -->
+<script>
+var tag=document.createElement("script");tag.src="https://www.youtube.com/iframe_api";document.head.appendChild(tag);
+var ytHeroPlayer;
+function onYouTubeIframeAPIReady(){
+  ytHeroPlayer=new YT.Player("yt-hero",{videoId:"VLwIDbPU_S8",playerVars:{autoplay:1,mute:1,controls:0,showinfo:0,rel:0,modestbranding:1,iv_load_policy:3,disablekb:1,start:0,end:30,loop:1,playlist:"VLwIDbPU_S8",playsinline:1},events:{onReady:function(e){e.target.mute();e.target.playVideo()},onStateChange:function(e){if(e.data===YT.PlayerState.ENDED||e.target.getCurrentTime()>=30){e.target.seekTo(0);e.target.playVideo()}}}});
+}
+</script>
 </body>
 </html>
