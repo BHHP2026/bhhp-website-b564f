@@ -11,7 +11,7 @@
   }
 
   // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  // STRIPE 1 â HERO IMAGE: "The Resort Lifestyle"
+  // STRIPE 1 \u2014 HERO IMAGE: "The Resort Lifestyle"
   // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var stripe1CSS = `
     .sp-stripe-hero { position: relative; height: 65vh; overflow: hidden; }
@@ -42,7 +42,7 @@
       <div class="sp-hero-title">
         <div class="sp-eyebrow">
           <div class="sp-eyebrow-rule"></div>
-          <span class="sp-eyebrow-text">Sea Pines Resort &nbsp;Â·&nbsp; Hilton Head Island</span>
+          <span class="sp-eyebrow-text">Sea Pines Resort &nbsp;Â\u00B7&nbsp; Hilton Head Island</span>
           <div class="sp-eyebrow-rule"></div>
         </div>
         <p class="sp-t-the">The</p>
@@ -57,7 +57,7 @@
   `;
 
   // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  // STRIPE 2 â CHARLES FRASER: Editorial Text Band
+  // STRIPE 2 \u2014 CHARLES FRASER: Editorial Text Band
   // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var stripe2CSS = `
     .sp-stripe-text { background: #ffffff; padding: 100px 40px; text-align: center; }
@@ -83,15 +83,15 @@
       <div class="sp-stripe-text-inner">
         <div class="sp-text-eyebrow">
           <div class="sp-text-eyebrow-rule"></div>
-          Founded 1956 &nbsp;Â·&nbsp; A Vision Ahead of Its Time
+          Founded 1956 &nbsp;Â\u00B7&nbsp; A Vision Ahead of Its Time
           <div class="sp-text-eyebrow-rule"></div>
         </div>
         <h2 class="sp-text-section-title">Charles Fraser &amp; the<br><em>Birth of Sea Pines</em></h2>
-        <p class="sp-text-body">In 1956, a young Yale-educated attorney named Charles Fraser looked out over 5,000 acres of pristine Carolina Sea Islands barrier island and saw something extraordinary â not a resort to be imposed upon the land, but one designed to live in perfect harmony with it. His father had purchased the land, but it was Charles who transformed it into the world's first environmentally planned resort community.</p>
-        <p class="sp-text-body">Fraser balanced homes, golf courses, and gathering spaces with preserved tidal marshes, ancient live oaks, and the island's native ecosystem. He established a conservation foundation to safeguard Sea Pines' natural beauty well beyond his own lifetime â a foresight that, nearly seven decades later, is woven into the very character of Hilton Head Island itself.</p>
+        <p class="sp-text-body">In 1956, a young Yale-educated attorney named Charles Fraser looked out over 5,000 acres of pristine Carolina Sea Islands barrier island and saw something extraordinary \u2014 not a resort to be imposed upon the land, but one designed to live in perfect harmony with it. His father had purchased the land, but it was Charles who transformed it into the world's first environmentally planned resort community.</p>
+        <p class="sp-text-body">Fraser balanced homes, golf courses, and gathering spaces with preserved tidal marshes, ancient live oaks, and the island's native ecosystem. He established a conservation foundation to safeguard Sea Pines' natural beauty well beyond his own lifetime \u2014 a foresight that, nearly seven decades later, is woven into the very character of Hilton Head Island itself.</p>
         <div class="sp-text-pull-quote">
-          <p>"Hilton Head is the very first community in the United States to have been eco-planned. Charles Fraser was way ahead of his time â and his legacy stands to this day."</p>
-          <cite>â Talita, BHHP</cite>
+          <p>"Hilton Head is the very first community in the United States to have been eco-planned. Charles Fraser was way ahead of his time \u2014 and his legacy stands to this day."</p>
+          <cite>\u2014 Talita, BHHP</cite>
         </div>
         <a href="#" class="sp-text-cta">Explore Sea Pines &nbsp;â</a>
       </div>
@@ -99,7 +99,7 @@
   `;
 
   // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  // STRIPE 3 â TWO IMAGE PANELS: Marina + Pool
+  // STRIPE 3 \u2014 TWO IMAGE PANELS: Marina + Pool
   // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var stripe3CSS = `
     .sp-stripe-images { display: grid; grid-template-columns: 1fr 1fr; height: 54vh; }
@@ -139,7 +139,7 @@
   `;
 
   // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  // STRIPE 4 â GOLF COURSES: A Legacy Unmatched
+  // STRIPE 4 \u2014 GOLF COURSES: A Legacy Unmatched
   // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var golfCSS = `
     .sp-golf-section { background: #fff; }
@@ -192,11 +192,11 @@
       <div class="sp-golf-mag">
         <div class="sp-golf-mag-eyebrow">
           <div class="sp-golf-mag-eyebrow-rule"></div>
-          <p class="sp-golf-mag-eyebrow-text">Golf at Sea Pines &nbsp;Â·&nbsp; Three Championship Courses</p>
+          <p class="sp-golf-mag-eyebrow-text">Golf at Sea Pines &nbsp;Â\u00B7&nbsp; Three Championship Courses</p>
           <div class="sp-golf-mag-eyebrow-rule"></div>
         </div>
         <h2 class="sp-golf-mag-title">A Legacy<br><em>Unmatched</em></h2>
-        <p class="sp-golf-mag-subtitle">Three world-class courses, three distinct personalities â all within a private 5,000-acre address on Hilton Head Island.</p>
+        <p class="sp-golf-mag-subtitle">Three world-class courses, three distinct personalities \u2014 all within a private 5,000-acre address on Hilton Head Island.</p>
       </div>
       <div class="sp-golf-video-strip">
         <div class="sp-golf-video-grad-top"></div>
@@ -211,11 +211,11 @@
           <div class="sp-golf-hero-grad"></div>
           <div class="sp-golf-hero-content">
             <p class="sp-golf-hero-num">01</p>
-            <p class="sp-golf-hero-tag">Championship Play &nbsp;Â·&nbsp; PGA Tour Host</p>
+            <p class="sp-golf-hero-tag">Championship Play &nbsp;Â\u00B7&nbsp; PGA Tour Host</p>
             <h3 class="sp-golf-hero-name">Harbour Town<br><em>Golf Links</em></h3>
-            <p class="sp-golf-hero-designer">Pete Dye &nbsp;Â·&nbsp; Jack Nicklaus</p>
-            <p class="sp-golf-hero-desc">Host of the RBC Heritage every April. Ranked Top 100 in America by Golf Digest. The 18th hole â lighthouse over Calibogue Sound â is one of the most photographed finishing holes in golf.</p>
-            <span class="sp-golf-hero-badge">Top 100 Â· Golf Digest</span>
+            <p class="sp-golf-hero-designer">Pete Dye &nbsp;Â\u00B7&nbsp; Jack Nicklaus</p>
+            <p class="sp-golf-hero-desc">Host of the RBC Heritage every April. Ranked Top 100 in America by Golf Digest. The 18th hole \u2014 lighthouse over Calibogue Sound \u2014 is one of the most photographed finishing holes in golf.</p>
+            <span class="sp-golf-hero-badge">Top 100 Â\u00B7 Golf Digest</span>
             <span class="sp-golf-hero-badge">RBC Heritage Host</span>
           </div>
         </div>
@@ -226,7 +226,7 @@
             <p class="sp-golf-card-tag">Pete Dye Signature Design</p>
             <h3 class="sp-golf-card-name">Heron Point<br><em>by Pete Dye</em></h3>
             <p class="sp-golf-card-designer">Pete Dye Design</p>
-            <p class="sp-golf-card-desc">Weaving through tidal marshes and ancient live oaks â strategic shot-making over brute force. Stunning water views on nearly every hole.</p>
+            <p class="sp-golf-card-desc">Weaving through tidal marshes and ancient live oaks \u2014 strategic shot-making over brute force. Stunning water views on nearly every hole.</p>
             <span class="sp-golf-card-badge">Pete Dye Signature</span>
           </div>
           <div class="sp-golf-card">
@@ -245,7 +245,7 @@
   `;
 
   // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  // STRIPE 5 â GOLF LEARNING CENTER: Refine Your Game
+  // STRIPE 5 \u2014 GOLF LEARNING CENTER: Refine Your Game
   // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var glcCSS = `
     .sp-glc-section { background: #fff; }
@@ -289,22 +289,22 @@
       <div class="sp-glc-header">
         <div class="sp-glc-eyebrow">
           <div class="sp-glc-eyebrow-rule"></div>
-          <p class="sp-glc-eyebrow-text">Golf Learning Center &nbsp;Â·&nbsp; Sea Pines Resort</p>
+          <p class="sp-glc-eyebrow-text">Golf Learning Center &nbsp;Â\u00B7&nbsp; Sea Pines Resort</p>
           <div class="sp-glc-eyebrow-rule"></div>
         </div>
         <h2 class="sp-glc-title">Refine Your<br><em>Game.</em></h2>
-        <p class="sp-glc-subtitle">PGA &amp; LPGA certified instructors, TrackMan technology, and personalized programs for every level â all steps from the most storied courses in the South.</p>
+        <p class="sp-glc-subtitle">PGA &amp; LPGA certified instructors, TrackMan technology, and personalized programs for every level \u2014 all steps from the most storied courses in the South.</p>
       </div>
       <div class="sp-glc-grid">
         <div class="sp-glc-hero">
           <div class="sp-glc-hero-img"></div>
           <div class="sp-glc-hero-scrim"></div>
           <div class="sp-glc-hero-content">
-            <p class="sp-glc-hero-label">Golf Learning Center &nbsp;Â·&nbsp; Hilton Head Island</p>
+            <p class="sp-glc-hero-label">Golf Learning Center &nbsp;Â\u00B7&nbsp; Hilton Head Island</p>
             <h3 class="sp-glc-hero-name">World-Class<br><em>Instruction</em></h3>
-            <p class="sp-glc-hero-desc">PGA &amp; LPGA certified professionals, decades of combined experience, and the latest launch monitor technology â all tailored to your game.</p>
+            <p class="sp-glc-hero-desc">PGA &amp; LPGA certified professionals, decades of combined experience, and the latest launch monitor technology \u2014 all tailored to your game.</p>
             <span class="sp-glc-hero-chip">Golf Digest Editors' Choice</span>
-            <span class="sp-glc-hero-chip">No. 5 Golf Resort Â· Golf Inc</span>
+            <span class="sp-glc-hero-chip">No. 5 Golf Resort Â\u00B7 Golf Inc</span>
           </div>
         </div>
         <div class="sp-glc-stack">
@@ -314,23 +314,23 @@
             <div class="sp-glc-card-content">
               <p class="sp-glc-card-tag">One-on-One Coaching</p>
               <h4 class="sp-glc-card-name">Private <em>Instruction</em></h4>
-              <p class="sp-glc-card-sub">PGA Â· LPGA Certified Staff</p>
+              <p class="sp-glc-card-sub">PGA Â\u00B7 LPGA Certified Staff</p>
             </div>
           </div>
           <div class="sp-glc-card">
             <div class="sp-glc-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/image_grid/public/2022-03/julie-cole.jpg'); background-position:center 30%;"></div>
             <div class="sp-glc-card-scrim"></div>
             <div class="sp-glc-card-content">
-              <p class="sp-glc-card-tag">Group Clinics Â· Golf Schools</p>
+              <p class="sp-glc-card-tag">Group Clinics Â\u00B7 Golf Schools</p>
               <h4 class="sp-glc-card-name">Golf <em>Schools</em></h4>
-              <p class="sp-glc-card-sub">Women's Â· Adult Â· All Levels</p>
+              <p class="sp-glc-card-sub">Women's Â\u00B7 Adult Â\u00B7 All Levels</p>
             </div>
           </div>
           <div class="sp-glc-card">
             <div class="sp-glc-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/image_grid/public/2022-03/tim-cooke.jpg'); background-position:center 35%;"></div>
             <div class="sp-glc-card-scrim"></div>
             <div class="sp-glc-card-content">
-              <p class="sp-glc-card-tag">Launch Monitor Â· Precision Analysis</p>
+              <p class="sp-glc-card-tag">Launch Monitor Â\u00B7 Precision Analysis</p>
               <h4 class="sp-glc-card-name">Club <em>Fitting</em></h4>
               <p class="sp-glc-card-sub">TPI-Certified Staff</p>
             </div>
