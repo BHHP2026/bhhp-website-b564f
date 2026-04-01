@@ -120,7 +120,7 @@
   var stripe3HTML = `
     <div class="sp-stripe-images">
       <div class="sp-img-panel">
-        <div class="sp-img-bg" style="background-image:url('/marina-aerial.jpg'); background-position:center 30%;"></div>
+        <div class="sp-img-bg" style="background-image:url('/sea_pines_harbour_town%20marina.jpg'); background-position:center 30%;"></div>
         <div class="sp-img-grad"></div>
         <div class="sp-caption">
           <div class="sp-cap-eyebrow">Harbour Town Marina</div>
@@ -128,7 +128,7 @@
         </div>
       </div>
       <div class="sp-img-panel">
-        <div class="sp-img-bg" style="background-image:url('/pool-riviera.jpg'); background-position:center 55%;"></div>
+        <div class="sp-img-bg" style="background-image:url('/Riviera%20pool%20side.jpg'); background-position:center 55%;"></div>
         <div class="sp-img-grad"></div>
         <div class="sp-caption">
           <div class="sp-cap-eyebrow">Sea Pines Resort</div>
