@@ -365,4 +365,140 @@
     injectWidgets();
   }
 
+
+
+// ═══════════════════════════════════════════════════════════
+// HARBOUR TOWN: cinematic full-bleed override
+// ═══════════════════════════════════════════════════════════
+(function() {
+  if (!window.location.pathname.match(/\/sea-pines(\/|$)/)) return;
+
+  function applyHarbourTownCinematic() {
+    var fs = document.querySelector('.feature-section');
+    if (!fs) return;
+    // Confirm it's the Harbour Town one
+    var title = fs.querySelector('h2.section-title');
+    if (!title || !title.textContent.includes('Harbour Town')) return;
+
+    var styleEl = document.getElementById('sp-ht-cinematic-css');
+    if (!styleEl) {
+      styleEl = document.createElement('style');
+      styleEl.id = 'sp-ht-cinematic-css';
+      styleEl.textContent = `
+        .feature-section {
+          position: relative !important;
+          height: 80vh !important;
+          min-height: 540px !important;
+          max-height: 720px !important;
+          overflow: hidden !important;
+          background: #0a1220 !important;
+          display: block !important;
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+        .feature-section::before {
+          content: '' !important;
+          position: absolute !important;
+          inset: 0 !important;
+          background-image: url('/Harbour%20town%20night%20time.jpg') !important;
+          background-size: cover !important;
+          background-position: center 45% !important;
+          z-index: 0 !important;
+        }
+        .feature-section::after {
+          content: '' !important;
+          position: absolute !important;
+          inset: 0 !important;
+          background: linear-gradient(
+            100deg,
+            rgba(8,14,28,0.04) 0%,
+            rgba(8,14,28,0.08) 28%,
+            rgba(8,14,28,0.68) 55%,
+            rgba(8,14,28,0.92) 100%
+          ) !important;
+          z-index: 1 !important;
+        }
+        .feature-inner {
+          position: absolute !important;
+          inset: 0 !important;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: flex-end !important;
+          z-index: 2 !important;
+          padding: 0 !important;
+        }
+        .feature-img-col { display: none !important; }
+        .feature-inner > div:last-child {
+          width: 44% !important;
+          padding: 0 6% 0 0 !important;
+          color: #fff !important;
+        }
+        .section-eyebrow {
+          font-family: 'Montserrat', sans-serif !important;
+          font-size: 9.5px !important;
+          font-weight: 600 !important;
+          letter-spacing: 4px !important;
+          text-transform: uppercase !important;
+          color: #0ABAB5 !important;
+          margin-bottom: 22px !important;
+          display: flex !important;
+          align-items: center !important;
+          gap: 12px !important;
+        }
+        .section-eyebrow::before {
+          content: '' !important;
+          display: inline-block !important;
+          width: 28px !important;
+          height: 1px !important;
+          background: #0ABAB5 !important;
+          flex-shrink: 0 !important;
+        }
+        .feature-section h2.section-title {
+          font-family: 'Playfair Display', Georgia, serif !important;
+          font-size: clamp(2.2rem, 3vw, 3.2rem) !important;
+          font-weight: 400 !important;
+          color: #fff !important;
+          line-height: 1.1 !important;
+          margin: 0 0 24px 0 !important;
+          letter-spacing: -0.5px !important;
+        }
+        .feature-section h2.section-title em {
+          font-style: italic !important;
+          color: #0ABAB5 !important;
+        }
+        .feature-section .section-body {
+          font-family: 'Montserrat', sans-serif !important;
+          font-size: 14.5px !important;
+          line-height: 1.78 !important;
+          color: rgba(255,255,255,0.80) !important;
+          max-width: 400px !important;
+          margin: 0 0 38px 0 !important;
+        }
+        .feature-section ul, .feature-section li { display: none !important; }
+        .feature-section .section-cta {
+          display: inline-block !important;
+          font-family: 'Montserrat', sans-serif !important;
+          font-size: 9.5px !important;
+          font-weight: 700 !important;
+          letter-spacing: 3px !important;
+          text-transform: uppercase !important;
+          color: #fff !important;
+          border: 1px solid rgba(255,255,255,0.45) !important;
+          padding: 14px 28px !important;
+          text-decoration: none !important;
+        }
+      `;
+      document.head.appendChild(styleEl);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyHarbourTownCinematic);
+  } else {
+    applyHarbourTownCinematic();
+  }
+  // Also try after a short delay for late-rendering CMS content
+  setTimeout(applyHarbourTownCinematic, 800);
+})();
+
 })();
