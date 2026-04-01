@@ -195,7 +195,7 @@
           <p class="sp-golf-mag-eyebrow-text">Golf at Sea Pines &nbsp;Â\u00B7&nbsp; Three Championship Courses</p>
           <div class="sp-golf-mag-eyebrow-rule"></div>
         </div>
-        <h2 class="sp-golf-mag-title">A Legacy<br><em>Unmatched</em></h2>
+        <h2 class="sp-golf-mag-title">A Legacy<br><em style="color:#0ABAB5">Unmatched</em></h2>
         <p class="sp-golf-mag-subtitle">Three world-class courses, three distinct personalities \u2014 all within a private 5,000-acre address on Hilton Head Island.</p>
       </div>
       <div class="sp-golf-video-strip">
@@ -292,7 +292,7 @@
           <p class="sp-glc-eyebrow-text">Golf Learning Center &nbsp;Â\u00B7&nbsp; Sea Pines Resort</p>
           <div class="sp-glc-eyebrow-rule"></div>
         </div>
-        <h2 class="sp-glc-title">Refine Your<br><em>Game.</em></h2>
+        <h2 class="sp-glc-title">Refine Your<br><em style="color:#0ABAB5">Game.</em></h2>
         <p class="sp-glc-subtitle">PGA &amp; LPGA certified instructors, TrackMan technology, and personalized programs for every level \u2014 all steps from the most storied courses in the South.</p>
       </div>
       <div class="sp-glc-grid">
