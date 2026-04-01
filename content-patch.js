@@ -721,3 +721,24 @@
 (function(){function f(){var c=document.querySelector('.nav-link--contact');if(c&&!c._cp){c._cp=true;c.href='/contact.html';c.addEventListener('click',function(e){e.preventDefault();window.location.href='/contact.html';});}}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',f);}else{f();}setTimeout(f,800);})();
 // Link Contact nav item to contact page
 (function(){var c=document.querySelector('.nav-link--contact');if(c)c.href='/contact.html';})();
+
+
+// ═══════════════════════════════════════════════════════
+// SEA PINES — Remove default CMS sections replaced by widgets
+// ═══════════════════════════════════════════════════════
+(function () {
+  if (!window.location.pathname.match(/\/sea-pines(\/|$)/)) return;
+  function removeSections() {
+    var aboutSection = document.querySelector('.about-section');
+    if (aboutSection) aboutSection.remove();
+    var golfSection = document.querySelector('.golf-section');
+    if (golfSection) golfSection.remove();
+    var lifestyleSection = document.querySelector('.lifestyle-section');
+    if (lifestyleSection) lifestyleSection.remove();
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', removeSections);
+  } else {
+    removeSections();
+  }
+})();
