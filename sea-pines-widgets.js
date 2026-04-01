@@ -156,7 +156,7 @@
     .sp-golf-video-grad-bot { position: absolute; bottom: 0; left: 0; right: 0; height: 80px; background: linear-gradient(to top, #fff 0%, transparent 100%); z-index: 2; }
     .sp-golf-mag-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 4px; min-height: 560px; margin-top: 4px; }
     .sp-golf-hero { position: relative; overflow: hidden; background: #0a1628; }
-    .sp-golf-hero-img { position: absolute; inset: 0; background-image: url('/harbour-town-golf.webp'); background-size: cover; background-position: center 35%; }
+    .sp-golf-hero-img { position: absolute; inset: 0; background-image: url('/Sea%20Pines%20Lighthouse%20Golf'); background-size: cover; background-position: center 35%; }
     .sp-golf-hero-grad { position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,14,28,0.95) 0%, rgba(8,14,28,0.45) 45%, rgba(8,14,28,0.1) 100%); }
     .sp-golf-hero-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 40px 44px; }
     .sp-golf-hero-num { font-family: 'Playfair Display', Georgia, serif; font-size: 72px; font-weight: 400; color: rgba(212,175,55,0.2); line-height: 1; margin: 0 0 4px; }
