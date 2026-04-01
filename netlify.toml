@@ -1,12 +1,12 @@
-# âââââââââââââââââââââââââââââââââââââââââââââââââ
-# Best Hilton Head Properties â Netlify Configuration
+# ═══════════════════════════════════════════════
+# Best Hilton Head Properties — Netlify Configuration
 # besthiltonheadproperties.com
-# âââââââââââââââââââââââââââââââââââââââââââââââââ
+# ═══════════════════════════════════════════════
 
 [build]
   publish = "."
 
-# ââ Force HTTPS & strip www ââ
+# ── Force HTTPS & strip www ──
 [[redirects]]
   from = "http://besthiltonheadproperties.com/*"
   to = "https://besthiltonheadproperties.com/:splat"
@@ -19,7 +19,7 @@
   status = 301
   force = true
 
-# ââ Security Headers ââ
+# ── Security Headers ──
 [[headers]]
   for = "/*"
   [headers.values]
@@ -29,27 +29,27 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://besthiltonheadproperties.com https://*.besthiltonheadproperties.com; media-src 'self'; frame-src https://www.youtube.com https://youtube.com; frame-ancestors 'none';"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://besthiltonheadproperties.com https://*.besthiltonheadproperties.com https://www.seapines.com https://images.unsplash.com; media-src 'self'; frame-src https://www.youtube.com https://youtube.com; frame-ancestors 'none';"
 
-# ââ Cache videos for 1 year (immutable) ââ
+# ── Cache videos for 1 year (immutable) ──
 [[headers]]
   for = "/*.mp4"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# ââ Cache JS patches for 1 hour (allow quick updates) ââ
+# ── Cache JS patches for 1 hour (allow quick updates) ──
 [[headers]]
   for = "/*.js"
   [headers.values]
     Cache-Control = "public, max-age=3600, must-revalidate"
 
-# ââ Always revalidate HTML so updates go live instantly ââ
+# ── Always revalidate HTML so updates go live instantly ──
 [[headers]]
   for = "/*.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
-# âââ Script Injection: all pages âââââââââââââââââââââââââââââââââââââââââââââ
+# ─── Script Injection: all pages ─────────────────────────────────────────────
 # Load order: content-patch first (fixes text), then widgets, then footer last
 
 
@@ -58,22 +58,22 @@
   location = "head"
   html = "<style>.hero-headline em,[class*='hero'] h1 em,[class*='hero'] h2 em,.hero em,#hero em,.hero-sub{visibility:hidden}</style>"
 
-# 1. Global content patch â Lowcountry â Carolina Sea Islands rebrand
+# 1. Global content patch — Lowcountry → Carolina Sea Islands rebrand
 [[snippets]]
   location = "body"
   html = "<script src='/content-patch.js' defer></script>"
 
-# 2. Editorial Widget â Your Bluffton Home Search article carousel
+# 2. Editorial Widget — Your Bluffton Home Search article carousel
 [[snippets]]
   location = "body"
   html = "<script src='/editorial-widget.js' defer></script>"
 
-# 3. Editorial Intro Widget â The Resort Editorial promo after New Construction
+# 3. Editorial Intro Widget — The Resort Editorial promo after New Construction
 [[snippets]]
   location = "body"
   html = "<script src='/editorial-intro-widget.js' defer></script>"
 
-# 4. Discover Bluffton Widget â cinematic video CTA before article carousel
+# 4. Discover Bluffton Widget — cinematic video CTA before article carousel
 [[snippets]]
   location = "body"
   html = "<script src='/discover-bluffton-widget.js' defer></script>"
@@ -83,7 +83,12 @@
   location = "body"
   html = "<script src='/ourstory-serhant-video.js' defer></script>"
 
-# 6. Footer Compliance Patch â legal disclaimers & grammar fix
+# 6. Footer Compliance Patch — legal disclaimers & grammar fix
 [[snippets]]
   location = "body"
   html = "<script src='/footer-patch.js' defer></script>"
+
+# 7. Sea Pines Widgets — Resort Lifestyle, Charles Fraser, Marina+Pool, Golf, GLC
+[[snippets]]
+  location = "body"
+  html = "<script src='/sea-pines-widgets.js' defer></script>"
