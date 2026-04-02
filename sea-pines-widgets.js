@@ -1,7 +1,7 @@
 (function(){
   if (!window.location.pathname.match(/\/sea-pines(\/|$)/)) return;
 
-  // ââ Fonts âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // ── Fonts ─────────────────────────────────────────────────────────────────
   if (!document.getElementById('sp-widget-fonts')) {
     var link = document.createElement('link');
     link.id = 'sp-widget-fonts';
@@ -10,9 +10,9 @@
     document.head.appendChild(link);
   }
 
-  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  // STRIPE 1 \u2014 HERO IMAGE: "The Resort Lifestylee"
-  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // ══════════════════════════════════════════════════════════════════════════
+  // STRIPE 1 — HERO IMAGE: "The Resort Lifestyle"
+  // ══════════════════════════════════════════════════════════════════════════
   var stripe1CSS = `
     .sp-stripe-hero { position: relative; height: 65vh; overflow: hidden; }
     .sp-stripe-hero .sp-bg { position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=2000&q=90') center 40% / cover no-repeat; z-index: 0; }
@@ -42,7 +42,7 @@
       <div class="sp-hero-title">
         <div class="sp-eyebrow">
           <div class="sp-eyebrow-rule"></div>
-          <span class="sp-eyebrow-text">Sea Pines Resort &nbsp;Â\u00B7&nbsp; Hilton Head Island</span>
+          <span class="sp-eyebrow-text">Sea Pines Resort &nbsp;·&nbsp; Hilton Head Island</span>
           <div class="sp-eyebrow-rule"></div>
         </div>
         <p class="sp-t-the">The</p>
@@ -56,9 +56,9 @@
     </div>
   `;
 
-  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  // STRIPE 2 \u2014 CHARLES FRASER: Editorial Text Band
-  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // ══════════════════════════════════════════════════════════════════════════
+  // STRIPE 2 — CHARLES FRASER: Editorial Text Band
+  // ══════════════════════════════════════════════════════════════════════════
   var stripe2CSS = `
     .sp-stripe-text { background: #ffffff; padding: 100px 40px; text-align: center; }
     .sp-stripe-text-inner { max-width: 820px; margin: 0 auto; }
@@ -83,24 +83,24 @@
       <div class="sp-stripe-text-inner">
         <div class="sp-text-eyebrow">
           <div class="sp-text-eyebrow-rule"></div>
-          Founded 1956 &nbsp;Â\u00B7&nbsp; A Vision Ahead of Its Time
+          Founded 1956 &nbsp;·&nbsp; A Vision Ahead of Its Time
           <div class="sp-text-eyebrow-rule"></div>
         </div>
         <h2 class="sp-text-section-title">Charles Fraser &amp; the<br><em>Birth of Sea Pines</em></h2>
-        <p class="sp-text-body">In 1956, a young Yale-educated attorney named Charles Fraser looked out over 5,000 acres of pristine Carolina Sea Islands barrier island and saw something extraordinary \u2014 not a resort to be imposed upon the land, but one designed to live in perfect harmony with it. His father had purchased the land, but it was Charles who transformed it into the world's first environmentally planned resort community.</p>
-        <p class="sp-text-body">Fraser balanced homes, golf courses, and gathering spaces with preserved tidal marshes, ancient live oaks, and the island's native ecosystem. He established a conservation foundation to safeguard Sea Pines' natural beauty well beyond his own lifetime \u2014 a foresight that, nearly seven decades later, is woven into the very character of Hilton Head Island itself.</p>
+        <p class="sp-text-body">In 1956, a young Yale-educated attorney named Charles Fraser looked out over 5,000 acres of pristine Carolina Sea Islands barrier island and saw something extraordinary — not a resort to be imposed upon the land, but one designed to live in perfect harmony with it. His father had purchased the land, but it was Charles who transformed it into the world's first environmentally planned resort community.</p>
+        <p class="sp-text-body">Fraser balanced homes, golf courses, and gathering spaces with preserved tidal marshes, ancient live oaks, and the island's native ecosystem. He established a conservation foundation to safeguard Sea Pines' natural beauty well beyond his own lifetime — a foresight that, nearly seven decades later, is woven into the very character of Hilton Head Island itself.</p>
         <div class="sp-text-pull-quote">
-          <p>"Hilton Head is the very first community in the United States to have been eco-planned. Charles Fraser was way ahead of his time \u2014 and his legacy stands to this day."</p>
-          <cite>\u2014 Talita, BHHP</cite>
+          <p>"Hilton Head is the very first community in the United States to have been eco-planned. Charles Fraser was way ahead of his time — and his legacy stands to this day."</p>
+          <cite>— Talita, BHHP</cite>
         </div>
-        <a href="#" class="sp-text-cta">Explore Sea Pines &nbsp;â</a>
+        <a href="#" class="sp-text-cta">Explore Sea Pines &nbsp;→</a>
       </div>
     </div>
   `;
 
-  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  // STRIPE 3 \u2014 TWO IMAGE PANELS: Marina + Pool
-  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // ══════════════════════════════════════════════════════════════════════════
+  // STRIPE 3 — TWO IMAGE PANELS: Marina + Pool
+  // ══════════════════════════════════════════════════════════════════════════
   var stripe3CSS = `
     .sp-stripe-images { display: grid; grid-template-columns: 1fr 1fr; height: 54vh; }
     .sp-img-panel { position: relative; overflow: hidden; }
@@ -120,7 +120,7 @@
   var stripe3HTML = `
     <div class="sp-stripe-images">
       <div class="sp-img-panel">
-        <div class="sp-img-bg" style="background-image:url('/sea_pines_harbour_town%20marina.jpg'); background-position:center 30%;"></div>
+        <div class="sp-img-bg" style="background-image:url('/marina-aerial.jpg'); background-position:center 30%;"></div>
         <div class="sp-img-grad"></div>
         <div class="sp-caption">
           <div class="sp-cap-eyebrow">Harbour Town Marina</div>
@@ -128,7 +128,7 @@
         </div>
       </div>
       <div class="sp-img-panel">
-        <div class="sp-img-bg" style="background-image:url('/Riviera%20pool%20side.jpg'); background-position:center 55%;"></div>
+        <div class="sp-img-bg" style="background-image:url('/pool-riviera.jpg'); background-position:center 55%;"></div>
         <div class="sp-img-grad"></div>
         <div class="sp-caption">
           <div class="sp-cap-eyebrow">Sea Pines Resort</div>
@@ -138,9 +138,9 @@
     </div>
   `;
 
-  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  // STRIPE 4 \u2014 GOLF COURSES: A Legacy Unmatched
-  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // ══════════════════════════════════════════════════════════════════════════
+  // STRIPE 4 — GOLF COURSES: A Legacy Unmatched
+  // ══════════════════════════════════════════════════════════════════════════
   var golfCSS = `
     .sp-golf-section { background: #fff; }
     .sp-golf-mag { max-width: 1400px; margin: 0 auto; padding: 80px 40px 0; }
@@ -156,10 +156,10 @@
     .sp-golf-video-grad-bot { position: absolute; bottom: 0; left: 0; right: 0; height: 80px; background: linear-gradient(to top, #fff 0%, transparent 100%); z-index: 2; }
     .sp-golf-mag-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 4px; min-height: 560px; margin-top: 4px; }
     .sp-golf-hero { position: relative; overflow: hidden; background: #0a1628; }
-    .sp-golf-hero-img { position: absolute; inset: 0; background-image: url('/Sea%20Pines%20Lighthouse%20Golf'); background-size: cover; background-position: center 35%; }
+    .sp-golf-hero-img { position: absolute; inset: 0; background-image: url('https://www.seapines.com/sites/default/files/styles/hero_desktop/public/media/images/harbour-town-golf-links-aerial-hole-18.jpg'); background-size: cover; background-position: center 35%; }
     .sp-golf-hero-grad { position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,14,28,0.95) 0%, rgba(8,14,28,0.45) 45%, rgba(8,14,28,0.1) 100%); }
     .sp-golf-hero-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 40px 44px; }
-    .sp-golf-hero-num { font-family: 'Playfair Display', Georgia, serif; font-size: 72px; font-weight: 400; color: rgba(212,175,55,0.2); line-height: 1; margin: 0 0 4px; }
+    .sp-golf-hero-num { font-family: 'Playfair Display', Georgia, serif; font-size: 72px; font-weight: 400; color: rgba(212,177�55,0.2); line-height: 1; margin: 0 0 4px; }
     .sp-golf-hero-tag { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; color: rgb(212,175,55); text-transform: uppercase; font-weight: 600; margin: 0 0 10px; }
     .sp-golf-hero-name { font-family: 'Playfair Display', Georgia, serif; font-size: 34px; font-weight: 400; color: #fff; margin: 0 0 8px; line-height: 1.15; }
     .sp-golf-hero-name em { font-style: italic; }
@@ -178,7 +178,7 @@
     .sp-golf-card-designer { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 2px; color: rgba(255,255,255,0.35); text-transform: uppercase; margin: 0 0 12px; }
     .sp-golf-card-desc { font-family: Georgia, serif; font-size: 12.5px; color: rgba(255,255,255,0.6); line-height: 1.7; margin: 0 0 14px; }
     .sp-golf-card-badge { font-family: 'Montserrat', sans-serif; font-size: 7.5px; letter-spacing: 2px; color: rgb(212,175,55); text-transform: uppercase; }
-    .sp-golf-card-badge::before { content: 'â  '; }
+    .sp-golf-card-badge::before { content: '★  '; }
     .sp-golf-bottom-pad { height: 80px; background: #fff; }
     @media (max-width: 768px) {
       .sp-golf-mag-grid { grid-template-columns: 1fr; }
@@ -192,11 +192,11 @@
       <div class="sp-golf-mag">
         <div class="sp-golf-mag-eyebrow">
           <div class="sp-golf-mag-eyebrow-rule"></div>
-          <p class="sp-golf-mag-eyebrow-text">Golf at Sea Pines &nbsp;Â\u00B7&nbsp; Three Championship Courses</p>
+          <p class="sp-golf-mag-eyebrow-text">Golf at Sea Pines &nbsp;·&nbsp; Three Championship Courses</p>
           <div class="sp-golf-mag-eyebrow-rule"></div>
         </div>
-        <h2 class="sp-golf-mag-title">A Legacy<br><em style="color:#0ABAB5">Unmatched</em></h2>
-        <p class="sp-golf-mag-subtitle">Three world-class courses, three distinct personalities \u2014 all within a private 5,000-acre address on Hilton Head Island.</p>
+        <h2 class="sp-golf-mag-title">A Legacy<br><em>Unmatched</em></h2>
+        <p class="sp-golf-mag-subtitle">Three world-class courses, three distinct personalities — all within a private 5,000-acre address on Hilton Head Island.</p>
       </div>
       <div class="sp-golf-video-strip">
         <div class="sp-golf-video-grad-top"></div>
@@ -211,11 +211,11 @@
           <div class="sp-golf-hero-grad"></div>
           <div class="sp-golf-hero-content">
             <p class="sp-golf-hero-num">01</p>
-            <p class="sp-golf-hero-tag">Championship Play &nbsp;Â\u00B7&nbsp; PGA Tour Host</p>
+            <p class="sp-golf-hero-tag">Championship Play &nbsp;·&nbsp; PGA Tour Host</p>
             <h3 class="sp-golf-hero-name">Harbour Town<br><em>Golf Links</em></h3>
-            <p class="sp-golf-hero-designer">Pete Dye &nbsp;Â\u00B7&nbsp; Jack Nicklaus</p>
-            <p class="sp-golf-hero-desc">Host of the RBC Heritage every April. Ranked Top 100 in America by Golf Digest. The 18th hole \u2014 lighthouse over Calibogue Sound \u2014 is one of the most photographed finishing holes in golf.</p>
-            <span class="sp-golf-hero-badge">Top 100 Â\u00B7 Golf Digest</span>
+            <p class="sp-golf-hero-designer">Pete Dye &nbsp;·&nbsp; Jack Nicklaus</p>
+            <p class="sp-golf-hero-desc">Host of the RBC Heritage every April. Ranked Top 100 in America by Golf Digest. The 18th hole — lighthouse over Calibogue Sound — is one of the most photographed finishing holes in golf.</p>
+            <span class="sp-golf-hero-badge">Top 100 · Golf Digest</span>
             <span class="sp-golf-hero-badge">RBC Heritage Host</span>
           </div>
         </div>
@@ -226,7 +226,7 @@
             <p class="sp-golf-card-tag">Pete Dye Signature Design</p>
             <h3 class="sp-golf-card-name">Heron Point<br><em>by Pete Dye</em></h3>
             <p class="sp-golf-card-designer">Pete Dye Design</p>
-            <p class="sp-golf-card-desc">Weaving through tidal marshes and ancient live oaks \u2014 strategic shot-making over brute force. Stunning water views on nearly every hole.</p>
+            <p class="sp-golf-card-desc">Weaving through tidal marshes and ancient live oaks — strategic shot-making over brute force. Stunning water views on nearly every hole.</p>
             <span class="sp-golf-card-badge">Pete Dye Signature</span>
           </div>
           <div class="sp-golf-card">
@@ -244,9 +244,9 @@
     </div>
   `;
 
-  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-  // STRIPE 5 \u2014 GOLF LEARNING CENTER: Refine Your Game
-  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // ══════════════════════════════════════════════════════════════════════════
+  // STRIPE 5 — GOLF LEARNING CENTER: Refine Your Game
+  // ══════════════════════════════════════════════════════════════════════════
   var glcCSS = `
     .sp-glc-section { background: #fff; }
     .sp-glc-header { max-width: 1400px; margin: 0 auto; padding: 80px 40px 52px; }
@@ -289,22 +289,22 @@
       <div class="sp-glc-header">
         <div class="sp-glc-eyebrow">
           <div class="sp-glc-eyebrow-rule"></div>
-          <p class="sp-glc-eyebrow-text">Golf Learning Center &nbsp;Â\u00B7&nbsp; Sea Pines Resort</p>
+          <p class="sp-glc-eyebrow-text">Golf Learning Center &nbsp;·&nbsp; Sea Pines Resort</p>
           <div class="sp-glc-eyebrow-rule"></div>
         </div>
-        <h2 class="sp-glc-title">Refine Your<br><em style="color:#0ABAB5">Game.</em></h2>
-        <p class="sp-glc-subtitle">PGA &amp; LPGA certified instructors, TrackMan technology, and personalized programs for every level \u2014 all steps from the most storied courses in the South.</p>
+        <h2 class="sp-glc-title">Refine Your<br><em>Game.</em></h2>
+        <p class="sp-glc-subtitle">PGA &amp; LPGA certified instructors, TrackMan technology, and personalized programs for every level — all steps from the most storied courses in the South.</p>
       </div>
       <div class="sp-glc-grid">
         <div class="sp-glc-hero">
           <div class="sp-glc-hero-img"></div>
           <div class="sp-glc-hero-scrim"></div>
           <div class="sp-glc-hero-content">
-            <p class="sp-glc-hero-label">Golf Learning Center &nbsp;Â\u00B7&nbsp; Hilton Head Island</p>
+            <p class="sp-glc-hero-label">Golf Learning Center &nbsp;·&nbsp; Hilton Head Island</p>
             <h3 class="sp-glc-hero-name">World-Class<br><em>Instruction</em></h3>
-            <p class="sp-glc-hero-desc">PGA &amp; LPGA certified professionals, decades of combined experience, and the latest launch monitor technology \u2014 all tailored to your game.</p>
+            <p class="sp-glc-hero-desc">PGA &amp; LPGA certified professionals, decades of combined experience, and the latest launch monitor technology — all tailored to your game.</p>
             <span class="sp-glc-hero-chip">Golf Digest Editors' Choice</span>
-            <span class="sp-glc-hero-chip">No. 5 Golf Resort Â\u00B7 Golf Inc</span>
+            <span class="sp-glc-hero-chip">No. 5 Golf Resort · Golf Inc</span>
           </div>
         </div>
         <div class="sp-glc-stack">
@@ -314,23 +314,23 @@
             <div class="sp-glc-card-content">
               <p class="sp-glc-card-tag">One-on-One Coaching</p>
               <h4 class="sp-glc-card-name">Private <em>Instruction</em></h4>
-              <p class="sp-glc-card-sub">PGA Â\u00B7 LPGA Certified Staff</p>
+              <p class="sp-glc-card-sub">PGA · LPGA Certified Staff</p>
             </div>
           </div>
           <div class="sp-glc-card">
             <div class="sp-glc-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/image_grid/public/2022-03/julie-cole.jpg'); background-position:center 30%;"></div>
             <div class="sp-glc-card-scrim"></div>
             <div class="sp-glc-card-content">
-              <p class="sp-glc-card-tag">Group Clinics Â\u00B7 Golf Schools</p>
+              <p class="sp-glc-card-tag">Group Clinics · Golf Schools</p>
               <h4 class="sp-glc-card-name">Golf <em>Schools</em></h4>
-              <p class="sp-glc-card-sub">Women's Â\u00B7 Adult Â\u00B7 All Levels</p>
+              <p class="sp-glc-card-sub">Women's · Adult · All Levels</p>
             </div>
           </div>
           <div class="sp-glc-card">
             <div class="sp-glc-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/image_grid/public/2022-03/tim-cooke.jpg'); background-position:center 35%;"></div>
             <div class="sp-glc-card-scrim"></div>
             <div class="sp-glc-card-content">
-              <p class="sp-glc-card-tag">Launch Monitor Â\u00B7 Precision Analysis</p>
+              <p class="sp-glc-card-tag">Launch Monitor · Precision Analysis</p>
               <h4 class="sp-glc-card-name">Club <em>Fitting</em></h4>
               <p class="sp-glc-card-sub">TPI-Certified Staff</p>
             </div>
@@ -341,43 +341,144 @@
     </div>
   `;
 
-
   // ══════════════════════════════════════════════════════════════════════════
   // WIDGET 6 — LOCATION & ACCESS: Full Bleed with Photo Cards
   // Injected after .culture-section ("A Life Beyond the Fairways")
   // ══════════════════════════════════════════════════════════════════════════
   var accessCSS = `
     .sp-access-section {
-      position: relative; overflow: hidden;
+      position: relative;
+      overflow: hidden;
       background:
         linear-gradient(135deg,
-          rgba(10,22,40,0.88) 0%, rgba(10,22,40,0.75) 30%,
-          rgba(14,31,62,0.7) 50%, rgba(10,22,40,0.8) 70%,
+          rgba(10,22,40,0.88) 0%,
+          rgba(10,22,40,0.75) 30%,
+          rgba(14,31,62,0.7) 50%,
+          rgba(10,22,40,0.8) 70%,
           rgba(10,22,40,0.92) 100%),
         url('https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=1400&q=80') center/cover no-repeat;
     }
-    .sp-access-inner { padding: 56px 48px 64px; position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; }
-    .sp-access-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #0ABAB5; font-weight: 500; text-align: center; margin-bottom: 10px; }
-    .sp-access-title { font-family: 'Bodoni Moda', Didot, 'Bodoni MT', serif; font-weight: 400; font-size: 40px; line-height: 1.08; color: #fff; text-align: center; margin-top: 8px; margin-bottom: 10px; }
+    .sp-access-inner {
+      padding: 56px 48px 64px;
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .sp-access-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #0ABAB5;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .sp-access-title {
+      font-family: 'Bodoni Moda', Didot, 'Bodoni MT', serif;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 1.08;
+      color: #fff;
+      text-align: center;
+      margin-top: 8px;
+      margin-bottom: 10px;
+    }
     .sp-access-title em { font-style: italic; color: #0ABAB5; }
-    .sp-access-tagline { font-size: 13px; color: rgba(255,255,255,0.6); text-align: center; letter-spacing: 0.5px; margin: 0 auto 44px; line-height: 1.6; max-width: 560px; }
-    .sp-access-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 3px; margin-bottom: 40px; }
-    .sp-access-card { background: rgba(10,22,40,0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.06); overflow: hidden; transition: all 0.3s ease; }
-    .sp-access-card:hover { background: rgba(10,22,40,0.85); border-color: rgba(10,186,181,0.3); }
-    .sp-access-card-photo { width: 100%; height: 120px; object-fit: cover; display: block; opacity: 0.8; transition: opacity 0.3s; }
+    .sp-access-tagline {
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      letter-spacing: 0.5px;
+      margin: 0 auto 44px;
+      line-height: 1.6;
+      max-width: 560px;
+    }
+    .sp-access-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3px;
+      margin-bottom: 40px;
+    }
+    .sp-access-card {
+      background: rgba(10,22,40,0.6);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.06);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .sp-access-card:hover {
+      background: rgba(10,22,40,0.85);
+      border-color: rgba(10,186,181,0.3);
+    }
+    .sp-access-card-photo {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      display: block;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
     .sp-access-card:hover .sp-access-card-photo { opacity: 1; }
     .sp-access-card-body { text-align: center; padding: 20px 14px 24px; }
-    .sp-access-card-distance { font-family: 'Bodoni Moda', Didot, 'Bodoni MT', serif; font-size: 34px; font-weight: 700; color: #fff; margin-bottom: 2px; }
-    .sp-access-card-unit { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: #0ABAB5; margin-bottom: 10px; font-weight: 500; }
-    .sp-access-card-name { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.9); margin-bottom: 4px; }
-    .sp-access-card-detail { font-size: 10px; color: rgba(255,255,255,0.5); line-height: 1.5; }
-    .sp-access-driving { display: flex; justify-content: center; gap: 48px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.08); }
+    .sp-access-card-distance {
+      font-family: 'Bodoni Moda', Didot, 'Bodoni MT', serif;
+      font-size: 34px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+    .sp-access-card-unit {
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #0ABAB5;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    .sp-access-card-name {
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 4px;
+    }
+    .sp-access-card-detail {
+      font-size: 10px;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.5;
+    }
+    .sp-access-driving {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
     .sp-access-driving-item { text-align: center; }
-    .sp-access-driving-city { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; color: rgba(255,255,255,0.7); }
-    .sp-access-driving-time { font-family: 'Bodoni Moda', Didot, 'Bodoni MT', serif; font-size: 18px; font-weight: 700; color: #fff; margin-top: 3px; }
-    .sp-access-driving-miles { font-size: 9px; color: rgba(255,255,255,0.4); margin-top: 1px; letter-spacing: 0.5px; }
+    .sp-access-driving-city {
+      font-size: 9px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: rgba(255,255,255,0.7);
+    }
+    .sp-access-driving-time {
+      font-family: 'Bodoni Moda', Didot, 'Bodoni MT', serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 3px;
+    }
+    .sp-access-driving-miles {
+      font-size: 9px;
+      color: rgba(255,255,255,0.4);
+      margin-top: 1px;
+      letter-spacing: 0.5px;
+    }
     @media (max-width: 768px) {
-      .sp-access-grid { grid-template-columns: repeat(2,1fr); }
+      .sp-access-grid { grid-template-columns: repeat(2, 1fr); }
       .sp-access-inner { padding: 40px 24px 48px; }
       .sp-access-driving { gap: 20px; flex-wrap: wrap; }
     }
@@ -389,9 +490,10 @@
         <div class="sp-access-eyebrow">Getting Here</div>
         <h2 class="sp-access-title">Location &amp; <em>Access</em></h2>
         <p class="sp-access-tagline">Sea Pines sits at the southern tip of Hilton Head Island — where the Atlantic meets Calibogue Sound.</p>
+
         <div class="sp-access-grid">
           <div class="sp-access-card">
-            <img class="sp-access-card-photo" src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=600&q=80" alt="Airplane at gate with sunset sky" referrerpolicy="no-referrer">
+            <img class="sp-access-card-photo" src="https:/images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=600&q=80" alt="Airplane at gate with sunset sky" referrerpolicy="no-referrer">
             <div class="sp-access-card-body">
               <div class="sp-access-card-distance">HHH</div>
               <div class="sp-access-card-unit">On Island</div>
@@ -405,14 +507,14 @@
               <div class="sp-access-card-distance">45</div>
               <div class="sp-access-card-unit">Minutes</div>
               <div class="sp-access-card-name">Savannah/Hilton Head Intl</div>
-              <div class="sp-access-card-detail">SAV — #1 rated U.S. airport, daily flights from all major hubs</div>
+              <div class="sp-access-card-detail">SAV ℔ #1 rated U.S. airport, daily flights from all major hubs</div>
             </div>
           </div>
           <div class="sp-access-card">
             <img class="sp-access-card-photo" src="/images/sea-pines/sp-sps-harbour.jpg" alt="Harbour Town Marina aerial view" referrerpolicy="no-referrer">
             <div class="sp-access-card-body">
               <div class="sp-access-card-distance">10</div>
-              <div class="sp-access-card-unit">Minutes</div>
+              <div class="sp-acce1ss-card-unit">Minutes</div>
               <div class="sp-access-card-name">Harbour Town Marina</div>
               <div class="sp-access-card-detail">Deep-water berths, dining, shops &amp; the iconic lighthouse</div>
             </div>
@@ -427,6 +529,7 @@
             </div>
           </div>
         </div>
+
         <div class="sp-access-driving">
           <div class="sp-access-driving-item">
             <div class="sp-access-driving-city">Atlanta</div>
@@ -458,20 +561,125 @@
     </section>
   `;
 
+  // ── RESIDENCES WIDGET CSS ──────────────────────────────────────────────────
+  var residencesCSS = `
+    #sp-residences-widget { background: #fff; }
+    .sp-res-section { max-width: 1200px; margin: 0 auto; padding: 56px 40px 60px; background: #fff; }
+    .sp-res-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #0ABAB5; font-weight: 500; margin-bottom: 8px; }
+    .sp-res-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; padding-bottom: 20px; border-bottom: 1px solid rgba(129,216,208,0.2); margin-top: 8px; }
+    .sp-res-title { font-family: 'Bodoni Moda', Didot, serif; font-size: 38px; font-weight: 400; line-height: 1.1; color: #111; margin: 0; }
+    .sp-res-desc { font-family: 'Montserrat', sans-serif; font-size: 13px; color: #555; line-height: 1.7; text-align: right; margin: 0; }
+    .sp-res-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 280px 280px; gap: 3px; }
+    .sp-res-card { position: relative; overflow: hidden; cursor: pointer; }
+    .sp-res-card:first-child { grid-row: 1 / 3; }
+    .sp-res-card-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 0.6s ease; }
+    .sp-res-card:hover .sp-res-card-bg { transform: scale(1.04); }
+    .sp-res-card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.05) 100%); }
+    .sp-res-card-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px; }
+    .sp-res-card-type { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #0ABAB5; font-weight: 500; display: block; margin-bottom: 6px; }
+    .sp-res-card-name { font-family: 'Bodoni Moda', Didot, serif; font-size: 20px; font-style: italic; color: white; margin: 0 0 6px; }
+    .sp-res-card:first-child .sp-res-card-name { font-size: 28px; }
+    .sp-res-card-price { font-family: 'Montserrat', sans-serif; font-size: 12px; color: rgba(255,255,255,0.85); margin: 0 0 4px; font-weight: 500; }
+    .sp-res-card-count { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 2px; color: #0ABAB5; margin: 0; text-transform: uppercase; }
+    .sp-res-cta { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; color: #0A1628; border: 1px solid #0A1628; padding: 14px 40px; text-decoration: none; display: inline-block; transition: all 0.3s ease; }
+    .sp-res-cta:hover { background: #0A1628; color: #fff; }
+  `;
+
+  var residencesHTML = `
+    <div class="sp-res-section">
+      <p class="sp-res-eyebrow">— SEA PINES REAL ESTATE</p>
+      <div class="sp-res-header">
+        <div>
+          <h2 class="sp-res-title">The <em>Residences</em></h2>
+        </div>
+        <p class="sp-res-desc">From oceanfront estates to marina<br>villas — find the Sea Pines address that<br>fits your life.</p>
+      </div>
+      <div class="sp-res-grid">
+        <div class="sp-res-card">
+          <div class="sp-res-card-bg" style="background-image:url('/images/sea-pines/Sea%20Pines%20ocean%20front%20estate.png')"></div>
+          <div class="sp-res-card-overlay"></div>
+          <div class="sp-res-card-content">
+            <span class="sp-res-card-type">PREMIER COLLECTION</span>
+            <h3 class="sp-res-card-name">Oceanfront Estates</h3>
+            <p class="sp-res-card-price">$5M — $10M+</p>
+            <p class="sp-res-card-count">✦ 8 AVAILABLE</p>
+          </div>
+        </div>
+        <div class="sp-res-card">
+          <div class="sp-res-card-bg" style="background-image:url('/images/sea-pines/Sea%20Pines%20Fairytale%20Home.png')"></div>
+          <div class="sp-res-card-overlay"></div>
+          <div class="sp-res-card-content">
+            <span class="sp-res-card-type">GOLF COURSE</span>
+            <h3 class="sp-res-card-name">Fairway Homes</h3>
+            <p class="sp-res-card-price">$1.2M — $3M</p>
+            <p class="sp-res-card-count">✦ 12 AVAILABLE</p>
+          </div>
+        </div>
+        <div class="sp-res-card">
+          <div class="sp-res-card-bg" style="background-image:url('/images/sea-pines/Sea%20Pines-Marina%20Homes.jpg')"></div>
+          <div class="sp-res-card-overlay"></div>
+          <div class="sp-res-card-content">
+            <span class="sp-res-card-type">HARBOUR TOWN</span>
+            <h3 class="sp-res-card-name">Marina Villas</h3>
+            <p class="sp-res-card-price">$800K — $2M</p>
+            <p class="sp-res-card-count">✦ 6 AVAILABLE</p>
+          </div>
+        </div>
+        <div class="sp-res-card">
+          <div class="sp-res-card-bg" style="background-image:url('/images/sea-pines/Sea%20Pines%20Lagoon%20Vilas.png')"></div>
+          <div class="sp-res-card-overlay"></div>
+          <div class="sp-res-card-content">
+            <span class="sp-res-card-type">LAGOON-FRONT</span>
+            <h3 class="sp-res-card-name">Lagoon Retreats</h3>
+            <p class="sp-res-card-price">$1.5M — $4M</p>
+            <p class="sp-res-card-count">✦ 10 AVAILABLE</p>
+          </div>
+        </div>
+        <div class="sp-res-card">
+          <div class="sp-res-card-bg" style="background-image:url('/images/sea-pines/Sea%20Pines-Tennis%20Villas.png')"></div>
+          <div class="sp-res-card-overlay"></div>
+          <div class="sp-res-card-content">
+            <span class="sp-res-card-type">RESORT COLLECTION</span>
+            <h3 class="sp-res-card-name">Resort Villas</h3>
+            <p class="sp-res-card-price">$500K — $1M</p>
+            <p class="sp-res-card-count">✦ 18 AVAILABLE</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;padding:40px 0 0;">
+        <a href="/listings?community=sea-pines" class="sp-res-cta">VIEW ALL SEA PINES LISTINGS</a>
+      </div>
+    </div>
+  `;
+
   // ── Inject all styles ──────────────────────────────────────────────────────
   var styleEl = document.createElement('style');
   styleEl.id = 'sp-widgets-css';
-  styleEl.textContent = stripe1CSS + stripe2CSS + stripe3CSS + golfCSS + glcCSS + accessCSS;
+  styleEl.textContent = stripe1CSS + stripe2CSS + stripe3CSS + golfCSS + glcCSS + accessCSS + residencesCSS;
   document.head.appendChild(styleEl);
 
   // ── Inject stripes 1–5 after the hero section ──────────────────────────────
   function injectWidgets() {
     var hero = document.querySelector('.hero');
     if (!hero) return;
+
     var container = document.createElement('div');
     container.id = 'sp-new-widgets';
     container.innerHTML = stripe1HTML + stripe2HTML + stripe3HTML + golfHTML + glcHTML;
+
     hero.parentNode.insertBefore(container, hero.nextSibling);
+  }
+
+  // ── Inject Residences after the market section ─────────────────────────────
+  function injectResidencesWidget() {
+    var market = document.querySelector('.market-section');
+    if (!market) return;
+    if (document.getElementById('sp-residences-widget')) return;
+
+    var el = document.createElement('div');
+    el.id = 'sp-residences-widget';
+    el.innerHTML = residencesHTML;
+    market.parentNode.insertBefore(el, market.nextSibling);
   }
 
   // ── Inject Location & Access after the tree story (culture section) ────────
@@ -479,6 +687,7 @@
     var culture = document.querySelector('.culture-section');
     if (!culture) return;
     if (document.getElementById('sp-access-widget')) return;
+
     var el = document.createElement('div');
     el.id = 'sp-access-widget';
     el.innerHTML = accessHTML;
@@ -487,6 +696,7 @@
 
   function injectAll() {
     injectWidgets();
+    injectResidencesWidget();
     injectAccessWidget();
   }
 
@@ -496,4 +706,40 @@
     injectAll();
   }
 
+})();
+
+// ── Harbour Town Cinematic Override ──────────────────────────────────────────
+(function() {
+  if (!window.location.pathname.match(/\/sea-pines(\/|$)/)) return;
+  function applyHarbourTownCinematic() {
+    var fs = document.querySelector('.feature-section');
+    if (!fs) return;
+    var title = fs.querySelector('h2.section-title');
+    if (!title || !title.textContent.includes('Harbour Town')) return;
+    if (document.getElementById('sp-ht-cinematic-css')) return;
+    var styleEl = document.createElement('style');
+    styleEl.id = 'sp-ht-cinematic-css';
+    styleEl.textContent = `
+      .feature-section { position:relative!important; height:80vh!important; min-height:540px!important; max-height:720px!important; overflow:hidden!important; background:#0a1220!important; display:block!important; padding:0!important; margin:0!important; }
+      .feature-section::before { content:''!important; position:absolute!important; inset:0!important; background-image:url('/Harbour%20town%20night%20time.jpg')!important; background-size:cover!important; background-position:center 45%!important; z-index:0!important; }
+      .feature-section::after { content:''!important; position:absolute!important; inset:0!important; background:linear-gradient(100deg,rgba(8,14,28,0.04) 0%,rgba(8,14,28,0.08) 28%,rgba(8,14,28,0.68) 55%,rgba(8,14,28,0.92) 100%)!important; z-index:1!important; }
+      .feature-inner { position:absolute!important; inset:0!important; display:flex!important; align-items:center!important; justify-content:flex-end!important; z-index:2!important; padding:0!important; }
+      .feature-img-col { display:none!important; }
+      .feature-inner > div:last-child { width:44%!important; padding:0 6% 0 0!important; color:#fff!important; }
+      .section-eyebrow { font-family:'Montserrat',sans-serif!important; font-size:9.5px!important; font-weight:600!important; letter-spacing:4px!important; text-transform:uppercase!important; color:#0ABAB5!important; margin-bottom:22px!important; display:flex!important; align-items:center!important; gap:12px!important; }
+      .section-eyebrow::before { content:''!important; display:inline-block!important; width:28px!important; height:1px!important; background:#0ABAB5!important; flex-shrink:0!important; }
+      .feature-section h2.section-title { font-family:'Playfair Display',Georgia,serif!important; font-size:clamp(2.2rem,3vw,3.2rem)!important; font-weight:400!important; color:#fff!important; line-height:1.1!important; margin:0 0 24px 0!important; letter-spacing:-0.5px!important; }
+      .feature-section h2.section-title em { font-style:italic!important; color:#0ABAB5!important; }
+      .feature-section .section-body { font-family:'Montserrat',sans-serif!important; font-size:14.5px!important; line-height:1.78!important; color:rgba(255,255,255,0.80)!important; max-width:400px!important; margin:0 0 38px 0!important; }
+      .feature-section ul, .feature-section li { display:none!important; }
+      .feature-section .section-cta { display:inline-block!important; font-family:'Montserrat',sans-serif!important; font-size:9.5px!important; font-weight:700!important; letter-spacing:3px!important; text-transform:uppercase!important; color:#fff!important; border:1px solid rgba(255,255,255,0.45)!important; padding:14px 28px!important; text-decoration:none!important; }
+    `;
+    document.head.appendChild(styleEl);
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyHarbourTownCinematic);
+  } else {
+    applyHarbourTownCinematic();
+  }
+  setTimeout(applyHarbourTownCinematic, 800);
 })();
