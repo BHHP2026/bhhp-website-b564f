@@ -341,164 +341,159 @@
     </div>
   `;
 
-  // ââ Inject all styles ââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // WIDGET 6 — LOCATION & ACCESS: Full Bleed with Photo Cards
+  // Injected after .culture-section ("A Life Beyond the Fairways")
+  // ══════════════════════════════════════════════════════════════════════════
+  var accessCSS = `
+    .sp-access-section {
+      position: relative; overflow: hidden;
+      background:
+        linear-gradient(135deg,
+          rgba(10,22,40,0.88) 0%, rgba(10,22,40,0.75) 30%,
+          rgba(14,31,62,0.7) 50%, rgba(10,22,40,0.8) 70%,
+          rgba(10,22,40,0.92) 100%),
+        url('https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=1400&q=80') center/cover no-repeat;
+    }
+    .sp-access-inner { padding: 56px 48px 64px; position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; }
+    .sp-access-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #0ABAB5; font-weight: 500; text-align: center; margin-bottom: 10px; }
+    .sp-access-title { font-family: 'Bodoni Moda', Didot, 'Bodoni MT', serif; font-weight: 400; font-size: 40px; line-height: 1.08; color: #fff; text-align: center; margin-top: 8px; margin-bottom: 10px; }
+    .sp-access-title em { font-style: italic; color: #0ABAB5; }
+    .sp-access-tagline { font-size: 13px; color: rgba(255,255,255,0.6); text-align: center; letter-spacing: 0.5px; margin: 0 auto 44px; line-height: 1.6; max-width: 560px; }
+    .sp-access-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 3px; margin-bottom: 40px; }
+    .sp-access-card { background: rgba(10,22,40,0.6); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.06); overflow: hidden; transition: all 0.3s ease; }
+    .sp-access-card:hover { background: rgba(10,22,40,0.85); border-color: rgba(10,186,181,0.3); }
+    .sp-access-card-photo { width: 100%; height: 120px; object-fit: cover; display: block; opacity: 0.8; transition: opacity 0.3s; }
+    .sp-access-card:hover .sp-access-card-photo { opacity: 1; }
+    .sp-access-card-body { text-align: center; padding: 20px 14px 24px; }
+    .sp-access-card-distance { font-family: 'Bodoni Moda', Didot, 'Bodoni MT', serif; font-size: 34px; font-weight: 700; color: #fff; margin-bottom: 2px; }
+    .sp-access-card-unit { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: #0ABAB5; margin-bottom: 10px; font-weight: 500; }
+    .sp-access-card-name { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.9); margin-bottom: 4px; }
+    .sp-access-card-detail { font-size: 10px; color: rgba(255,255,255,0.5); line-height: 1.5; }
+    .sp-access-driving { display: flex; justify-content: center; gap: 48px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.08); }
+    .sp-access-driving-item { text-align: center; }
+    .sp-access-driving-city { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; color: rgba(255,255,255,0.7); }
+    .sp-access-driving-time { font-family: 'Bodoni Moda', Didot, 'Bodoni MT', serif; font-size: 18px; font-weight: 700; color: #fff; margin-top: 3px; }
+    .sp-access-driving-miles { font-size: 9px; color: rgba(255,255,255,0.4); margin-top: 1px; letter-spacing: 0.5px; }
+    @media (max-width: 768px) {
+      .sp-access-grid { grid-template-columns: repeat(2,1fr); }
+      .sp-access-inner { padding: 40px 24px 48px; }
+      .sp-access-driving { gap: 20px; flex-wrap: wrap; }
+    }
+  `;
+
+  var accessHTML = `
+    <section class="sp-access-section">
+      <div class="sp-access-inner">
+        <div class="sp-access-eyebrow">Getting Here</div>
+        <h2 class="sp-access-title">Location &amp; <em>Access</em></h2>
+        <p class="sp-access-tagline">Sea Pines sits at the southern tip of Hilton Head Island — where the Atlantic meets Calibogue Sound.</p>
+        <div class="sp-access-grid">
+          <div class="sp-access-card">
+            <img class="sp-access-card-photo" src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=600&q=80" alt="Airplane at gate with sunset sky" referrerpolicy="no-referrer">
+            <div class="sp-access-card-body">
+              <div class="sp-access-card-distance">HHH</div>
+              <div class="sp-access-card-unit">On Island</div>
+              <div class="sp-access-card-name">Hilton Head Island Airport</div>
+              <div class="sp-access-card-detail">Direct flights from Charlotte, Dallas, Washington, New York &amp; more</div>
+            </div>
+          </div>
+          <div class="sp-access-card">
+            <img class="sp-access-card-photo" src="/images/savannah-airport.jpg" alt="Savannah Hilton Head International Airport" referrerpolicy="no-referrer">
+            <div class="sp-access-card-body">
+              <div class="sp-access-card-distance">45</div>
+              <div class="sp-access-card-unit">Minutes</div>
+              <div class="sp-access-card-name">Savannah/Hilton Head Intl</div>
+              <div class="sp-access-card-detail">SAV — #1 rated U.S. airport, daily flights from all major hubs</div>
+            </div>
+          </div>
+          <div class="sp-access-card">
+            <img class="sp-access-card-photo" src="/images/sea-pines/sp-sps-harbour.jpg" alt="Harbour Town Marina aerial view" referrerpolicy="no-referrer">
+            <div class="sp-access-card-body">
+              <div class="sp-access-card-distance">10</div>
+              <div class="sp-access-card-unit">Minutes</div>
+              <div class="sp-access-card-name">Harbour Town Marina</div>
+              <div class="sp-access-card-detail">Deep-water berths, dining, shops &amp; the iconic lighthouse</div>
+            </div>
+          </div>
+          <div class="sp-access-card">
+            <img class="sp-access-card-photo" src="/images/sea-pines/sp-sps-beach.jpg" alt="Sea Pines Beach on Hilton Head Island" referrerpolicy="no-referrer">
+            <div class="sp-access-card-body">
+              <div class="sp-access-card-distance">5</div>
+              <div class="sp-access-card-unit">Minutes</div>
+              <div class="sp-access-card-name">Coligny Beach Park</div>
+              <div class="sp-access-card-detail">Hilton Head's premier public beach, dining &amp; nightlife</div>
+            </div>
+          </div>
+        </div>
+        <div class="sp-access-driving">
+          <div class="sp-access-driving-item">
+            <div class="sp-access-driving-city">Atlanta</div>
+            <div class="sp-access-driving-time">4h 30m</div>
+            <div class="sp-access-driving-miles">290 miles</div>
+          </div>
+          <div class="sp-access-driving-item">
+            <div class="sp-access-driving-city">Charlotte</div>
+            <div class="sp-access-driving-time">4h 15m</div>
+            <div class="sp-access-driving-miles">280 miles</div>
+          </div>
+          <div class="sp-access-driving-item">
+            <div class="sp-access-driving-city">Savannah</div>
+            <div class="sp-access-driving-time">45 min</div>
+            <div class="sp-access-driving-miles">35 miles</div>
+          </div>
+          <div class="sp-access-driving-item">
+            <div class="sp-access-driving-city">Charleston</div>
+            <div class="sp-access-driving-time">2h 15m</div>
+            <div class="sp-access-driving-miles">150 miles</div>
+          </div>
+          <div class="sp-access-driving-item">
+            <div class="sp-access-driving-city">Jacksonville</div>
+            <div class="sp-access-driving-time">2h 45m</div>
+            <div class="sp-access-driving-miles">175 miles</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  `;
+
+  // ── Inject all styles ──────────────────────────────────────────────────────
   var styleEl = document.createElement('style');
   styleEl.id = 'sp-widgets-css';
-  styleEl.textContent = stripe1CSS + stripe2CSS + stripe3CSS + golfCSS + glcCSS;
+  styleEl.textContent = stripe1CSS + stripe2CSS + stripe3CSS + golfCSS + glcCSS + accessCSS;
   document.head.appendChild(styleEl);
 
-  // ââ Inject all 5 stripes as a single block after the hero section ââââââââââ
+  // ── Inject stripes 1–5 after the hero section ──────────────────────────────
   function injectWidgets() {
     var hero = document.querySelector('.hero');
     if (!hero) return;
-
     var container = document.createElement('div');
     container.id = 'sp-new-widgets';
     container.innerHTML = stripe1HTML + stripe2HTML + stripe3HTML + golfHTML + glcHTML;
-
     hero.parentNode.insertBefore(container, hero.nextSibling);
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', injectWidgets);
-  } else {
+  // ── Inject Location & Access after the tree story (culture section) ────────
+  function injectAccessWidget() {
+    var culture = document.querySelector('.culture-section');
+    if (!culture) return;
+    if (document.getElementById('sp-access-widget')) return;
+    var el = document.createElement('div');
+    el.id = 'sp-access-widget';
+    el.innerHTML = accessHTML;
+    culture.parentNode.insertBefore(el, culture.nextSibling);
+  }
+
+  function injectAll() {
     injectWidgets();
-  }
-
-
-
-// ═══════════════════════════════════════════════════════════
-// HARBOUR TOWN: cinematic full-bleed override
-// ═══════════════════════════════════════════════════════════
-(function() {
-  if (!window.location.pathname.match(/\/sea-pines(\/|$)/)) return;
-
-  function applyHarbourTownCinematic() {
-    var fs = document.querySelector('.feature-section');
-    if (!fs) return;
-    // Confirm it's the Harbour Town one
-    var title = fs.querySelector('h2.section-title');
-    if (!title || !title.textContent.includes('Harbour Town')) return;
-
-    var styleEl = document.getElementById('sp-ht-cinematic-css');
-    if (!styleEl) {
-      styleEl = document.createElement('style');
-      styleEl.id = 'sp-ht-cinematic-css';
-      styleEl.textContent = `
-        .feature-section {
-          position: relative !important;
-          height: 80vh !important;
-          min-height: 540px !important;
-          max-height: 720px !important;
-          overflow: hidden !important;
-          background: #0a1220 !important;
-          display: block !important;
-          padding: 0 !important;
-          margin: 0 !important;
-        }
-        .feature-section::before {
-          content: '' !important;
-          position: absolute !important;
-          inset: 0 !important;
-          background-image: url('/Harbour%20town%20night%20time.jpg') !important;
-          background-size: cover !important;
-          background-position: center 45% !important;
-          z-index: 0 !important;
-        }
-        .feature-section::after {
-          content: '' !important;
-          position: absolute !important;
-          inset: 0 !important;
-          background: linear-gradient(
-            100deg,
-            rgba(8,14,28,0.04) 0%,
-            rgba(8,14,28,0.08) 28%,
-            rgba(8,14,28,0.68) 55%,
-            rgba(8,14,28,0.92) 100%
-          ) !important;
-          z-index: 1 !important;
-        }
-        .feature-inner {
-          position: absolute !important;
-          inset: 0 !important;
-          display: flex !important;
-          align-items: center !important;
-          justify-content: flex-end !important;
-          z-index: 2 !important;
-          padding: 0 !important;
-        }
-        .feature-img-col { display: none !important; }
-        .feature-inner > div:last-child {
-          width: 44% !important;
-          padding: 0 6% 0 0 !important;
-          color: #fff !important;
-        }
-        .section-eyebrow {
-          font-family: 'Montserrat', sans-serif !important;
-          font-size: 9.5px !important;
-          font-weight: 600 !important;
-          letter-spacing: 4px !important;
-          text-transform: uppercase !important;
-          color: #0ABAB5 !important;
-          margin-bottom: 22px !important;
-          display: flex !important;
-          align-items: center !important;
-          gap: 12px !important;
-        }
-        .section-eyebrow::before {
-          content: '' !important;
-          display: inline-block !important;
-          width: 28px !important;
-          height: 1px !important;
-          background: #0ABAB5 !important;
-          flex-shrink: 0 !important;
-        }
-        .feature-section h2.section-title {
-          font-family: 'Playfair Display', Georgia, serif !important;
-          font-size: clamp(2.2rem, 3vw, 3.2rem) !important;
-          font-weight: 400 !important;
-          color: #fff !important;
-          line-height: 1.1 !important;
-          margin: 0 0 24px 0 !important;
-          letter-spacing: -0.5px !important;
-        }
-        .feature-section h2.section-title em {
-          font-style: italic !important;
-          color: #0ABAB5 !important;
-        }
-        .feature-section .section-body {
-          font-family: 'Montserrat', sans-serif !important;
-          font-size: 14.5px !important;
-          line-height: 1.78 !important;
-          color: rgba(255,255,255,0.80) !important;
-          max-width: 400px !important;
-          margin: 0 0 38px 0 !important;
-        }
-        .feature-section ul, .feature-section li { display: none !important; }
-        .feature-section .section-cta {
-          display: inline-block !important;
-          font-family: 'Montserrat', sans-serif !important;
-          font-size: 9.5px !important;
-          font-weight: 700 !important;
-          letter-spacing: 3px !important;
-          text-transform: uppercase !important;
-          color: #fff !important;
-          border: 1px solid rgba(255,255,255,0.45) !important;
-          padding: 14px 28px !important;
-          text-decoration: none !important;
-        }
-      `;
-      document.head.appendChild(styleEl);
-    }
+    injectAccessWidget();
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', applyHarbourTownCinematic);
+    document.addEventListener('DOMContentLoaded', injectAll);
   } else {
-    applyHarbourTownCinematic();
+    injectAll();
   }
-  // Also try after a short delay for late-rendering CMS content
-  setTimeout(applyHarbourTownCinematic, 800);
-})();
 
 })();
