@@ -663,7 +663,7 @@ var w3CSS = `
   .sp-w3-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 4px; text-transform: uppercase; color: #0ABAB5; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
   .sp-w3-eyebrow::before { content: ''; display: inline-block; width: 24px; height: 1px; background: #0ABAB5; opacity: 0.6; }
   .sp-w3-heading { font-family: 'Bodoni Moda', serif; font-size: clamp(28px,3.8vw,50px); font-weight: 400; text-transform: uppercase; letter-spacing: 1px; line-height: 1; color: #111111; }
-  .sp-w3-heading em { font-weight: 400; font-style: italic; color: #999; }
+  .sp-w3-heading em { font-weight: 400; font-style: italic; color: #0ABAB5; }
   .sp-w3-subtitle { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 400; letter-spacing: 3px; text-transform: uppercase; color: #888; margin-top: 10px; }
   .sp-w3-header-right { text-align: right; flex-shrink: 0; }
   .sp-w3-header-desc { font-family: 'Bodoni Moda', serif; font-style: italic; font-size: 15px; color: #666; line-height: 1.65; max-width: 300px; margin-bottom: 18px; }
