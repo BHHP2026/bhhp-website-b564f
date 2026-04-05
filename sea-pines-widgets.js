@@ -784,10 +784,108 @@ var w3HTML = `
 `;
 
 
-  // ── Inject all styles ──────────────────────────────────────────────────────
+  // ══════════════════════════════════════════════════════════════════════════
+// MAP WIDGET — "5,000 Acres. One Master Vision." (Google Maps Split)
+// ══════════════════════════════════════════════════════════════════════════
+var mapCSS = `
+  .sp-map-section {
+    background: #0A1628;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    min-height: 600px;
+    overflow: hidden;
+  }
+  .sp-map-left {
+    padding: 72px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sp-map-eyebrow {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px; font-weight: 700; letter-spacing: 3px;
+    text-transform: uppercase; color: #0ABAB5;
+    margin-bottom: 20px; display: flex; align-items: center; gap: 10px;
+  }
+  .sp-map-eyebrow::before {
+    content: ''; display: inline-block; width: 24px;
+    height: 1px; background: #0ABAB5; opacity: 0.6;
+  }
+  .sp-map-title {
+    font-family: 'Bodoni Moda', Didot, serif;
+    font-size: clamp(28px, 2.5vw, 38px);
+    color: #fff; line-height: 1.15;
+    margin-bottom: 20px; font-weight: 400;
+    text-transform: uppercase; letter-spacing: 1px;
+  }
+  .sp-map-title em { color: #0ABAB5; font-style: italic; text-transform: none; }
+  .sp-map-sub {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px; color: rgba(255,255,255,0.5);
+    line-height: 1.75; margin-bottom: 36px;
+  }
+  .sp-map-pills { display: flex; flex-direction: column; gap: 10px; }
+  .sp-map-pill {
+    font-family: 'Montserrat', sans-serif;
+    display: flex; align-items: center; gap: 10px;
+    font-size: 10px; font-weight: 600; letter-spacing: 1.5px;
+    text-transform: uppercase; color: rgba(255,255,255,0.6);
+  }
+  .sp-map-pill-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #0ABAB5; flex-shrink: 0;
+  }
+  .sp-map-cta {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-flex; align-items: center; gap: 8px;
+    margin-top: 36px; font-size: 10px; font-weight: 700;
+    letter-spacing: 2.5px; text-transform: uppercase;
+    color: #0ABAB5; text-decoration: none;
+    border-bottom: 1px solid rgba(10,186,181,0.3); padding-bottom: 3px;
+    cursor: pointer;
+  }
+  .sp-map-right iframe {
+    width: 100%; height: 100%; min-height: 600px;
+    display: block; border: none;
+  }
+  @media (max-width: 900px) {
+    .sp-map-section { grid-template-columns: 1fr; min-height: auto; }
+    .sp-map-left { padding: 56px 28px; }
+    .sp-map-right iframe { min-height: 420px; }
+  }
+`;
+
+var mapHTML = `
+  <div class="sp-map-section" id="sp-map-widget">
+    <div class="sp-map-left">
+      <div class="sp-map-eyebrow">Sea Pines &nbsp;&middot;&nbsp; Hilton Head Island</div>
+      <h2 class="sp-map-title">5,000 Acres.<br><em>One Master</em><br>Vision.</h2>
+      <p class="sp-map-sub">From the Atlantic shore to Calibogue Sound &mdash; every path, preserve, and fairway designed with purpose since 1956.</p>
+      <div class="sp-map-pills">
+        <div class="sp-map-pill"><span class="sp-map-pill-dot"></span>Harbour Town Marina &amp; Lighthouse</div>
+        <div class="sp-map-pill"><span class="sp-map-pill-dot"></span>Sea Pines Beach Club</div>
+        <div class="sp-map-pill"><span class="sp-map-pill-dot"></span>605-Acre Forest Preserve</div>
+        <div class="sp-map-pill"><span class="sp-map-pill-dot"></span>4 Championship Golf Courses</div>
+        <div class="sp-map-pill"><span class="sp-map-pill-dot"></span>South Beach Marina Village</div>
+      </div>
+      <a class="sp-map-cta" href="/sea-pines">Explore Sea Pines Listings &nbsp;&rarr;</a>
+    </div>
+    <div class="sp-map-right">
+      <iframe
+        src="https://maps.google.com/maps?q=Sea+Pines+Resort,+Hilton+Head+Island,+SC&t=h&z=14&ie=UTF8&iwloc=B&output=embed"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Sea Pines Resort &mdash; Hilton Head Island, SC &mdash; Satellite Map">
+      </iframe>
+    </div>
+  </div>
+`;
+
+// ── Inject all styles ──────────────────────────────────────────────────────
   var styleEl = document.createElement('style');
   styleEl.id = 'sp-widgets-css';
-  styleEl.textContent = stripe1CSS + stripe2CSS + stripe3CSS + golfCSS + glcCSS + accessCSS + residencesCSS + w3CSS;
+  styleEl.textContent = stripe1CSS + stripe2CSS + stripe3CSS + golfCSS + glcCSS + accessCSS + residencesCSS + w3CSS + mapCSS;
   document.head.appendChild(styleEl);
 
   // ── Inject stripes 1–5 after the hero section ──────────────────────────────
@@ -844,10 +942,22 @@ function injectExploreMoreWidget() {
     prevBtn.addEventListener('click', function(){ track.scrollBy({left:-360, behavior:'smooth'}); });
   }
 }
+// ── Inject Map Widget after the Residences widget ─────────────────────────
+function injectMapWidget() {
+  if (document.getElementById('sp-map-widget')) return;
+  var residences = document.getElementById('sp-residences-widget');
+  var anchor = residences || document.querySelector('.market-section');
+  if (!anchor) return;
+  var el = document.createElement('div');
+  el.innerHTML = mapHTML;
+  anchor.parentNode.insertBefore(el.firstElementChild, anchor.nextSibling);
+}
+
 function injectAll() {
     injectWidgets();
     injectResidencesWidget();
-    injectAccessWidget();
+    injectMapWidget();
+  injectAccessWidget();
     injectExploreMoreWidget();
   }
 
