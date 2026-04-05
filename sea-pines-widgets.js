@@ -57,48 +57,51 @@
   `;
 
   // ══════════════════════════════════════════════════════════════════════════
-  // STRIPE 2 — CHARLES FRASER: Editorial Text Band
+  // ══════════════════════════════════════════════════════════════════════════
+  // STRIPE 2 — CHARLES FRASER: Editorial Map Hero
+  // Background: 1711 hand-colored Carolina map (Library of Congress, no restrictions)
+  // Crop: pct:10,65,28,28 — "Hiltons Head Island" centered
   // ══════════════════════════════════════════════════════════════════════════
   var stripe2CSS = `
-    .sp-stripe-text { background: #ffffff; padding: 100px 40px; text-align: center; }
-    .sp-stripe-text-inner { max-width: 820px; margin: 0 auto; }
-    .sp-text-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 4px; text-transform: uppercase; color: #D4AF37; margin-bottom: 24px; display: flex; align-items: center; justify-content: center; gap: 16px; }
-    .sp-text-eyebrow-rule { width: 40px; height: 1px; background: #D4AF37; flex-shrink: 0; }
-    .sp-text-section-title { font-family: 'Playfair Display', Georgia, serif; font-style: normal; font-weight: 400; font-size: clamp(42px, 5vw, 64px); color: #111; line-height: 1.10; text-transform: uppercase; letter-spacing: 0; margin-bottom: 20px; }
-    .sp-text-section-title em { font-style: italic; color: #092969; }
-    .sp-text-body { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 400; line-height: 1.85; color: #444; margin-bottom: 20px; max-width: 700px; margin-left: auto; margin-right: auto; }
-    .sp-text-pull-quote { border-top: 1px solid rgba(212,175,55,0.25); border-bottom: 1px solid rgba(212,175,55,0.25); padding: 36px 48px; margin: 36px auto 44px; max-width: 640px; }
-    .sp-text-pull-quote p { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: clamp(18px, 2vw, 24px); line-height: 1.65; color: #092969; margin-bottom: 14px; }
-    .sp-text-pull-quote cite { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37; font-style: normal; }
-    .sp-text-cta { display: inline-flex; align-items: center; gap: 10px; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #092969; text-decoration: none; border: 1px solid #092969; padding: 14px 28px; transition: background 0.2s, color 0.2s; }
-    .sp-text-cta:hover { background: #092969; color: #fff; }
+    .sp-fraser-map { position: relative; min-height: 660px; display: flex; align-items: center; overflow: hidden; }
+    .sp-fraser-map-bg { position: absolute; inset: 0; background-image: url('https://tile.loc.gov/image-services/iiif/service:gmd:gmd387:g3870:g3870:ct001123/pct:10,65,28,28/full/0/default.jpg'); background-size: cover; background-position: center 40%; }
+    .sp-fraser-map-overlay { position: absolute; inset: 0; background: linear-gradient(150deg, rgba(5,18,14,0.72) 0%, rgba(8,14,28,0.80) 100%); }
+    .sp-fraser-content { position: relative; z-index: 2; max-width: 820px; margin: 0 auto; padding: 90px 48px; text-align: center; }
+    .sp-fraser-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #0ABAB5; margin-bottom: 28px; }
+    .sp-fraser-title { font-family: 'Bodoni Moda', Didot, serif; font-size: clamp(34px, 4.2vw, 58px); line-height: 1.12; font-weight: 400; color: #fff; margin-bottom: 30px; }
+    .sp-fraser-title em { color: #0ABAB5; font-style: italic; }
+    .sp-fraser-rule { width: 48px; height: 1px; background: #0ABAB5; margin: 0 auto 32px; opacity: 0.65; }
+    .sp-fraser-body { font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.90; color: rgba(255,255,255,0.80); max-width: 650px; margin: 0 auto 20px; font-weight: 400; }
+    .sp-fraser-body strong { color: #fff; font-weight: 600; }
+    .sp-fraser-body-b { font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.90; color: rgba(255,255,255,0.80); max-width: 650px; margin: 0 auto 40px; font-weight: 400; }
+    .sp-fraser-body-b strong { color: #fff; font-weight: 600; }
+    .sp-fraser-cta { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #0ABAB5; text-decoration: none; border-bottom: 1px solid rgba(10,186,181,0.40); padding-bottom: 4px; transition: border-color 0.2s; }
+    .sp-fraser-cta:hover { border-color: #0ABAB5; }
+    .sp-fraser-ghost-year { font-family: 'Bodoni Moda', serif; font-size: 140px; font-weight: 400; font-style: italic; color: rgba(255,255,255,0.04); position: absolute; bottom: -16px; right: 36px; line-height: 1; pointer-events: none; z-index: 1; }
+    .sp-fraser-map-credit { position: absolute; bottom: 12px; left: 20px; z-index: 3; font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 400; letter-spacing: 1px; color: rgba(255,255,255,0.22); }
     @media (max-width: 768px) {
-      .sp-stripe-text { padding: 60px 24px; }
-      .sp-text-pull-quote { padding: 28px 24px; }
+      .sp-fraser-content { padding: 64px 28px; }
+      .sp-fraser-ghost-year { font-size: 80px; right: 16px; }
     }
   `;
 
   var stripe2HTML = `
-    <div class="sp-stripe-text">
-      <div class="sp-stripe-text-inner">
-        <div class="sp-text-eyebrow">
-          <div class="sp-text-eyebrow-rule"></div>
-          Founded 1956 &nbsp;·&nbsp; A Vision Ahead of Its Time
-          <div class="sp-text-eyebrow-rule"></div>
-        </div>
-        <h2 class="sp-text-section-title">Charles Fraser &amp; the<br><em>Birth of Sea Pines</em></h2>
-        <p class="sp-text-body">In 1956, a young Yale-educated attorney named Charles Fraser looked out over 5,000 acres of pristine Carolina Sea Islands barrier island and saw something extraordinary — not a resort to be imposed upon the land, but one designed to live in perfect harmony with it. His father had purchased the land, but it was Charles who transformed it into the world's first environmentally planned resort community.</p>
-        <p class="sp-text-body">Fraser balanced homes, golf courses, and gathering spaces with preserved tidal marshes, ancient live oaks, and the island's native ecosystem. He established a conservation foundation to safeguard Sea Pines' natural beauty well beyond his own lifetime — a foresight that, nearly seven decades later, is woven into the very character of Hilton Head Island itself.</p>
-        <div class="sp-text-pull-quote">
-          <p>"Hilton Head is the very first community in the United States to have been eco-planned. Charles Fraser was way ahead of his time — and his legacy stands to this day."</p>
-          <cite>— Talita, BHHP</cite>
-        </div>
-        <a href="#" class="sp-text-cta">Explore Sea Pines &nbsp;→</a>
+    <div class="sp-fraser-map" id="sp-fraser-widget">
+      <div class="sp-fraser-map-bg"></div>
+      <div class="sp-fraser-map-overlay"></div>
+      <div class="sp-fraser-content">
+        <div class="sp-fraser-eyebrow">A Living Legacy &nbsp;&middot;&nbsp; Sea Pines Resort</div>
+        <h2 class="sp-fraser-title">One man.<br>One vision.<br><em>5,200 acres</em> of forever.</h2>
+        <div class="sp-fraser-rule"></div>
+        <p class="sp-fraser-body"><strong>Charles Fraser</strong> didn&rsquo;t just build a resort. He invented a philosophy. No billboards. No neon. Building heights limited so the tree canopy always wins. Wetlands preserved. Wildlife protected.</p>
+        <p class="sp-fraser-body-b">In 1973, Sea Pines was declared a <strong>Registered National Landmark</strong> &mdash; one of the few planned communities in American history to receive the distinction. Nearly seven decades later, that covenant with the land is woven into the very character of Hilton Head Island itself. <strong>To own here is to become part of that story.</strong></p>
+        <a href="https://besthiltonheadproperties.com/sea-pines" class="sp-fraser-cta">View Available Properties &nbsp;&rarr;</a>
       </div>
+      <div class="sp-fraser-ghost-year">1956</div>
+      <span class="sp-fraser-map-credit">Map: &ldquo;Province of Carolina&rdquo; &mdash; Library of Congress, 1711</span>
     </div>
   `;
 
-  // ══════════════════════════════════════════════════════════════════════════
   // STRIPE 3 — TWO IMAGE PANELS: Marina + Pool
   // ══════════════════════════════════════════════════════════════════════════
   var stripe3CSS = `
