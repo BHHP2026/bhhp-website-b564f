@@ -652,10 +652,142 @@
     </div>
   `;
 
+
+// ═════════════════════════════════════════════════════════════════════════
+// WIDGET 3 — EXPLORE MORE: "Where Hilton Head's Finest Call Home"
+// ══════════════════════════════════════════════════════════════════════════
+var w3CSS = `
+  .sp-w3-section { background: #F7F5F0; padding: 80px 0 72px; overflow: hidden; position: relative; }
+  .sp-w3-watermark { position: absolute; right: -40px; top: 50%; transform: translateY(-50%); font-size: 260px; font-family: 'Bodoni Moda', serif; font-weight: 700; color: rgba(0,0,0,0.025); line-height: 1; pointer-events: none; letter-spacing: -0.05em; user-select: none; text-transform: uppercase; }
+  .sp-w3-header { display: flex; align-items: flex-end; justify-content: space-between; padding: 0 80px 48px; flex-wrap: wrap; gap: 24px; }
+  .sp-w3-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 4px; text-transform: uppercase; color: #0ABAB5; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .sp-w3-eyebrow::before { content: ''; display: inline-block; width: 24px; height: 1px; background: #0ABAB5; opacity: 0.6; }
+  .sp-w3-heading { font-family: 'Bodoni Moda', serif; font-size: clamp(28px,3.8vw,50px); font-weight: 400; text-transform: uppercase; letter-spacing: 1px; line-height: 1; color: #111111; }
+  .sp-w3-heading em { font-weight: 400; font-style: italic; color: #999; }
+  .sp-w3-subtitle { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 400; letter-spacing: 3px; text-transform: uppercase; color: #888; margin-top: 10px; }
+  .sp-w3-header-right { text-align: right; flex-shrink: 0; }
+  .sp-w3-header-desc { font-family: 'Bodoni Moda', serif; font-style: italic; font-size: 15px; color: #666; line-height: 1.65; max-width: 300px; margin-bottom: 18px; }
+  .sp-w3-header-cta { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: #111; text-decoration: none; border-bottom: 1px solid rgba(0,0,0,0.25); padding-bottom: 3px; transition: color 0.2s, border-color 0.2s; }
+  .sp-w3-header-cta:hover { color: #0ABAB5; border-color: #0ABAB5; }
+  .sp-w3-track-wrapper { position: relative; overflow: hidden; padding: 0 0 0 80px; }
+  .sp-w3-track { display: flex; gap: 20px; overflow-x: auto; scroll-behavior: smooth; padding: 0 80px 20px 0; scrollbar-width: none; }
+  .sp-w3-track::-webkit-scrollbar { display: none; }
+  .sp-w3-card { min-width: 340px; max-width: 340px; height: 520px; border-radius: 16px; overflow: hidden; position: relative; cursor: pointer; flex-shrink: 0; text-decoration: none; display: block; transition: transform 0.4s ease, box-shadow 0.4s ease; }
+  .sp-w3-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(0,0,0,0.18); }
+  .sp-w3-card-img { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 0.6s ease; }
+  .sp-w3-card:hover .sp-w3-card-img { transform: scale(1.05); }
+  .sp-w3-card-grad { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.32) 40%, rgba(0,0,0,0.06) 68%, rgba(0,0,0,0.14) 100%); transition: opacity 0.4s; }
+  .sp-w3-card:hover .sp-w3-card-grad { opacity: 0.88; }
+  .sp-w3-card-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 24px; z-index: 2; }
+  .sp-w3-card-tag { font-family: 'Montserrat', sans-serif; font-size: 9px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #0ABAB5; margin-bottom: 10px; }
+  .sp-w3-card-name { font-family: 'Bodoni Moda', serif; font-size: 24px; font-weight: 400; font-style: italic; color: #fff; line-height: 1.25; margin-bottom: 8px; }
+  .sp-w3-card-desc { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 300; color: rgba(255,255,255,0.75); line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .sp-w3-card-price { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 1.5px; color: rgba(255,255,255,0.45); margin-top: 8px; }
+  .sp-w3-card-price strong { color: rgba(255,255,255,0.78); font-weight: 600; }
+  .sp-w3-card-cta { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #0ABAB5; margin-top: 12px; display: inline-block; opacity: 0; transform: translateY(8px); transition: opacity 0.3s ease, transform 0.3s ease; }
+  .sp-w3-card:hover .sp-w3-card-cta { opacity: 1; transform: translateY(0); }
+  .sp-w3-arrows { display: flex; gap: 10px; padding: 28px 80px 0; justify-content: flex-end; }
+  .sp-w3-arrow { width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.15); background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s; font-size: 18px; color: #111; }
+  .sp-w3-arrow:hover { background: #0A1628; border-color: #0A1628; color: #fff; }
+  @media (max-width: 900px) { .sp-w3-header { padding: 0 32px 40px; } .sp-w3-track-wrapper { padding-left: 32px; } .sp-w3-track { padding-right: 32px; } .sp-w3-arrows { padding: 20px 32px 0; } }
+`;
+
+var w3HTML = `
+  <section class="sp-w3-section">
+    <div class="sp-w3-watermark">HHI</div>
+    <div class="sp-w3-header">
+      <div>
+        <div class="sp-w3-eyebrow">Also on Hilton Head Island</div>
+        <h2 class="sp-w3-heading">WHERE HILTON HEAD'S <em>Finest</em> CALL HOME</h2>
+        <p class="sp-w3-subtitle">Gated Communities &nbsp;&middot;&nbsp; Oceanfront &nbsp;&middot;&nbsp; Golf &nbsp;&middot;&nbsp; Marina</p>
+      </div>
+      <div class="sp-w3-header-right">
+        <p class="sp-w3-header-desc">Every island enclave tells its own story. Explore Hilton Head's most storied addresses.</p>
+        <a href="/neighborhoods" class="sp-w3-header-cta">View All Neighborhoods &nbsp;&rarr;</a>
+      </div>
+    </div>
+    <div class="sp-w3-track-wrapper">
+      <div class="sp-w3-track" id="sp-w3-track">
+        <a class="sp-w3-card" href="/palmetto-dunes">
+          <div class="sp-w3-card-img" style="background-image:url('https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=700&q=80');"></div>
+          <div class="sp-w3-card-grad"></div>
+          <div class="sp-w3-card-content">
+            <div class="sp-w3-card-tag">Hilton Head Island</div>
+            <div class="sp-w3-card-name">Palmetto Dunes</div>
+            <div class="sp-w3-card-desc">Three championship courses, an 11-mile lagoon system, and the island's widest, most pristine stretch of beach.</div>
+            <div class="sp-w3-card-price">From <strong>$750K</strong> &nbsp;&middot;&nbsp; 3 Golf Courses</div>
+            <div class="sp-w3-card-cta">Explore &rarr;</div>
+          </div>
+        </a>
+        <a class="sp-w3-card" href="/wexford">
+          <div class="sp-w3-card-img" style="background-image:url('https://images.unsplash.com/photo-1534430480872-3498386e7856?w=700&q=80'); background-position:center 30%;"></div>
+          <div class="sp-w3-card-grad"></div>
+          <div class="sp-w3-card-content">
+            <div class="sp-w3-card-tag">Hilton Head Island</div>
+            <div class="sp-w3-card-name">Wexford Plantation</div>
+            <div class="sp-w3-card-desc">Old-world elegance anchored by a private deep-water marina on Broad Creek. One of the island's most coveted addresses.</div>
+            <div class="sp-w3-card-price">From <strong>$900K</strong> &nbsp;&middot;&nbsp; Private Marina</div>
+            <div class="sp-w3-card-cta">Explore &rarr;</div>
+          </div>
+        </a>
+        <a class="sp-w3-card" href="/hilton-head-plantation">
+          <div class="sp-w3-card-img" style="background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=700&q=80'); background-position:center 40%;"></div>
+          <div class="sp-w3-card-grad"></div>
+          <div class="sp-w3-card-content">
+            <div class="sp-w3-card-tag">Hilton Head Island</div>
+            <div class="sp-w3-card-name">Hilton Head Plantation</div>
+            <div class="sp-w3-card-desc">The island's largest gated community &mdash; 4,000 acres with four golf courses, a beach club, and deep community roots.</div>
+            <div class="sp-w3-card-price">From <strong>$600K</strong> &nbsp;&middot;&nbsp; 4,000 Acres</div>
+            <div class="sp-w3-card-cta">Explore &rarr;</div>
+          </div>
+        </a>
+        <a class="sp-w3-card" href="/port-royal">
+          <div class="sp-w3-card-img" style="background-image:url('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=700&q=80'); background-position:center 20%;"></div>
+          <div class="sp-w3-card-grad"></div>
+          <div class="sp-w3-card-content">
+            <div class="sp-w3-card-tag">Hilton Head Island</div>
+            <div class="sp-w3-card-name">Port Royal Plantation</div>
+            <div class="sp-w3-card-desc">A quiet, understated enclave on the island's north end &mdash; pristine oceanfront lots and three championship courses.</div>
+            <div class="sp-w3-card-price">From <strong>$800K</strong> &nbsp;&middot;&nbsp; Oceanfront</div>
+            <div class="sp-w3-card-cta">Explore &rarr;</div>
+          </div>
+        </a>
+        <a class="sp-w3-card" href="/shipyard">
+          <div class="sp-w3-card-img" style="background-image:url('https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=700&q=80');"></div>
+          <div class="sp-w3-card-grad"></div>
+          <div class="sp-w3-card-content">
+            <div class="sp-w3-card-tag">Hilton Head Island</div>
+            <div class="sp-w3-card-name">Shipyard Plantation</div>
+            <div class="sp-w3-card-desc">Mid-island living with a private beach club, three golf courses, and the most walkable village center on the island.</div>
+            <div class="sp-w3-card-price">From <strong>$450K</strong> &nbsp;&middot;&nbsp; Beach Club</div>
+            <div class="sp-w3-card-cta">Explore &rarr;</div>
+          </div>
+        </a>
+        <a class="sp-w3-card" href="/long-cove">
+          <div class="sp-w3-card-img" style="background-image:url('https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=700&q=80'); background-position:center 35%;"></div>
+          <div class="sp-w3-card-grad"></div>
+          <div class="sp-w3-card-content">
+            <div class="sp-w3-card-tag">Hilton Head Island</div>
+            <div class="sp-w3-card-name">Long Cove Club</div>
+            <div class="sp-w3-card-desc">Pete Dye's personal masterpiece on Broad Creek &mdash; a private, intimate club where members know each other by name.</div>
+            <div class="sp-w3-card-price">From <strong>$1.1M</strong> &nbsp;&middot;&nbsp; Pete Dye Course</div>
+            <div class="sp-w3-card-cta">Explore &rarr;</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="sp-w3-arrows">
+      <button class="sp-w3-arrow" id="sp-w3-prev">&#8592;</button>
+      <button class="sp-w3-arrow" id="sp-w3-next">&#8594;</button>
+    </div>
+  </section>
+`;
+
+
   // ── Inject all styles ──────────────────────────────────────────────────────
   var styleEl = document.createElement('style');
   styleEl.id = 'sp-widgets-css';
-  styleEl.textContent = stripe1CSS + stripe2CSS + stripe3CSS + golfCSS + glcCSS + accessCSS + residencesCSS;
+  styleEl.textContent = stripe1CSS + stripe2CSS + stripe3CSS + golfCSS + glcCSS + accessCSS + residencesCSS + w3CSS;
   document.head.appendChild(styleEl);
 
   // ── Inject stripes 1–5 after the hero section ──────────────────────────────
@@ -694,10 +826,29 @@
     culture.parentNode.insertBefore(el, culture.nextSibling);
   }
 
-  function injectAll() {
+  
+function injectExploreMoreWidget() {
+  if (document.getElementById('sp-explore-widget')) return;
+  var accessWidget = document.getElementById('sp-access-widget');
+  var anchor = accessWidget || document.querySelector('footer, .footer, #footer');
+  if (!anchor) return;
+  var el = document.createElement('div');
+  el.id = 'sp-explore-widget';
+  el.innerHTML = w3HTML;
+  anchor.parentNode.insertBefore(el, anchor.nextSibling);
+  var track = el.querySelector('#sp-w3-track');
+  var nextBtn = el.querySelector('#sp-w3-next');
+  var prevBtn = el.querySelector('#sp-w3-prev');
+  if (track && nextBtn && prevBtn) {
+    nextBtn.addEventListener('click', function(){ track.scrollBy({left:360, behavior:'smooth'}); });
+    prevBtn.addEventListener('click', function(){ track.scrollBy({left:-360, behavior:'smooth'}); });
+  }
+}
+function injectAll() {
     injectWidgets();
     injectResidencesWidget();
     injectAccessWidget();
+    injectExploreMoreWidget();
   }
 
   if (document.readyState === 'loading') {
