@@ -1,7 +1,7 @@
 (function(){
   if (!window.location.pathname.match(/\/sea-pines(\/|$)/)) return;
 
-  // ── Fonts ─────────────────────────────────────────────────────────────────
+  // ââ Fonts âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   if (!document.getElementById('sp-widget-fonts')) {
     var link = document.createElement('link');
     link.id = 'sp-widget-fonts';
@@ -10,9 +10,9 @@
     document.head.appendChild(link);
   }
 
-  // ══════════════════════════════════════════════════════════════════════════
-  // STRIPE 1 — HERO IMAGE: "The Resort Lifestyle"
-  // ══════════════════════════════════════════════════════════════════════════
+  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // STRIPE 1 â HERO IMAGE: "The Resort Lifestyle"
+  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var stripe1CSS = `
     .sp-stripe-hero { position: relative; height: 65vh; overflow: hidden; }
     .sp-stripe-hero .sp-bg { position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=2000&q=90') center 40% / cover no-repeat; z-index: 0; }
@@ -42,7 +42,7 @@
       <div class="sp-hero-title">
         <div class="sp-eyebrow">
           <div class="sp-eyebrow-rule"></div>
-          <span class="sp-eyebrow-text">Sea Pines Resort &nbsp;·&nbsp; Hilton Head Island</span>
+          <span class="sp-eyebrow-text">Sea Pines Resort &nbsp;Â·&nbsp; Hilton Head Island</span>
           <div class="sp-eyebrow-rule"></div>
         </div>
         <p class="sp-t-the">The</p>
@@ -56,9 +56,9 @@
     </div>
   `;
 
-  // ══════════════════════════════════════════════════════════════════════════
-  // STRIPE 2 — CHARLES FRASER: Editorial Text Band
-  // ══════════════════════════════════════════════════════════════════════════
+  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // STRIPE 2 â CHARLES FRASER: Editorial Text Band
+  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var stripe2CSS = `
     .sp-stripe-text { background: #ffffff; padding: 100px 40px; text-align: center; }
     .sp-stripe-text-inner { max-width: 820px; margin: 0 auto; }
@@ -83,24 +83,24 @@
       <div class="sp-stripe-text-inner">
         <div class="sp-text-eyebrow">
           <div class="sp-text-eyebrow-rule"></div>
-          Founded 1956 &nbsp;·&nbsp; A Vision Ahead of Its Time
+          Founded 1956 &nbsp;Â·&nbsp; A Vision Ahead of Its Time
           <div class="sp-text-eyebrow-rule"></div>
         </div>
         <h2 class="sp-text-section-title">Charles Fraser &amp; the<br><em>Birth of Sea Pines</em></h2>
-        <p class="sp-text-body">In 1956, a young Yale-educated attorney named Charles Fraser looked out over 5,000 acres of pristine Carolina Sea Islands barrier island and saw something extraordinary — not a resort to be imposed upon the land, but one designed to live in perfect harmony with it. His father had purchased the land, but it was Charles who transformed it into the world's first environmentally planned resort community.</p>
-        <p class="sp-text-body">Fraser balanced homes, golf courses, and gathering spaces with preserved tidal marshes, ancient live oaks, and the island's native ecosystem. He established a conservation foundation to safeguard Sea Pines' natural beauty well beyond his own lifetime — a foresight that, nearly seven decades later, is woven into the very character of Hilton Head Island itself.</p>
+        <p class="sp-text-body">In 1956, a young Yale-educated attorney named Charles Fraser looked out over 5,000 acres of pristine Carolina Sea Islands barrier island and saw something extraordinary â not a resort to be imposed upon the land, but one designed to live in perfect harmony with it. His father had purchased the land, but it was Charles who transformed it into the world's first environmentally planned resort community.</p>
+        <p class="sp-text-body">Fraser balanced homes, golf courses, and gathering spaces with preserved tidal marshes, ancient live oaks, and the island's native ecosystem. He established a conservation foundation to safeguard Sea Pines' natural beauty well beyond his own lifetime â a foresight that, nearly seven decades later, is woven into the very character of Hilton Head Island itself.</p>
         <div class="sp-text-pull-quote">
-          <p>"Hilton Head is the very first community in the United States to have been eco-planned. Charles Fraser was way ahead of his time — and his legacy stands to this day."</p>
-          <cite>— Talita, BHHP</cite>
+          <p>"Hilton Head is the very first community in the United States to have been eco-planned. Charles Fraser was way ahead of his time â and his legacy stands to this day."</p>
+          <cite>â Talita, BHHP</cite>
         </div>
-        <a href="#" class="sp-text-cta">Explore Sea Pines &nbsp;→</a>
+        <a href="#" class="sp-text-cta">Explore Sea Pines &nbsp;â</a>
       </div>
     </div>
   `;
 
-  // ══════════════════════════════════════════════════════════════════════════
-  // STRIPE 3 — TWO IMAGE PANELS: Marina + Pool
-  // ══════════════════════════════════════════════════════════════════════════
+  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // STRIPE 3 â TWO IMAGE PANELS: Marina + Pool
+  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var stripe3CSS = `
     .sp-stripe-images { display: grid; grid-template-columns: 1fr 1fr; height: 54vh; }
     .sp-img-panel { position: relative; overflow: hidden; }
@@ -138,9 +138,9 @@
     </div>
   `;
 
-  // ══════════════════════════════════════════════════════════════════════════
-  // STRIPE 4 — GOLF COURSES: A Legacy Unmatched
-  // ══════════════════════════════════════════════════════════════════════════
+  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // STRIPE 4 â GOLF COURSES: A Legacy Unmatched
+  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var golfCSS = `
     .sp-golf-section { background: #fff; }
     .sp-golf-mag { max-width: 1400px; margin: 0 auto; padding: 80px 40px 0; }
@@ -159,7 +159,7 @@
     .sp-golf-hero-img { position: absolute; inset: 0; background-image: url('https://www.seapines.com/sites/default/files/styles/hero_desktop/public/media/images/harbour-town-golf-links-aerial-hole-18.jpg'); background-size: cover; background-position: center 35%; }
     .sp-golf-hero-grad { position: absolute; inset: 0; background: linear-gradient(to top, rgba(8,14,28,0.95) 0%, rgba(8,14,28,0.45) 45%, rgba(8,14,28,0.1) 100%); }
     .sp-golf-hero-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 40px 44px; }
-    .sp-golf-hero-num { font-family: 'Playfair Display', Georgia, serif; font-size: 72px; font-weight: 400; color: rgba(212,177�55,0.2); line-height: 1; margin: 0 0 4px; }
+    .sp-golf-hero-num { font-family: 'Playfair Display', Georgia, serif; font-size: 72px; font-weight: 400; color: rgba(212,177ï¿½55,0.2); line-height: 1; margin: 0 0 4px; }
     .sp-golf-hero-tag { font-family: 'Montserrat', sans-serif; font-size: 9px; letter-spacing: 3px; color: rgb(212,175,55); text-transform: uppercase; font-weight: 600; margin: 0 0 10px; }
     .sp-golf-hero-name { font-family: 'Playfair Display', Georgia, serif; font-size: 34px; font-weight: 400; color: #fff; margin: 0 0 8px; line-height: 1.15; }
     .sp-golf-hero-name em { font-style: italic; }
@@ -178,7 +178,7 @@
     .sp-golf-card-designer { font-family: 'Montserrat', sans-serif; font-size: 8px; letter-spacing: 2px; color: rgba(255,255,255,0.35); text-transform: uppercase; margin: 0 0 12px; }
     .sp-golf-card-desc { font-family: Georgia, serif; font-size: 12.5px; color: rgba(255,255,255,0.6); line-height: 1.7; margin: 0 0 14px; }
     .sp-golf-card-badge { font-family: 'Montserrat', sans-serif; font-size: 7.5px; letter-spacing: 2px; color: rgb(212,175,55); text-transform: uppercase; }
-    .sp-golf-card-badge::before { content: '★  '; }
+    .sp-golf-card-badge::before { content: 'â  '; }
     .sp-golf-bottom-pad { height: 80px; background: #fff; }
     @media (max-width: 768px) {
       .sp-golf-mag-grid { grid-template-columns: 1fr; }
@@ -192,11 +192,11 @@
       <div class="sp-golf-mag">
         <div class="sp-golf-mag-eyebrow">
           <div class="sp-golf-mag-eyebrow-rule"></div>
-          <p class="sp-golf-mag-eyebrow-text">Golf at Sea Pines &nbsp;·&nbsp; Three Championship Courses</p>
+          <p class="sp-golf-mag-eyebrow-text">Golf at Sea Pines &nbsp;Â·&nbsp; Three Championship Courses</p>
           <div class="sp-golf-mag-eyebrow-rule"></div>
         </div>
         <h2 class="sp-golf-mag-title">A Legacy<br><em>Unmatched</em></h2>
-        <p class="sp-golf-mag-subtitle">Three world-class courses, three distinct personalities — all within a private 5,000-acre address on Hilton Head Island.</p>
+        <p class="sp-golf-mag-subtitle">Three world-class courses, three distinct personalities â all within a private 5,000-acre address on Hilton Head Island.</p>
       </div>
       <div class="sp-golf-video-strip">
         <div class="sp-golf-video-grad-top"></div>
@@ -211,11 +211,11 @@
           <div class="sp-golf-hero-grad"></div>
           <div class="sp-golf-hero-content">
             <p class="sp-golf-hero-num">01</p>
-            <p class="sp-golf-hero-tag">Championship Play &nbsp;·&nbsp; PGA Tour Host</p>
+            <p class="sp-golf-hero-tag">Championship Play &nbsp;Â·&nbsp; PGA Tour Host</p>
             <h3 class="sp-golf-hero-name">Harbour Town<br><em>Golf Links</em></h3>
-            <p class="sp-golf-hero-designer">Pete Dye &nbsp;·&nbsp; Jack Nicklaus</p>
-            <p class="sp-golf-hero-desc">Host of the RBC Heritage every April. Ranked Top 100 in America by Golf Digest. The 18th hole — lighthouse over Calibogue Sound — is one of the most photographed finishing holes in golf.</p>
-            <span class="sp-golf-hero-badge">Top 100 · Golf Digest</span>
+            <p class="sp-golf-hero-designer">Pete Dye &nbsp;Â·&nbsp; Jack Nicklaus</p>
+            <p class="sp-golf-hero-desc">Host of the RBC Heritage every April. Ranked Top 100 in America by Golf Digest. The 18th hole â lighthouse over Calibogue Sound â is one of the most photographed finishing holes in golf.</p>
+            <span class="sp-golf-hero-badge">Top 100 Â· Golf Digest</span>
             <span class="sp-golf-hero-badge">RBC Heritage Host</span>
           </div>
         </div>
@@ -226,7 +226,7 @@
             <p class="sp-golf-card-tag">Pete Dye Signature Design</p>
             <h3 class="sp-golf-card-name">Heron Point<br><em>by Pete Dye</em></h3>
             <p class="sp-golf-card-designer">Pete Dye Design</p>
-            <p class="sp-golf-card-desc">Weaving through tidal marshes and ancient live oaks — strategic shot-making over brute force. Stunning water views on nearly every hole.</p>
+            <p class="sp-golf-card-desc">Weaving through tidal marshes and ancient live oaks â strategic shot-making over brute force. Stunning water views on nearly every hole.</p>
             <span class="sp-golf-card-badge">Pete Dye Signature</span>
           </div>
           <div class="sp-golf-card">
@@ -244,9 +244,9 @@
     </div>
   `;
 
-  // ══════════════════════════════════════════════════════════════════════════
-  // STRIPE 5 — GOLF LEARNING CENTER: Refine Your Game
-  // ══════════════════════════════════════════════════════════════════════════
+  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // STRIPE 5 â GOLF LEARNING CENTER: Refine Your Game
+  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var glcCSS = `
     .sp-glc-section { background: #fff; }
     .sp-glc-header { max-width: 1400px; margin: 0 auto; padding: 80px 40px 52px; }
@@ -289,22 +289,22 @@
       <div class="sp-glc-header">
         <div class="sp-glc-eyebrow">
           <div class="sp-glc-eyebrow-rule"></div>
-          <p class="sp-glc-eyebrow-text">Golf Learning Center &nbsp;·&nbsp; Sea Pines Resort</p>
+          <p class="sp-glc-eyebrow-text">Golf Learning Center &nbsp;Â·&nbsp; Sea Pines Resort</p>
           <div class="sp-glc-eyebrow-rule"></div>
         </div>
         <h2 class="sp-glc-title">Refine Your<br><em>Game.</em></h2>
-        <p class="sp-glc-subtitle">PGA &amp; LPGA certified instructors, TrackMan technology, and personalized programs for every level — all steps from the most storied courses in the South.</p>
+        <p class="sp-glc-subtitle">PGA &amp; LPGA certified instructors, TrackMan technology, and personalized programs for every level â all steps from the most storied courses in the South.</p>
       </div>
       <div class="sp-glc-grid">
         <div class="sp-glc-hero">
           <div class="sp-glc-hero-img"></div>
           <div class="sp-glc-hero-scrim"></div>
           <div class="sp-glc-hero-content">
-            <p class="sp-glc-hero-label">Golf Learning Center &nbsp;·&nbsp; Hilton Head Island</p>
+            <p class="sp-glc-hero-label">Golf Learning Center &nbsp;Â·&nbsp; Hilton Head Island</p>
             <h3 class="sp-glc-hero-name">World-Class<br><em>Instruction</em></h3>
-            <p class="sp-glc-hero-desc">PGA &amp; LPGA certified professionals, decades of combined experience, and the latest launch monitor technology — all tailored to your game.</p>
+            <p class="sp-glc-hero-desc">PGA &amp; LPGA certified professionals, decades of combined experience, and the latest launch monitor technology â all tailored to your game.</p>
             <span class="sp-glc-hero-chip">Golf Digest Editors' Choice</span>
-            <span class="sp-glc-hero-chip">No. 5 Golf Resort · Golf Inc</span>
+            <span class="sp-glc-hero-chip">No. 5 Golf Resort Â· Golf Inc</span>
           </div>
         </div>
         <div class="sp-glc-stack">
@@ -314,23 +314,23 @@
             <div class="sp-glc-card-content">
               <p class="sp-glc-card-tag">One-on-One Coaching</p>
               <h4 class="sp-glc-card-name">Private <em>Instruction</em></h4>
-              <p class="sp-glc-card-sub">PGA · LPGA Certified Staff</p>
+              <p class="sp-glc-card-sub">PGA Â· LPGA Certified Staff</p>
             </div>
           </div>
           <div class="sp-glc-card">
             <div class="sp-glc-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/image_grid/public/2022-03/julie-cole.jpg'); background-position:center 30%;"></div>
             <div class="sp-glc-card-scrim"></div>
             <div class="sp-glc-card-content">
-              <p class="sp-glc-card-tag">Group Clinics · Golf Schools</p>
+              <p class="sp-glc-card-tag">Group Clinics Â· Golf Schools</p>
               <h4 class="sp-glc-card-name">Golf <em>Schools</em></h4>
-              <p class="sp-glc-card-sub">Women's · Adult · All Levels</p>
+              <p class="sp-glc-card-sub">Women's Â· Adult Â· All Levels</p>
             </div>
           </div>
           <div class="sp-glc-card">
             <div class="sp-glc-card-img" style="background-image:url('https://www.seapines.com/sites/default/files/styles/image_grid/public/2022-03/tim-cooke.jpg'); background-position:center 35%;"></div>
             <div class="sp-glc-card-scrim"></div>
             <div class="sp-glc-card-content">
-              <p class="sp-glc-card-tag">Launch Monitor · Precision Analysis</p>
+              <p class="sp-glc-card-tag">Launch Monitor Â· Precision Analysis</p>
               <h4 class="sp-glc-card-name">Club <em>Fitting</em></h4>
               <p class="sp-glc-card-sub">TPI-Certified Staff</p>
             </div>
@@ -341,10 +341,10 @@
     </div>
   `;
 
-  // ══════════════════════════════════════════════════════════════════════════
-  // WIDGET 6 — LOCATION & ACCESS: Full Bleed with Photo Cards
+  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+  // WIDGET 6 â LOCATION & ACCESS: Full Bleed with Photo Cards
   // Injected after .culture-section ("A Life Beyond the Fairways")
-  // ══════════════════════════════════════════════════════════════════════════
+  // ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var accessCSS = `
     .sp-access-section {
       position: relative;
@@ -489,7 +489,7 @@
       <div class="sp-access-inner">
         <div class="sp-access-eyebrow">Getting Here</div>
         <h2 class="sp-access-title">Location &amp; <em>Access</em></h2>
-        <p class="sp-access-tagline">Sea Pines sits at the southern tip of Hilton Head Island — where the Atlantic meets Calibogue Sound.</p>
+        <p class="sp-access-tagline">Sea Pines sits at the southern tip of Hilton Head Island â where the Atlantic meets Calibogue Sound.</p>
 
         <div class="sp-access-grid">
           <div class="sp-access-card">
@@ -507,7 +507,7 @@
               <div class="sp-access-card-distance">45</div>
               <div class="sp-access-card-unit">Minutes</div>
               <div class="sp-access-card-name">Savannah/Hilton Head Intl</div>
-              <div class="sp-access-card-detail">SAV ℔ #1 rated U.S. airport, daily flights from all major hubs</div>
+              <div class="sp-access-card-detail">SAV â #1 rated U.S. airport, daily flights from all major hubs</div>
             </div>
           </div>
           <div class="sp-access-card">
@@ -561,7 +561,7 @@
     </section>
   `;
 
-  // ── RESIDENCES WIDGET CSS ──────────────────────────────────────────────────
+  // ââ RESIDENCES WIDGET CSS ââââââââââââââââââââââââââââââââââââââââââââââââââ
   var residencesCSS = `
     #sp-residences-widget { background: #fff; }
     .sp-res-section { max-width: 1200px; margin: 0 auto; padding: 56px 40px 60px; background: #fff; }
@@ -587,12 +587,12 @@
 
   var residencesHTML = `
     <div class="sp-res-section">
-      <p class="sp-res-eyebrow">— SEA PINES REAL ESTATE</p>
+      <p class="sp-res-eyebrow">â SEA PINES REAL ESTATE</p>
       <div class="sp-res-header">
         <div>
           <h2 class="sp-res-title">The <em>Residences</em></h2>
         </div>
-        <p class="sp-res-desc">From oceanfront estates to marina<br>villas — find the Sea Pines address that<br>fits your life.</p>
+        <p class="sp-res-desc">From oceanfront estates to marina<br>villas â find the Sea Pines address that<br>fits your life.</p>
       </div>
       <div class="sp-res-grid">
         <div class="sp-res-card">
@@ -601,8 +601,8 @@
           <div class="sp-res-card-content">
             <span class="sp-res-card-type">PREMIER COLLECTION</span>
             <h3 class="sp-res-card-name">Oceanfront Estates</h3>
-            <p class="sp-res-card-price">$5M — $10M+</p>
-            <p class="sp-res-card-count">✦ 8 AVAILABLE</p>
+            <p class="sp-res-card-price">$5M â $10M+</p>
+            <p class="sp-res-card-count">â¦ 8 AVAILABLE</p>
           </div>
         </div>
         <div class="sp-res-card">
@@ -611,8 +611,8 @@
           <div class="sp-res-card-content">
             <span class="sp-res-card-type">GOLF COURSE</span>
             <h3 class="sp-res-card-name">Fairway Homes</h3>
-            <p class="sp-res-card-price">$1.2M — $3M</p>
-            <p class="sp-res-card-count">✦ 12 AVAILABLE</p>
+            <p class="sp-res-card-price">$1.2M â $3M</p>
+            <p class="sp-res-card-count">â¦ 12 AVAILABLE</p>
           </div>
         </div>
         <div class="sp-res-card">
@@ -621,8 +621,8 @@
           <div class="sp-res-card-content">
             <span class="sp-res-card-type">HARBOUR TOWN</span>
             <h3 class="sp-res-card-name">Marina Villas</h3>
-            <p class="sp-res-card-price">$800K — $2M</p>
-            <p class="sp-res-card-count">✦ 6 AVAILABLE</p>
+            <p class="sp-res-card-price">$800K â $2M</p>
+            <p class="sp-res-card-count">â¦ 6 AVAILABLE</p>
           </div>
         </div>
         <div class="sp-res-card">
@@ -631,8 +631,8 @@
           <div class="sp-res-card-content">
             <span class="sp-res-card-type">LAGOON-FRONT</span>
             <h3 class="sp-res-card-name">Lagoon Retreats</h3>
-            <p class="sp-res-card-price">$1.5M — $4M</p>
-            <p class="sp-res-card-count">✦ 10 AVAILABLE</p>
+            <p class="sp-res-card-price">$1.5M â $4M</p>
+            <p class="sp-res-card-count">â¦ 10 AVAILABLE</p>
           </div>
         </div>
         <div class="sp-res-card">
@@ -641,8 +641,8 @@
           <div class="sp-res-card-content">
             <span class="sp-res-card-type">RESORT COLLECTION</span>
             <h3 class="sp-res-card-name">Resort Villas</h3>
-            <p class="sp-res-card-price">$500K — $1M</p>
-            <p class="sp-res-card-count">✦ 18 AVAILABLE</p>
+            <p class="sp-res-card-price">$500K â $1M</p>
+            <p class="sp-res-card-count">â¦ 18 AVAILABLE</p>
           </div>
         </div>
       </div>
@@ -653,9 +653,9 @@
   `;
 
 
-// ═════════════════════════════════════════════════════════════════════════
-// WIDGET 3 — EXPLORE MORE: "Where Hilton Head's Finest Call Home"
-// ══════════════════════════════════════════════════════════════════════════
+// âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// WIDGET 3 â EXPLORE MORE: "Where Hilton Head's Finest Call Home"
+// ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 var w3CSS = `
   .sp-w3-section { background: #F7F5F0; padding: 80px 0 72px; overflow: hidden; position: relative; }
   .sp-w3-watermark { position: absolute; right: -40px; top: 50%; transform: translateY(-50%); font-size: 260px; font-family: 'Bodoni Moda', serif; font-weight: 700; color: rgba(0,0,0,0.025); line-height: 1; pointer-events: none; letter-spacing: -0.05em; user-select: none; text-transform: uppercase; }
@@ -783,112 +783,13 @@ var w3HTML = `
   </section>
 `;
 
-
-  // ══════════════════════════════════════════════════════════════════════════
-// MAP WIDGET — "5,000 Acres. One Master Vision." (Google Maps Split)
-// ══════════════════════════════════════════════════════════════════════════
-var mapCSS = `
-  .sp-map-section {
-    background: #0A1628;
-    display: grid;
-    grid-template-columns: 380px 1fr;
-    min-height: 600px;
-    overflow: hidden;
-  }
-  .sp-map-left {
-    padding: 72px 48px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .sp-map-eyebrow {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10px; font-weight: 700; letter-spacing: 3px;
-    text-transform: uppercase; color: #0ABAB5;
-    margin-bottom: 20px; display: flex; align-items: center; gap: 10px;
-  }
-  .sp-map-eyebrow::before {
-    content: ''; display: inline-block; width: 24px;
-    height: 1px; background: #0ABAB5; opacity: 0.6;
-  }
-  .sp-map-title {
-    font-family: 'Bodoni Moda', Didot, serif;
-    font-size: clamp(28px, 2.5vw, 38px);
-    color: #fff; line-height: 1.15;
-    margin-bottom: 20px; font-weight: 400;
-    text-transform: uppercase; letter-spacing: 1px;
-  }
-  .sp-map-title em { color: #0ABAB5; font-style: italic; text-transform: none; }
-  .sp-map-sub {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px; color: rgba(255,255,255,0.5);
-    line-height: 1.75; margin-bottom: 36px;
-  }
-  .sp-map-pills { display: flex; flex-direction: column; gap: 10px; }
-  .sp-map-pill {
-    font-family: 'Montserrat', sans-serif;
-    display: flex; align-items: center; gap: 10px;
-    font-size: 10px; font-weight: 600; letter-spacing: 1.5px;
-    text-transform: uppercase; color: rgba(255,255,255,0.6);
-  }
-  .sp-map-pill-dot {
-    width: 6px; height: 6px; border-radius: 50%;
-    background: #0ABAB5; flex-shrink: 0;
-  }
-  .sp-map-cta {
-    font-family: 'Montserrat', sans-serif;
-    display: inline-flex; align-items: center; gap: 8px;
-    margin-top: 36px; font-size: 10px; font-weight: 700;
-    letter-spacing: 2.5px; text-transform: uppercase;
-    color: #0ABAB5; text-decoration: none;
-    border-bottom: 1px solid rgba(10,186,181,0.3); padding-bottom: 3px;
-    cursor: pointer;
-  }
-  .sp-map-right iframe {
-    width: 100%; height: 100%; min-height: 600px;
-    display: block; border: none;
-  }
-  @media (max-width: 900px) {
-    .sp-map-section { grid-template-columns: 1fr; min-height: auto; }
-    .sp-map-left { padding: 56px 28px; }
-    .sp-map-right iframe { min-height: 420px; }
-  }
-`;
-
-var mapHTML = `
-  <div class="sp-map-section" id="sp-map-widget">
-    <div class="sp-map-left">
-      <div class="sp-map-eyebrow">Sea Pines &nbsp;&middot;&nbsp; Hilton Head Island</div>
-      <h2 class="sp-map-title">5,000 Acres.<br><em>One Master</em><br>Vision.</h2>
-      <p class="sp-map-sub">From the Atlantic shore to Calibogue Sound &mdash; every path, preserve, and fairway designed with purpose since 1956.</p>
-      <div class="sp-map-pills">
-        <div class="sp-map-pill"><span class="sp-map-pill-dot"></span>Harbour Town Marina &amp; Lighthouse</div>
-        <div class="sp-map-pill"><span class="sp-map-pill-dot"></span>Sea Pines Beach Club</div>
-        <div class="sp-map-pill"><span class="sp-map-pill-dot"></span>605-Acre Forest Preserve</div>
-        <div class="sp-map-pill"><span class="sp-map-pill-dot"></span>4 Championship Golf Courses</div>
-        <div class="sp-map-pill"><span class="sp-map-pill-dot"></span>South Beach Marina Village</div>
-      </div>
-      <a class="sp-map-cta" href="/sea-pines">Explore Sea Pines Listings &nbsp;&rarr;</a>
-    </div>
-    <div class="sp-map-right">
-      <iframe
-        src="https://maps.google.com/maps?q=Sea+Pines+Resort,+Hilton+Head+Island,+SC&t=h&z=14&ie=UTF8&iwloc=B&output=embed"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Sea Pines Resort &mdash; Hilton Head Island, SC &mdash; Satellite Map">
-      </iframe>
-    </div>
-  </div>
-`;
-
-// ── Inject all styles ──────────────────────────────────────────────────────
+// ââ Inject all styles ââââââââââââââââââââââââââââââââââââââââââââââââââââââ
   var styleEl = document.createElement('style');
   styleEl.id = 'sp-widgets-css';
-  styleEl.textContent = stripe1CSS + stripe2CSS + stripe3CSS + golfCSS + glcCSS + accessCSS + residencesCSS + w3CSS + mapCSS;
+  styleEl.textContent = stripe1CSS + stripe2CSS + stripe3CSS + golfCSS + glcCSS + accessCSS + residencesCSS + w3CSS;
   document.head.appendChild(styleEl);
 
-  // ── Inject stripes 1–5 after the hero section ──────────────────────────────
+  // ââ Inject stripes 1â5 after the hero section ââââââââââââââââââââââââââââââ
   function injectWidgets() {
     var hero = document.querySelector('.hero');
     if (!hero) return;
@@ -900,7 +801,7 @@ var mapHTML = `
     hero.parentNode.insertBefore(container, hero.nextSibling);
   }
 
-  // ── Inject Residences after the market section ─────────────────────────────
+  // ââ Inject Residences after the market section âââââââââââââââââââââââââââââ
   function injectResidencesWidget() {
     var market = document.querySelector('.market-section');
     if (!market) return;
@@ -912,7 +813,7 @@ var mapHTML = `
     market.parentNode.insertBefore(el, market.nextSibling);
   }
 
-  // ── Inject Location & Access after the tree story (culture section) ────────
+  // ââ Inject Location & Access after the tree story (culture section) ââââââââ
   function injectAccessWidget() {
     var culture = document.querySelector('.culture-section');
     if (!culture) return;
@@ -942,21 +843,9 @@ function injectExploreMoreWidget() {
     prevBtn.addEventListener('click', function(){ track.scrollBy({left:-360, behavior:'smooth'}); });
   }
 }
-// ── Inject Map Widget after the Residences widget ─────────────────────────
-function injectMapWidget() {
-  if (document.getElementById('sp-map-widget')) return;
-  var residences = document.getElementById('sp-residences-widget');
-  var anchor = residences || document.querySelector('.market-section');
-  if (!anchor) return;
-  var el = document.createElement('div');
-  el.innerHTML = mapHTML;
-  anchor.parentNode.insertBefore(el.firstElementChild, anchor.nextSibling);
-}
-
 function injectAll() {
     injectWidgets();
     injectResidencesWidget();
-    injectMapWidget();
   injectAccessWidget();
     injectExploreMoreWidget();
   }
@@ -969,7 +858,7 @@ function injectAll() {
 
 })();
 
-// ── Harbour Town Cinematic Override ──────────────────────────────────────────
+// ââ Harbour Town Cinematic Override ââââââââââââââââââââââââââââââââââââââââââ
 (function() {
   if (!window.location.pathname.match(/\/sea-pines(\/|$)/)) return;
   function applyHarbourTownCinematic() {
