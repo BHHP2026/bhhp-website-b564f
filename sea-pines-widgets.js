@@ -64,7 +64,7 @@
   // ══════════════════════════════════════════════════════════════════════════
   var stripe2CSS = `
     .sp-fraser-map { position: relative; min-height: 660px; display: flex; align-items: center; overflow: hidden; }
-    .sp-fraser-map-bg { position: absolute; inset: 0; background-image: url('https://tile.loc.gov/image-services/iiif/service:gmd:gmd387:g3870:g3870:ct001123/pct:10,65,28,28/full/0/default.jpg'); background-size: cover; background-position: center 40%; }
+    .sp-fraser-map-bg { position: absolute; inset: 0; background-image: url('/sc.jpg'); background-size: cover; background-position: center 40%; }
     .sp-fraser-map-overlay { position: absolute; inset: 0; background: linear-gradient(150deg, rgba(5,18,14,0.72) 0%, rgba(8,14,28,0.80) 100%); }
     .sp-fraser-content { position: relative; z-index: 2; max-width: 820px; margin: 0 auto; padding: 90px 48px; text-align: center; }
     .sp-fraser-eyebrow { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #0ABAB5; margin-bottom: 28px; }
