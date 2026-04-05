@@ -13,7 +13,48 @@
   // ══════════════════════════════════════════════════════════════════════════
   // STRIPE 1 — HERO IMAGE: "The Resort Lifestyle"
   // ══════════════════════════════════════════════════════════════════════════
+  var stripe1CSS = `
+    .sp-stripe-hero { position: relative; height: 65vh; overflow: hidden; }
+    .sp-stripe-hero .sp-bg { position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=2000&q=90') center 40% / cover no-repeat; z-index: 0; }
+    .sp-stripe-hero .sp-overlay { position: absolute; inset: 0; background: rgba(10,15,28,0.50); z-index: 1; }
+    .sp-stripe-hero .sp-vignette { position: absolute; inset: 0; background: radial-gradient(ellipse at center, transparent 25%, rgba(10,15,28,0.30) 65%, rgba(10,15,28,0.55) 100%); z-index: 2; }
+    .sp-hero-title { position: relative; z-index: 3; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 60px; }
+    .sp-eyebrow { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 24px; }
+    .sp-eyebrow-rule { width: 28px; height: 1px; background: #0ABAB5; opacity: 0.8; }
+    .sp-eyebrow-text { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 4px; text-transform: uppercase; color: #fff; }
+    .sp-t-the { font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 400; font-size: clamp(24px, 2.6vw, 38px); color: #fff; line-height: 1; }
+    .sp-t-main { font-family: 'Bodoni Moda', Didot, serif; font-style: italic; font-weight: 400; font-size: clamp(68px, 8.5vw, 122px); color: #fff; line-height: 0.90; letter-spacing: -2px; }
+    .sp-t-sub { font-family: 'Bodoni Moda', Didot, serif; font-style: normal; font-weight: 400; font-size: clamp(30px, 3.6vw, 52px); color: #fff; letter-spacing: 12px; text-transform: uppercase; line-height: 1; margin: 8px 0 0 6px; }
+    .sp-badge { position: absolute; right: 64px; bottom: 56px; z-index: 4; width: 108px; height: 108px; border-radius: 50%; background: rgba(10,15,28,0.35); border: 1.5px solid rgba(255,255,255,0.22); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+    .sp-badge .b-year { font-family: 'Bodoni Moda', serif; font-size: 28px; font-weight: 700; color: #fff; line-height: 1; }
+    .sp-badge .b-label { font-size: 8px; font-weight: 600; letter-spacing: 1.5px; color: rgba(255,255,255,0.55); text-transform: uppercase; line-height: 1.5; margin-top: 5px; }
+    @media (max-width: 768px) {
+      .sp-badge { right: 24px; bottom: 32px; width: 80px; height: 80px; }
+      .sp-badge .b-year { font-size: 20px; }
+    }
+  `;
 
+  var stripe1HTML = `
+    <div class="sp-stripe-hero">
+      <div class="sp-bg"></div>
+      <div class="sp-overlay"></div>
+      <div class="sp-vignette"></div>
+      <div class="sp-hero-title">
+        <div class="sp-eyebrow">
+          <div class="sp-eyebrow-rule"></div>
+          <span class="sp-eyebrow-text">Sea Pines Resort &nbsp;·&nbsp; Hilton Head Island</span>
+          <div class="sp-eyebrow-rule"></div>
+        </div>
+        <p class="sp-t-the">The</p>
+        <p class="sp-t-main">Resort</p>
+        <p class="sp-t-sub">Lifestyle</p>
+      </div>
+      <div class="sp-badge">
+        <span class="b-year">1956</span>
+        <span class="b-label">Est. by<br>C. Fraser</span>
+      </div>
+    </div>
+  `;
 
   // ══════════════════════════════════════════════════════════════════════════
   // STRIPE 2 — CHARLES FRASER: Editorial Text Band
@@ -844,7 +885,7 @@ var mapHTML = `
 // ── Inject all styles ──────────────────────────────────────────────────────
   var styleEl = document.createElement('style');
   styleEl.id = 'sp-widgets-css';
-  styleEl.textContent = stripe2CSS + stripe3CSS + golfCSS + glcCSS + accessCSS + residencesCSS + w3CSS + mapCSS;
+  styleEl.textContent = stripe1CSS + stripe2CSS + stripe3CSS + golfCSS + glcCSS + accessCSS + residencesCSS + w3CSS + mapCSS;
   document.head.appendChild(styleEl);
 
   // ── Inject stripes 1–5 after the hero section ──────────────────────────────
@@ -854,7 +895,7 @@ var mapHTML = `
 
     var container = document.createElement('div');
     container.id = 'sp-new-widgets';
-    container.innerHTML = stripe2HTML + stripe3HTML + golfHTML + glcHTML;
+    container.innerHTML = stripe1HTML + stripe2HTML + stripe3HTML + golfHTML + glcHTML;
 
     hero.parentNode.insertBefore(container, hero.nextSibling);
   }
@@ -963,7 +1004,3 @@ function injectAll() {
   }
   setTimeout(applyHarbourTownCinematic, 800);
 })();
-
-Claude is active in this tab group
-Open chat
-Dismiss
